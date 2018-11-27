@@ -5,7 +5,8 @@ This ontology contains the definitions for the ABS Structures which are areas th
 * Main structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,
 * Indigenous structures: Indigenous location, Indigenous area, , Indigenous region classes
 * Urban structures: Urban Centre and Locality,  Section of State Range, Section of State, and Significant Urban Area classes
-and Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere
+
+and for the Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere
 * Local Government Areas (LGAs)
 * Postal Areas (POAs)
 * State Suburbs (SSCs)

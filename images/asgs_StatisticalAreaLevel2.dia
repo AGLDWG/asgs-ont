@@ -1,0 +1,42 @@
+digraph G {
+ compound = false;
+ ranksep = "1.2";
+ rankdir = LR
+fontname = "Verdana"
+fontsize = 8
+overlap=false
+nodesep=0.3
+ratio = fill
+margin=0
+node [
+        fontname = "Verdana"
+        fontsize = 8
+        shape = "rect"
+        style=filled
+        fontcolor=black
+        fillcolor="#CECECE"
+        color="#706f6f"
+] 
+edge [
+        fontname = "Verdana"
+        fontsize = 8
+]  
+subgraph asgs {
+1 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:StatisticalAreaLevel2</b></TD></TR><tr><td><br/></td></tr><TR><TD cellpadding="0" cellspacing="5" align="left"  >:statisticalArea2Sa29DigitCode string</TD></TR><TR><TD cellpadding="0" cellspacing="5" align="left"  >:sa2Name2011 string</TD></TR><TR><TD cellpadding="0" cellspacing="5" align="left"  >:sa2Name2016 string</TD></TR><TR><TD cellpadding="0" cellspacing="5" align="left"  >:sa2Maincode2016 string</TD></TR><TR><TD cellpadding="0" cellspacing="5" align="left"  >:sa2Maincode2011 string</TD></TR> </TABLE>> shape="rectangle" ];
+1 -> 2 [ label="rdfs:subClassOf" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+1 -> 4 [ label=":isStatisticalAreaLevel2Of" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+2 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:Feature</b></TD></TR> </TABLE>> shape="rectangle" ];
+3 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:TrToSa2Path</b></TD></TR> </TABLE>> shape="rectangle" ];
+3 -> 1 [ label=":trToSa2PathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+4 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:StatisticalAreaLevel1</b></TD></TR> </TABLE>> shape="rectangle" ];
+5 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:StatisticalAreaLevel3</b></TD></TR> </TABLE>> shape="rectangle" ];
+5 -> 1 [ label=":isStatisticalAreaLevel3Of" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+6 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:Sa2ToDznPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+6 -> 1 [ label=":sa2ToDznPathFrom" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+7 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:SuaToSa2Path</b></TD></TR> </TABLE>> shape="rectangle" ];
+7 -> 1 [ label=":suaToSa2PathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+} 
+label=<Title: ASGS (StatisticalAreaLevel2)
+<br/>Prefix: asgs
+<br/>URI: http://linked.data.gov.au/def/asgs#
+> labeljust=l fontsize=8}

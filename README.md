@@ -20,4 +20,3 @@ The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Bl
 
 The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).
 
-(documentation to follow - working on diagrams)

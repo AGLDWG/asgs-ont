@@ -1,0 +1,47 @@
+digraph G {
+ compound = false;
+ ranksep = "1.2";
+ rankdir = LR
+fontname = "Verdana"
+fontsize = 8
+overlap=false
+nodesep=0.3
+ratio = fill
+margin=0
+node [
+        fontname = "Verdana"
+        fontsize = 8
+        shape = "rect"
+        style=filled
+        fontcolor=black
+        fillcolor="#CECECE"
+        color="#706f6f"
+] 
+edge [
+        fontname = "Verdana"
+        fontsize = 8
+]  
+subgraph asgs {
+1 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:MeshBlock</b></TD></TR><tr><td><br/></td></tr><TR><TD cellpadding="0" cellspacing="5" align="left"  >:mbCode2016 string</TD></TR><TR><TD cellpadding="0" cellspacing="5" align="left"  >:mbCode2011 string</TD></TR><TR><TD cellpadding="0" cellspacing="5" align="left"  >:category string</TD></TR> </TABLE>> shape="rectangle" ];
+1 -> 2 [ label="rdfs:subClassOf" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+2 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:Feature</b></TD></TR> </TABLE>> shape="rectangle" ];
+3 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:AddToMbPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+3 -> 1 [ label=":addToMbPathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+4 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:DznToMbPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+4 -> 1 [ label=":dznToMbPathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+5 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:SscToMbPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+5 -> 1 [ label=":sscToMbPathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+5 -> 1 [ label=":sscToSa1PathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+6 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:PoaToMbPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+6 -> 1 [ label=":poaToMbPathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+7 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:NrmrToMbPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+7 -> 1 [ label=":nrmrToMbPathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+8 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:StatisticalAreaLevel1</b></TD></TR> </TABLE>> shape="rectangle" ];
+8 -> 1 [ label=":isStatisticalAreaLevel1Of" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+9 [fillcolor="#FFD180" label=<<TABLE BORDER="0" CELLSPACING="0" CELLBORDER="0" CELLPADDING="5" ><TR><TD><b>:LgaToMbPath</b></TD></TR> </TABLE>> shape="rectangle" ];
+9 -> 1 [ label=":lgaToMbPathTo" color="brown" fontcolor="brown" arrowhead="normal" arrowsize="1.2" ];
+} 
+label=<Title: ASGS (MeshBlock)
+<br/>Prefix: asgs
+<br/>URI: http://linked.data.gov.au/def/asgs#
+> labeljust=l fontsize=8}

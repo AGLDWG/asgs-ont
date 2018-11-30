@@ -1,0 +1,22 @@
+RewriteEngine On
+
+DirectoryIndex asgs.html
+
+AddDefaultCharset UTF-8
+AddType text/turtle ttl
+
+
+# RDF Content Negotiation
+RewriteCond %{HTTP:Accept} text/turtle [NC]
+RewriteRule (.*) asgs.ttl [L]
+#Header add Content-Type "text/plain"
+
+# RDF Query String Argument
+RewriteCond %{QUERY_STRING} ^_format=text/turtle$
+RewriteRule (.*) asgs.ttl [L]
+
+# RDF file extension
+# handled by file system (directly addressing .ttl file) and upper-dir .htaccess: {ont-name}.ttl --> {ont-name}/{ont-name}.ttl
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)/?$ asgs.html [R=302,L]

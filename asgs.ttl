@@ -22,7 +22,7 @@
                                        
                                        dc:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                        
-                                       dc:title "asgs ontology" ;
+                                       dc:title "ASGS Ontology" ;
                                        
                                        dct:modified "2018-11-23" ;
                                        

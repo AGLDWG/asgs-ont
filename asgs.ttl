@@ -26,7 +26,11 @@
                                        
                                        dct:modified "2018-11-23" ;
                                        
-                                       dc:date "2018-11-23" .
+                                       dc:date "2018-11-23" ;
+
+                                       dc:publisher "Australian Bureau of Statistics" ;
+
+                                       dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> .
 
 #################################################################
 #

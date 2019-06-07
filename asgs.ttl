@@ -15,17 +15,17 @@
 
 
 <http://linked.data.gov.au/def/asgs> rdf:type owl:Ontology ;
-                                       
+
                                        dc:creator "Laurent Lefort, Australian Bureau of Statistics"^^xsd:string ;
-                                       
+
                                        dc:description "Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures" ;
-                                       
+
                                        dc:rights "Copyright 2018 Australian Bureau of Statistics." ;
-                                       
+
                                        dc:title "ASGS Ontology" ;
-                                       
+
                                        dct:modified "2018-11-23" ;
-                                       
+
                                        dc:date "2018-11-23" ;
 
                                        dc:publisher "Australian Bureau of Statistics" ;
@@ -96,13 +96,13 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  http://linked.data.gov.au/def/asgs#addToMbPathFrom
 
 asgs:addToMbPathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "addToMbPath from" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AddToMbPath" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -110,13 +110,13 @@ asgs:addToMbPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#addToMbPathTo
 
 asgs:addToMbPathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "addToMbPath to" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AddToMbPath" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -124,13 +124,13 @@ asgs:addToMbPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#cedToSa1PathFrom
 
 asgs:cedToSa1PathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "cedToSa1Path from" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#CedToSa1Path" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -138,13 +138,13 @@ asgs:cedToSa1PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#cedToSa1PathTo
 
 asgs:cedToSa1PathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "cedToSa1Path to" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#CedToSa1Path" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -152,11 +152,11 @@ asgs:cedToSa1PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#contains
 
 asgs:contains rdf:type owl:ObjectProperty ;
-              
+
               rdfs:label "contains" ;
-              
+
               rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Feature" ;
-              
+
               rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -164,13 +164,13 @@ asgs:contains rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#dznToMbPathFrom
 
 asgs:dznToMbPathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "dznToMbPath from" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DznToMbPath" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -178,13 +178,13 @@ asgs:dznToMbPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#dznToMbPathTo
 
 asgs:dznToMbPathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "dznToMbPath to" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DznToMbPath" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -192,11 +192,11 @@ asgs:dznToMbPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#from
 
 asgs:from rdf:type owl:ObjectProperty ;
-          
+
           rdfs:label "from" ;
-          
+
           rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-          
+
           rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GeospatialPath" .
 
 
@@ -204,13 +204,13 @@ asgs:from rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#ilocToSa1PathFrom
 
 asgs:ilocToSa1PathFrom rdf:type owl:ObjectProperty ;
-                       
+
                        rdfs:label "ilocToSa1Path from" ;
-                       
+
                        rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                       
+
                        rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IlocToSa1Path" ;
-                       
+
                        rdfs:subPropertyOf asgs:from .
 
 
@@ -218,13 +218,13 @@ asgs:ilocToSa1PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#ilocToSa1PathTo
 
 asgs:ilocToSa1PathTo rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "ilocToSa1Path to" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IlocToSa1Path" ;
-                     
+
                      rdfs:subPropertyOf asgs:to .
 
 
@@ -232,13 +232,13 @@ asgs:ilocToSa1PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isGreaterCapitalCityStatisticalAreaOf
 
 asgs:isGreaterCapitalCityStatisticalAreaOf rdf:type owl:ObjectProperty ;
-                                           
+
                                            rdfs:label "isGreater Capital City Statistical AreaOf" ;
-                                           
+
                                            rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                           
+
                                            rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                                           
+
                                            rdfs:subPropertyOf asgs:contains .
 
 
@@ -246,13 +246,13 @@ asgs:isGreaterCapitalCityStatisticalAreaOf rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isIndigenousAreaOf
 
 asgs:isIndigenousAreaOf rdf:type owl:ObjectProperty ;
-                        
+
                         rdfs:label "isIndigenous AreaOf" ;
-                        
+
                         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" ;
-                        
+
                         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                        
+
                         rdfs:subPropertyOf asgs:contains .
 
 
@@ -260,13 +260,13 @@ asgs:isIndigenousAreaOf rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isIndigenousRegionOf
 
 asgs:isIndigenousRegionOf rdf:type owl:ObjectProperty ;
-                          
+
                           rdfs:label "isIndigenous RegionOf" ;
-                          
+
                           rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" ;
-                          
+
                           rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                          
+
                           rdfs:subPropertyOf asgs:contains .
 
 
@@ -274,13 +274,13 @@ asgs:isIndigenousRegionOf rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isSectionOfStateOf
 
 asgs:isSectionOfStateOf rdf:type owl:ObjectProperty ;
-                        
+
                         rdfs:label "isSection of StateOf" ;
-                        
+
                         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                        
+
                         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                        
+
                         rdfs:subPropertyOf asgs:contains .
 
 
@@ -288,13 +288,13 @@ asgs:isSectionOfStateOf rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isSectionOfStateRangeOf
 
 asgs:isSectionOfStateRangeOf rdf:type owl:ObjectProperty ;
-                             
+
                              rdfs:label "isSection of State RangeOf" ;
-                             
+
                              rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                             
+
                              rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                             
+
                              rdfs:subPropertyOf asgs:contains .
 
 
@@ -302,13 +302,13 @@ asgs:isSectionOfStateRangeOf rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isStateOrTerritoryOf
 
 asgs:isStateOrTerritoryOf rdf:type owl:ObjectProperty ;
-                          
+
                           rdfs:label "isState or TerritoryOf" ;
-                          
+
                           rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                          
+
                           rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                          
+
                           rdfs:subPropertyOf asgs:contains .
 
 
@@ -316,13 +316,13 @@ asgs:isStateOrTerritoryOf rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel1Of
 
 asgs:isStatisticalAreaLevel1Of rdf:type owl:ObjectProperty ;
-                               
+
                                rdfs:label "isStatistical Area Level1Of" ;
-                               
+
                                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                               
+
                                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1" ;
-                               
+
                                rdfs:subPropertyOf asgs:contains .
 
 
@@ -330,13 +330,13 @@ asgs:isStatisticalAreaLevel1Of rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel2Of
 
 asgs:isStatisticalAreaLevel2Of rdf:type owl:ObjectProperty ;
-                               
+
                                rdfs:label "isStatistical Area Level2Of" ;
-                               
+
                                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                               
+
                                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                               
+
                                rdfs:subPropertyOf asgs:contains .
 
 
@@ -344,13 +344,13 @@ asgs:isStatisticalAreaLevel2Of rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel3Of
 
 asgs:isStatisticalAreaLevel3Of rdf:type owl:ObjectProperty ;
-                               
+
                                rdfs:label "isStatistical Area Level3Of" ;
-                               
+
                                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" ;
-                               
+
                                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                               
+
                                rdfs:subPropertyOf asgs:contains .
 
 
@@ -358,13 +358,13 @@ asgs:isStatisticalAreaLevel3Of rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel4Of
 
 asgs:isStatisticalAreaLevel4Of rdf:type owl:ObjectProperty ;
-                               
+
                                rdfs:label "isStatistical Area Level4Of" ;
-                               
+
                                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                               
+
                                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                               
+
                                rdfs:subPropertyOf asgs:contains .
 
 
@@ -372,13 +372,13 @@ asgs:isStatisticalAreaLevel4Of rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#lgaToMbPathFrom
 
 asgs:lgaToMbPathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "lgaToMbPath from" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#LgaToMbPath" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -386,13 +386,13 @@ asgs:lgaToMbPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#lgaToMbPathTo
 
 asgs:lgaToMbPathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "lgaToMbPath to" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#LgaToMbPath" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -400,13 +400,13 @@ asgs:lgaToMbPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#nrmrToMbPathFrom
 
 asgs:nrmrToMbPathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "nrmrToMbPath from" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NrmrToMbPath" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -414,13 +414,13 @@ asgs:nrmrToMbPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#nrmrToMbPathTo
 
 asgs:nrmrToMbPathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "nrmrToMbPath to" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NrmrToMbPath" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -428,13 +428,13 @@ asgs:nrmrToMbPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#poaToMbPathFrom
 
 asgs:poaToMbPathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "poaToMbPath from" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PoaToMbPath" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -442,13 +442,13 @@ asgs:poaToMbPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#poaToMbPathTo
 
 asgs:poaToMbPathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "poaToMbPath to" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PoaToMbPath" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -456,13 +456,13 @@ asgs:poaToMbPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#raToSa1PathFrom
 
 asgs:raToSa1PathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "raToSa1Path from" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RaToSa1Path" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -470,13 +470,13 @@ asgs:raToSa1PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#raToSa1PathTo
 
 asgs:raToSa1PathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "raToSa1Path to" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RaToSa1Path" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -484,13 +484,13 @@ asgs:raToSa1PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa2ToDznPathFrom
 
 asgs:sa2ToDznPathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "sa2ToDznPath from" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Sa2ToDznPath" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -498,13 +498,13 @@ asgs:sa2ToDznPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa2ToDznPathTo
 
 asgs:sa2ToDznPathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "sa2ToDznPath to" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Sa2ToDznPath" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -512,13 +512,13 @@ asgs:sa2ToDznPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sedToSa1PathFrom
 
 asgs:sedToSa1PathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "sedToSa1Path from" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SedToSa1Path" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -526,13 +526,13 @@ asgs:sedToSa1PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sedToSa1PathTo
 
 asgs:sedToSa1PathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "sedToSa1Path to" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SedToSa1Path" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -540,13 +540,13 @@ asgs:sedToSa1PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sscToMbPathFrom
 
 asgs:sscToMbPathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "sscToMbPath from" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SscToMbPath" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -554,13 +554,13 @@ asgs:sscToMbPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sscToMbPathTo
 
 asgs:sscToMbPathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "sscToMbPath to" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SscToMbPath" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -568,13 +568,13 @@ asgs:sscToMbPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sscToSa1PathFrom
 
 asgs:sscToSa1PathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "sscToSa1Path from" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SscToMbPath" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -582,13 +582,13 @@ asgs:sscToSa1PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#sscToSa1PathTo
 
 asgs:sscToSa1PathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "sscToSa1Path to" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SscToMbPath" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -596,13 +596,13 @@ asgs:sscToSa1PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToIregPathFrom
 
 asgs:stateToIregPathFrom rdf:type owl:ObjectProperty ;
-                         
+
                          rdfs:label "stateToIregPath from" ;
-                         
+
                          rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                         
+
                          rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToIregPath" ;
-                         
+
                          rdfs:subPropertyOf asgs:from .
 
 
@@ -610,13 +610,13 @@ asgs:stateToIregPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToIregPathTo
 
 asgs:stateToIregPathTo rdf:type owl:ObjectProperty ;
-                       
+
                        rdfs:label "stateToIregPath to" ;
-                       
+
                        rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                       
+
                        rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToIregPath" ;
-                       
+
                        rdfs:subPropertyOf asgs:to .
 
 
@@ -624,13 +624,13 @@ asgs:stateToIregPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToLgaPathFrom
 
 asgs:stateToLgaPathFrom rdf:type owl:ObjectProperty ;
-                        
+
                         rdfs:label "stateToLgaPath from" ;
-                        
+
                         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToLgaPath" ;
-                        
+
                         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                        
+
                         rdfs:subPropertyOf asgs:from .
 
 
@@ -638,13 +638,13 @@ asgs:stateToLgaPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToLgaPathTo
 
 asgs:stateToLgaPathTo rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "stateToLgaPath to" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToLgaPath" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -652,13 +652,13 @@ asgs:stateToLgaPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToRaPathFrom
 
 asgs:stateToRaPathFrom rdf:type owl:ObjectProperty ;
-                       
+
                        rdfs:label "stateToRaPath from" ;
-                       
+
                        rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                       
+
                        rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToRaPath" ;
-                       
+
                        rdfs:subPropertyOf asgs:from .
 
 
@@ -666,13 +666,13 @@ asgs:stateToRaPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToRaPathTo
 
 asgs:stateToRaPathTo rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "stateToRaPath to" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToRaPath" ;
-                     
+
                      rdfs:subPropertyOf asgs:to .
 
 
@@ -680,13 +680,13 @@ asgs:stateToRaPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToSosPathFrom
 
 asgs:stateToSosPathFrom rdf:type owl:ObjectProperty ;
-                        
+
                         rdfs:label "stateToSosPath from" ;
-                        
+
                         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                        
+
                         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToSosPath" ;
-                        
+
                         rdfs:subPropertyOf asgs:from .
 
 
@@ -694,13 +694,13 @@ asgs:stateToSosPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToSosPathTo
 
 asgs:stateToSosPathTo rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "stateToSosPath to" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToSosPath" ;
-                      
+
                       rdfs:subPropertyOf asgs:to .
 
 
@@ -708,13 +708,13 @@ asgs:stateToSosPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToSscPathFrom
 
 asgs:stateToSscPathFrom rdf:type owl:ObjectProperty ;
-                        
+
                         rdfs:label "stateToSscPath from" ;
-                        
+
                         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                        
+
                         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToSscPath" ;
-                        
+
                         rdfs:subPropertyOf asgs:from .
 
 
@@ -722,13 +722,13 @@ asgs:stateToSscPathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateToSscPathTo
 
 asgs:stateToSscPathTo rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "stateToSscPath to" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToSscPath" ;
-                      
+
                       rdfs:subPropertyOf asgs:to .
 
 
@@ -736,13 +736,13 @@ asgs:stateToSscPathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#suaToSa2PathFrom
 
 asgs:suaToSa2PathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "suaToSa2Path from" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SuaToSa2Path" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -750,13 +750,13 @@ asgs:suaToSa2PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#suaToSa2PathTo
 
 asgs:suaToSa2PathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "suaToSa2Path to" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SuaToSa2Path" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -764,11 +764,11 @@ asgs:suaToSa2PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#to
 
 asgs:to rdf:type owl:ObjectProperty ;
-        
+
         rdfs:label "to" ;
-        
+
         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-        
+
         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GeospatialPath" .
 
 
@@ -776,13 +776,13 @@ asgs:to rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#trToSa2PathFrom
 
 asgs:trToSa2PathFrom rdf:type owl:ObjectProperty ;
-                     
+
                      rdfs:label "trToSa2Path from" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#TrToSa2Path" ;
-                     
+
                      rdfs:subPropertyOf asgs:from .
 
 
@@ -790,13 +790,13 @@ asgs:trToSa2PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#trToSa2PathTo
 
 asgs:trToSa2PathTo rdf:type owl:ObjectProperty ;
-                   
+
                    rdfs:label "trToSa2Path to" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#TrToSa2Path" ;
-                   
+
                    rdfs:subPropertyOf asgs:to .
 
 
@@ -804,13 +804,13 @@ asgs:trToSa2PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#uclToSa1PathFrom
 
 asgs:uclToSa1PathFrom rdf:type owl:ObjectProperty ;
-                      
+
                       rdfs:label "uclToSa1Path from" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UclToSa1Path" ;
-                      
+
                       rdfs:subPropertyOf asgs:from .
 
 
@@ -818,13 +818,13 @@ asgs:uclToSa1PathFrom rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#uclToSa1PathTo
 
 asgs:uclToSa1PathTo rdf:type owl:ObjectProperty ;
-                    
+
                     rdfs:label "uclToSa1Path to" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UclToSa1Path" ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:subPropertyOf asgs:to .
 
 
@@ -841,17 +841,17 @@ asgs:uclToSa1PathTo rdf:type owl:ObjectProperty ;
 ###  http://linked.data.gov.au/def/asgs#addCode2011
 
 asgs:addCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "addCode2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AustralianDrainageDivision" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:AustralianDrainageDivision ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -859,17 +859,17 @@ asgs:addCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#addCode2016
 
 asgs:addCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "addCode2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AustralianDrainageDivision" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:AustralianDrainageDivision ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -877,17 +877,17 @@ asgs:addCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#addName2011
 
 asgs:addName2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "addName2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AustralianDrainageDivision" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:AustralianDrainageDivision ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -895,17 +895,17 @@ asgs:addName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#addName2016
 
 asgs:addName2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "addName2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AustralianDrainageDivision" ;
-                 
+
                  rdfs:domain asgs:AustralianDrainageDivision ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -913,17 +913,17 @@ asgs:addName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#ausCode2011
 
 asgs:ausCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "ausCode2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Country" ;
-                 
+
                  rdfs:domain asgs:Country ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -931,17 +931,17 @@ asgs:ausCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#ausCode2016
 
 asgs:ausCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "ausCode2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Country" ;
-                 
+
                  rdfs:domain asgs:Country ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -949,15 +949,15 @@ asgs:ausCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#category
 
 asgs:category rdf:type owl:DatatypeProperty ;
-              
+
               rdfs:label "category" ;
-              
+
               rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-              
+
               rdfs:seeAlso "http://linked.data.gov.au/def/asgs#MeshBlock" ;
-              
+
               rdfs:domain asgs:MeshBlock ;
-              
+
               rdfs:range xsd:string .
 
 
@@ -965,15 +965,15 @@ asgs:category rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#code
 
 asgs:code rdf:type owl:DatatypeProperty ;
-          
+
           rdfs:label "code" ;
-          
+
           rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Feature" ;
-          
+
           rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-          
+
           rdfs:domain asgs:Feature ;
-          
+
           rdfs:range xsd:string .
 
 
@@ -981,17 +981,17 @@ asgs:code rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#dzn5dig11
 
 asgs:dzn5dig11 rdf:type owl:DatatypeProperty ;
-               
+
                rdfs:label "dzn5dig11" ;
-               
+
                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DestinationZone" ;
-               
+
                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-               
+
                rdfs:domain asgs:DestinationZone ;
-               
+
                rdfs:subPropertyOf asgs:label ;
-               
+
                rdfs:range xsd:string .
 
 
@@ -999,17 +999,17 @@ asgs:dzn5dig11 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#dznCode11
 
 asgs:dznCode11 rdf:type owl:DatatypeProperty ;
-               
+
                rdfs:label "dznCode11" ;
-               
+
                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-               
+
                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DestinationZone" ;
-               
+
                rdfs:domain asgs:DestinationZone ;
-               
+
                rdfs:subPropertyOf asgs:code ;
-               
+
                rdfs:range xsd:string .
 
 
@@ -1017,17 +1017,17 @@ asgs:dznCode11 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#dznCode2016
 
 asgs:dznCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "dznCode2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DestinationZone" ;
-                 
+
                  rdfs:domain asgs:DestinationZone ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1035,17 +1035,17 @@ asgs:dznCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#gccsaCode2011
 
 asgs:gccsaCode2011 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "gccsaCode2011" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                   
+
                    rdfs:domain asgs:GreaterCapitalCityStatisticalArea ;
-                   
+
                    rdfs:subPropertyOf asgs:code ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -1053,17 +1053,17 @@ asgs:gccsaCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#gccsaCode2016
 
 asgs:gccsaCode2016 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "gccsaCode2016" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                   
+
                    rdfs:domain asgs:GreaterCapitalCityStatisticalArea ;
-                   
+
                    rdfs:subPropertyOf asgs:code ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -1071,17 +1071,17 @@ asgs:gccsaCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#gccsaName2011
 
 asgs:gccsaName2011 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "gccsaName2011" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                   
+
                    rdfs:domain asgs:GreaterCapitalCityStatisticalArea ;
-                   
+
                    rdfs:subPropertyOf asgs:label ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -1089,17 +1089,17 @@ asgs:gccsaName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#gccsaName2016
 
 asgs:gccsaName2016 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "gccsaName2016" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                   
+
                    rdfs:domain asgs:GreaterCapitalCityStatisticalArea ;
-                   
+
                    rdfs:subPropertyOf asgs:label ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -1107,15 +1107,15 @@ asgs:gccsaName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode
 
 asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode rdf:type owl:DatatypeProperty ;
-                                                                       
+
                                                                        rdfs:label "Greater Capital City Statistical Areas (GCCSA) 5-character alphanumeric code" ;
-                                                                       
+
                                                                        rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                                                       
+
                                                                        rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                                                                       
+
                                                                        rdfs:domain asgs:GreaterCapitalCityStatisticalArea ;
-                                                                       
+
                                                                        rdfs:range xsd:string .
 
 
@@ -1123,17 +1123,17 @@ asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode rdf:type 
 ###  http://linked.data.gov.au/def/asgs#iareCode2011
 
 asgs:iareCode2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iareCode2011" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousArea ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1141,17 +1141,17 @@ asgs:iareCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iareCode2016
 
 asgs:iareCode2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iareCode2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousArea ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1159,17 +1159,17 @@ asgs:iareCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iareName2011
 
 asgs:iareName2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iareName2011" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" ;
-                  
+
                   rdfs:domain asgs:IndigenousArea ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1177,17 +1177,17 @@ asgs:iareName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iareName2016
 
 asgs:iareName2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iareName2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousArea ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1195,17 +1195,17 @@ asgs:iareName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#ilocCode2011
 
 asgs:ilocCode2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "ilocCode2011" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousLocation" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousLocation ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1213,17 +1213,17 @@ asgs:ilocCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#ilocCode2016
 
 asgs:ilocCode2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "ilocCode2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousLocation" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousLocation ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1231,17 +1231,17 @@ asgs:ilocCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#ilocName2011
 
 asgs:ilocName2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "ilocName2011" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousLocation" ;
-                  
+
                   rdfs:domain asgs:IndigenousLocation ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1249,17 +1249,17 @@ asgs:ilocName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#ilocName2016
 
 asgs:ilocName2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "ilocName2016" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousLocation" ;
-                  
+
                   rdfs:domain asgs:IndigenousLocation ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1267,15 +1267,15 @@ asgs:ilocName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#indigenousAreas6DigitCode
 
 asgs:indigenousAreas6DigitCode rdf:type owl:DatatypeProperty ;
-                               
+
                                rdfs:label "Indigenous Areas 6-digit code" ;
-                               
+
                                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" ;
-                               
+
                                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                               
+
                                rdfs:domain asgs:IndigenousArea ;
-                               
+
                                rdfs:range xsd:string .
 
 
@@ -1283,15 +1283,15 @@ asgs:indigenousAreas6DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#indigenousRegions3DigitCode
 
 asgs:indigenousRegions3DigitCode rdf:type owl:DatatypeProperty ;
-                                 
+
                                  rdfs:label "Indigenous Regions 3-digit code" ;
-                                 
+
                                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                 
+
                                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" ;
-                                 
+
                                  rdfs:domain asgs:IndigenousRegion ;
-                                 
+
                                  rdfs:range xsd:string .
 
 
@@ -1299,17 +1299,17 @@ asgs:indigenousRegions3DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iregCode2011
 
 asgs:iregCode2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iregCode2011" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1317,17 +1317,17 @@ asgs:iregCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iregCode2016
 
 asgs:iregCode2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iregCode2016" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" ;
-                  
+
                   rdfs:domain asgs:IndigenousRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1335,17 +1335,17 @@ asgs:iregCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iregName2011
 
 asgs:iregName2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iregName2011" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" ;
-                  
+
                   rdfs:domain asgs:IndigenousRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1353,17 +1353,17 @@ asgs:iregName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#iregName2016
 
 asgs:iregName2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "iregName2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:IndigenousRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1371,15 +1371,15 @@ asgs:iregName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#label
 
 asgs:label rdf:type owl:DatatypeProperty ;
-           
+
            rdfs:label "label" ;
-           
+
            rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-           
+
            rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Feature" ;
-           
+
            rdfs:domain asgs:Feature ;
-           
+
            rdfs:range xsd:string .
 
 
@@ -1387,17 +1387,17 @@ asgs:label rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#lgaCode2012
 
 asgs:lgaCode2012 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "lgaCode2012" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#LocalGovernmentArea" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:LocalGovernmentArea ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1405,17 +1405,17 @@ asgs:lgaCode2012 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#lgaName2012
 
 asgs:lgaName2012 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "lgaName2012" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#LocalGovernmentArea" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:LocalGovernmentArea ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1423,17 +1423,17 @@ asgs:lgaName2012 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#mbCode2011
 
 asgs:mbCode2011 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "mbCode2011" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#MeshBlock" ;
-                
+
                 rdfs:domain asgs:MeshBlock ;
-                
+
                 rdfs:subPropertyOf asgs:code ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -1441,17 +1441,17 @@ asgs:mbCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#mbCode2016
 
 asgs:mbCode2016 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "mbCode2016" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#MeshBlock" ;
-                
+
                 rdfs:domain asgs:MeshBlock ;
-                
+
                 rdfs:subPropertyOf asgs:code ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -1459,17 +1459,17 @@ asgs:mbCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#nrmrCode2011
 
 asgs:nrmrCode2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "nrmrCode2011" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion" ;
-                  
+
                   rdfs:domain asgs:NaturalResourceManagementRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1477,17 +1477,17 @@ asgs:nrmrCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#nrmrCode2016
 
 asgs:nrmrCode2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "nrmrCode2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:NaturalResourceManagementRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1495,17 +1495,17 @@ asgs:nrmrCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#nrmrName2011
 
 asgs:nrmrName2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "nrmrName2011" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:NaturalResourceManagementRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1513,17 +1513,17 @@ asgs:nrmrName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#nrmrName2016
 
 asgs:nrmrName2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "nrmrName2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:NaturalResourceManagementRegion ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -1531,17 +1531,17 @@ asgs:nrmrName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#poaCode2011
 
 asgs:poaCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "poaCode2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PostalArea" ;
-                 
+
                  rdfs:domain asgs:PostalArea ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1549,17 +1549,17 @@ asgs:poaCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#poaCode2016
 
 asgs:poaCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "poaCode2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PostalArea" ;
-                 
+
                  rdfs:domain asgs:PostalArea ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1567,17 +1567,17 @@ asgs:poaCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#poaName2011
 
 asgs:poaName2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "poaName2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PoaToMbPath" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:PoaToMbPath ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1585,17 +1585,17 @@ asgs:poaName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#poaName2016
 
 asgs:poaName2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "poaName2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PostalArea" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:PostalArea ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1603,17 +1603,17 @@ asgs:poaName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#raCode2011
 
 asgs:raCode2011 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "raCode2011" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RemotenessArea" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:domain asgs:RemotenessArea ;
-                
+
                 rdfs:subPropertyOf asgs:code ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -1621,17 +1621,17 @@ asgs:raCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#raCode2016
 
 asgs:raCode2016 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "raCode2016" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RemotenessArea" ;
-                
+
                 rdfs:domain asgs:RemotenessArea ;
-                
+
                 rdfs:subPropertyOf asgs:code ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -1639,17 +1639,17 @@ asgs:raCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#raName2011
 
 asgs:raName2011 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "raName2011" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RemotenessArea" ;
-                
+
                 rdfs:domain asgs:RemotenessArea ;
-                
+
                 rdfs:subPropertyOf asgs:label ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -1657,17 +1657,17 @@ asgs:raName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#raName2016
 
 asgs:raName2016 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "raName2016" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RemotenessArea" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:domain asgs:RemotenessArea ;
-                
+
                 rdfs:subPropertyOf asgs:label ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -1675,17 +1675,17 @@ asgs:raName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa1Maincode2011
 
 asgs:sa1Maincode2011 rdf:type owl:DatatypeProperty ;
-                     
+
                      rdfs:label "sa1Maincode2011" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1" ;
-                     
+
                      rdfs:domain asgs:StatisticalAreaLevel1 ;
-                     
+
                      rdfs:subPropertyOf asgs:code ;
-                     
+
                      rdfs:range xsd:string .
 
 
@@ -1693,17 +1693,17 @@ asgs:sa1Maincode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa1Maincode2016
 
 asgs:sa1Maincode2016 rdf:type owl:DatatypeProperty ;
-                     
+
                      rdfs:label "sa1Maincode2016" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:domain asgs:StatisticalAreaLevel1 ;
-                     
+
                      rdfs:subPropertyOf asgs:code ;
-                     
+
                      rdfs:range xsd:string .
 
 
@@ -1711,17 +1711,17 @@ asgs:sa1Maincode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa2Maincode2011
 
 asgs:sa2Maincode2011 rdf:type owl:DatatypeProperty ;
-                     
+
                      rdfs:label "sa2Maincode2011" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                     
+
                      rdfs:domain asgs:StatisticalAreaLevel2 ;
-                     
+
                      rdfs:subPropertyOf asgs:code ;
-                     
+
                      rdfs:range xsd:string .
 
 
@@ -1729,17 +1729,17 @@ asgs:sa2Maincode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa2Maincode2016
 
 asgs:sa2Maincode2016 rdf:type owl:DatatypeProperty ;
-                     
+
                      rdfs:label "sa2Maincode2016" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:domain asgs:StatisticalAreaLevel2 ;
-                     
+
                      rdfs:subPropertyOf asgs:code ;
-                     
+
                      rdfs:range xsd:string .
 
 
@@ -1747,17 +1747,17 @@ asgs:sa2Maincode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa2Name2011
 
 asgs:sa2Name2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa2Name2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel2 ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1765,17 +1765,17 @@ asgs:sa2Name2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa2Name2016
 
 asgs:sa2Name2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa2Name2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel2 ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1783,17 +1783,17 @@ asgs:sa2Name2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa3Code2011
 
 asgs:sa3Code2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa3Code2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel3 ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1801,17 +1801,17 @@ asgs:sa3Code2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa3Code2016
 
 asgs:sa3Code2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa3Code2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel3 ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1819,17 +1819,17 @@ asgs:sa3Code2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa3Name2011
 
 asgs:sa3Name2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa3Name2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel3 ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1837,17 +1837,17 @@ asgs:sa3Name2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa3Name2016
 
 asgs:sa3Name2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa3Name2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel3 ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1855,17 +1855,17 @@ asgs:sa3Name2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa4Code2011
 
 asgs:sa4Code2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa4Code2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel4 ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1873,17 +1873,17 @@ asgs:sa4Code2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa4Code2016
 
 asgs:sa4Code2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa4Code2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel4 ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1891,17 +1891,17 @@ asgs:sa4Code2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa4Name2011
 
 asgs:sa4Name2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa4Name2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel4 ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1909,17 +1909,17 @@ asgs:sa4Name2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sa4Name2016
 
 asgs:sa4Name2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sa4Name2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                 
+
                  rdfs:domain asgs:StatisticalAreaLevel4 ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1927,15 +1927,15 @@ asgs:sa4Name2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sectionOfState2DigitCode
 
 asgs:sectionOfState2DigitCode rdf:type owl:DatatypeProperty ;
-                              
+
                               rdfs:label "Section of state 2-digit code" ;
-                              
+
                               rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                              
+
                               rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                              
+
                               rdfs:domain asgs:SectionOfState ;
-                              
+
                               rdfs:range xsd:string .
 
 
@@ -1943,15 +1943,15 @@ asgs:sectionOfState2DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sectionOfStateRange3DigitCode
 
 asgs:sectionOfStateRange3DigitCode rdf:type owl:DatatypeProperty ;
-                                   
+
                                    rdfs:label "Section of state range 3-digit code" ;
-                                   
+
                                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                   
+
                                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                                   
+
                                    rdfs:domain asgs:SectionOfStateRange ;
-                                   
+
                                    rdfs:range xsd:string .
 
 
@@ -1959,17 +1959,17 @@ asgs:sectionOfStateRange3DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sedCode2011
 
 asgs:sedCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "SED code 2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateElectoralDivision" ;
-                 
+
                  rdfs:domain asgs:StateElectoralDivision ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1977,17 +1977,17 @@ asgs:sedCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sedCode2016
 
 asgs:sedCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "SED code 2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateElectoralDivision" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StateElectoralDivision ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -1995,17 +1995,17 @@ asgs:sedCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosCode2011
 
 asgs:sosCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sosCode2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:SectionOfState ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2013,17 +2013,17 @@ asgs:sosCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosCode2016
 
 asgs:sosCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sosCode2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:SectionOfState ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2031,17 +2031,17 @@ asgs:sosCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosName2011
 
 asgs:sosName2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sosName2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                 
+
                  rdfs:domain asgs:SectionOfState ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2049,17 +2049,17 @@ asgs:sosName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosName2016
 
 asgs:sosName2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sosName2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                 
+
                  rdfs:domain asgs:SectionOfState ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2067,17 +2067,17 @@ asgs:sosName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosrCode2011
 
 asgs:sosrCode2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "sosrCode2011" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:SectionOfStateRange ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -2085,17 +2085,17 @@ asgs:sosrCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosrCode2016
 
 asgs:sosrCode2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "sosrCode2016" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                  
+
                   rdfs:domain asgs:SectionOfStateRange ;
-                  
+
                   rdfs:subPropertyOf asgs:code ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -2103,17 +2103,17 @@ asgs:sosrCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosrName2011
 
 asgs:sosrName2011 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "sosrName2011" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                  
+
                   rdfs:domain asgs:SectionOfStateRange ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -2121,17 +2121,17 @@ asgs:sosrName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sosrName2016
 
 asgs:sosrName2016 rdf:type owl:DatatypeProperty ;
-                  
+
                   rdfs:label "sosrName2016" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:domain asgs:SectionOfStateRange ;
-                  
+
                   rdfs:subPropertyOf asgs:label ;
-                  
+
                   rdfs:range xsd:string .
 
 
@@ -2139,17 +2139,17 @@ asgs:sosrName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sscCode2016
 
 asgs:sscCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sscCode2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateSuburb" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:StateSuburb ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2157,17 +2157,17 @@ asgs:sscCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#sscName2016
 
 asgs:sscName2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "sscName2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateSuburb" ;
-                 
+
                  rdfs:domain asgs:StateSuburb ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2175,17 +2175,17 @@ asgs:sscName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateCode2011
 
 asgs:stateCode2011 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "stateCode2011" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:domain asgs:StateOrTerritory ;
-                   
+
                    rdfs:subPropertyOf asgs:code ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -2193,17 +2193,17 @@ asgs:stateCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateCode2016
 
 asgs:stateCode2016 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "stateCode2016" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                   
+
                    rdfs:domain asgs:StateOrTerritory ;
-                   
+
                    rdfs:subPropertyOf asgs:code ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -2211,17 +2211,17 @@ asgs:stateCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateName2011
 
 asgs:stateName2011 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "stateName2011" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                   
+
                    rdfs:domain asgs:StateOrTerritory ;
-                   
+
                    rdfs:subPropertyOf asgs:label ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -2229,17 +2229,17 @@ asgs:stateName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateName2016
 
 asgs:stateName2016 rdf:type owl:DatatypeProperty ;
-                   
+
                    rdfs:label "stateName2016" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:domain asgs:StateOrTerritory ;
-                   
+
                    rdfs:subPropertyOf asgs:label ;
-                   
+
                    rdfs:range xsd:string .
 
 
@@ -2247,15 +2247,15 @@ asgs:stateName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateOrTerritory1DigitCode
 
 asgs:stateOrTerritory1DigitCode rdf:type owl:DatatypeProperty ;
-                                
+
                                 rdfs:label "State or Territory 1 digit code" ;
-                                
+
                                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                                
+
                                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                
+
                                 rdfs:domain asgs:StateOrTerritory ;
-                                
+
                                 rdfs:range xsd:string .
 
 
@@ -2263,17 +2263,17 @@ asgs:stateOrTerritory1DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#stateelectoraldivisionIdentifier
 
 asgs:stateelectoraldivisionIdentifier rdf:type owl:DatatypeProperty ;
-                                      
+
                                       rdfs:label "stateelectoraldivisionIdentifier" ;
-                                      
+
                                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateElectoralDivision" ;
-                                      
+
                                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                      
+
                                       rdfs:domain asgs:StateElectoralDivision ;
-                                      
+
                                       rdfs:subPropertyOf asgs:code ;
-                                      
+
                                       rdfs:range xsd:string .
 
 
@@ -2281,15 +2281,15 @@ asgs:stateelectoraldivisionIdentifier rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#statisticalArea1Sa111DigitCode
 
 asgs:statisticalArea1Sa111DigitCode rdf:type owl:DatatypeProperty ;
-                                    
+
                                     rdfs:label "Statistical area 1 (SA1) 11-digit code" ;
-                                    
+
                                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                    
+
                                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1" ;
-                                    
+
                                     rdfs:domain asgs:StatisticalAreaLevel1 ;
-                                    
+
                                     rdfs:range xsd:string .
 
 
@@ -2297,15 +2297,15 @@ asgs:statisticalArea1Sa111DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#statisticalArea2Sa29DigitCode
 
 asgs:statisticalArea2Sa29DigitCode rdf:type owl:DatatypeProperty ;
-                                   
+
                                    rdfs:label "Statistical area 2 (SA2) 9-digit code" ;
-                                   
+
                                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                                   
+
                                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                   
+
                                    rdfs:domain asgs:StatisticalAreaLevel2 ;
-                                   
+
                                    rdfs:range xsd:string .
 
 
@@ -2313,15 +2313,15 @@ asgs:statisticalArea2Sa29DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#statisticalArea3Sa35DigitCode
 
 asgs:statisticalArea3Sa35DigitCode rdf:type owl:DatatypeProperty ;
-                                   
+
                                    rdfs:label "Statistical area 3 (SA3) 5-digit code" ;
-                                   
+
                                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" ;
-                                   
+
                                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                   
+
                                    rdfs:domain asgs:StatisticalAreaLevel3 ;
-                                   
+
                                    rdfs:range xsd:string .
 
 
@@ -2329,15 +2329,15 @@ asgs:statisticalArea3Sa35DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#statisticalArea4Sa43DigitCode
 
 asgs:statisticalArea4Sa43DigitCode rdf:type owl:DatatypeProperty ;
-                                   
+
                                    rdfs:label "Statistical area 4 (SA4) 3-digit code" ;
-                                   
+
                                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                                   
+
                                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                   
+
                                    rdfs:domain asgs:StatisticalAreaLevel4 ;
-                                   
+
                                    rdfs:range xsd:string .
 
 
@@ -2345,17 +2345,17 @@ asgs:statisticalArea4Sa43DigitCode rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#suaCode2011
 
 asgs:suaCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "suaCode2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SignificantUrbanArea" ;
-                 
+
                  rdfs:domain asgs:SignificantUrbanArea ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2363,17 +2363,17 @@ asgs:suaCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#suaCode2016
 
 asgs:suaCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "suaCode2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SignificantUrbanArea" ;
-                 
+
                  rdfs:domain asgs:SignificantUrbanArea ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2381,17 +2381,17 @@ asgs:suaCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#suaName2011
 
 asgs:suaName2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "suaName2011" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SignificantUrbanArea" ;
-                 
+
                  rdfs:domain asgs:SignificantUrbanArea ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2399,17 +2399,17 @@ asgs:suaName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#suaName2016
 
 asgs:suaName2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "suaName2016" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SignificantUrbanArea" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:SignificantUrbanArea ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2417,17 +2417,17 @@ asgs:suaName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#trCode2011
 
 asgs:trCode2011 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "trCode2011" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#TourismRegion" ;
-                
+
                 rdfs:domain asgs:TourismRegion ;
-                
+
                 rdfs:subPropertyOf asgs:code ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -2435,17 +2435,17 @@ asgs:trCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#trCode2012
 
 asgs:trCode2012 rdf:type owl:DatatypeProperty ;
-                
+
                 rdfs:label "trCode2012" ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#TourismRegion" ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                
+
                 rdfs:domain asgs:TourismRegion ;
-                
+
                 rdfs:subPropertyOf asgs:code ;
-                
+
                 rdfs:range xsd:string .
 
 
@@ -2453,17 +2453,17 @@ asgs:trCode2012 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#uclCode2011
 
 asgs:uclCode2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "uclCode2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:UrbanCentreAndLocality ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2471,17 +2471,17 @@ asgs:uclCode2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#uclCode2016
 
 asgs:uclCode2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "uclCode2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality" ;
-                 
+
                  rdfs:domain asgs:UrbanCentreAndLocality ;
-                 
+
                  rdfs:subPropertyOf asgs:code ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2489,17 +2489,17 @@ asgs:uclCode2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#uclName2011
 
 asgs:uclName2011 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "uclName2011" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:domain asgs:UrbanCentreAndLocality ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2507,17 +2507,17 @@ asgs:uclName2011 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#uclName2016
 
 asgs:uclName2016 rdf:type owl:DatatypeProperty ;
-                 
+
                  rdfs:label "uclName2016" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality" ;
-                 
+
                  rdfs:domain asgs:UrbanCentreAndLocality ;
-                 
+
                  rdfs:subPropertyOf asgs:label ;
-                 
+
                  rdfs:range xsd:string .
 
 
@@ -2534,9 +2534,9 @@ asgs:uclName2016 rdf:type owl:DatatypeProperty ;
 ###  http://linked.data.gov.au/def/asgs#AddToMbPath
 
 asgs:AddToMbPath rdf:type owl:Class ;
-                 
+
                  rdfs:label "ADD to MB Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:addToMbPathFrom ;
@@ -2546,9 +2546,9 @@ asgs:AddToMbPath rdf:type owl:Class ;
                                    owl:onProperty asgs:addToMbPathTo ;
                                    owl:allValuesFrom asgs:MeshBlock
                                  ] ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AddToMbPath" .
 
 
@@ -2556,15 +2556,15 @@ asgs:AddToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#AustralianDrainageDivision
 
 asgs:AustralianDrainageDivision rdf:type owl:Class ;
-                                
+
                                 rdfs:label "Australian Drainage Division" ;
-                                
+
                                 rdfs:subClassOf asgs:Feature ;
-                                
+
                                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#AustralianDrainageDivision" ;
-                                
+
                                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                                
+
                                 dc:description "Australian Drainage Divisions (ADD) are an ABS approximation of Bureau of Meteorology Drainage Divisions. Drainage Divisions are defined by major landscape features and climatic zones to form broad hydrological regions as represented in the Australian Hydrological Geospatial Fabric (Geofabric) 2014 version 2 developed by the Bureau of Meteorology. ADDs are approximated using one or more Mesh Blocks (MBs). ADDs can cross State and Territory (S/T) boundaries. ADDs cover the whole of geographic Australia without gaps or overlaps. The ADDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
@@ -2572,9 +2572,9 @@ asgs:AustralianDrainageDivision rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#CedToSa1Path
 
 asgs:CedToSa1Path rdf:type owl:Class ;
-                  
+
                   rdfs:label "CED to SA1 Path" ;
-                  
+
                   rdfs:subClassOf asgs:GeospatialPath ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty asgs:cedToSa1PathFrom ;
@@ -2584,9 +2584,9 @@ asgs:CedToSa1Path rdf:type owl:Class ;
                                     owl:onProperty asgs:cedToSa1PathTo ;
                                     owl:allValuesFrom asgs:StatisticalAreaLevel1
                                   ] ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#CedToSa1Path" .
 
 
@@ -2594,15 +2594,15 @@ asgs:CedToSa1Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision
 
 asgs:CommonwealthElectoralDivision rdf:type owl:Class ;
-                                   
+
                                    rdfs:label "Commonwealth Electoral Division" ;
-                                   
+
                                    rdfs:subClassOf asgs:Feature ;
-                                   
+
                                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision" ;
-                                   
+
                                    dc:description "Commonwealth Electoral Divisions (CED) are an ABS approximation of Australian Electoral Commission (AEC) electoral division boundaries. An Australian Electoral Commission electoral division boundary is an area legally prescribed for the purpose of returning one member to the House of Representatives Australia's Federal Lower House of Parliament. Commonwealth Electoral Divisions may change as the Australian Electoral Commission revise their boundaries. Where the Australian Electoral Commission revise their boundaries the CEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures. CEDs are approximated using whole Statistical Areas Level 1 (SA1s). CEDs cover the whole of Australia without gaps or overlaps.The CEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                                   
+
                                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2610,17 +2610,17 @@ asgs:CommonwealthElectoralDivision rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#Country
 
 asgs:Country rdf:type owl:Class ;
-             
+
              rdfs:label "Country" ;
-             
+
              rdfs:subClassOf asgs:Feature ;
-             
+
              dc:description "Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning:Ã¢â‚¬ËœÃ¢â‚¬Â¦the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external TerritoryÃ¢â‚¬â„¢.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia" ;
-             
+
              rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-             
+
              rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Country" ;
-             
+
              dc:description "Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning:â€˜â€¦the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territoryâ€™.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia" .
 
 
@@ -2628,15 +2628,15 @@ asgs:Country rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#DestinationZone
 
 asgs:DestinationZone rdf:type owl:Class ;
-                     
+
                      rdfs:label "DestinationZone" ;
-                     
+
                      rdfs:subClassOf asgs:Feature ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DestinationZone" ;
-                     
+
                      dc:description "Destination Zones (DZN) are geographic areas primarily used for the analysis of Census Place of Work data. They are designed to represent the distribution of workplaces rather than residential dwellings. This means there is greater spatial detail in areas with high concentrations of workplaces. DZNs are jointly developed between the ABS and each State or Territory Transport Authority. DZNs are built from whole Mesh Blocks (MB) and aggregate to Statistical Areas Level 2 (SA2s). DZNs cover the whole of Australia without gaps or overlaps. The DZN regions are not an Australian Statistical Geography Standard (ASGS) structure however the ABS publishes Census data on these areas. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2644,9 +2644,9 @@ asgs:DestinationZone rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#DznToMbPath
 
 asgs:DznToMbPath rdf:type owl:Class ;
-                 
+
                  rdfs:label "DZN to MB Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:dznToMbPathFrom ;
@@ -2656,9 +2656,9 @@ asgs:DznToMbPath rdf:type owl:Class ;
                                    owl:onProperty asgs:dznToMbPathTo ;
                                    owl:allValuesFrom asgs:MeshBlock
                                  ] ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#DznToMbPath" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2666,16 +2666,16 @@ asgs:DznToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#Feature
 
 asgs:Feature rdf:type owl:Class ;
-             
+
              rdfs:label "Feature" ;
-             
+
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty asgs:contains ;
                                owl:allValuesFrom asgs:Feature
                              ] ;
-             
+
              rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-             
+
              rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Feature" .
 
 
@@ -2683,9 +2683,9 @@ asgs:Feature rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#GeospatialPath
 
 asgs:GeospatialPath rdf:type owl:Class ;
-                    
+
                     rdfs:label "Geospatial Path" ;
-                    
+
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:to ;
                                       owl:allValuesFrom asgs:Feature
@@ -2694,9 +2694,9 @@ asgs:GeospatialPath rdf:type owl:Class ;
                                       owl:onProperty asgs:from ;
                                       owl:allValuesFrom asgs:Feature
                                     ] ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GeospatialPath" .
 
 
@@ -2704,19 +2704,19 @@ asgs:GeospatialPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea
 
 asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
-                                       
+
                                        rdfs:label "Greater Capital City Statistical Area" ;
-                                       
+
                                        rdfs:subClassOf asgs:Feature ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty asgs:isGreaterCapitalCityStatisticalAreaOf ;
                                                          owl:allValuesFrom asgs:StatisticalAreaLevel4
                                                        ] ;
-                                       
+
                                        dc:description "Greater Capital City Statistical Areas (GCCSAs) are designed to represent the functional extent of each of the eight State and Territory capital cities. They include the people who regularly socialise shop or work within the city but live in the small towns and rural areas surrounding the city. GCCSAs are defined using the capital city labour markets. The labour market is sometimes used as a de-facto measure of the functional extent of a city as it contains the majority of the commuting population. It is important to note that GCCSAs do not define the built up edge of the city this is better represented by Urban Centres and Localities (UCLs) or Significant Urban Areas (SUAs). The GCCSA is designed to provide a stable definition of the capital cities to enable production of economic indicators which integrate variables collected over long periods of time. GCCSAs are aggregations of whole Statistical Areas Level 4 (SA4s) in the ASGS Main Structure. Whole GCCSAs aggregate to State and Territory (S/T). GSSCAs are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                                       
+
                                        rdfs:seeAlso "http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea" ;
-                                       
+
                                        rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2724,9 +2724,9 @@ asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#IlocToSa1Path
 
 asgs:IlocToSa1Path rdf:type owl:Class ;
-                   
+
                    rdfs:label "ILOC to SA1 Path" ;
-                   
+
                    rdfs:subClassOf asgs:GeospatialPath ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty asgs:ilocToSa1PathFrom ;
@@ -2736,9 +2736,9 @@ asgs:IlocToSa1Path rdf:type owl:Class ;
                                      owl:onProperty asgs:ilocToSa1PathTo ;
                                      owl:allValuesFrom asgs:StatisticalAreaLevel1
                                    ] ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IlocToSa1Path" ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2746,19 +2746,19 @@ asgs:IlocToSa1Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#IndigenousArea
 
 asgs:IndigenousArea rdf:type owl:Class ;
-                    
+
                     rdfs:label "Indigenous Area" ;
-                    
+
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isIndigenousAreaOf ;
                                       owl:allValuesFrom asgs:IndigenousLocation
                                     ] ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     dc:description "Indigenous Areas (IAREs) are medium sized geographical areas designed to facilitate the release of statistics with multiple variables for Aboriginal and Torres Strait Islander Peoples. IAREs provide a balance between spatial resolution and population size which provides the ability to release more detailed socio-economic attribute data than is available on Indigenous Locations (ILOCs). IAREs are aggregates of Indigenous Locations (ILOCs) and aggregate up to Indigenous Regions (IREGs). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousArea" .
 
 
@@ -2766,15 +2766,15 @@ asgs:IndigenousArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#IndigenousLocation
 
 asgs:IndigenousLocation rdf:type owl:Class ;
-                        
+
                         rdfs:label "Indigenous Location" ;
-                        
+
                         rdfs:subClassOf asgs:Feature ;
-                        
+
                         dc:description "Indigenous Locations (ILOCs) represent small Aboriginal and Torres Strait Islander communities (urban and rural) with a minimum population of 90 Aboriginal and Torres Strait Islander usual residents. An ILOC is an area designed to allow the release of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial detail whilst maintaining the confidentiality of individuals. ILOCs are aggregates of Statistical Areas Level 1 (SA1s). ILOCs aggregate to Indigenous Areas (IAREs) and cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                        
+
                         rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousLocation" ;
-                        
+
                         rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2782,19 +2782,19 @@ asgs:IndigenousLocation rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#IndigenousRegion
 
 asgs:IndigenousRegion rdf:type owl:Class ;
-                      
+
                       rdfs:label "Indigenous Region" ;
-                      
+
                       rdfs:subClassOf asgs:Feature ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:isIndigenousRegionOf ;
                                         owl:allValuesFrom asgs:IndigenousArea
                                       ] ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                      
+
                       dc:description "Indigenous Regions (IREGs) are large geographical areas loosely based on the former Aboriginal and Torres Strait Islander Commission boundaries. They are designed for the release of detailed statistical data with multiple variables on Aboriginal and Torres Strait Islander Peoples. The greater population of IREGs enables greater cross classification of variables when compared with Indigenous Areas (IAREs) or Indigenous Localities (ILOCs). IREGs are aggregates of IAREs and aggregate up to State and Territory (S/T). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#IndigenousRegion" .
 
 
@@ -2802,9 +2802,9 @@ asgs:IndigenousRegion rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#LgaToMbPath
 
 asgs:LgaToMbPath rdf:type owl:Class ;
-                 
+
                  rdfs:label "LGA to MB Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:lgaToMbPathTo ;
@@ -2814,9 +2814,9 @@ asgs:LgaToMbPath rdf:type owl:Class ;
                                    owl:onProperty asgs:lgaToMbPathFrom ;
                                    owl:allValuesFrom asgs:LocalGovernmentArea
                                  ] ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#LgaToMbPath" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2824,15 +2824,15 @@ asgs:LgaToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#LocalGovernmentArea
 
 asgs:LocalGovernmentArea rdf:type owl:Class ;
-                         
+
                          rdfs:label "Local Government Area" ;
-                         
+
                          rdfs:subClassOf asgs:Feature ;
-                         
+
                          rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                         
+
                          rdfs:seeAlso "http://linked.data.gov.au/def/asgs#LocalGovernmentArea" ;
-                         
+
                          dc:description "Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as â€˜Unincorporatedâ€™ in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics." ,
                                         "Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as Ã¢â‚¬ËœUnincorporatedÃ¢â‚¬â„¢ in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics." .
 
@@ -2841,15 +2841,15 @@ asgs:LocalGovernmentArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#MeshBlock
 
 asgs:MeshBlock rdf:type owl:Class ;
-               
+
                rdfs:label "Mesh Block" ;
-               
+
                rdfs:subClassOf asgs:Feature ;
-               
+
                rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-               
+
                rdfs:seeAlso "http://linked.data.gov.au/def/asgs#MeshBlock" ;
-               
+
                dc:description "Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
@@ -2857,15 +2857,15 @@ asgs:MeshBlock rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion
 
 asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
-                                     
+
                                      rdfs:label "Natural Resource Management Region" ;
-                                     
+
                                      rdfs:subClassOf asgs:Feature ;
-                                     
+
                                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion" ;
-                                     
+
                                      dc:description "Natural Resource Management Regions (NRMR) are an ABS approximation of Natural Resource Management regions (NRMs) which are defined through the Australian Government National Landcare Program. They are administrative regions primarily used by the Department of the Environment and Energy and the Department of Agriculture and Water Resources who share responsibility for delivery of the Australian Government's environment and sustainable agriculture programs which are broadly referred to as Natural Resource Management (NRM). NRMRs change occasionally as States and Territories revise their boundaries. NRMRs are approximated using one or more Mesh Blocks (MBs). NRMRs do not cross State and Territory (S/T) boundaries except for Jervis Bay which is included in a NSW region. NRMRs cover the whole of geographic Australia without gaps or overlaps. The NRMRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                                     
+
                                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2873,9 +2873,9 @@ asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#NrmrToMbPath
 
 asgs:NrmrToMbPath rdf:type owl:Class ;
-                  
+
                   rdfs:label "NRMR to MB Path" ;
-                  
+
                   rdfs:subClassOf asgs:GeospatialPath ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty asgs:nrmrToMbPathFrom ;
@@ -2885,9 +2885,9 @@ asgs:NrmrToMbPath rdf:type owl:Class ;
                                     owl:onProperty asgs:nrmrToMbPathTo ;
                                     owl:allValuesFrom asgs:MeshBlock
                                   ] ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#NrmrToMbPath" .
 
 
@@ -2895,9 +2895,9 @@ asgs:NrmrToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#PoaToMbPath
 
 asgs:PoaToMbPath rdf:type owl:Class ;
-                 
+
                  rdfs:label "POA to MB Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:poaToMbPathFrom ;
@@ -2907,9 +2907,9 @@ asgs:PoaToMbPath rdf:type owl:Class ;
                                    owl:onProperty asgs:poaToMbPathTo ;
                                    owl:allValuesFrom asgs:MeshBlock
                                  ] ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PoaToMbPath" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2917,15 +2917,15 @@ asgs:PoaToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#PostalArea
 
 asgs:PostalArea rdf:type owl:Class ;
-                
+
                 rdfs:label "Postal area" ;
-                
+
                 rdfs:subClassOf asgs:Feature ;
-                
+
                 rdfs:seeAlso "http://linked.data.gov.au/def/asgs#PostalArea" ;
-                
+
                 dc:description "Postal Areas (POAs) are an ABS approximation of postcodes created to enable the release of ABS data on areas that as closely as possible approximate postcodes. This enables the comparison of ABS data with other data that has been collected using postcodes as the geographic reference. POAs exclude non-mappable Australia Post postcodes such as: post office box postcodes some delivery route postcodes which are also covered by other postcodes (a situation which often occurs in rural areas).POAs are approximated using one or more Mesh Blocks (MBs). POAs cover the whole of geographic Australia without gaps or overlaps. The POAs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                
+
                 rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2933,9 +2933,9 @@ asgs:PostalArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#RaToSa1Path
 
 asgs:RaToSa1Path rdf:type owl:Class ;
-                 
+
                  rdfs:label "RA to SA1 Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:raToSa1PathFrom ;
@@ -2945,9 +2945,9 @@ asgs:RaToSa1Path rdf:type owl:Class ;
                                    owl:onProperty asgs:raToSa1PathTo ;
                                    owl:allValuesFrom asgs:StatisticalAreaLevel1
                                  ] ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RaToSa1Path" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2955,15 +2955,15 @@ asgs:RaToSa1Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#RemotenessArea
 
 asgs:RemotenessArea rdf:type owl:Class ;
-                    
+
                     rdfs:label "Remoteness Area" ;
-                    
+
                     rdfs:subClassOf asgs:Feature ;
-                    
+
                     dc:description "Remoteness Areas (RAs) divide Australia into five classes of remoteness on the basis of relative access to services. RAs are based on the Accessibility and Remoteness Index of Australia (ARIA+) produced by the Hugo Centre for Migration and Population Research at the University of Adelaide. RAs are aggregates of Statistical Areas Level 1 (SA1s) that are grouped together based on their average ARIA+ score. Ras aggregate up to State and Territory (S/T) and cover Australia without gaps or overlaps." ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#RemotenessArea" .
 
 
@@ -2971,9 +2971,9 @@ asgs:RemotenessArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#Sa2ToDznPath
 
 asgs:Sa2ToDznPath rdf:type owl:Class ;
-                  
+
                   rdfs:label "SA2 to DZN Path" ;
-                  
+
                   rdfs:subClassOf asgs:GeospatialPath ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty asgs:sa2ToDznPathTo ;
@@ -2983,9 +2983,9 @@ asgs:Sa2ToDznPath rdf:type owl:Class ;
                                     owl:onProperty asgs:sa2ToDznPathFrom ;
                                     owl:allValuesFrom asgs:StatisticalAreaLevel2
                                   ] ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Sa2ToDznPath" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -2993,19 +2993,19 @@ asgs:Sa2ToDznPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#SectionOfState
 
 asgs:SectionOfState rdf:type owl:Class ;
-                    
+
                     rdfs:label "Section of State" ;
-                    
+
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isSectionOfStateOf ;
                                       owl:allValuesFrom asgs:SectionOfStateRange
                                     ] ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfState" ;
-                    
+
                     dc:description "Section of State (SOS) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into four different classes within each State and Territory (S/T). These four classes are an aggregation of the more detailed Section of State Range (SOSR) classification. SOS groups Urban Centres into 2 classes one of 100 000 people or more and the other less than 100 000 people. The remaining two classes are Localities and Rural Balance. This broad summary of UCLs enables detailed statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOS are aggregates of SOSR and aggregate up to State and Territory (S/T). SOS regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3013,19 +3013,19 @@ asgs:SectionOfState rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#SectionOfStateRange
 
 asgs:SectionOfStateRange rdf:type owl:Class ;
-                         
+
                          rdfs:label "Section of State Range" ;
-                         
+
                          rdfs:subClassOf asgs:Feature ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty asgs:isSectionOfStateRangeOf ;
                                            owl:allValuesFrom asgs:UrbanCentreAndLocality
                                          ] ;
-                         
+
                          rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                         
+
                          rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SectionOfStateRange" ;
-                         
+
                          dc:description "Section of State Range (SOSR) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into 11 different classes within each State and Territory (S/T). The 11 classes are made up of; 8 different population size classes grouping Urban Centres; 2 population size classes grouping Localities; and a Rural Balance. This detailed summary of UCLs enables statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOSR are aggregates of UCLs and aggregate up to Section of State (SOS). SOSR regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
@@ -3033,9 +3033,9 @@ asgs:SectionOfStateRange rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#SedToSa1Path
 
 asgs:SedToSa1Path rdf:type owl:Class ;
-                  
+
                   rdfs:label "SED to SA1 Path" ;
-                  
+
                   rdfs:subClassOf asgs:GeospatialPath ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty asgs:sedToSa1PathFrom ;
@@ -3045,9 +3045,9 @@ asgs:SedToSa1Path rdf:type owl:Class ;
                                     owl:onProperty asgs:sedToSa1PathTo ;
                                     owl:allValuesFrom asgs:StatisticalAreaLevel1
                                   ] ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SedToSa1Path" .
 
 
@@ -3055,15 +3055,15 @@ asgs:SedToSa1Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#SignificantUrbanArea
 
 asgs:SignificantUrbanArea rdf:type owl:Class ;
-                          
+
                           rdfs:label "Significant Urban Area" ;
-                          
+
                           rdfs:subClassOf asgs:Feature ;
-                          
+
                           dc:description "Significant Urban Areas (SUAs) represent towns or cities with 10 000 people or more. They are based on Urban Centres and Localities (UCLs) but are defined by the larger Statistical Areas Level 2 (SA2s). A single SUA can represent either a single Urban Centre or a cluster of related Urban Centres. Using SA2s to define SUAs ensures a wider range of more regularly updated data is available for these areas (such as Estimated Resident Population and Building Approvals) compared to UCLs where only Census data is available. The SUA structure does not aggregate to State or Territory (S/T) level as SUAs may cross S/T boundaries. In aggregate SUAs cover Australia without gaps or overlaps as they include a remainder area 'Not in any Significant Urban Area'. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                          
+
                           rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SignificantUrbanArea" ;
-                          
+
                           rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3071,9 +3071,9 @@ asgs:SignificantUrbanArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#SscToMbPath
 
 asgs:SscToMbPath rdf:type owl:Class ;
-                 
+
                  rdfs:label "SSC to MB Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:sscToSa1PathFrom ;
@@ -3091,9 +3091,9 @@ asgs:SscToMbPath rdf:type owl:Class ;
                                    owl:onProperty asgs:sscToMbPathTo ;
                                    owl:allValuesFrom asgs:MeshBlock
                                  ] ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SscToMbPath" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3101,15 +3101,15 @@ asgs:SscToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateElectoralDivision
 
 asgs:StateElectoralDivision rdf:type owl:Class ;
-                            
+
                             rdfs:label "State Electoral Division" ;
-                            
+
                             rdfs:subClassOf asgs:Feature ;
-                            
+
                             dc:description "State Electoral Divisions (SED) are an ABS approximation of State Electoral Districts. A State Electoral District is an area legally prescribed for the purpose of returning one or more members to the State or Territory Lower Houses of Parliament or the relevant equivalent. State Electoral Divisions may change as State or Territory authorities revise their boundaries. Where the Australian Electoral Commission revise their boundaries the SEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures.SEDs are approximated using whole Statistical Areas Level 1 (SA1s). SEDs do not cross State and Territory (S/T) boundaries and they cover the whole of Australia without gaps or overlaps. The Other Territories (OT) of Jervis Bay Norfolk Island Christmas Island and the Cocos (Keeling) Islands are allocated to 'Unclassified (OT)'. The SEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                            
+
                             rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateElectoralDivision" ;
-                            
+
                             rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3117,19 +3117,19 @@ asgs:StateElectoralDivision rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateOrTerritory
 
 asgs:StateOrTerritory rdf:type owl:Class ;
-                      
+
                       rdfs:label "StateOrTerritory" ;
-                      
+
                       rdfs:subClassOf asgs:Feature ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:isStateOrTerritoryOf ;
                                         owl:allValuesFrom asgs:GreaterCapitalCityStatisticalArea
                                       ] ;
-                      
+
                       dc:description "State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                      
+
                       rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateOrTerritory" ;
-                      
+
                       rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3137,15 +3137,15 @@ asgs:StateOrTerritory rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateSuburb
 
 asgs:StateSuburb rdf:type owl:Class ;
-                 
+
                  rdfs:label "State Suburb" ;
-                 
+
                  rdfs:subClassOf asgs:Feature ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateSuburb" ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  dc:description "State Suburbs (SSC) are an ABS approximation of localities gazetted by the Geographical Place Name authority in each State and Territory (S/T). Gazetted Localities are the officially recognised boundaries of suburbs (in cities and larger towns) and localities (outside cities and larger towns). Gazetted Localities cover most of Australia. Presently there remain areas of rural South Australia and rural Australian Capital Territory for which Gazetted Localities remain undefined. Various islands offshore from New South Wales Victoria and Tasmania and some inshore water areas and islands are also undefined. Since 1996 Locality boundaries have been formalised for most areas of Australia through a program coordinated by the Permanent Committee on Place Names (PCPN) under the umbrella of the Intergovernmental Committee On Surveying and Mapping (ISCM). Areas where localities are not gazetted are represented by Remainder SSCs.SSCs are approximated using one or more Mesh Blocks (MBs). SSCs cover the whole of geographic Australia without gaps or overlaps including the Remainder SSCs.The SSCs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
@@ -3153,9 +3153,9 @@ asgs:StateSuburb rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateToIregPath
 
 asgs:StateToIregPath rdf:type owl:Class ;
-                     
+
                      rdfs:label "State to IREG Path" ;
-                     
+
                      rdfs:subClassOf asgs:GeospatialPath ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty asgs:stateToIregPathTo ;
@@ -3165,9 +3165,9 @@ asgs:StateToIregPath rdf:type owl:Class ;
                                        owl:onProperty asgs:stateToIregPathFrom ;
                                        owl:allValuesFrom asgs:StateOrTerritory
                                      ] ;
-                     
+
                      rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                     
+
                      rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToIregPath" .
 
 
@@ -3175,9 +3175,9 @@ asgs:StateToIregPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateToLgaPath
 
 asgs:StateToLgaPath rdf:type owl:Class ;
-                    
+
                     rdfs:label "State to LGA Path" ;
-                    
+
                     rdfs:subClassOf asgs:GeospatialPath ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:stateToLgaPathTo ;
@@ -3187,9 +3187,9 @@ asgs:StateToLgaPath rdf:type owl:Class ;
                                       owl:onProperty asgs:stateToLgaPathFrom ;
                                       owl:allValuesFrom asgs:StateOrTerritory
                                     ] ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToLgaPath" .
 
 
@@ -3197,9 +3197,9 @@ asgs:StateToLgaPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateToRaPath
 
 asgs:StateToRaPath rdf:type owl:Class ;
-                   
+
                    rdfs:label "State to RA Path" ;
-                   
+
                    rdfs:subClassOf asgs:GeospatialPath ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty asgs:stateToRaPathFrom ;
@@ -3209,9 +3209,9 @@ asgs:StateToRaPath rdf:type owl:Class ;
                                      owl:onProperty asgs:stateToRaPathTo ;
                                      owl:allValuesFrom asgs:RemotenessArea
                                    ] ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToRaPath" .
 
 
@@ -3219,9 +3219,9 @@ asgs:StateToRaPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateToSosPath
 
 asgs:StateToSosPath rdf:type owl:Class ;
-                    
+
                     rdfs:label "State to SOS Path" ;
-                    
+
                     rdfs:subClassOf asgs:GeospatialPath ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:stateToSosPathFrom ;
@@ -3231,9 +3231,9 @@ asgs:StateToSosPath rdf:type owl:Class ;
                                       owl:onProperty asgs:stateToSosPathTo ;
                                       owl:allValuesFrom asgs:SectionOfState
                                     ] ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToSosPath" .
 
 
@@ -3241,9 +3241,9 @@ asgs:StateToSosPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StateToSscPath
 
 asgs:StateToSscPath rdf:type owl:Class ;
-                    
+
                     rdfs:label "State to SSC Path" ;
-                    
+
                     rdfs:subClassOf asgs:GeospatialPath ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:stateToSscPathTo ;
@@ -3253,9 +3253,9 @@ asgs:StateToSscPath rdf:type owl:Class ;
                                       owl:onProperty asgs:stateToSscPathFrom ;
                                       owl:allValuesFrom asgs:StateOrTerritory
                                     ] ;
-                    
+
                     rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                    
+
                     rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StateToSscPath" .
 
 
@@ -3263,19 +3263,19 @@ asgs:StateToSscPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1
 
 asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
-                           
-                           rdfs:label "Statistical Area Level1" ;
-                           
+
+                           rdfs:label "Statistical Area Level 1" ;
+
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isStatisticalAreaLevel1Of ;
                                              owl:allValuesFrom asgs:MeshBlock
                                            ] ;
-                           
+
                            rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1" ;
-                           
+
                            dc:description "Statistical Areas Level 1 (SA1s) are designed to maximise the spatial detail available for Census data. Most SA1s have a population of between 200 to 800 persons with an average population of approximately 400 persons. This is to optimise the balance between spatial detail and the ability to cross classify Census variables without the resulting counts becoming too small for use. SA1s aim to separate out areas with different geographic characteristics within Suburb and Locality boundaries. In rural areas they often combine related Locality boundaries. SA1s are aggregations of Mesh Blocks (MBs). Whole SA1s aggregate to form Statistical Areas Level 2 (SA2s) Indigenous Locations (ILOCs) Urban Centres and Localities (UCLs) Remoteness Areas (RAs) Commonwealth Electoral Divisions (CEDs) and State Electoral Divisions (SEDs). SA1s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                           
+
                            rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3283,19 +3283,19 @@ asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2
 
 asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
-                           
-                           rdfs:label "StatisticalAreaLevel2" ;
-                           
+
+                           rdfs:label "Statistical Area Level 2" ;
+
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isStatisticalAreaLevel2Of ;
                                              owl:allValuesFrom asgs:StatisticalAreaLevel1
                                            ] ;
-                           
+
                            rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2" ;
-                           
+
                            rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                           
+
                            dc:description "Statistical Areas Level 2 (SA2s) are functional areas that represent a community that interacts together socially and economically. They often align with Suburb and Locality boundaries to improve the geographic coding of data to these areas. In major urban areas SA2s often reflect one or more related suburbs. The SA2 is the smallest area for the release of many ABS statistics including the Estimated Resident Population (ERP) Health & Vitals and Building Approvals data. SA2s generally have a population range of 3 000 to 25 000 persons and have an average population of about 10 000 persons. SA2s are aggregated from whole Statistical Areas Level 1 (SA1s) in the ASGS Main Structure. Whole SA2s aggregate to form Statistical Areas Level 3 (SA3s) Significant Urban Areas (SUAs) and Tourism Regions (TRs). SA2s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
@@ -3303,19 +3303,19 @@ asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3
 
 asgs:StatisticalAreaLevel3 rdf:type owl:Class ;
-                           
-                           rdfs:label "Statistical Area Level3" ;
-                           
+
+                           rdfs:label "Statistical Area Level 3" ;
+
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isStatisticalAreaLevel3Of ;
                                              owl:allValuesFrom asgs:StatisticalAreaLevel2
                                            ] ;
-                           
+
                            dc:description "Statistical Areas Level 3 (SA3s) are designed for the output of regional data. SA3s create a standard framework for the analysis of ABS data at the regional level. SA3s do this by clustering groups of Statistical Areas Level 2 (SA2s) that have similar regional characteristics administrative boundaries or labour markets. SA3s generally have populations between 30 000 and 130 000 persons. They are often the functional areas of regional towns and cities with a population in excess of 20 000 people. Within urban areas they represent clusters of related suburbs around urban commercial and transport hubs. SA3s are aggregations of whole SA2s in the ASGS Main Structure. Whole SA3s aggregate to form Statistical Areas Level 4 (SA4s). SA3s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                           
+
                            rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                           
+
                            rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3" .
 
 
@@ -3323,19 +3323,19 @@ asgs:StatisticalAreaLevel3 rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4
 
 asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
-                           
-                           rdfs:label "Statistical Area Level4" ;
-                           
+
+                           rdfs:label "Statistical Area Level 4" ;
+
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isStatisticalAreaLevel4Of ;
                                              owl:allValuesFrom asgs:StatisticalAreaLevel3
                                            ] ;
-                           
+
                            rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                           
+
                            rdfs:seeAlso "http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4" ;
-                           
+
                            dc:description "Statistical Areas Level 4 (SA4s) are specifically designed for the output of Labour Force Survey data. SA4s reflect labour markets within each State and Territory within the population limits imposed by the Labour Force Survey sample. Most SA4s have a population above 100 000 persons to provide sufficient sample size for Labour Force estimates. In regional areas SA4s tend to have lower populations (100 000 to 300 000). In metropolitan areas the SA4s tend to have larger populations (300 000 to 500 000). SA4s are aggregations of whole Statistical Areas Level 3 (SA3s) in the ASGS Main Structure. Whole SA4s aggregate to form Greater Capital City Statistical Areas (GCCSAs) and State and Territory (S/T).SA4s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." .
 
 
@@ -3343,9 +3343,9 @@ asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#SuaToSa2Path
 
 asgs:SuaToSa2Path rdf:type owl:Class ;
-                  
+
                   rdfs:label "SUA to SA2 Path" ;
-                  
+
                   rdfs:subClassOf asgs:GeospatialPath ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty asgs:suaToSa2PathTo ;
@@ -3355,9 +3355,9 @@ asgs:SuaToSa2Path rdf:type owl:Class ;
                                     owl:onProperty asgs:suaToSa2PathFrom ;
                                     owl:allValuesFrom asgs:SignificantUrbanArea
                                   ] ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#SuaToSa2Path" ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3365,15 +3365,15 @@ asgs:SuaToSa2Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#TourismRegion
 
 asgs:TourismRegion rdf:type owl:Class ;
-                   
+
                    rdfs:label "Tourism Region" ;
-                   
+
                    rdfs:subClassOf asgs:Feature ;
-                   
+
                    rdfs:seeAlso "http://linked.data.gov.au/def/asgs#TourismRegion" ;
-                   
+
                    dc:description "Tourism Regions (TR) are an ABS approximation of Tourism Regions provided by Tourism Research Australia (TRA). They are administrative regions primarily used by Tourism Research Australia for research and policy purposes.TRs are approximated using whole Statistical Areas Level 2 (SA2s). As of 2016 TRs do not cross State and Territory (S/T) boundaries and there are no TRs for the Other Territories (OT). The TRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                   
+
                    rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
@@ -3381,9 +3381,9 @@ asgs:TourismRegion rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#TrToSa2Path
 
 asgs:TrToSa2Path rdf:type owl:Class ;
-                 
+
                  rdfs:label "TR to SA2 Path" ;
-                 
+
                  rdfs:subClassOf asgs:GeospatialPath ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:trToSa2PathFrom ;
@@ -3393,9 +3393,9 @@ asgs:TrToSa2Path rdf:type owl:Class ;
                                    owl:onProperty asgs:trToSa2PathTo ;
                                    owl:allValuesFrom asgs:StatisticalAreaLevel2
                                  ] ;
-                 
+
                  rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                 
+
                  rdfs:seeAlso "http://linked.data.gov.au/def/asgs#TrToSa2Path" .
 
 
@@ -3403,9 +3403,9 @@ asgs:TrToSa2Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#UclToSa1Path
 
 asgs:UclToSa1Path rdf:type owl:Class ;
-                  
+
                   rdfs:label "UCL to SA1 Path" ;
-                  
+
                   rdfs:subClassOf asgs:GeospatialPath ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty asgs:uclToSa1PathTo ;
@@ -3415,9 +3415,9 @@ asgs:UclToSa1Path rdf:type owl:Class ;
                                     owl:onProperty asgs:uclToSa1PathFrom ;
                                     owl:allValuesFrom asgs:UrbanCentreAndLocality
                                   ] ;
-                  
+
                   rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" ;
-                  
+
                   rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UclToSa1Path" .
 
 
@@ -3425,19 +3425,18 @@ asgs:UclToSa1Path rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality
 
 asgs:UrbanCentreAndLocality rdf:type owl:Class ;
-                            
+
                             rdfs:label "UrbanCentreAndLocality" ;
-                            
+
                             rdfs:subClassOf asgs:Feature ;
-                            
+
                             dc:description "Urban Centres and Localities (UCLs) represent areas of concentrated urban development with populations of 200 people or more. These areas of urban development are primarily identified using objective dwelling and population density criteria. This criteria is developed using data from the Census of Population and Housing. Urban Centres are defined separately to Localities. Urban Centres have urban populations of 1 000 people or more while Localities have populations of between 200 and 999 people.The UCLs are designed for the analysis of statistical data in particular data from the Census of Population and Housing. The 200 minimum population size is set to enable users to access cross classified Census data for these areas without the resulting counts becoming too small for use. UCLs are aggregates of Statistical Areas Level 1 (SA1s) they aggregate up to Section of State (SOS). UCLs include a category of Rural Balance which ensures that they cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
-                            
+
                             rdfs:seeAlso "http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality" ;
-                            
+
                             rdfs:isDefinedBy "http://linked.data.gov.au/def/asgs" .
 
 
 
 
 ###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
-

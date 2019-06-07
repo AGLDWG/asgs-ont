@@ -153,6 +153,8 @@ asgs:cedToSa1PathTo rdf:type owl:ObjectProperty ;
 
 asgs:contains rdf:type owl:ObjectProperty ;
 
+              rdfs:subPropertyOf geo:sfContains ;
+
               rdfs:label "contains" ;
 
               rdfs:seeAlso "http://linked.data.gov.au/def/asgs#Feature" ;
@@ -2666,6 +2668,8 @@ asgs:DznToMbPath rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#Feature
 
 asgs:Feature rdf:type owl:Class ;
+
+             rdfs:subClassOf goe:Feature ;
 
              rdfs:label "Feature" ;
 

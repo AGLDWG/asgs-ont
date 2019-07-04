@@ -2669,7 +2669,7 @@ asgs:DznToMbPath rdf:type owl:Class ;
 
 asgs:Feature rdf:type owl:Class ;
 
-             rdfs:subClassOf goe:Feature ;
+             rdfs:subClassOf geo:Feature ;
 
              rdfs:label "Feature" ;
 

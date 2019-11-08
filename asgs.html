@@ -16,20 +16,20 @@
         <dd><code>http://linked.data.gov.au/def/asgs</code></dd>
         <dt>Publisher(s)</dt>
         <dd>
-            http://catalogue.linked.data.gov.au/org/O-000928<br/>
-            Australian Bureau of Statistics<br/>
+            <a href="http://catalogue.linked.data.gov.au/org/O-000928">
+            Australian Bureau of Statistics</a><br/>
         </dd>
         <dt>Creator(s)</dt>
         <dd>
-            https://orcid.org/0000-0002-4305-6085<br/>
-            Laurent Lefort, Australian Bureau of Statistics<br/>
+            <a href="https://orcid.org/0000-0002-4305-6085">
+            Laurent Lefort, Australian Bureau of Statistics</a><br/>
         </dd>
         <dt>Contributors(s)</dt>
         <dd>
-            https://orcid.org/0000-0002-8742-7730<br/>
-            https://orcid.org/0000-0002-3884-3420<br/>
-            Nicholas Car, Surround Australia<br/>
-            Simon J D Cox, CSIRO<br/>
+            <a href="https://orcid.org/0000-0002-8742-7730">
+            Nicholas Car, Surround Australia</a><br/>
+            <a href="https://orcid.org/0000-0002-3884-3420">
+            Simon J D Cox, CSIRO</a><br/>
         </dd>
         <dt>Modified</dt>
         <dd>2019-11-08</dd>
@@ -38,7 +38,7 @@
             <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a><br/>
         </dd>
         <dt>Ontology Source</dt>
-        <dd><a href="whocares.ttl">RDF (text/turtle)</a></dd>
+        <dd><a href="https://raw.githubusercontent.com/AGLDWG/asgs-ont/master/asgs.ttl">RDF (text/turtle)</a></dd>
     </dl>
     <h2>Description</h2>
     <div id="description">
@@ -57,10 +57,27 @@
 </section>
 <section id="overview">
     <h2>Overview</h2>
-    <div class="figure">
-        <div style="width:500px; height:500px; background-color: black;">&nbsp;</div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
-    </div>
+    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
+    <ul>
+        <li>structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,</li> 
+        <li>Indigenous structures: Indigenous location, Indigenous area, , Indigenous region classes</li>
+        <li>Urban structures: Urban Centre and Locality, Section of State Range, Section of State, and Significant Urban Area classes</li>
+    </ul>
+        <p>and for the Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>
+    <ul>   
+        <li>Local Government Areas (LGAs)</li>
+        <li>Postal Areas (POAs)</li>
+        <li>State Suburbs (SSCs)</li>
+        <li>Commonwealth Electoral Divisions (CEDs)</li>
+        <li>State Electoral Divisions (SEDs)</li>
+        <li>Australian Drainage Divisions (ADDs)</li>
+        <li>Natural Resource Management Regions (NRMRs)</li>
+        <li>Tourism Regions (TRs)</li>
+     </ul>
+        <p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>
+        
+        <p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>
+        <img src="images/asgs-Statistical-Areas.png" style="max-width: 100%; height: auto;" alt="asgs_Statistical-Areas diagram" />
 </section>
 <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
@@ -615,7 +632,6 @@
     </div>
     <div class="entity class" id="meshblock">
         <h3>Mesh Block<sup title="class" class="sup-c">c</sup></h3>
-        <img src="images/asgs-Statistical-Areas.png" style="max-width: 100%; height: auto;" alt="asgs_Statistical-Areas diagram" />
         <img src="images/asgs_MeshBlock.svg" style="max-width: 100%; height: auto;" alt="asgs_MeshBlock diagram" />
         <table>
             <tr>

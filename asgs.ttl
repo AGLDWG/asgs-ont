@@ -29,7 +29,7 @@
                                       dc:publisher "Australian Bureau of Statistics" ;
                                       dct:creator <https://orcid.org/0000-0002-4305-6085> ;
                                       dc:rights "Copyright 2018 Australian Bureau of Statistics." ;
-                                      dc:description "<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
+                                      dc:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
                                       <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
     <ul>
         <li>structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,</li> 
@@ -50,7 +50,7 @@
         <p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>
         
         <p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>
-"^^rdf:HTML .
+"""^^rdf:HTML .
 
 #################################################################
 #    Annotation properties

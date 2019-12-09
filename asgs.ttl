@@ -1597,6 +1597,11 @@ asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty asgs:isGreaterCapitalCityStatisticalAreaOf ;
                                                          owl:allValuesFrom asgs:StatisticalAreaLevel4
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty asgs:within ;
+                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass asgs:StateOrTerritory
                                                        ] ;
                                        dc:description "Greater Capital City Statistical Areas (GCCSAs) are designed to represent the functional extent of each of the eight State and Territory capital cities. They include the people who regularly socialise shop or work within the city but live in the small towns and rural areas surrounding the city. GCCSAs are defined using the capital city labour markets. The labour market is sometimes used as a de-facto measure of the functional extent of a city as it contains the majority of the commuting population. It is important to note that GCCSAs do not define the built up edge of the city this is better represented by Urban Centres and Localities (UCLs) or Significant Urban Areas (SUAs). The GCCSA is designed to provide a stable definition of the capital cities to enable production of economic indicators which integrate variables collected over long periods of time. GCCSAs are aggregations of whole Statistical Areas Level 4 (SA4s) in the ASGS Main Structure. Whole GCCSAs aggregate to State and Territory (S/T). GSSCAs are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -1626,6 +1631,11 @@ asgs:IndigenousArea rdf:type owl:Class ;
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isIndigenousAreaOf ;
                                       owl:allValuesFrom asgs:IndigenousLocation
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:within ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass asgs:IndigenousRegion
                                     ] ;
                     dc:description "Indigenous Areas (IAREs) are medium sized geographical areas designed to facilitate the release of statistics with multiple variables for Aboriginal and Torres Strait Islander Peoples. IAREs provide a balance between spatial resolution and population size which provides the ability to release more detailed socio-economic attribute data than is available on Indigenous Locations (ILOCs). IAREs are aggregates of Indigenous Locations (ILOCs) and aggregate up to Indigenous Regions (IREGs). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -1635,7 +1645,12 @@ asgs:IndigenousArea rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#IndigenousLocation
 asgs:IndigenousLocation rdf:type owl:Class ;
-                        rdfs:subClassOf asgs:Feature ;
+                        rdfs:subClassOf asgs:Feature ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty asgs:within ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass asgs:IndigenousArea
+                                        ] ;
                         dc:description "Indigenous Locations (ILOCs) represent small Aboriginal and Torres Strait Islander communities (urban and rural) with a minimum population of 90 Aboriginal and Torres Strait Islander usual residents. An ILOC is an area designed to allow the release of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial detail whilst maintaining the confidentiality of individuals. ILOCs are aggregates of Statistical Areas Level 1 (SA1s). ILOCs aggregate to Indigenous Areas (IAREs) and cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                         rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                         rdfs:label "Indigenous Location" ;
@@ -1648,6 +1663,11 @@ asgs:IndigenousRegion rdf:type owl:Class ;
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:isIndigenousRegionOf ;
                                         owl:allValuesFrom asgs:IndigenousArea
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty asgs:within ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass asgs:StateOrTerritory
                                       ] ;
                       dc:description "Indigenous Regions (IREGs) are large geographical areas loosely based on the former Aboriginal and Torres Strait Islander Commission boundaries. They are designed for the release of detailed statistical data with multiple variables on Aboriginal and Torres Strait Islander Peoples. The greater population of IREGs enables greater cross classification of variables when compared with Indigenous Areas (IAREs) or Indigenous Localities (ILOCs). IREGs are aggregates of IAREs and aggregate up to State and Territory (S/T). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                       rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -1763,7 +1783,12 @@ asgs:RaToSa1Path rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#RemotenessArea
 asgs:RemotenessArea rdf:type owl:Class ;
-                    rdfs:subClassOf asgs:Feature ;
+                    rdfs:subClassOf asgs:Feature ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:within ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass asgs:StateOrTerritory
+                                    ] ;
                     dc:description "Remoteness Areas (RAs) divide Australia into five classes of remoteness on the basis of relative access to services. RAs are based on the Accessibility and Remoteness Index of Australia (ARIA+) produced by the Hugo Centre for Migration and Population Research at the University of Adelaide. RAs are aggregates of Statistical Areas Level 1 (SA1s) that are grouped together based on their average ARIA+ score. Ras aggregate up to State and Territory (S/T) and cover Australia without gaps or overlaps." ;
                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                     rdfs:label "Remoteness Area" ;
@@ -1792,6 +1817,11 @@ asgs:SectionOfState rdf:type owl:Class ;
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isSectionOfStateOf ;
                                       owl:allValuesFrom asgs:SectionOfStateRange
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:within ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass asgs:StateOrTerritory
                                     ] ;
                     dc:description "Section of State (SOS) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into four different classes within each State and Territory (S/T). These four classes are an aggregation of the more detailed Section of State Range (SOSR) classification. SOS groups Urban Centres into 2 classes one of 100 000 people or more and the other less than 100 000 people. The remaining two classes are Localities and Rural Balance. This broad summary of UCLs enables detailed statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOS are aggregates of SOSR and aggregate up to State and Territory (S/T). SOS regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -1805,6 +1835,11 @@ asgs:SectionOfStateRange rdf:type owl:Class ;
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty asgs:isSectionOfStateRangeOf ;
                                            owl:allValuesFrom asgs:UrbanCentreAndLocality
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty asgs:within ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass asgs:SectionOfState
                                          ] ;
                          dc:description "Section of State Range (SOSR) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into 11 different classes within each State and Territory (S/T). The 11 classes are made up of; 8 different population size classes grouping Urban Centres; 2 population size classes grouping Localities; and a Rural Balance. This detailed summary of UCLs enables statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOSR are aggregates of UCLs and aggregate up to Section of State (SOS). SOSR regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -1988,6 +2023,21 @@ asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
                                              owl:onProperty asgs:within ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StatisticalAreaLevel2
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:within ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass asgs:IndigenousLocation
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:within ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass asgs:RemotenessArea
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:within ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass asgs:UrbanCentreAndLocality
                                            ] ;
                            dc:description "Statistical Areas Level 1 (SA1s) are designed to maximise the spatial detail available for Census data. Most SA1s have a population of between 200 to 800 persons with an average population of approximately 400 persons. This is to optimise the balance between spatial detail and the ability to cross classify Census variables without the resulting counts becoming too small for use. SA1s aim to separate out areas with different geographic characteristics within Suburb and Locality boundaries. In rural areas they often combine related Locality boundaries. SA1s are aggregations of Mesh Blocks (MBs). Whole SA1s aggregate to form Statistical Areas Level 2 (SA2s) Indigenous Locations (ILOCs) Urban Centres and Localities (UCLs) Remoteness Areas (RAs) Commonwealth Electoral Divisions (CEDs) and State Electoral Divisions (SEDs). SA1s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -2006,6 +2056,11 @@ asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
                                              owl:onProperty asgs:within ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StatisticalAreaLevel3
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:within ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass asgs:SignificantUrbanArea
                                            ] ;
                            dc:description "Statistical Areas Level 2 (SA2s) are functional areas that represent a community that interacts together socially and economically. They often align with Suburb and Locality boundaries to improve the geographic coding of data to these areas. In major urban areas SA2s often reflect one or more related suburbs. The SA2 is the smallest area for the release of many ABS statistics including the Estimated Resident Population (ERP) Health & Vitals and Building Approvals data. SA2s generally have a population range of 3 000 to 25 000 persons and have an average population of about 10 000 persons. SA2s are aggregated from whole Statistical Areas Level 1 (SA1s) in the ASGS Main Structure. Whole SA2s aggregate to form Statistical Areas Level 3 (SA3s) Significant Urban Areas (SUAs) and Tourism Regions (TRs). SA2s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -2042,6 +2097,11 @@ asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
                                              owl:onProperty asgs:within ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StateOrTerritory
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:within ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass asgs:GreaterCapitalCityStatisticalArea
                                            ] ;
                            dc:description "Statistical Areas Level 4 (SA4s) are specifically designed for the output of Labour Force Survey data. SA4s reflect labour markets within each State and Territory within the population limits imposed by the Labour Force Survey sample. Most SA4s have a population above 100 000 persons to provide sufficient sample size for Labour Force estimates. In regional areas SA4s tend to have lower populations (100 000 to 300 000). In metropolitan areas the SA4s tend to have larger populations (300 000 to 500 000). SA4s are aggregations of whole Statistical Areas Level 3 (SA3s) in the ASGS Main Structure. Whole SA4s aggregate to form Greater Capital City Statistical Areas (GCCSAs) and State and Territory (S/T).SA4s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -2108,7 +2168,12 @@ asgs:UclToSa1Path rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality
 asgs:UrbanCentreAndLocality rdf:type owl:Class ;
-                            rdfs:subClassOf asgs:Feature ;
+                            rdfs:subClassOf asgs:Feature ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty asgs:within ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass asgs:SectionOfStateRange
+                                            ] ;
                             dc:description "Urban Centres and Localities (UCLs) represent areas of concentrated urban development with populations of 200 people or more. These areas of urban development are primarily identified using objective dwelling and population density criteria. This criteria is developed using data from the Census of Population and Housing. Urban Centres are defined separately to Localities. Urban Centres have urban populations of 1 000 people or more while Localities have populations of between 200 and 999 people.The UCLs are designed for the analysis of statistical data in particular data from the Census of Population and Housing. The 200 minimum population size is set to enable users to access cross classified Census data for these areas without the resulting counts becoming too small for use. UCLs are aggregates of Statistical Areas Level 1 (SA1s) they aggregate up to Section of State (SOS). UCLs include a category of Rural Balance which ensures that they cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                             rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                             rdfs:label "UrbanCentreAndLocality" ;

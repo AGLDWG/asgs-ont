@@ -1,0 +1,726 @@
+@prefix : <http://linked.data.gov.au/def/asgs-path#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix asgs: <http://linked.data.gov.au/def/asgs#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schema.org/> .
+@base <http://linked.data.gov.au/def/asgs-path> .
+
+<http://linked.data.gov.au/def/asgs-path> rdf:type owl:Ontology ;
+                                           owl:imports <http://linked.data.gov.au/def/asgs> ;
+                                           dct:contributor <https://orcid.org/0000-0002-3884-3420> ,
+                                                           "Simon J D Cox, CSIRO" ;
+                                           dct:created "2019-12-10" ;
+                                           dct:creator <https://orcid.org/0000-0002-4305-6085> ,
+                                                       "Laurent Lefort, Australian Bureau of Statistics" ;
+                                           dct:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
+                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
+					<p>Extensions for paths linking features</p>
+"""^^rdf:HTML ;
+                                           dct:modified "2019-12-10" ;
+                                           dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
+                                                         "Australian Bureau of Statistics" ;
+                                           dct:rights "Copyright 2018 Australian Bureau of Statistics." ;
+                                           dct:title "ASGS Ontology - path extensions" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dct:rights rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://linked.data.gov.au/def/asgs#addToMbPathFrom
+asgs:addToMbPathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "addToMbPath from" ;
+                     rdfs:seeAlso asgs:AddToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#addToMbPathTo
+asgs:addToMbPathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "addToMbPath to" ;
+                   rdfs:seeAlso asgs:AddToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#cedToSa1PathFrom
+asgs:cedToSa1PathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "cedToSa1Path from" ;
+                      rdfs:seeAlso asgs:CedToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#cedToSa1PathTo
+asgs:cedToSa1PathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "cedToSa1Path to" ;
+                    rdfs:seeAlso asgs:CedToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#dznToMbPathFrom
+asgs:dznToMbPathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "dznToMbPath from" ;
+                     rdfs:seeAlso asgs:DznToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#dznToMbPathTo
+asgs:dznToMbPathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "dznToMbPath to" ;
+                   rdfs:seeAlso asgs:DznToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#from
+asgs:from rdf:type owl:ObjectProperty ;
+          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+          rdfs:label "from" ;
+          rdfs:seeAlso asgs:GeospatialPath .
+
+
+###  http://linked.data.gov.au/def/asgs#ilocToSa1PathFrom
+asgs:ilocToSa1PathFrom rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf asgs:from ;
+                       rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                       rdfs:label "ilocToSa1Path from" ;
+                       rdfs:seeAlso asgs:IlocToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#ilocToSa1PathTo
+asgs:ilocToSa1PathTo rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:to ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "ilocToSa1Path to" ;
+                     rdfs:seeAlso asgs:IlocToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#lgaToMbPathFrom
+asgs:lgaToMbPathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "lgaToMbPath from" ;
+                     rdfs:seeAlso asgs:LgaToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#lgaToMbPathTo
+asgs:lgaToMbPathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "lgaToMbPath to" ;
+                   rdfs:seeAlso asgs:LgaToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#nrmrToMbPathFrom
+asgs:nrmrToMbPathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "nrmrToMbPath from" ;
+                      rdfs:seeAlso asgs:NrmrToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#nrmrToMbPathTo
+asgs:nrmrToMbPathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "nrmrToMbPath to" ;
+                    rdfs:seeAlso asgs:NrmrToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#poaToMbPathFrom
+asgs:poaToMbPathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "poaToMbPath from" ;
+                     rdfs:seeAlso asgs:PoaToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#poaToMbPathTo
+asgs:poaToMbPathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "poaToMbPath to" ;
+                   rdfs:seeAlso asgs:PoaToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#raToSa1PathFrom
+asgs:raToSa1PathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "raToSa1Path from" ;
+                     rdfs:seeAlso asgs:RaToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#raToSa1PathTo
+asgs:raToSa1PathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "raToSa1Path to" ;
+                   rdfs:seeAlso asgs:RaToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#sa2ToDznPathFrom
+asgs:sa2ToDznPathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "sa2ToDznPath from" ;
+                      rdfs:seeAlso asgs:Sa2ToDznPath .
+
+
+###  http://linked.data.gov.au/def/asgs#sa2ToDznPathTo
+asgs:sa2ToDznPathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "sa2ToDznPath to" ;
+                    rdfs:seeAlso asgs:Sa2ToDznPath .
+
+
+###  http://linked.data.gov.au/def/asgs#sedToSa1PathFrom
+asgs:sedToSa1PathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "sedToSa1Path from" ;
+                      rdfs:seeAlso asgs:SedToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#sedToSa1PathTo
+asgs:sedToSa1PathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "sedToSa1Path to" ;
+                    rdfs:seeAlso asgs:SedToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#sscToMbPathFrom
+asgs:sscToMbPathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "sscToMbPath from" ;
+                     rdfs:seeAlso asgs:SscToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#sscToMbPathTo
+asgs:sscToMbPathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "sscToMbPath to" ;
+                   rdfs:seeAlso asgs:SscToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#sscToSa1PathFrom
+asgs:sscToSa1PathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "sscToSa1Path from" ;
+                      rdfs:seeAlso asgs:SscToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#sscToSa1PathTo
+asgs:sscToSa1PathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "sscToSa1Path to" ;
+                    rdfs:seeAlso asgs:SscToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToIregPathFrom
+asgs:stateToIregPathFrom rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf asgs:from ;
+                         rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                         rdfs:label "stateToIregPath from" ;
+                         rdfs:seeAlso asgs:StateToIregPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToIregPathTo
+asgs:stateToIregPathTo rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf asgs:to ;
+                       rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                       rdfs:label "stateToIregPath to" ;
+                       rdfs:seeAlso asgs:StateToIregPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToLgaPathFrom
+asgs:stateToLgaPathFrom rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf asgs:from ;
+                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                        rdfs:label "stateToLgaPath from" ;
+                        rdfs:seeAlso asgs:StateToLgaPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToLgaPathTo
+asgs:stateToLgaPathTo rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "stateToLgaPath to" ;
+                      rdfs:seeAlso asgs:StateToLgaPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToRaPathFrom
+asgs:stateToRaPathFrom rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf asgs:from ;
+                       rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                       rdfs:label "stateToRaPath from" ;
+                       rdfs:seeAlso asgs:StateToRaPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToRaPathTo
+asgs:stateToRaPathTo rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:to ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "stateToRaPath to" ;
+                     rdfs:seeAlso asgs:StateToRaPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToSosPathFrom
+asgs:stateToSosPathFrom rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf asgs:from ;
+                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                        rdfs:label "stateToSosPath from" ;
+                        rdfs:seeAlso asgs:StateToSosPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToSosPathTo
+asgs:stateToSosPathTo rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:to ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "stateToSosPath to" ;
+                      rdfs:seeAlso asgs:StateToSosPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToSscPathFrom
+asgs:stateToSscPathFrom rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf asgs:from ;
+                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                        rdfs:label "stateToSscPath from" ;
+                        rdfs:seeAlso asgs:StateToSscPath .
+
+
+###  http://linked.data.gov.au/def/asgs#stateToSscPathTo
+asgs:stateToSscPathTo rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:to ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "stateToSscPath to" ;
+                      rdfs:seeAlso asgs:StateToSscPath .
+
+
+###  http://linked.data.gov.au/def/asgs#suaToSa2PathFrom
+asgs:suaToSa2PathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "suaToSa2Path from" ;
+                      rdfs:seeAlso asgs:SuaToSa2Path .
+
+
+###  http://linked.data.gov.au/def/asgs#suaToSa2PathTo
+asgs:suaToSa2PathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "suaToSa2Path to" ;
+                    rdfs:seeAlso asgs:SuaToSa2Path .
+
+
+###  http://linked.data.gov.au/def/asgs#to
+asgs:to rdf:type owl:ObjectProperty ;
+        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+        rdfs:label "to" ;
+        rdfs:seeAlso asgs:GeospatialPath .
+
+
+###  http://linked.data.gov.au/def/asgs#trToSa2PathFrom
+asgs:trToSa2PathFrom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf asgs:from ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "trToSa2Path from" ;
+                     rdfs:seeAlso asgs:TrToSa2Path .
+
+
+###  http://linked.data.gov.au/def/asgs#trToSa2PathTo
+asgs:trToSa2PathTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf asgs:to ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "trToSa2Path to" ;
+                   rdfs:seeAlso asgs:TrToSa2Path .
+
+
+###  http://linked.data.gov.au/def/asgs#uclToSa1PathFrom
+asgs:uclToSa1PathFrom rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf asgs:from ;
+                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                      rdfs:label "uclToSa1Path from" ;
+                      rdfs:seeAlso asgs:UclToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#uclToSa1PathTo
+asgs:uclToSa1PathTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf asgs:to ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "uclToSa1Path to" ;
+                    rdfs:seeAlso asgs:UclToSa1Path .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://linked.data.gov.au/def/asgs#poaName2011
+asgs:poaName2011 rdfs:domain asgs:PoaToMbPath ;
+                 rdfs:seeAlso asgs:PoaToMbPath .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://linked.data.gov.au/def/asgs#AddToMbPath
+asgs:AddToMbPath rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:addToMbPathFrom ;
+                                   owl:allValuesFrom asgs:AustralianDrainageDivision
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:addToMbPathTo ;
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "ADD to MB Path" ;
+                 rdfs:seeAlso asgs:AddToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#CedToSa1Path
+asgs:CedToSa1Path rdf:type owl:Class ;
+                  rdfs:subClassOf asgs:GeospatialPath ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:cedToSa1PathFrom ;
+                                    owl:allValuesFrom asgs:CommonwealthElectoralDivision
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:cedToSa1PathTo ;
+                                    owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                  ] ;
+                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                  rdfs:label "CED to SA1 Path" ;
+                  rdfs:seeAlso asgs:CedToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#DznToMbPath
+asgs:DznToMbPath rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:dznToMbPathFrom ;
+                                   owl:allValuesFrom asgs:DestinationZone
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:dznToMbPathTo ;
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "DZN to MB Path" ;
+                 rdfs:seeAlso asgs:DznToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#GeospatialPath
+asgs:GeospatialPath rdf:type owl:Class ;
+                    rdfs:subClassOf owl:Thing ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:from ;
+                                      owl:allValuesFrom asgs:Feature
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:to ;
+                                      owl:allValuesFrom asgs:Feature
+                                    ] ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "Geospatial Path" ;
+                    rdfs:seeAlso asgs:GeospatialPath .
+
+
+###  http://linked.data.gov.au/def/asgs#IlocToSa1Path
+asgs:IlocToSa1Path rdf:type owl:Class ;
+                   rdfs:subClassOf asgs:GeospatialPath ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty asgs:ilocToSa1PathFrom ;
+                                     owl:allValuesFrom asgs:IndigenousLocation
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty asgs:ilocToSa1PathTo ;
+                                     owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                   ] ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "ILOC to SA1 Path" ;
+                   rdfs:seeAlso asgs:IlocToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#LgaToMbPath
+asgs:LgaToMbPath rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:lgaToMbPathFrom ;
+                                   owl:allValuesFrom asgs:LocalGovernmentArea
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:lgaToMbPathTo ;
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "LGA to MB Path" ;
+                 rdfs:seeAlso asgs:LgaToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#NrmrToMbPath
+asgs:NrmrToMbPath rdf:type owl:Class ;
+                  rdfs:subClassOf asgs:GeospatialPath ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:nrmrToMbPathFrom ;
+                                    owl:allValuesFrom asgs:NaturalResourceManagementRegion
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:nrmrToMbPathTo ;
+                                    owl:allValuesFrom asgs:MeshBlock
+                                  ] ;
+                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                  rdfs:label "NRMR to MB Path" ;
+                  rdfs:seeAlso asgs:NrmrToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#PoaToMbPath
+asgs:PoaToMbPath rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:poaToMbPathFrom ;
+                                   owl:allValuesFrom asgs:PostalArea
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:poaToMbPathTo ;
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "POA to MB Path" ;
+                 rdfs:seeAlso asgs:PoaToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#RaToSa1Path
+asgs:RaToSa1Path rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:raToSa1PathFrom ;
+                                   owl:allValuesFrom asgs:RemotenessArea
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:raToSa1PathTo ;
+                                   owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "RA to SA1 Path" ;
+                 rdfs:seeAlso asgs:RaToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#Sa2ToDznPath
+asgs:Sa2ToDznPath rdf:type owl:Class ;
+                  rdfs:subClassOf asgs:GeospatialPath ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:sa2ToDznPathFrom ;
+                                    owl:allValuesFrom asgs:StatisticalAreaLevel2
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:sa2ToDznPathTo ;
+                                    owl:allValuesFrom asgs:DestinationZone
+                                  ] ;
+                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                  rdfs:label "SA2 to DZN Path" ;
+                  rdfs:seeAlso asgs:Sa2ToDznPath .
+
+
+###  http://linked.data.gov.au/def/asgs#SedToSa1Path
+asgs:SedToSa1Path rdf:type owl:Class ;
+                  rdfs:subClassOf asgs:GeospatialPath ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:sedToSa1PathFrom ;
+                                    owl:allValuesFrom asgs:StateElectoralDivision
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:sedToSa1PathTo ;
+                                    owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                  ] ;
+                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                  rdfs:label "SED to SA1 Path" ;
+                  rdfs:seeAlso asgs:SedToSa1Path .
+
+
+###  http://linked.data.gov.au/def/asgs#SscToMbPath
+asgs:SscToMbPath rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:sscToMbPathFrom ;
+                                   owl:allValuesFrom asgs:StateSuburb
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:sscToMbPathTo ;
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:sscToSa1PathFrom ;
+                                   owl:allValuesFrom asgs:StateSuburb
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:sscToSa1PathTo ;
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "SSC to MB Path" ;
+                 rdfs:seeAlso asgs:SscToMbPath .
+
+
+###  http://linked.data.gov.au/def/asgs#StateToIregPath
+asgs:StateToIregPath rdf:type owl:Class ;
+                     rdfs:subClassOf asgs:GeospatialPath ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty asgs:stateToIregPathFrom ;
+                                       owl:allValuesFrom asgs:StateOrTerritory
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty asgs:stateToIregPathTo ;
+                                       owl:allValuesFrom asgs:IndigenousRegion
+                                     ] ;
+                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                     rdfs:label "State to IREG Path" ;
+                     rdfs:seeAlso asgs:StateToIregPath .
+
+
+###  http://linked.data.gov.au/def/asgs#StateToLgaPath
+asgs:StateToLgaPath rdf:type owl:Class ;
+                    rdfs:subClassOf asgs:GeospatialPath ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:stateToLgaPathFrom ;
+                                      owl:allValuesFrom asgs:StateOrTerritory
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:stateToLgaPathTo ;
+                                      owl:allValuesFrom asgs:LocalGovernmentArea
+                                    ] ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "State to LGA Path" ;
+                    rdfs:seeAlso asgs:StateToLgaPath .
+
+
+###  http://linked.data.gov.au/def/asgs#StateToRaPath
+asgs:StateToRaPath rdf:type owl:Class ;
+                   rdfs:subClassOf asgs:GeospatialPath ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty asgs:stateToRaPathFrom ;
+                                     owl:allValuesFrom asgs:StateOrTerritory
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty asgs:stateToRaPathTo ;
+                                     owl:allValuesFrom asgs:RemotenessArea
+                                   ] ;
+                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                   rdfs:label "State to RA Path" ;
+                   rdfs:seeAlso asgs:StateToRaPath .
+
+
+###  http://linked.data.gov.au/def/asgs#StateToSosPath
+asgs:StateToSosPath rdf:type owl:Class ;
+                    rdfs:subClassOf asgs:GeospatialPath ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:stateToSosPathFrom ;
+                                      owl:allValuesFrom asgs:StateOrTerritory
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:stateToSosPathTo ;
+                                      owl:allValuesFrom asgs:SectionOfState
+                                    ] ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "State to SOS Path" ;
+                    rdfs:seeAlso asgs:StateToSosPath .
+
+
+###  http://linked.data.gov.au/def/asgs#StateToSscPath
+asgs:StateToSscPath rdf:type owl:Class ;
+                    rdfs:subClassOf asgs:GeospatialPath ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:stateToSscPathFrom ;
+                                      owl:allValuesFrom asgs:StateOrTerritory
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:stateToSscPathTo ;
+                                      owl:allValuesFrom asgs:StateSuburb
+                                    ] ;
+                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                    rdfs:label "State to SSC Path" ;
+                    rdfs:seeAlso asgs:StateToSscPath .
+
+
+###  http://linked.data.gov.au/def/asgs#SuaToSa2Path
+asgs:SuaToSa2Path rdf:type owl:Class ;
+                  rdfs:subClassOf asgs:GeospatialPath ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:suaToSa2PathFrom ;
+                                    owl:allValuesFrom asgs:SignificantUrbanArea
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:suaToSa2PathTo ;
+                                    owl:allValuesFrom asgs:StatisticalAreaLevel2
+                                  ] ;
+                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                  rdfs:label "SUA to SA2 Path" ;
+                  rdfs:seeAlso asgs:SuaToSa2Path .
+
+
+###  http://linked.data.gov.au/def/asgs#TrToSa2Path
+asgs:TrToSa2Path rdf:type owl:Class ;
+                 rdfs:subClassOf asgs:GeospatialPath ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:trToSa2PathFrom ;
+                                   owl:allValuesFrom asgs:TourismRegion
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:trToSa2PathTo ;
+                                   owl:allValuesFrom asgs:StatisticalAreaLevel2
+                                 ] ;
+                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                 rdfs:label "TR to SA2 Path" ;
+                 rdfs:seeAlso asgs:TrToSa2Path .
+
+
+###  http://linked.data.gov.au/def/asgs#UclToSa1Path
+asgs:UclToSa1Path rdf:type owl:Class ;
+                  rdfs:subClassOf asgs:GeospatialPath ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:uclToSa1PathFrom ;
+                                    owl:allValuesFrom asgs:UrbanCentreAndLocality
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty asgs:uclToSa1PathTo ;
+                                    owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                  ] ;
+                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                  rdfs:label "UCL to SA1 Path" ;
+                  rdfs:seeAlso asgs:UclToSa1Path .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -102,6 +102,7 @@ rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
 ###  http://linked.data.gov.au/def/asgs#category
 asgs:category rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf dct:type ;
               rdfs:domain asgs:MeshBlock ;
               rdfs:range asgs:MeshblockCategory ;
               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;

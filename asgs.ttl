@@ -100,6 +100,15 @@ rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://linked.data.gov.au/def/asgs#category
+asgs:category rdf:type owl:ObjectProperty ;
+              rdfs:domain asgs:MeshBlock ;
+              rdfs:range asgs:MeshblockCategory ;
+              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+              rdfs:label "category" ;
+              rdfs:seeAlso asgs:MeshBlock .
+
+
 ###  http://linked.data.gov.au/def/asgs#contains
 asgs:contains rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf geo:sfContains ;
@@ -178,15 +187,6 @@ asgs:ausCode2016 rdf:type owl:DatatypeProperty ;
                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                  rdfs:label "ausCode2016" ;
                  rdfs:seeAlso asgs:Country .
-
-
-###  http://linked.data.gov.au/def/asgs#category
-asgs:category rdf:type owl:DatatypeProperty ;
-              rdfs:domain asgs:MeshBlock ;
-              rdfs:range xsd:string ;
-              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-              rdfs:label "category" ;
-              rdfs:seeAlso asgs:MeshBlock .
 
 
 ###  http://linked.data.gov.au/def/asgs#code
@@ -1179,6 +1179,14 @@ asgs:MeshBlock rdf:type owl:Class ;
                dc:description "Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                rdfs:label "Mesh Block" .
+
+
+###  http://linked.data.gov.au/def/asgs#MeshblockCategory
+asgs:MeshblockCategory rdf:type owl:Class ;
+                       rdfs:subClassOf skos:Concept ;
+                       rdfs:comment "The class of meshblock categories, as defined in ASGS" ;
+                       rdfs:label "Meshblock category" ;
+                       rdfs:seeAlso <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> .
 
 
 ###  http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion

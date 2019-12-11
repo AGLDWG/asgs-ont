@@ -868,5 +868,6 @@ asgs:uclName2016
   dct:publisher "Australian Bureau of Statistics" ;
   dct:rights "Copyright 2018 Australian Bureau of Statistics." ;
   dct:title "ASGS Ontology - code properties" ;
+  owl:deprecated true ;
   owl:imports <http://linked.data.gov.au/def/asgs> ;
 .

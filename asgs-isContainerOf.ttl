@@ -29,7 +29,8 @@
                                            dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
                                                          "Australian Bureau of Statistics" ;
                                            dct:rights "Copyright 2018 Australian Bureau of Statistics." ;
-                                           dct:title "ASGS Ontology - path extensions" .
+                                           dct:title "ASGS Ontology - specialized containment predicates" ;
+                                           owl:deprecated true .
 
 #################################################################
 #    Annotation properties

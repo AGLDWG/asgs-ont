@@ -43,7 +43,14 @@
         <p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>
         
         <p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>
-"""^^rdf:HTML ;
+<p>The ASGS Ontology is packaged in multiple graphs:</p>
+<ul>
+	<li>http://linked.data.gov.au/def/asgs (this graph) contains the core classes for ASGS statistical units, and a small number of properties relating to their identity, classification, and containment hierarchy</li>
+  <li>http://linked.data.gov.au/def/asgs-cat contains the meshblock classification scheme</li>
+  <li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>
+  <li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by the generic 'within' and 'contains' relations</li>
+  <li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>
+</u>"""^^rdf:HTML ;
                                       dc:publisher "Australian Bureau of Statistics" ;
                                       dc:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                       dc:title "ASGS Ontology" ;

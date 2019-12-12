@@ -1200,66 +1200,6 @@ asgs:within rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://linked.data.gov.au/def/asgs#addCode2011
-asgs:addCode2011 rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf asgs:code ;
-                 rdfs:domain asgs:AustralianDrainageDivision ;
-                 rdfs:range xsd:string ;
-                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "addCode2011" ;
-                 rdfs:seeAlso asgs:AustralianDrainageDivision .
-
-
-###  http://linked.data.gov.au/def/asgs#addCode2016
-asgs:addCode2016 rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf asgs:code ;
-                 rdfs:domain asgs:AustralianDrainageDivision ;
-                 rdfs:range xsd:string ;
-                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "addCode2016" ;
-                 rdfs:seeAlso asgs:AustralianDrainageDivision .
-
-
-###  http://linked.data.gov.au/def/asgs#addName2011
-asgs:addName2011 rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf asgs:label ;
-                 rdfs:domain asgs:AustralianDrainageDivision ;
-                 rdfs:range xsd:string ;
-                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "addName2011" ;
-                 rdfs:seeAlso asgs:AustralianDrainageDivision .
-
-
-###  http://linked.data.gov.au/def/asgs#addName2016
-asgs:addName2016 rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf asgs:label ;
-                 rdfs:domain asgs:AustralianDrainageDivision ;
-                 rdfs:range xsd:string ;
-                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "addName2016" ;
-                 rdfs:seeAlso asgs:AustralianDrainageDivision .
-
-
-###  http://linked.data.gov.au/def/asgs#ausCode2011
-asgs:ausCode2011 rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf asgs:code ;
-                 rdfs:domain asgs:Country ;
-                 rdfs:range xsd:string ;
-                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "ausCode2011" ;
-                 rdfs:seeAlso asgs:Country .
-
-
-###  http://linked.data.gov.au/def/asgs#ausCode2016
-asgs:ausCode2016 rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf asgs:code ;
-                 rdfs:domain asgs:Country ;
-                 rdfs:range xsd:string ;
-                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "ausCode2016" ;
-                 rdfs:seeAlso asgs:Country .
-
-
 ###  http://linked.data.gov.au/def/asgs#code
 asgs:code rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf dct:identifier ;

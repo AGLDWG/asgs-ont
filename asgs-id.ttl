@@ -1,0 +1,1126 @@
+@prefix : <http://linked.data.gov.au/def/asgs-id#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schema.org/> .
+@prefix asgs-id: <http://linked.data.gov.au/def/asgs/id#> .
+@base <http://linked.data.gov.au/def/asgs-id> .
+
+<http://linked.data.gov.au/def/asgs-id> rdf:type owl:Ontology ;
+                                         dct:contributor <https://orcid.org/0000-0002-3884-3420> ,
+                                                         "Simon J D Cox, CSIRO" ;
+                                         dct:created "2019-12-13" ;
+                                         dct:creator <https://orcid.org/0000-0002-4305-6085> ,
+                                                     "Laurent Lefort, Australian Bureau of Statistics" ;
+                                         dct:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
+                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
+					<p>String types for codes and names</p>
+"""^^rdf:HTML ;
+                                         dct:modified "2019-12-13" ;
+                                         dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
+                                                       "Australian Bureau of Statistics" ;
+                                         dct:rights "Copyright 2018 Australian Bureau of Statistics." ;
+                                         dct:title "ASGS Ontology - code properties" ;
+                                         rdfs:comment """The 'code' datatypes were initially generated from the retired datatype-properties using the following SPARQL expression:
+
+                                      CONSTRUCT { ?dn a rdfs:Datatype ;
+rdfs:label ?ln ; 
+owl:equivalentClass [  
+rdf:type rdfs:Datatype ; 
+owl:onDatatype xsd:string ; 
+      owl:withRestrictions (
+          [
+            xsd:pattern \"([0-9])+\" ;
+          ]
+        ) ;
+]  ; .}
+WHERE {
+	?p rdfs:subPropertyOf asgs:code . 
+	BIND( strafter( str(?p) , \"#\" ) AS ?ln )
+	BIND( IRI( concat( \"http://linked.data.gov.au/def/asgs/id#\", ?ln ) ) as ?dn )
+}
+
+This says that each *code* string is composed of 1..* digit characters. The exact patterns will be updated later. """ ,
+                                                   """The 'name' datatypes were initially generated from the retired datatype-properties using the following SPARQL expression:
+CONSTRUCT { ?dn a rdfs:Datatype ;
+rdfs:label ?ln ; 
+owl:equivalentClass [  
+rdf:type rdfs:Datatype ; 
+owl:onDatatype xsd:string ; 
+      owl:withRestrictions (
+          [
+            xsd:maxLength \"100\"^^xsd:integer ;
+          ]
+        ) ;
+]  ; .}
+WHERE {
+	?p rdfs:subPropertyOf asgs:label . 
+	BIND( strafter( str(?p) , \"#\" ) AS ?ln )
+	BIND( IRI( concat( \"http://linked.data.gov.au/def/asgs/id#\", ?ln ) ) as ?dn )
+}
+
+This says that each label or name is a string up to length 100. The exact patterns will be adjusted later. """ .
+
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dct:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dct:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://linked.data.gov.au/def/asgs/id#addCode2011
+asgs-id:addCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "addCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#addCode2016
+asgs-id:addCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "addCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#addName2011
+asgs-id:addName2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "addName2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#addName2016
+asgs-id:addName2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "addName2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#ausCode2011
+asgs-id:ausCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "ausCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#ausCode2016
+asgs-id:ausCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "ausCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#dzn5dig11
+asgs-id:dzn5dig11 rdf:type rdfs:Datatype ;
+                  rdfs:label "dzn5dig11" ;
+                  owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                        owl:onDatatype xsd:string ;
+                                        owl:withRestrictions ( [ xsd:maxLength 100
+                                                               ]
+                                                             )
+                                      ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#dznCode11
+asgs-id:dznCode11 rdf:type rdfs:Datatype ;
+                  rdfs:label "dznCode11" ;
+                  owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                        owl:onDatatype xsd:string ;
+                                        owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                               ]
+                                                             )
+                                      ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#dznCode2016
+asgs-id:dznCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "dznCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#gccsaCode2011
+asgs-id:gccsaCode2011 rdf:type rdfs:Datatype ;
+                      rdfs:label "gccsaCode2011" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#gccsaCode2016
+asgs-id:gccsaCode2016 rdf:type rdfs:Datatype ;
+                      rdfs:label "gccsaCode2016" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#gccsaName2011
+asgs-id:gccsaName2011 rdf:type rdfs:Datatype ;
+                      rdfs:label "gccsaName2011" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:maxLength 100
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#gccsaName2016
+asgs-id:gccsaName2016 rdf:type rdfs:Datatype ;
+                      rdfs:label "gccsaName2016" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:maxLength 100
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode
+asgs-id:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode rdf:type rdfs:Datatype ;
+                                                                          rdfs:label "greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode" ;
+                                                                          owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                                                                owl:onDatatype xsd:string ;
+                                                                                                owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                                                       ]
+                                                                                                                     )
+                                                                                              ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iareCode2011
+asgs-id:iareCode2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "iareCode2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iareCode2016
+asgs-id:iareCode2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "iareCode2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iareName2011
+asgs-id:iareName2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "iareName2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iareName2016
+asgs-id:iareName2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "iareName2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#ilocCode2011
+asgs-id:ilocCode2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "ilocCode2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#ilocCode2016
+asgs-id:ilocCode2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "ilocCode2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#ilocName2011
+asgs-id:ilocName2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "ilocName2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#ilocName2016
+asgs-id:ilocName2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "ilocName2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#indigenousAreas6DigitCode
+asgs-id:indigenousAreas6DigitCode rdf:type rdfs:Datatype ;
+                                  rdfs:label "indigenousAreas6DigitCode" ;
+                                  owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                        owl:onDatatype xsd:string ;
+                                                        owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                               ]
+                                                                             )
+                                                      ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#indigenousRegions3DigitCode
+asgs-id:indigenousRegions3DigitCode rdf:type rdfs:Datatype ;
+                                    rdfs:label "indigenousRegions3DigitCode" ;
+                                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:string ;
+                                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                 ]
+                                                                               )
+                                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iregCode2011
+asgs-id:iregCode2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "iregCode2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iregCode2016
+asgs-id:iregCode2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "iregCode2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iregName2011
+asgs-id:iregName2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "iregName2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#iregName2016
+asgs-id:iregName2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "iregName2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#lgaCode2012
+asgs-id:lgaCode2012 rdf:type rdfs:Datatype ;
+                    rdfs:label "lgaCode2012" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#lgaName2012
+asgs-id:lgaName2012 rdf:type rdfs:Datatype ;
+                    rdfs:label "lgaName2012" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#mbCode2011
+asgs-id:mbCode2011 rdf:type rdfs:Datatype ;
+                   rdfs:label "mbCode2011" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#mbCode2016
+asgs-id:mbCode2016 rdf:type rdfs:Datatype ;
+                   rdfs:label "mbCode2016" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#nrmrCode2011
+asgs-id:nrmrCode2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "nrmrCode2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#nrmrCode2016
+asgs-id:nrmrCode2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "nrmrCode2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#nrmrName2011
+asgs-id:nrmrName2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "nrmrName2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#nrmrName2016
+asgs-id:nrmrName2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "nrmrName2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#poaCode2011
+asgs-id:poaCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "poaCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#poaCode2016
+asgs-id:poaCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "poaCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#poaName2011
+asgs-id:poaName2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "poaName2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#poaName2016
+asgs-id:poaName2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "poaName2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#raCode2011
+asgs-id:raCode2011 rdf:type rdfs:Datatype ;
+                   rdfs:label "raCode2011" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#raCode2016
+asgs-id:raCode2016 rdf:type rdfs:Datatype ;
+                   rdfs:label "raCode2016" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#raName2011
+asgs-id:raName2011 rdf:type rdfs:Datatype ;
+                   rdfs:label "raName2011" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:maxLength 100
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#raName2016
+asgs-id:raName2016 rdf:type rdfs:Datatype ;
+                   rdfs:label "raName2016" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:maxLength 100
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa1Maincode2011
+asgs-id:sa1Maincode2011 rdf:type rdfs:Datatype ;
+                        rdfs:label "sa1Maincode2011" ;
+                        owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:string ;
+                                              owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                     ]
+                                                                   )
+                                            ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa1Maincode2016
+asgs-id:sa1Maincode2016 rdf:type rdfs:Datatype ;
+                        rdfs:label "sa1Maincode2016" ;
+                        owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:string ;
+                                              owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                     ]
+                                                                   )
+                                            ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa2Maincode2011
+asgs-id:sa2Maincode2011 rdf:type rdfs:Datatype ;
+                        rdfs:label "sa2Maincode2011" ;
+                        owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:string ;
+                                              owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                     ]
+                                                                   )
+                                            ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa2Maincode2016
+asgs-id:sa2Maincode2016 rdf:type rdfs:Datatype ;
+                        rdfs:label "sa2Maincode2016" ;
+                        owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:string ;
+                                              owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                     ]
+                                                                   )
+                                            ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa2Name2011
+asgs-id:sa2Name2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa2Name2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa2Name2016
+asgs-id:sa2Name2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa2Name2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa3Code2011
+asgs-id:sa3Code2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa3Code2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa3Code2016
+asgs-id:sa3Code2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa3Code2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa3Name2011
+asgs-id:sa3Name2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa3Name2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa3Name2016
+asgs-id:sa3Name2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa3Name2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa4Code2011
+asgs-id:sa4Code2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa4Code2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa4Code2016
+asgs-id:sa4Code2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa4Code2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa4Name2011
+asgs-id:sa4Name2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa4Name2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sa4Name2016
+asgs-id:sa4Name2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sa4Name2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sectionOfState2DigitCode
+asgs-id:sectionOfState2DigitCode rdf:type rdfs:Datatype ;
+                                 rdfs:label "sectionOfState2DigitCode" ;
+                                 owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                       owl:onDatatype xsd:string ;
+                                                       owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                              ]
+                                                                            )
+                                                     ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sectionOfStateRange3DigitCode
+asgs-id:sectionOfStateRange3DigitCode rdf:type rdfs:Datatype ;
+                                      rdfs:label "sectionOfStateRange3DigitCode" ;
+                                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:string ;
+                                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                   ]
+                                                                                 )
+                                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sedCode2011
+asgs-id:sedCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sedCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sedCode2016
+asgs-id:sedCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sedCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosCode2011
+asgs-id:sosCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sosCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosCode2016
+asgs-id:sosCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sosCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosName2011
+asgs-id:sosName2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "sosName2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosName2016
+asgs-id:sosName2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sosName2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosrCode2011
+asgs-id:sosrCode2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "sosrCode2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosrCode2016
+asgs-id:sosrCode2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "sosrCode2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosrName2011
+asgs-id:sosrName2011 rdf:type rdfs:Datatype ;
+                     rdfs:label "sosrName2011" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sosrName2016
+asgs-id:sosrName2016 rdf:type rdfs:Datatype ;
+                     rdfs:label "sosrName2016" ;
+                     owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:string ;
+                                           owl:withRestrictions ( [ xsd:maxLength 100
+                                                                  ]
+                                                                )
+                                         ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sscCode2016
+asgs-id:sscCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sscCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#sscName2016
+asgs-id:sscName2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "sscName2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#stateCode2011
+asgs-id:stateCode2011 rdf:type rdfs:Datatype ;
+                      rdfs:label "stateCode2011" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#stateCode2016
+asgs-id:stateCode2016 rdf:type rdfs:Datatype ;
+                      rdfs:label "stateCode2016" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#stateName2011
+asgs-id:stateName2011 rdf:type rdfs:Datatype ;
+                      rdfs:label "stateName2011" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:maxLength 100
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#stateName2016
+asgs-id:stateName2016 rdf:type rdfs:Datatype ;
+                      rdfs:label "stateName2016" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:maxLength 100
+                                                                   ]
+                                                                 )
+                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#stateOrTerritory1DigitCode
+asgs-id:stateOrTerritory1DigitCode rdf:type rdfs:Datatype ;
+                                   rdfs:label "stateOrTerritory1DigitCode" ;
+                                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                         owl:onDatatype xsd:string ;
+                                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                ]
+                                                                              )
+                                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#stateelectoraldivisionIdentifier
+asgs-id:stateelectoraldivisionIdentifier rdf:type rdfs:Datatype ;
+                                         rdfs:label "stateelectoraldivisionIdentifier" ;
+                                         owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                               owl:onDatatype xsd:string ;
+                                                               owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                      ]
+                                                                                    )
+                                                             ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#statisticalArea1Sa111DigitCode
+asgs-id:statisticalArea1Sa111DigitCode rdf:type rdfs:Datatype ;
+                                       rdfs:label "statisticalArea1Sa111DigitCode" ;
+                                       owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                             owl:onDatatype xsd:string ;
+                                                             owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                    ]
+                                                                                  )
+                                                           ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#statisticalArea2Sa29DigitCode
+asgs-id:statisticalArea2Sa29DigitCode rdf:type rdfs:Datatype ;
+                                      rdfs:label "statisticalArea2Sa29DigitCode" ;
+                                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:string ;
+                                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                   ]
+                                                                                 )
+                                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#statisticalArea3Sa35DigitCode
+asgs-id:statisticalArea3Sa35DigitCode rdf:type rdfs:Datatype ;
+                                      rdfs:label "statisticalArea3Sa35DigitCode" ;
+                                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:string ;
+                                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                   ]
+                                                                                 )
+                                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#statisticalArea4Sa43DigitCode
+asgs-id:statisticalArea4Sa43DigitCode rdf:type rdfs:Datatype ;
+                                      rdfs:label "statisticalArea4Sa43DigitCode" ;
+                                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:string ;
+                                                            owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                                   ]
+                                                                                 )
+                                                          ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#suaCode2011
+asgs-id:suaCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "suaCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#suaCode2016
+asgs-id:suaCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "suaCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#suaName2011
+asgs-id:suaName2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "suaName2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#suaName2016
+asgs-id:suaName2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "suaName2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#trCode2011
+asgs-id:trCode2011 rdf:type rdfs:Datatype ;
+                   rdfs:label "trCode2011" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#trCode2012
+asgs-id:trCode2012 rdf:type rdfs:Datatype ;
+                   rdfs:label "trCode2012" ;
+                   owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:string ;
+                                         owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                ]
+                                                              )
+                                       ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#uclCode2011
+asgs-id:uclCode2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "uclCode2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#uclCode2016
+asgs-id:uclCode2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "uclCode2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:pattern "([0-9])+"
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#uclName2011
+asgs-id:uclName2011 rdf:type rdfs:Datatype ;
+                    rdfs:label "uclName2011" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  http://linked.data.gov.au/def/asgs/id#uclName2016
+asgs-id:uclName2016 rdf:type rdfs:Datatype ;
+                    rdfs:label "uclName2016" ;
+                    owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:maxLength 100
+                                                                 ]
+                                                               )
+                                        ] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

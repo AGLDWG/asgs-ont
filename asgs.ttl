@@ -57,7 +57,7 @@
                                       dct:contributor <https://orcid.org/0000-0002-3884-3420> ,
                                                       <https://orcid.org/0000-0002-8742-7730> ;
                                       dct:creator <https://orcid.org/0000-0002-4305-6085> ;
-                                      dct:modified "2019-11-08" ;
+                                      dct:modified "2020-01-14" ;
                                       dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> .
 
 #################################################################
@@ -173,7 +173,12 @@ dct:type rdf:type owl:DatatypeProperty .
 
 ###  http://linked.data.gov.au/def/asgs#AustralianDrainageDivision
 asgs:AustralianDrainageDivision rdf:type owl:Class ;
-                                rdfs:subClassOf asgs:Feature ;
+                                rdfs:subClassOf asgs:Feature ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty asgs:contains ;
+                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass asgs:MeshBlock
+                                                ] ;
                                 dc:description "Australian Drainage Divisions (ADD) are an ABS approximation of Bureau of Meteorology Drainage Divisions. Drainage Divisions are defined by major landscape features and climatic zones to form broad hydrological regions as represented in the Australian Hydrological Geospatial Fabric (Geofabric) 2014 version 2 developed by the Bureau of Meteorology. ADDs are approximated using one or more Mesh Blocks (MBs). ADDs can cross State and Territory (S/T) boundaries. ADDs cover the whole of geographic Australia without gaps or overlaps. The ADDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                                 rdfs:label "Australian Drainage Division" .
@@ -181,7 +186,17 @@ asgs:AustralianDrainageDivision rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision
 asgs:CommonwealthElectoralDivision rdf:type owl:Class ;
-                                   rdfs:subClassOf asgs:Feature ;
+                                   rdfs:subClassOf asgs:Feature ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty asgs:contains ;
+                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass asgs:StatisticalAreaLevel1
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty asgs:within ;
+                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass asgs:StateOrTerritory
+                                                   ] ;
                                    dc:description "Commonwealth Electoral Divisions (CED) are an ABS approximation of Australian Electoral Commission (AEC) electoral division boundaries. An Australian Electoral Commission electoral division boundary is an area legally prescribed for the purpose of returning one member to the House of Representatives Australia's Federal Lower House of Parliament. Commonwealth Electoral Divisions may change as the Australian Electoral Commission revise their boundaries. Where the Australian Electoral Commission revise their boundaries the CEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures. CEDs are approximated using whole Statistical Areas Level 1 (SA1s). CEDs cover the whole of Australia without gaps or overlaps.The CEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                                    rdfs:label "Commonwealth Electoral Division" .
@@ -198,7 +213,17 @@ asgs:Country rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#DestinationZone
 asgs:DestinationZone rdf:type owl:Class ;
-                     rdfs:subClassOf asgs:Feature ;
+                     rdfs:subClassOf asgs:Feature ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty asgs:contains ;
+                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass asgs:MeshBlock
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty asgs:within ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass asgs:StatisticalAreaLevel2
+                                     ] ;
                      dc:description "Destination Zones (DZN) are geographic areas primarily used for the analysis of Census Place of Work data. They are designed to represent the distribution of workplaces rather than residential dwellings. This means there is greater spatial detail in areas with high concentrations of workplaces. DZNs are jointly developed between the ABS and each State or Territory Transport Authority. DZNs are built from whole Mesh Blocks (MB) and aggregate to Statistical Areas Level 2 (SA2s). DZNs cover the whole of Australia without gaps or overlaps. The DZN regions are not an Australian Statistical Geography Standard (ASGS) structure however the ABS publishes Census data on these areas. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                      rdfs:label "DestinationZone" .
@@ -273,7 +298,17 @@ asgs:IndigenousRegion rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#LocalGovernmentArea
 asgs:LocalGovernmentArea rdf:type owl:Class ;
-                         rdfs:subClassOf asgs:Feature ;
+                         rdfs:subClassOf asgs:Feature ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty asgs:contains ;
+                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass asgs:MeshBlock
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty asgs:within ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass asgs:StateOrTerritory
+                                         ] ;
                          dc:description "Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as Ã¢â‚¬ËœUnincorporatedÃ¢â‚¬â„¢ in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics." ,
                                         "Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as â€˜Unincorporatedâ€™ in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics." ;
                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -303,7 +338,17 @@ asgs:MeshblockCategory rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion
 asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
-                                     rdfs:subClassOf asgs:Feature ;
+                                     rdfs:subClassOf asgs:Feature ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty asgs:contains ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass asgs:MeshBlock
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty asgs:within ;
+                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass asgs:StateOrTerritory
+                                                     ] ;
                                      dc:description "Natural Resource Management Regions (NRMR) are an ABS approximation of Natural Resource Management regions (NRMs) which are defined through the Australian Government National Landcare Program. They are administrative regions primarily used by the Department of the Environment and Energy and the Department of Agriculture and Water Resources who share responsibility for delivery of the Australian Government's environment and sustainable agriculture programs which are broadly referred to as Natural Resource Management (NRM). NRMRs change occasionally as States and Territories revise their boundaries. NRMRs are approximated using one or more Mesh Blocks (MBs). NRMRs do not cross State and Territory (S/T) boundaries except for Jervis Bay which is included in a NSW region. NRMRs cover the whole of geographic Australia without gaps or overlaps. The NRMRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                                      rdfs:label "Natural Resource Management Region" .
@@ -311,7 +356,12 @@ asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#PostalArea
 asgs:PostalArea rdf:type owl:Class ;
-                rdfs:subClassOf asgs:Feature ;
+                rdfs:subClassOf asgs:Feature ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty asgs:contains ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass asgs:MeshBlock
+                                ] ;
                 dc:description "Postal Areas (POAs) are an ABS approximation of postcodes created to enable the release of ABS data on areas that as closely as possible approximate postcodes. This enables the comparison of ABS data with other data that has been collected using postcodes as the geographic reference. POAs exclude non-mappable Australia Post postcodes such as: post office box postcodes some delivery route postcodes which are also covered by other postcodes (a situation which often occurs in rural areas).POAs are approximated using one or more Mesh Blocks (MBs). POAs cover the whole of geographic Australia without gaps or overlaps. The POAs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                 rdfs:label "Postal area" .
@@ -366,7 +416,17 @@ asgs:SignificantUrbanArea rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#StateElectoralDivision
 asgs:StateElectoralDivision rdf:type owl:Class ;
-                            rdfs:subClassOf asgs:Feature ;
+                            rdfs:subClassOf asgs:Feature ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty asgs:contains ;
+                                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass asgs:StatisticalAreaLevel1
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty asgs:within ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass asgs:StateOrTerritory
+                                            ] ;
                             dc:description "State Electoral Divisions (SED) are an ABS approximation of State Electoral Districts. A State Electoral District is an area legally prescribed for the purpose of returning one or more members to the State or Territory Lower Houses of Parliament or the relevant equivalent. State Electoral Divisions may change as State or Territory authorities revise their boundaries. Where the Australian Electoral Commission revise their boundaries the SEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures.SEDs are approximated using whole Statistical Areas Level 1 (SA1s). SEDs do not cross State and Territory (S/T) boundaries and they cover the whole of Australia without gaps or overlaps. The Other Territories (OT) of Jervis Bay Norfolk Island Christmas Island and the Cocos (Keeling) Islands are allocated to 'Unclassified (OT)'. The SEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                             rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                             rdfs:label "State Electoral Division" .
@@ -387,7 +447,17 @@ asgs:StateOrTerritory rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#StateSuburb
 asgs:StateSuburb rdf:type owl:Class ;
-                 rdfs:subClassOf asgs:Feature ;
+                 rdfs:subClassOf asgs:Feature ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:contains ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass asgs:MeshBlock
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:within ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass asgs:StateOrTerritory
+                                 ] ;
                  dc:description "State Suburbs (SSC) are an ABS approximation of localities gazetted by the Geographical Place Name authority in each State and Territory (S/T). Gazetted Localities are the officially recognised boundaries of suburbs (in cities and larger towns) and localities (outside cities and larger towns). Gazetted Localities cover most of Australia. Presently there remain areas of rural South Australia and rural Australian Capital Territory for which Gazetted Localities remain undefined. Various islands offshore from New South Wales Victoria and Tasmania and some inshore water areas and islands are also undefined. Since 1996 Locality boundaries have been formalised for most areas of Australia through a program coordinated by the Permanent Committee on Place Names (PCPN) under the umbrella of the Intergovernmental Committee On Surveying and Mapping (ISCM). Areas where localities are not gazetted are represented by Remainder SSCs.SSCs are approximated using one or more Mesh Blocks (MBs). SSCs cover the whole of geographic Australia without gaps or overlaps including the Remainder SSCs.The SSCs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                  rdfs:label "State Suburb" .
@@ -472,7 +542,12 @@ asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#TourismRegion
 asgs:TourismRegion rdf:type owl:Class ;
-                   rdfs:subClassOf asgs:Feature ;
+                   rdfs:subClassOf asgs:Feature ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty asgs:contains ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass asgs:StatisticalAreaLevel2
+                                   ] ;
                    dc:description "Tourism Regions (TR) are an ABS approximation of Tourism Regions provided by Tourism Research Australia (TRA). They are administrative regions primarily used by Tourism Research Australia for research and policy purposes.TRs are approximated using whole Statistical Areas Level 2 (SA2s). As of 2016 TRs do not cross State and Territory (S/T) boundaries and there are no TRs for the Other Territories (OT). The TRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                    rdfs:label "Tourism Region" .

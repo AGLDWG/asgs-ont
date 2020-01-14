@@ -2,7 +2,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms:erms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -54,11 +54,11 @@
                                       dc:publisher "Australian Bureau of Statistics" ;
                                       dc:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                       dc:title "ASGS Ontology" ;
-                                      dct:contributor <https://orcid.org/0000-0002-3884-3420> ,
+                                      dcterms:erms:contributor <https://orcid.org/0000-0002-3884-3420> ,
                                                       <https://orcid.org/0000-0002-8742-7730> ;
-                                      dct:creator <https://orcid.org/0000-0002-4305-6085> ;
-                                      dct:modified "2020-01-14" ;
-                                      dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> .
+                                      dcterms:erms:creator <https://orcid.org/0000-0002-4305-6085> ;
+                                      dcterms:erms:modified "2020-01-14" ;
+                                      dcterms:erms:publisher <http://catalogue.linked.data.gov.au/org/O-000928> .
 
 #################################################################
 #    Annotation properties
@@ -104,7 +104,7 @@ dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-dct:modified rdf:type owl:AnnotationProperty .
+dcterms:erms:modified rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
@@ -117,7 +117,7 @@ rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
 ###  http://linked.data.gov.au/def/asgs#category
 asgs:category rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf dct:type ;
+              rdfs:subPropertyOf dcterms:erms:type ;
               rdfs:domain asgs:MeshBlock ;
               rdfs:range asgs:MeshblockCategory ;
               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -147,7 +147,7 @@ asgs:within rdf:type owl:ObjectProperty ;
 
 ###  http://linked.data.gov.au/def/asgs#code
 asgs:code rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf dct:identifier ;
+          rdfs:subPropertyOf dcterms:erms:identifier ;
           rdfs:domain asgs:Feature ;
           rdfs:range xsd:string ;
           rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -160,11 +160,11 @@ asgs:label rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/identifier
-dct:identifier rdf:type owl:DatatypeProperty .
+dcterms:erms:identifier rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/type
-dct:type rdf:type owl:DatatypeProperty .
+dcterms:erms:type rdf:type owl:DatatypeProperty .
 
 
 #################################################################

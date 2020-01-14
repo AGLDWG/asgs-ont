@@ -5,7 +5,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:sf="http://www.opengis.net/ont/sf#"
     xmlns:void="http://rdfs.org/ns/void#"
-    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dcterms:="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -15,8 +15,8 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://linked.data.gov.au/def/asgs">
   <owl:Ontology rdf:about="">
-    <dct:contributor rdf:resource="https://orcid.org/0000-0002-8742-7730"/>
-    <dct:publisher rdf:resource="http://catalogue.linked.data.gov.au/org/O-000928"/>
+    <dcterms::contributor rdf:resource="https://orcid.org/0000-0002-8742-7730"/>
+    <dcterms::publisher rdf:resource="http://catalogue.linked.data.gov.au/org/O-000928"/>
     <dc:date>2018-11-23</dc:date>
     <dc:rights>Copyright 2018 Australian Bureau of Statistics.</dc:rights>
     <dc:contributor>Nicholas Car, Surround Australia</dc:contributor>
@@ -54,9 +54,9 @@
   &lt;li&gt;http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties&lt;/li&gt;&#xD;
 &lt;/u&gt;</dc:description>
     <dc:creator>Laurent Lefort, Australian Bureau of Statistics</dc:creator>
-    <dct:contributor rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
-    <dct:modified>2020-01-14</dct:modified>
-    <dct:creator rdf:resource="https://orcid.org/0000-0002-4305-6085"/>
+    <dcterms::contributor rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
+    <dcterms::modified>2020-01-14</dcterms::modified>
+    <dcterms::creator rdf:resource="https://orcid.org/0000-0002-4305-6085"/>
     <dc:title>ASGS Ontology</dc:title>
     <dc:publisher>Australian Bureau of Statistics</dc:publisher>
   </owl:Ontology>

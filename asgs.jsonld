@@ -227,7 +227,7 @@
     "rights" : "Copyright 2018 Australian Bureau of Statistics.",
     "title" : "ASGS Ontology",
     "contributor" : [ "https://orcid.org/0000-0002-8742-7730", "https://orcid.org/0000-0002-3884-3420" ],
-    "dct:creator" : {
+    "dcterms::creator" : {
       "@id" : "https://orcid.org/0000-0002-4305-6085"
     },
     "modified" : "2020-01-14",
@@ -429,7 +429,7 @@
     "label" : "category",
     "range" : "asgs:MeshblockCategory",
     "seeAlso" : "asgs:MeshBlock",
-    "subPropertyOf" : "dct:type"
+    "subPropertyOf" : "dcterms::type"
   }, {
     "@id" : "asgs:code",
     "@type" : "owl:DatatypeProperty",
@@ -438,7 +438,7 @@
     "label" : "code",
     "range" : "xsd:string",
     "seeAlso" : "asgs:Feature",
-    "subPropertyOf" : "dct:identifier"
+    "subPropertyOf" : "dcterms::identifier"
   }, {
     "@id" : "asgs:contains",
     "@type" : "owl:ObjectProperty",
@@ -487,13 +487,13 @@
     "@id" : "dc:title",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "dct:identifier",
+    "@id" : "dcterms::identifier",
     "@type" : "owl:DatatypeProperty"
   }, {
-    "@id" : "dct:modified",
+    "@id" : "dcterms::modified",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "dct:type",
+    "@id" : "dcterms::type",
     "@type" : "owl:DatatypeProperty"
   }, {
     "@id" : "rdfs:isDefinedBy",
@@ -595,7 +595,7 @@
     "geo" : "http://www.opengis.net/ont/geosparql#",
     "sf" : "http://www.opengis.net/ont/sf#",
     "asgs" : "http://linked.data.gov.au/def/asgs#",
-    "dct" : "http://purl.org/dc/terms/",
+    "dcterms:" : "http://purl.org/dc/terms/",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xml" : "http://www.w3.org/XML/1998/namespace",
     "dc" : "http://purl.org/dc/elements/1.1/"

@@ -2,7 +2,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms:: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -17,20 +17,20 @@
 
 <http://linked.data.gov.au/def/asgs-code> rdf:type owl:Ontology ;
                                            owl:imports <http://linked.data.gov.au/def/asgs> ;
-                                           dct:contributor <https://orcid.org/0000-0002-3884-3420> ,
+                                           dcterms::contributor <https://orcid.org/0000-0002-3884-3420> ,
                                                            "Simon J D Cox, CSIRO" ;
-                                           dct:created "2019-12-11" ;
-                                           dct:creator <https://orcid.org/0000-0002-4305-6085> ,
+                                           dcterms::created "2019-12-11" ;
+                                           dcterms::creator <https://orcid.org/0000-0002-4305-6085> ,
                                                        "Laurent Lefort, Australian Bureau of Statistics" ;
-                                           dct:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
+                                           dcterms::description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
                     <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
 					<p>Properties for specific codes and names</p>
 """^^rdf:HTML ;
-                                           dct:modified "2019-12-11" ;
-                                           dct:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
+                                           dcterms::modified "2019-12-11" ;
+                                           dcterms::publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
                                                          "Australian Bureau of Statistics" ;
-                                           dct:rights "Copyright 2018 Australian Bureau of Statistics." ;
-                                           dct:title "ASGS Ontology - code properties" ;
+                                           dcterms::rights "Copyright 2018 Australian Bureau of Statistics." ;
+                                           dcterms::title "ASGS Ontology - code properties" ;
                                            owl:deprecated "true"^^xsd:boolean .
 
 #################################################################
@@ -38,35 +38,35 @@
 #################################################################
 
 ###  http://purl.org/dc/terms/contributor
-dct:contributor rdf:type owl:AnnotationProperty .
+dcterms::contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
-dct:created rdf:type owl:AnnotationProperty .
+dcterms::created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-dct:creator rdf:type owl:AnnotationProperty .
+dcterms::creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-dct:description rdf:type owl:AnnotationProperty .
+dcterms::description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-dct:modified rdf:type owl:AnnotationProperty .
+dcterms::modified rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/publisher
-dct:publisher rdf:type owl:AnnotationProperty .
+dcterms::publisher rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/rights
-dct:rights rdf:type owl:AnnotationProperty .
+dcterms::rights rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-dct:title rdf:type owl:AnnotationProperty .
+dcterms::title rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -141,7 +141,7 @@ asgs:ausCode2016 rdf:type owl:DatatypeProperty ;
 
 ###  http://linked.data.gov.au/def/asgs#code
 asgs:code rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf dct:identifier ;
+          rdfs:subPropertyOf dcterms::identifier ;
           rdfs:domain asgs:Feature ;
           rdfs:range xsd:string ;
           rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs-code> ;
@@ -1012,7 +1012,7 @@ asgs:uclName2016 rdf:type owl:DatatypeProperty ;
 
 
 ###  http://purl.org/dc/terms/identifier
-dct:identifier rdf:type owl:DatatypeProperty .
+dcterms::identifier rdf:type owl:DatatypeProperty .
 
 
 #################################################################

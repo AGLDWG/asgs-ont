@@ -1,3 +1,4 @@
+![ABS Logo](./images/ABS_Logo_333.svg)
 # ASGS Ontology
 Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE)
 

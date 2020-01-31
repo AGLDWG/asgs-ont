@@ -1,149 +1,86 @@
-@prefix : <http://linked.data.gov.au/def/asgs-cat#> .
+# baseURI: http://linked.data.gov.au/def/asgs-cat
+# imports: http://linked.data.gov.au/def/asgs
+
+@prefix asgs: <http://linked.data.gov.au/def/asgs#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix sf: <http://www.opengis.net/ont/sf#> .
-@prefix dcterms:: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mbcat: <http://linked.data.gov.au/def/asgs-cat/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix asgs: <http://linked.data.gov.au/def/asgs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
-@prefix mbcat: <http://linked.data.gov.au/def/asgs-cat/> .
-@prefix schema: <http://schema.org/> .
-@base <http://linked.data.gov.au/def/asgs-cat> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://linked.data.gov.au/def/asgs-cat> rdf:type owl:Ontology ;
-                                          owl:imports <http://linked.data.gov.au/def/asgs> ;
-                                          dcterms::contributor <https://orcid.org/0000-0002-3884-3420> ,
-                                                          "Simon J D Cox, CSIRO" ;
-                                          dcterms::created "2019-12-11" ;
-                                          dcterms::creator <https://orcid.org/0000-0002-4305-6085> ,
-                                                      "Laurent Lefort, Australian Bureau of Statistics" ;
-                                          dcterms::description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
-                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
-					<p>Meshblock categories</p>
-"""^^rdf:HTML ;
-                                          dcterms::modified "2019-12-11" ;
-                                          dcterms::publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
-                                                        "Australian Bureau of Statistics" ;
-                                          dcterms::rights "Copyright 2018 Australian Bureau of Statistics." ;
-                                          dcterms::source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> ;
-                                          dcterms::title "ASGS Ontology - meshblock categories" .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/contributor
-dcterms::contributor rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-dcterms::created rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/creator
-dcterms::creator rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-dcterms::description rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
-dcterms::modified rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/publisher
-dcterms::publisher rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/rights
-dcterms::rights rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/source
-dcterms::source rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dcterms::title rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://linked.data.gov.au/def/asgs#MeshblockCategory
-asgs:MeshblockCategory rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://linked.data.gov.au/def/asgs-cat/commercial
-mbcat:commercial rdf:type owl:NamedIndividual ,
-                          asgs:MeshblockCategory ;
-                 rdfs:label "commercial" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/education
-mbcat:education rdf:type owl:NamedIndividual ,
-                         asgs:MeshblockCategory ;
-                rdfs:label "education" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/hospital-medical
-mbcat:hospital-medical rdf:type owl:NamedIndividual ,
-                                asgs:MeshblockCategory ;
-                       rdfs:label "hospital/medical" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/industrial
-mbcat:industrial rdf:type owl:NamedIndividual ,
-                          asgs:MeshblockCategory ;
-                 rdfs:label "industrial" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/other
-mbcat:other rdf:type owl:NamedIndividual ,
-                     asgs:MeshblockCategory ;
-            rdfs:label "other" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/parkland
-mbcat:parkland rdf:type owl:NamedIndividual ,
-                        asgs:MeshblockCategory ;
-               rdfs:label "parkland" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/primary-production
-mbcat:primary-production rdf:type owl:NamedIndividual ,
-                                  asgs:MeshblockCategory ;
-                         rdfs:label "primary production" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/residential
-mbcat:residential rdf:type owl:NamedIndividual ,
-                           asgs:MeshblockCategory ;
-                  rdfs:label "residential" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/transport
-mbcat:transport rdf:type owl:NamedIndividual ,
-                         asgs:MeshblockCategory ;
-                rdfs:label "transport" .
-
-
-###  http://linked.data.gov.au/def/asgs-cat/water
-mbcat:water rdf:type owl:NamedIndividual ,
-                     asgs:MeshblockCategory ;
-            rdfs:label "water" .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+asgs:MeshblockCategory
+  a owl:Class ;
+.
+<http://linked.data.gov.au/def/asgs-cat>
+  a owl:Ontology ;
+  dcterms:created "2019-12-11"^^xsd:date ;
+  dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ;
+  dcterms:description """<p>Meshblock categories <a href='https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012'>as defined by ABS</a>.</p>
+<p>For use with the <a href='http://linked.data.gov.au/def/asgs'>Australian Statistical Geography Standard (ASGS) ontology</a>.</p>"""^^rdf:HTML ;
+  dcterms:modified "2020-01-31"^^xsd:date ;
+  dcterms:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ;
+  dcterms:publisher "Australian Bureau of Statistics" ;
+  dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
+  dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> ;
+  dcterms:title "ASGS Ontology - meshblock categories" ;
+  owl:imports <http://linked.data.gov.au/def/asgs> ;
+.
+mbcat:commercial
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "commercial" ;
+.
+mbcat:education
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "education" ;
+.
+mbcat:hospital-medical
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "hospital/medical" ;
+.
+mbcat:industrial
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "industrial" ;
+.
+mbcat:other
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "other" ;
+.
+mbcat:parkland
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "parkland" ;
+.
+mbcat:primary-production
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "primary production" ;
+.
+mbcat:residential
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "residential" ;
+.
+mbcat:transport
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "transport" ;
+.
+mbcat:water
+  a asgs:MeshblockCategory ;
+  a owl:NamedIndividual ;
+  rdfs:label "water" ;
+.

@@ -608,7 +608,7 @@ rdf:type rdfs:Datatype ;
 owl:onDatatype xsd:string ; 
       owl:withRestrictions (
           [
-            xsd:pattern \"([0-9])+\" ;
+            xsd:pattern \"[0-9]+\" ;
           ]
         ) ;
 ]  ; .}
@@ -649,7 +649,7 @@ asgs-id:addCode2011
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -663,7 +663,7 @@ asgs-id:addCode2016
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -704,7 +704,7 @@ asgs-id:ausCode2011
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -717,7 +717,7 @@ asgs-id:ausCode2016
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -730,7 +730,7 @@ asgs-id:dzn5dig11
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -743,7 +743,7 @@ asgs-id:dznCode11
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -764,7 +764,7 @@ S/T	SA2	DZN
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "9"^^xsd:nonNegativeInteger ;
@@ -942,7 +942,7 @@ The codes used for the 2016 Indigenous Areas may not match those used in 2011 in
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "6"^^xsd:nonNegativeInteger ;
@@ -979,7 +979,7 @@ The codes used for the 2016 Indigenous Areas may not match those used in 2011 in
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "6"^^xsd:nonNegativeInteger ;
@@ -1048,7 +1048,7 @@ The codes used for the 2016 Indigenous Locations may not match those used in 201
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "8"^^xsd:nonNegativeInteger ;
@@ -1085,7 +1085,7 @@ The codes used for the 2016 Indigenous Locations may not match those used in 201
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "8"^^xsd:nonNegativeInteger ;
@@ -1154,7 +1154,7 @@ The codes used for the 2016 Indigenous Areas may not match those used in 2011 in
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "6"^^xsd:nonNegativeInteger ;
@@ -1187,7 +1187,7 @@ The codes used for the 2016 Indigenous Regions may not match those used in 2011 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -1220,7 +1220,7 @@ The codes used for the 2016 Indigenous Regions may not match those used in 2011 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -1253,7 +1253,7 @@ The codes used for the 2016 Indigenous Regions may not match those used in 2011 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -1324,7 +1324,7 @@ Queensland	3	39499	No usual address (Qld)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -1381,7 +1381,7 @@ Within each State and Territory, the Mesh Block identifier range 0000000000 to 9
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "11"^^xsd:nonNegativeInteger ;
@@ -1408,7 +1408,7 @@ Within each State and Territory, the Mesh Block identifier range 0000000000 to 9
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "11"^^xsd:nonNegativeInteger ;
@@ -1425,7 +1425,7 @@ asgs-id:nrmrCode2011
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -1439,7 +1439,7 @@ asgs-id:nrmrCode2016
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -1481,7 +1481,7 @@ asgs-id:poaCode2011
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -1498,7 +1498,7 @@ asgs-id:poaCode2016
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -1557,7 +1557,7 @@ State or Territory Code	State or Territory Name	Remoteness Area Category	Remoten
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "2"^^xsd:nonNegativeInteger ;
@@ -1588,7 +1588,7 @@ State or Territory Code	State or Territory Name	Remoteness Area Category	Remoten
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "2"^^xsd:nonNegativeInteger ;
@@ -1688,7 +1688,7 @@ Within each SA2, the SA1 identifier is in the data range 01 to 99.""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length 11 ;
@@ -1732,7 +1732,7 @@ Within each SA2, the SA1 identifier is in the data range 01 to 99.""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "11"^^xsd:nonNegativeInteger ;
@@ -1776,7 +1776,7 @@ Within each State and Territory, the SA2 identifier is in the data range 0001-79
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "9"^^xsd:nonNegativeInteger ;
@@ -1820,7 +1820,7 @@ Within each State and Territory, the SA2 identifier is in the data range 0001-79
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "9"^^xsd:nonNegativeInteger ;
@@ -1942,7 +1942,7 @@ Within each State and Territory, the SA3 identifier is in the data range 01-79. 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -1974,7 +1974,7 @@ Within each State and Territory, the SA3 identifier is in the data range 01-79. 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -2085,7 +2085,7 @@ Within each State and Territory, the SA4 identifier is in the range 01- 79. SA4 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -2118,7 +2118,7 @@ Within each State and Territory, the SA4 identifier is in the range 01- 79. SA4 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -2264,7 +2264,7 @@ No usual address (NSW)
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "2"^^xsd:nonNegativeInteger ;
@@ -2345,7 +2345,7 @@ No usual address (ACT)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -2473,7 +2473,7 @@ This""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -2601,7 +2601,7 @@ This""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -2675,7 +2675,7 @@ No usual address (NSW)
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "2"^^xsd:nonNegativeInteger ;
@@ -2749,7 +2749,7 @@ No usual address (NSW)
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "2"^^xsd:nonNegativeInteger ;
@@ -2866,7 +2866,7 @@ No usual address (ACT)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -2947,7 +2947,7 @@ No usual address (ACT)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -3000,7 +3000,7 @@ asgs-id:sscCode2016
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -3041,7 +3041,7 @@ Code	S/T
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([1-9])" ;
+            xsd:pattern "[1-9]" ;
           ]
         ) ;
     ] ;
@@ -3068,7 +3068,7 @@ Code	S/T
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([1-9])" ;
+            xsd:pattern "[1-9]" ;
           ]
         ) ;
     ] ;
@@ -3133,7 +3133,7 @@ Code	S/T
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([1-9])" ;
+            xsd:pattern "[1-9]" ;
           ]
         ) ;
     ] ;
@@ -3190,7 +3190,7 @@ Within each SA2, the SA1 identifier is in the data range 01 to 99.""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length 11 ;
@@ -3234,7 +3234,7 @@ Within each State and Territory, the SA2 identifier is in the data range 0001-79
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "9"^^xsd:nonNegativeInteger ;
@@ -3266,7 +3266,7 @@ Within each State and Territory, the SA3 identifier is in the data range 01-79. 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "5"^^xsd:nonNegativeInteger ;
@@ -3299,7 +3299,7 @@ Within each State and Territory, the SA4 identifier is in the range 01- 79. SA4 
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "3"^^xsd:nonNegativeInteger ;
@@ -3336,7 +3336,7 @@ Not in a Significant Urban Area (ACT)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "4"^^xsd:nonNegativeInteger ;
@@ -3373,7 +3373,7 @@ Not in a Significant Urban Area (ACT)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "4"^^xsd:nonNegativeInteger ;
@@ -3468,7 +3468,7 @@ asgs-id:trCode2011
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -3482,7 +3482,7 @@ asgs-id:trCode2012
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -3561,7 +3561,7 @@ No usual address (Vic.)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -3570,7 +3570,7 @@ No usual address (Vic.)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "6"^^xsd:nonNegativeInteger ;
@@ -3652,7 +3652,7 @@ No usual address (Vic.)""" ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "([0-9])+" ;
+            xsd:pattern "[0-9]+" ;
           ]
           [
             xsd:length "6"^^xsd:nonNegativeInteger ;

@@ -22,25 +22,25 @@ asgs:AustralianDrainageDivision
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:addName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:addName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:addCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:addCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:DestinationZone
@@ -48,19 +48,19 @@ asgs:DestinationZone
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:dzn5dig11 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:dznCode11 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:dznCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:GreaterCapitalCityStatisticalArea
@@ -68,31 +68,31 @@ asgs:GreaterCapitalCityStatisticalArea
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:gccsaName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:gccsaName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:gccsaCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:gccsaCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:IndigenousArea
@@ -100,31 +100,31 @@ asgs:IndigenousArea
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:iareName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:iareName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:iareCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:iareCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:indigenousAreas6DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:IndigenousLocation
@@ -132,25 +132,25 @@ asgs:IndigenousLocation
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:ilocName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:ilocName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:ilocCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:ilocCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:IndigenousRegion
@@ -158,31 +158,31 @@ asgs:IndigenousRegion
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:iregName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:iregName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:indigenousRegions3DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:iregCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:iregCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:LocalGovernmentArea
@@ -190,13 +190,13 @@ asgs:LocalGovernmentArea
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:lgaName2012 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:lgaCode2012 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:MeshBlock
@@ -204,13 +204,13 @@ asgs:MeshBlock
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:mbCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:mbCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:NaturalResourceManagementRegion
@@ -218,25 +218,25 @@ asgs:NaturalResourceManagementRegion
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:nrmrName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:nrmrName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:nrmrCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:nrmrCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:PostalArea
@@ -244,25 +244,25 @@ asgs:PostalArea
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:poaName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:poaName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:poaCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:poaCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:RemotenessArea
@@ -270,25 +270,25 @@ asgs:RemotenessArea
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:raName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:raName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:raCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:raCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:SectionOfState
@@ -296,31 +296,31 @@ asgs:SectionOfState
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sosName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sosName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sectionOfState2DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sosCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sosCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:SectionOfStateRange
@@ -328,31 +328,31 @@ asgs:SectionOfStateRange
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sosrName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sosrName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sectionOfStateRange3DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sosrCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sosrCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:SignificantUrbanArea
@@ -360,25 +360,25 @@ asgs:SignificantUrbanArea
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:suaName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:suaName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:suaCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:suaCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:StateElectoralDivision
@@ -386,19 +386,19 @@ asgs:StateElectoralDivision
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:stateelectoraldivisionIdentifier ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sedCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sedCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:StateOrTerritory
@@ -406,31 +406,31 @@ asgs:StateOrTerritory
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:stateName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:stateName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:stateCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:stateCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:stateOrTerritory1DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:StatisticalAreaLevel1
@@ -438,19 +438,19 @@ asgs:StatisticalAreaLevel1
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa1Maincode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa1Maincode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:statisticalArea1Sa111DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:StatisticalAreaLevel2
@@ -458,31 +458,31 @@ asgs:StatisticalAreaLevel2
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sa2Name2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sa2Name2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa2Maincode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa2Maincode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:statisticalArea2Sa29DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:StatisticalAreaLevel3
@@ -490,31 +490,31 @@ asgs:StatisticalAreaLevel3
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sa3Name2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sa3Name2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa3Code2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa3Code2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:statisticalArea3Sa35DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:StatisticalAreaLevel4
@@ -522,31 +522,31 @@ asgs:StatisticalAreaLevel4
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sa4Name2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:sa4Name2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa4Code2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:sa4Code2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:statisticalArea4Sa43DigitCode ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:TourismRegion
@@ -554,13 +554,13 @@ asgs:TourismRegion
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:trCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:trCode2012 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 asgs:UrbanCentreAndLocality
@@ -568,25 +568,25 @@ asgs:UrbanCentreAndLocality
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:uclName2011 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs-id:uclName2016 ;
-      owl:onProperty rdfs:label ;
+      owl:onProperty asgs:label ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:uclCode2011 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onDataRange asgs-id:uclCode2016 ;
-      owl:onProperty dcterms:identifier ;
+      owl:onProperty asgs:code ;
     ] ;
 .
 <http://linked.data.gov.au/def/asgs-id>

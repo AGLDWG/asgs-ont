@@ -49,8 +49,9 @@
   <li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>
   <li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by the generic 'within' and 'contains' relations</li>
   <li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>
+  <li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>
 </u>"""^^rdf:HTML ;
-                                      dcterms:modified "2020-01-14" ;
+                                      dcterms:modified "2020-02-03" ;
                                       dcterms:publisher "<a href='http://catalogue.linked.data.gov.au/org/O-000928'>Australian Bureau of Statistics</a>"^^rdf:HTML ;
                                       dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                       dcterms:source <https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)> ;
@@ -59,13 +60,6 @@
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://linked.data.gov.au/def/asgs#label
-asgs:label rdf:type owl:AnnotationProperty ;
-           rdfs:subPropertyOf rdfs:label ;
-           rdfs:range xsd:string ;
-           rdfs:domain asgs:Feature .
-
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:AnnotationProperty .
@@ -112,52 +106,8 @@ rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Object Properties
-#################################################################
-
-###  http://linked.data.gov.au/def/asgs#category
-asgs:category rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf dcterms:type ;
-              rdfs:domain asgs:MeshBlock ;
-              rdfs:range asgs:MeshblockCategory ;
-              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-              rdfs:label "category" ;
-              rdfs:seeAlso asgs:MeshBlock .
-
-
-###  http://linked.data.gov.au/def/asgs#contains
-asgs:contains rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf geo:sfContains ;
-              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-              rdfs:label "contains" ;
-              rdfs:seeAlso asgs:Feature .
-
-
-###  http://linked.data.gov.au/def/asgs#within
-asgs:within rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf geo:sfWithin ;
-            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-            rdfs:label "is within" ;
-            rdfs:seeAlso asgs:Feature .
-
-
-#################################################################
 #    Data properties
 #################################################################
-
-###  http://linked.data.gov.au/def/asgs#code
-asgs:code rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf dcterms:identifier ;
-          rdfs:domain asgs:Feature ;
-          rdfs:range xsd:string ;
-          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-          rdfs:label "code" ;
-          rdfs:seeAlso asgs:Feature .
-
-
-###  http://linked.data.gov.au/def/asgs#label
-asgs:label rdf:type owl:DatatypeProperty .
-
 
 ###  http://purl.org/dc/terms/identifier
 dcterms:identifier rdf:type owl:DatatypeProperty .
@@ -175,7 +125,7 @@ dcterms:type rdf:type owl:DatatypeProperty .
 asgs:AustralianDrainageDivision rdf:type owl:Class ;
                                 rdfs:subClassOf asgs:Feature ,
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:onProperty asgs:contains ;
+                                                  owl:onProperty geo:sfContains ;
                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                   owl:onClass asgs:MeshBlock
                                                 ] ;
@@ -188,12 +138,12 @@ asgs:AustralianDrainageDivision rdf:type owl:Class ;
 asgs:CommonwealthElectoralDivision rdf:type owl:Class ;
                                    rdfs:subClassOf asgs:Feature ,
                                                    [ rdf:type owl:Restriction ;
-                                                     owl:onProperty asgs:contains ;
+                                                     owl:onProperty geo:sfContains ;
                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                      owl:onClass asgs:StatisticalAreaLevel1
                                                    ] ,
                                                    [ rdf:type owl:Restriction ;
-                                                     owl:onProperty asgs:within ;
+                                                     owl:onProperty geo:sfWithin ;
                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                      owl:onClass asgs:StateOrTerritory
                                                    ] ;
@@ -215,12 +165,12 @@ asgs:Country rdf:type owl:Class ;
 asgs:DestinationZone rdf:type owl:Class ;
                      rdfs:subClassOf asgs:Feature ,
                                      [ rdf:type owl:Restriction ;
-                                       owl:onProperty asgs:contains ;
+                                       owl:onProperty geo:sfContains ;
                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onClass asgs:MeshBlock
                                      ] ,
                                      [ rdf:type owl:Restriction ;
-                                       owl:onProperty asgs:within ;
+                                       owl:onProperty geo:sfWithin ;
                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onClass asgs:StatisticalAreaLevel2
                                      ] ;
@@ -233,11 +183,11 @@ asgs:DestinationZone rdf:type owl:Class ;
 asgs:Feature rdf:type owl:Class ;
              rdfs:subClassOf geo:Feature ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty asgs:contains ;
+                               owl:onProperty geo:sfContains ;
                                owl:allValuesFrom asgs:Feature
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty asgs:within ;
+                               owl:onProperty geo:sfWithin ;
                                owl:allValuesFrom asgs:Feature
                              ] ;
              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -248,7 +198,7 @@ asgs:Feature rdf:type owl:Class ;
 asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
                                        rdfs:subClassOf asgs:Feature ,
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty asgs:within ;
+                                                         owl:onProperty geo:sfWithin ;
                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                          owl:onClass asgs:StateOrTerritory
                                                        ] ;
@@ -261,7 +211,7 @@ asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
 asgs:IndigenousArea rdf:type owl:Class ;
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty asgs:within ;
+                                      owl:onProperty geo:sfWithin ;
                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onClass asgs:IndigenousRegion
                                     ] ;
@@ -274,7 +224,7 @@ asgs:IndigenousArea rdf:type owl:Class ;
 asgs:IndigenousLocation rdf:type owl:Class ;
                         rdfs:subClassOf asgs:Feature ,
                                         [ rdf:type owl:Restriction ;
-                                          owl:onProperty asgs:within ;
+                                          owl:onProperty geo:sfWithin ;
                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onClass asgs:IndigenousArea
                                         ] ;
@@ -287,7 +237,7 @@ asgs:IndigenousLocation rdf:type owl:Class ;
 asgs:IndigenousRegion rdf:type owl:Class ;
                       rdfs:subClassOf asgs:Feature ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty asgs:within ;
+                                        owl:onProperty geo:sfWithin ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass asgs:StateOrTerritory
                                       ] ;
@@ -300,12 +250,12 @@ asgs:IndigenousRegion rdf:type owl:Class ;
 asgs:LocalGovernmentArea rdf:type owl:Class ;
                          rdfs:subClassOf asgs:Feature ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty asgs:contains ;
+                                           owl:onProperty geo:sfContains ;
                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            owl:onClass asgs:MeshBlock
                                          ] ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty asgs:within ;
+                                           owl:onProperty geo:sfWithin ;
                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            owl:onClass asgs:StateOrTerritory
                                          ] ;
@@ -319,9 +269,14 @@ asgs:LocalGovernmentArea rdf:type owl:Class ;
 asgs:MeshBlock rdf:type owl:Class ;
                rdfs:subClassOf asgs:Feature ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty asgs:within ;
+                                 owl:onProperty geo:sfWithin ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass asgs:StatisticalAreaLevel1
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty dcterms:type ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange asgs:MeshblockCategory
                                ] ;
                dcterms:description "Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -330,22 +285,19 @@ asgs:MeshBlock rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#MeshblockCategory
 asgs:MeshblockCategory rdf:type owl:Class ;
-                       rdfs:subClassOf skos:Concept ;
-                       rdfs:comment "The class of meshblock categories, as defined in ASGS" ;
-                       rdfs:label "Meshblock category" ;
-                       rdfs:seeAlso <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> .
+                       rdfs:subClassOf skos:Concept .
 
 
 ###  http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion
 asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
                                      rdfs:subClassOf asgs:Feature ,
                                                      [ rdf:type owl:Restriction ;
-                                                       owl:onProperty asgs:contains ;
+                                                       owl:onProperty geo:sfContains ;
                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                        owl:onClass asgs:MeshBlock
                                                      ] ,
                                                      [ rdf:type owl:Restriction ;
-                                                       owl:onProperty asgs:within ;
+                                                       owl:onProperty geo:sfWithin ;
                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                        owl:onClass asgs:StateOrTerritory
                                                      ] ;
@@ -358,7 +310,7 @@ asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
 asgs:PostalArea rdf:type owl:Class ;
                 rdfs:subClassOf asgs:Feature ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty asgs:contains ;
+                                  owl:onProperty geo:sfContains ;
                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass asgs:MeshBlock
                                 ] ;
@@ -371,7 +323,7 @@ asgs:PostalArea rdf:type owl:Class ;
 asgs:RemotenessArea rdf:type owl:Class ;
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty asgs:within ;
+                                      owl:onProperty geo:sfWithin ;
                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onClass asgs:StateOrTerritory
                                     ] ;
@@ -384,7 +336,7 @@ asgs:RemotenessArea rdf:type owl:Class ;
 asgs:SectionOfState rdf:type owl:Class ;
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty asgs:within ;
+                                      owl:onProperty geo:sfWithin ;
                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onClass asgs:StateOrTerritory
                                     ] ;
@@ -397,7 +349,7 @@ asgs:SectionOfState rdf:type owl:Class ;
 asgs:SectionOfStateRange rdf:type owl:Class ;
                          rdfs:subClassOf asgs:Feature ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty asgs:within ;
+                                           owl:onProperty geo:sfWithin ;
                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            owl:onClass asgs:SectionOfState
                                          ] ;
@@ -418,12 +370,12 @@ asgs:SignificantUrbanArea rdf:type owl:Class ;
 asgs:StateElectoralDivision rdf:type owl:Class ;
                             rdfs:subClassOf asgs:Feature ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty asgs:contains ;
+                                              owl:onProperty geo:sfContains ;
                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onClass asgs:StatisticalAreaLevel1
                                             ] ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty asgs:within ;
+                                              owl:onProperty geo:sfWithin ;
                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onClass asgs:StateOrTerritory
                                             ] ;
@@ -436,7 +388,7 @@ asgs:StateElectoralDivision rdf:type owl:Class ;
 asgs:StateOrTerritory rdf:type owl:Class ;
                       rdfs:subClassOf asgs:Feature ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty asgs:within ;
+                                        owl:onProperty geo:sfWithin ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass asgs:Country
                                       ] ;
@@ -449,12 +401,12 @@ asgs:StateOrTerritory rdf:type owl:Class ;
 asgs:StateSuburb rdf:type owl:Class ;
                  rdfs:subClassOf asgs:Feature ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty asgs:contains ;
+                                   owl:onProperty geo:sfContains ;
                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass asgs:MeshBlock
                                  ] ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty asgs:within ;
+                                   owl:onProperty geo:sfWithin ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass asgs:StateOrTerritory
                                  ] ;
@@ -467,22 +419,22 @@ asgs:StateSuburb rdf:type owl:Class ;
 asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StatisticalAreaLevel2
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:IndigenousLocation
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:RemotenessArea
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:UrbanCentreAndLocality
                                            ] ;
@@ -495,12 +447,12 @@ asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
 asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StatisticalAreaLevel3
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:SignificantUrbanArea
                                            ] ;
@@ -513,7 +465,7 @@ asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
 asgs:StatisticalAreaLevel3 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StatisticalAreaLevel4
                                            ] ;
@@ -526,12 +478,12 @@ asgs:StatisticalAreaLevel3 rdf:type owl:Class ;
 asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:StateOrTerritory
                                            ] ,
                                            [ rdf:type owl:Restriction ;
-                                             owl:onProperty asgs:within ;
+                                             owl:onProperty geo:sfWithin ;
                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onClass asgs:GreaterCapitalCityStatisticalArea
                                            ] ;
@@ -544,7 +496,7 @@ asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
 asgs:TourismRegion rdf:type owl:Class ;
                    rdfs:subClassOf asgs:Feature ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty asgs:contains ;
+                                     owl:onProperty geo:sfContains ;
                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass asgs:StatisticalAreaLevel2
                                    ] ;
@@ -557,7 +509,7 @@ asgs:TourismRegion rdf:type owl:Class ;
 asgs:UrbanCentreAndLocality rdf:type owl:Class ;
                             rdfs:subClassOf asgs:Feature ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty asgs:within ;
+                                              owl:onProperty geo:sfWithin ;
                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onClass asgs:SectionOfStateRange
                                             ] ;
@@ -570,9 +522,9 @@ asgs:UrbanCentreAndLocality rdf:type owl:Class ;
 #    Annotations
 #################################################################
 
-asgs:label rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-           rdfs:label "label" ;
-           rdfs:seeAlso asgs:Feature .
+asgs:MeshblockCategory rdfs:label "Meshblock category" ;
+                       rdfs:comment "The class of meshblock categories, as defined in ASGS" ;
+                       rdfs:seeAlso <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -17,7 +17,6 @@
 
 <http://linked.data.gov.au/def/asgs> rdf:type owl:Ontology ;
                                       owl:imports <http://www.opengis.net/ont/geosparql> ;
-                                      dcterms:contributor "<a href='https://orcid.org/0000-0002-8742-7730'>Nicholas Car, Surround Australia</a>"^^rdf:HTML ;
                                       dcterms:created "2018-11-23" ;
                                       dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ,
                                                       "<a href='https://orcid.org/0000-0002-4305-6085'>Laurent Lefort, Australian Bureau of Statistics</a>"^^rdf:HTML ;
@@ -105,16 +104,24 @@ dcterms:title rdf:type owl:AnnotationProperty .
 rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://purl.org/dc/terms/identifier
 dcterms:identifier rdf:type owl:DatatypeProperty .
-
-
-###  http://purl.org/dc/terms/type
-dcterms:type rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -268,15 +275,11 @@ asgs:LocalGovernmentArea rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#MeshBlock
 asgs:MeshBlock rdf:type owl:Class ;
                rdfs:subClassOf asgs:Feature ,
+                               <http://org.semanticweb.owlapi/error#Error1> ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty geo:sfWithin ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass asgs:StatisticalAreaLevel1
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty dcterms:type ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange asgs:MeshblockCategory
                                ] ;
                dcterms:description "Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -285,7 +288,10 @@ asgs:MeshBlock rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#MeshblockCategory
 asgs:MeshblockCategory rdf:type owl:Class ;
-                       rdfs:subClassOf skos:Concept .
+                       rdfs:subClassOf skos:Concept ;
+                       rdfs:comment "The class of meshblock categories, as defined in ASGS" ;
+                       rdfs:label "Meshblock category" ;
+                       rdfs:seeAlso <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> .
 
 
 ###  http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion
@@ -518,13 +524,11 @@ asgs:UrbanCentreAndLocality rdf:type owl:Class ;
                             rdfs:label "UrbanCentreAndLocality" .
 
 
-#################################################################
-#    Annotations
-#################################################################
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
 
-asgs:MeshblockCategory rdfs:label "Meshblock category" ;
-                       rdfs:comment "The class of meshblock categories, as defined in ASGS" ;
-                       rdfs:seeAlso <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012> .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,69 @@
+# baseURI: http://linked.data.gov.au/def/asgs-prop
+# imports: http://linked.data.gov.au/def/asgs
+# prefix: asgs-prop
+
+@prefix asgs: <http://linked.data.gov.au/def/asgs#> .
+@prefix asgs-prop: <http://linked.data.gov.au/def/asgs-prop#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+asgs:category
+  a owl:ObjectProperty ;
+  rdfs:domain asgs:MeshBlock ;
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+  rdfs:label "category" ;
+  rdfs:range asgs:MeshblockCategory ;
+  rdfs:seeAlso asgs:MeshBlock ;
+  rdfs:subPropertyOf dcterms:type ;
+.
+asgs:code
+  a owl:DatatypeProperty ;
+  rdfs:domain asgs:Feature ;
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+  rdfs:label "code" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso asgs:Feature ;
+  rdfs:subPropertyOf dcterms:identifier ;
+.
+asgs:contains
+  a owl:ObjectProperty ;
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+  rdfs:label "contains" ;
+  rdfs:seeAlso asgs:Feature ;
+  rdfs:subPropertyOf geo:sfContains ;
+.
+asgs:label
+  a owl:AnnotationProperty ;
+  a owl:DatatypeProperty ;
+  rdfs:domain asgs:Feature ;
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+  rdfs:label "label" ;
+  rdfs:range xsd:string ;
+  rdfs:seeAlso asgs:Feature ;
+  rdfs:subPropertyOf rdfs:label ;
+.
+asgs:within
+  a owl:ObjectProperty ;
+  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+  rdfs:label "is within" ;
+  rdfs:seeAlso asgs:Feature ;
+  rdfs:subPropertyOf geo:sfWithin ;
+.
+<http://linked.data.gov.au/def/asgs-prop>
+  a owl:Ontology ;
+  dcterms:created "2020-02-03" ;
+  dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ;
+  dcterms:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
+                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
+					<p>Specialized properties which shadow ones from standard RDF vocabularies</p>"""^^rdf:HTML ;
+  dcterms:modified "2020-02-03" ;
+  dcterms:publisher "<a href='http://catalogue.linked.data.gov.au/org/O-000928'>Australian Bureau of Statistics</a>"^^rdf:HTML ;
+  dcterms:rights "Copyright 2020 Australian Bureau of Statistics." ;
+  dcterms:title "ASGS Ontology - specialized properties" ;
+  owl:deprecated true ;
+  owl:imports <http://linked.data.gov.au/def/asgs> ;
+.

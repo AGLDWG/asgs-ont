@@ -206,12 +206,8 @@ code {
         </dd>
         <dt>Creator(s)</dt>
         <dd>
-            <a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a><br/>
             <a href='https://orcid.org/0000-0002-4305-6085'>Laurent Lefort, Australian Bureau of Statistics</a><br/>
-        </dd>
-        <dt>Contributors(s)</dt>
-        <dd>
-            <a href='https://orcid.org/0000-0002-8742-7730'>Nicholas Car, Surround Australia</a><br/>
+            <a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a><br/>
         </dd>
         <dt>Created</dt>
         <dd>2018-11-23</dd>
@@ -300,11 +296,11 @@ code {
 <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#ASGSFeature">ASGS Feature</a></li>
         <li><a href="#AustralianDrainageDivision">Australian Drainage Division</a></li>
         <li><a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a></li>
         <li><a href="#Country">Country</a></li>
         <li><a href="#DestinationZone">DestinationZone</a></li>
-        <li><a href="#Feature">Feature</a></li>
         <li><a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a></li>
         <li><a href="#IndigenousArea">Indigenous Area</a></li>
         <li><a href="#IndigenousLocation">Indigenous Location</a></li>
@@ -344,7 +340,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -371,14 +367,14 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -399,7 +395,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -420,7 +416,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -432,12 +428,23 @@ code {
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Feature">
-        <h3>Feature<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="ASGSFeature">
+        <h3>ASGS Feature<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#Feature</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Super-class for all ABS Structures and Non-ABS Structures. Use</p> 
+<ul>
+<li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
+<li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
+<li>geo:sfWithin, geo:sfContains for containment and nesting relations</li>
+</ul>
+                </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
@@ -446,40 +453,33 @@ code {
                 </td>
             </tr>
             <tr>
-                <th>Restrictions</th>
-                <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">only</span> <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">only</span> <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#UrbanCentreAndLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UrbanCentreAndLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -500,7 +500,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -527,7 +527,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -554,7 +554,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -581,7 +581,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -608,14 +608,14 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -636,14 +636,14 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://purl.org/dc/terms/type">dcterms:type</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/type">dcterms:type</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Meshblockcategory">asgs:MeshblockCategory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -685,7 +685,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -713,7 +713,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -740,7 +740,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -767,7 +767,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -794,7 +794,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -821,7 +821,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -842,14 +842,14 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -870,7 +870,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -897,7 +897,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -925,16 +925,16 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#UrbanCentreAndLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -955,7 +955,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -983,7 +983,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1010,7 +1010,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1038,7 +1038,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1065,7 +1065,7 @@ code {
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Feature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1122,6 +1122,7 @@ code {
         <li><a href="#source">source</a></li>
         <li><a href="#title">title</a></li>
         <li><a href="#isDefinedBy">isDefinedBy</a></li>
+        <li><a href="#qualifiedCardinality">qualifiedCardinality</a></li>
     </ul>
     <div class="entity property" id="created">
         <h3>created<sup title="annotation property" class="sup-ap">ap</sup></h3>
@@ -1213,6 +1214,15 @@ code {
             </tr>
         </table>
     </div>
+    <div class="entity property" id="qualifiedCardinality">
+        <h3>qualifiedCardinality<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://www.w3.org/2002/07/owl#qualifiedCardinality</code></td>
+            </tr>
+        </table>
+    </div>
 </section>
 
 <section id="namespaces">
@@ -1228,10 +1238,14 @@ code {
         <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
         <dt>dcterms</dt>
         <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>doap</dt>
+        <dd><code>http://usefulinc.com/ns/doap#</code></dd>
         <dt>geo</dt>
         <dd><code>http://www.opengis.net/ont/geosparql#</code></dd>
         <dt>owl</dt>
         <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+        <dt>prov</dt>
+        <dd><code>http://www.w3.org/ns/prov#</code></dd>
         <dt>rdf</dt>
         <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
         <dt>rdfs</dt>

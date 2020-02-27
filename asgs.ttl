@@ -8,6 +8,8 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix asgs: <http://linked.data.gov.au/def/asgs#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -109,6 +111,14 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
+rdf:HTML rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -188,17 +198,15 @@ asgs:DestinationZone rdf:type owl:Class ;
 
 ###  http://linked.data.gov.au/def/asgs#Feature
 asgs:Feature rdf:type owl:Class ;
-             rdfs:subClassOf geo:Feature ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty geo:sfContains ;
-                               owl:allValuesFrom asgs:Feature
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty geo:sfWithin ;
-                               owl:allValuesFrom asgs:Feature
-                             ] ;
+             rdfs:subClassOf geo:Feature ;
+             rdfs:comment """<p>Super-class for all ABS Structures and Non-ABS Structures. Use</p> 
+<ul>
+<li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
+<li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
+<li>geo:sfWithin, geo:sfContains for containment and nesting relations</li>
+</ul>"""^^rdf:HTML ;
              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-             rdfs:label "Feature" .
+             rdfs:label "ASGS Feature" .
 
 
 ###  http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea

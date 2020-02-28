@@ -1,0 +1,1035 @@
+{
+  "@graph" : [ {
+    "@id" : "asgs:AustralianDrainageDivision",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:Country",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:DestinationZone",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:Feature",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:GreaterCapitalCityStatisticalArea",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:IndigenousArea",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:IndigenousLocation",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:IndigenousRegion",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:LocalGovernmentArea",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:MeshBlock",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:NaturalResourceManagementRegion",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:PostalArea",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:RemotenessArea",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:SectionOfState",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:SectionOfStateRange",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:SignificantUrbanArea",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StateElectoralDivision",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StateOrTerritory",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StateSuburb",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel1",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel2",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel3",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel4",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:TourismRegion",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:UrbanCentreAndLocality",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "asgs:addCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:AustralianDrainageDivision",
+    "isDefinedBy" : [ "http://linked.data.gov.au/def/asgs/code", "http://linked.data.gov.au/def/asgs" ],
+    "label" : "addCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:AustralianDrainageDivision",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:addCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:AustralianDrainageDivision",
+    "isDefinedBy" : [ "http://linked.data.gov.au/def/asgs/code", "http://linked.data.gov.au/def/asgs" ],
+    "label" : "addCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:AustralianDrainageDivision",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:addName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:AustralianDrainageDivision",
+    "isDefinedBy" : [ "http://linked.data.gov.au/def/asgs/code", "http://linked.data.gov.au/def/asgs" ],
+    "label" : "addName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:AustralianDrainageDivision",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:addName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:AustralianDrainageDivision",
+    "isDefinedBy" : [ "http://linked.data.gov.au/def/asgs/code", "http://linked.data.gov.au/def/asgs" ],
+    "label" : "addName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:AustralianDrainageDivision",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:ausCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:Country",
+    "isDefinedBy" : [ "http://linked.data.gov.au/def/asgs/code", "http://linked.data.gov.au/def/asgs" ],
+    "label" : "ausCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:Country",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:ausCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:Country",
+    "isDefinedBy" : [ "http://linked.data.gov.au/def/asgs/code", "http://linked.data.gov.au/def/asgs" ],
+    "label" : "ausCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:Country",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:code",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:Feature",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:Feature",
+    "subPropertyOf" : "dcterms:identifier"
+  }, {
+    "@id" : "asgs:dzn5dig11",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:DestinationZone",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "dzn5dig11",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:DestinationZone",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:dznCode11",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:DestinationZone",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "dznCode11",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:DestinationZone",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:dznCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:DestinationZone",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "dznCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:DestinationZone",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:gccsaCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:GreaterCapitalCityStatisticalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "gccsaCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:gccsaCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:GreaterCapitalCityStatisticalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "gccsaCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:gccsaName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:GreaterCapitalCityStatisticalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "gccsaName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:gccsaName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:GreaterCapitalCityStatisticalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "gccsaName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:GreaterCapitalCityStatisticalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Greater Capital City Statistical Areas (GCCSA) 5-character alphanumeric code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:iareCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iareCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:iareCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iareCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:iareName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iareName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:iareName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iareName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:ilocCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousLocation",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "ilocCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousLocation",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:ilocCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousLocation",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "ilocCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousLocation",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:ilocName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousLocation",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "ilocName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousLocation",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:ilocName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousLocation",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "ilocName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousLocation",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:indigenousAreas6DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Indigenous Areas 6-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:indigenousRegions3DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Indigenous Regions 3-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:iregCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iregCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:iregCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iregCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:iregName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iregName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousRegion",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:iregName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:IndigenousRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "iregName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:IndigenousRegion",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:label",
+    "@type" : "owl:DatatypeProperty"
+  }, {
+    "@id" : "asgs:lgaCode2012",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:LocalGovernmentArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "lgaCode2012",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:LocalGovernmentArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:lgaName2012",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:LocalGovernmentArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "lgaName2012",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:LocalGovernmentArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:mbCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:MeshBlock",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "mbCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:MeshBlock",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:mbCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:MeshBlock",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "mbCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:MeshBlock",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:nrmrCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:NaturalResourceManagementRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "nrmrCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:NaturalResourceManagementRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:nrmrCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:NaturalResourceManagementRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "nrmrCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:NaturalResourceManagementRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:nrmrName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:NaturalResourceManagementRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "nrmrName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:NaturalResourceManagementRegion",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:nrmrName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:NaturalResourceManagementRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "nrmrName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:NaturalResourceManagementRegion",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:poaCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:PostalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "poaCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:PostalArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:poaCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:PostalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "poaCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:PostalArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:poaName2011",
+    "@type" : "owl:DatatypeProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "poaName2011",
+    "range" : "xsd:string",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:poaName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:PostalArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "poaName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:PostalArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:raCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:RemotenessArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "raCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:RemotenessArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:raCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:RemotenessArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "raCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:RemotenessArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:raName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:RemotenessArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "raName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:RemotenessArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:raName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:RemotenessArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "raName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:RemotenessArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sa1Maincode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel1",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa1Maincode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel1",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa1Maincode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel1",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa1Maincode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel1",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa2Maincode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel2",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa2Maincode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel2",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa2Maincode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel2",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa2Maincode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel2",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa2Name2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel2",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa2Name2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel2",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sa2Name2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel2",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa2Name2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel2",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sa3Code2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel3",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa3Code2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel3",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa3Code2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel3",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa3Code2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel3",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa3Name2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel3",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa3Name2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel3",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sa3Name2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel3",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa3Name2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel3",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sa4Code2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel4",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa4Code2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel4",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa4Code2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel4",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa4Code2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel4",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sa4Name2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel4",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa4Name2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel4",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sa4Name2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel4",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sa4Name2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel4",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sectionOfState2DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfState",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Section of state 2-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfState",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sectionOfStateRange3DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfStateRange",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Section of state range 3-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfStateRange",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sedCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateElectoralDivision",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "SED code 2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateElectoralDivision",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sedCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateElectoralDivision",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "SED code 2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateElectoralDivision",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sosCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfState",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfState",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sosCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfState",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfState",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sosName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfState",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfState",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sosName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfState",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfState",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sosrCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfStateRange",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosrCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfStateRange",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sosrCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfStateRange",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosrCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfStateRange",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sosrName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfStateRange",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosrName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfStateRange",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sosrName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SectionOfStateRange",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sosrName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SectionOfStateRange",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:sscCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateSuburb",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sscCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateSuburb",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:sscName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateSuburb",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "sscName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateSuburb",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:stateCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateOrTerritory",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "stateCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateOrTerritory",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:stateCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateOrTerritory",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "stateCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateOrTerritory",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:stateName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateOrTerritory",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "stateName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateOrTerritory",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:stateName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateOrTerritory",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "stateName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateOrTerritory",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:stateOrTerritory1DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateOrTerritory",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "State or Territory 1 digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateOrTerritory",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:stateelectoraldivisionIdentifier",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StateElectoralDivision",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "stateelectoraldivisionIdentifier",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StateElectoralDivision",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:statisticalArea1Sa111DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel1",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Statistical area 1 (SA1) 11-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel1",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:statisticalArea2Sa29DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel2",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Statistical area 2 (SA2) 9-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel2",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:statisticalArea3Sa35DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel3",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Statistical area 3 (SA3) 5-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel3",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:statisticalArea4Sa43DigitCode",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:StatisticalAreaLevel4",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "Statistical area 4 (SA4) 3-digit code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:StatisticalAreaLevel4",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:suaCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SignificantUrbanArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "suaCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SignificantUrbanArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:suaCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SignificantUrbanArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "suaCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SignificantUrbanArea",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:suaName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SignificantUrbanArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "suaName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SignificantUrbanArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:suaName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:SignificantUrbanArea",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "suaName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:SignificantUrbanArea",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:trCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:TourismRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "trCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:TourismRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:trCode2012",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:TourismRegion",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "trCode2012",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:TourismRegion",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:uclCode2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:UrbanCentreAndLocality",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "uclCode2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:UrbanCentreAndLocality",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:uclCode2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:UrbanCentreAndLocality",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "uclCode2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:UrbanCentreAndLocality",
+    "subPropertyOf" : "asgs:code"
+  }, {
+    "@id" : "asgs:uclName2011",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:UrbanCentreAndLocality",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "uclName2011",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:UrbanCentreAndLocality",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "asgs:uclName2016",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:UrbanCentreAndLocality",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs/code",
+    "label" : "uclName2016",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:UrbanCentreAndLocality",
+    "subPropertyOf" : "asgs:label"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/asgs/code",
+    "@type" : "owl:Ontology",
+    "contributor" : "https://orcid.org/0000-0002-3884-3420",
+    "dcterms:contributor" : "Simon J D Cox, CSIRO",
+    "created" : "2019-12-11",
+    "creator" : "https://orcid.org/0000-0002-4305-6085",
+    "dcterms:creator" : "Laurent Lefort, Australian Bureau of Statistics",
+    "description" : "<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>\r\n                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\r\n\t\t\t\t\t<p>Properties for specific codes and names</p>\r\n",
+    "modified" : "2019-12-11",
+    "publisher" : [ "Australian Bureau of Statistics", {
+      "@id" : "http://catalogue.linked.data.gov.au/org/O-000928"
+    } ],
+    "rights" : "Copyright 2018 Australian Bureau of Statistics.",
+    "title" : "ASGS Ontology - code properties",
+    "owl:deprecated" : true,
+    "imports" : "http://linked.data.gov.au/def/asgs"
+  }, {
+    "@id" : "dcterms:contributor",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:creator",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:identifier",
+    "@type" : "owl:DatatypeProperty"
+  }, {
+    "@id" : "dcterms:modified",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:publisher",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:rights",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:title",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "schema" : "http://schema.org/",
+    "@vocab" : "http://linked.data.gov.au/def/asgs/code#",
+    "cc" : "http://creativecommons.org/ns#",
+    "void" : "http://rdfs.org/ns/void#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "geo" : "http://www.opengis.net/ont/geosparql#",
+    "sf" : "http://www.opengis.net/ont/sf#",
+    "asgs" : "http://linked.data.gov.au/def/asgs#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

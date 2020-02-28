@@ -1,0 +1,2423 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b203" ]
+    }
+  }, {
+    "@id" : "_:b100",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sectionOfState2DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b101",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:uclCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b102",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:nrmrCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b103",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b104",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b358" ]
+    }
+  }, {
+    "@id" : "_:b106",
+    "xsd:length" : 11
+  }, {
+    "@id" : "_:b109",
+    "length" : "3"
+  }, {
+    "@id" : "_:b11",
+    "xsd:maxLength" : 40
+  }, {
+    "@id" : "_:b110",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:iareName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b111",
+    "xsd:maxLength" : 40
+  }, {
+    "@id" : "_:b113",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b114",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b409", "_:b214" ]
+    }
+  }, {
+    "@id" : "_:b118",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b119",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b299" ]
+    }
+  }, {
+    "@id" : "_:b12",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b121",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b124",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b125",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b215", "_:b109" ]
+    }
+  }, {
+    "@id" : "_:b129",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "rdfs:Datatype",
+    "owl:oneOf" : {
+      "@list" : [ "Major Cities of Australia", "Inner Regional Australia", "Outer Regional Australia", "Remote Australia", "Very Remote Australia", "Migratory - Offshore - Shipping", "No usual address" ]
+    }
+  }, {
+    "@id" : "_:b131",
+    "length" : "5"
+  }, {
+    "@id" : "_:b132",
+    "@type" : "rdfs:Datatype",
+    "owl:oneOf" : {
+      "@list" : [ "New South Wales", "Victoria", "Queensland", "South Australia", "Western Australia", "Tasmania", "Northern Territory", "Australian Capital Territory", "Other Territories" ]
+    }
+  }, {
+    "@id" : "_:b133",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b145" ]
+    }
+  }, {
+    "@id" : "_:b134",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b265" ]
+    }
+  }, {
+    "@id" : "_:b136",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sa4Name2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b137",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b138",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:ilocCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b139",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b469", "_:b106" ]
+    }
+  }, {
+    "@id" : "_:b142",
+    "length" : "11"
+  }, {
+    "@id" : "_:b143",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b379", "_:b29" ]
+    }
+  }, {
+    "@id" : "_:b145",
+    "xsd:maxLength" : 40
+  }, {
+    "@id" : "_:b146",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:statisticalArea2Sa29DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b147",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa2Maincode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b148",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa2Maincode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b149",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sa2Name2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b15",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b67" ]
+    }
+  }, {
+    "@id" : "_:b150",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sa2Name2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b153",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b154",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b363", "_:b420" ]
+    }
+  }, {
+    "@id" : "_:b156",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b454", "_:b234" ]
+    }
+  }, {
+    "@id" : "_:b161",
+    "length" : "4"
+  }, {
+    "@id" : "_:b162",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b463" ]
+    }
+  }, {
+    "@id" : "_:b166",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b167",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:nrmrName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b168",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b431" ]
+    }
+  }, {
+    "@id" : "_:b17",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b170",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b11" ]
+    }
+  }, {
+    "@id" : "_:b171",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b124" ]
+    }
+  }, {
+    "@id" : "_:b173",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b174",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b241" ]
+    }
+  }, {
+    "@id" : "_:b176",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b113" ]
+    }
+  }, {
+    "@id" : "_:b177",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:stateelectoraldivisionIdentifier",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b178",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b179",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:iregCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:stateCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b180",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:raCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b181",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b62", "_:b306" ]
+    }
+  }, {
+    "@id" : "_:b182",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b17", "_:b142" ]
+    }
+  }, {
+    "@id" : "_:b183",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:ilocCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b184",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:ilocName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b187",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sosrCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:mbCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b190",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b38", "_:b290" ]
+    }
+  }, {
+    "@id" : "_:b192",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:nrmrCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b193",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:nrmrName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b194",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:gccsaCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b196",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b198",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b459" ]
+    }
+  }, {
+    "@id" : "_:b2",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b201",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b202",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b203",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b204",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b250", "_:b3" ]
+    }
+  }, {
+    "@id" : "_:b205",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b21", "_:b7" ]
+    }
+  }, {
+    "@id" : "_:b206",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b440", "_:b212" ]
+    }
+  }, {
+    "@id" : "_:b208",
+    "length" : "3"
+  }, {
+    "@id" : "_:b209",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b21",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b210",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b321" ]
+    }
+  }, {
+    "@id" : "_:b212",
+    "length" : "3"
+  }, {
+    "@id" : "_:b213",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b214",
+    "length" : "6"
+  }, {
+    "@id" : "_:b215",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b220",
+    "length" : "11"
+  }, {
+    "@id" : "_:b221",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sosCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b222",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sosCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b223",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sosName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b224",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sosName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b225",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b295" ]
+    }
+  }, {
+    "@id" : "_:b227",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b401" ]
+    }
+  }, {
+    "@id" : "_:b228",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b2", "_:b294" ]
+    }
+  }, {
+    "@id" : "_:b231",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:statisticalArea3Sa35DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b232",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b234",
+    "length" : "2"
+  }, {
+    "@id" : "_:b236",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:indigenousRegions3DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b237",
+    "length" : "9"
+  }, {
+    "@id" : "_:b238",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b271" ]
+    }
+  }, {
+    "@id" : "_:b24",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b331" ]
+    }
+  }, {
+    "@id" : "_:b240",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b241",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b242",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b387", "_:b220" ]
+    }
+  }, {
+    "@id" : "_:b243",
+    "length" : "9"
+  }, {
+    "@id" : "_:b245",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:trCode2012",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b246",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b467" ]
+    }
+  }, {
+    "@id" : "_:b248",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b251" ]
+    }
+  }, {
+    "@id" : "_:b25",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b77" ]
+    }
+  }, {
+    "@id" : "_:b250",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b251",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b252",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b166", "_:b426" ]
+    }
+  }, {
+    "@id" : "_:b256",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:dznCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b257",
+    "length" : "9"
+  }, {
+    "@id" : "_:b259",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b404", "_:b347" ]
+    }
+  }, {
+    "@id" : "_:b261",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa1Maincode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b262",
+    "pattern" : "[1-9]"
+  }, {
+    "@id" : "_:b263",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b264",
+    "length" : "3"
+  }, {
+    "@id" : "_:b265",
+    "maxLength" : "40"
+  }, {
+    "@id" : "_:b267",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b268",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:gccsaName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b27",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b270",
+    "pattern" : "[1-9]"
+  }, {
+    "@id" : "_:b271",
+    "maxLength" : "40"
+  }, {
+    "@id" : "_:b274",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa3Code2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b275",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sa3Name2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b276",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sa3Name2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b278",
+    "length" : "8"
+  }, {
+    "@id" : "_:b279",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b137" ]
+    }
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:gccsaCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b281",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:dzn5dig11",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b284",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:statisticalArea4Sa43DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b286",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b287",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b400" ]
+    }
+  }, {
+    "@id" : "_:b288",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:poaCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b29",
+    "length" : "2"
+  }, {
+    "@id" : "_:b290",
+    "length" : "8"
+  }, {
+    "@id" : "_:b291",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b335" ]
+    }
+  }, {
+    "@id" : "_:b293",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b294",
+    "length" : "5"
+  }, {
+    "@id" : "_:b295",
+    "pattern" : "[1-9][A-Z]{4}"
+  }, {
+    "@id" : "_:b297",
+    "length" : "2"
+  }, {
+    "@id" : "_:b298",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b293", "_:b31" ]
+    }
+  }, {
+    "@id" : "_:b299",
+    "pattern" : "[1-9][A-Z]{4}"
+  }, {
+    "@id" : "_:b3",
+    "length" : "3"
+  }, {
+    "@id" : "_:b300",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b319", "_:b49" ]
+    }
+  }, {
+    "@id" : "_:b301",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b415", "_:b278" ]
+    }
+  }, {
+    "@id" : "_:b303",
+    "length" : "6"
+  }, {
+    "@id" : "_:b304",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b360", "_:b54" ]
+    }
+  }, {
+    "@id" : "_:b306",
+    "length" : "6"
+  }, {
+    "@id" : "_:b307",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:iareCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b308",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b322" ]
+    }
+  }, {
+    "@id" : "_:b31",
+    "length" : "3"
+  }, {
+    "@id" : "_:b310",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b103", "_:b161" ]
+    }
+  }, {
+    "@id" : "_:b312",
+    "@type" : "rdfs:Datatype",
+    "owl:oneOf" : {
+      "@list" : [ "Major Cities of Australia", "Inner Regional Australia", "Outer Regional Australia", "Remote Australia", "Very Remote Australia", "Migratory - Offshore - Shipping", "No usual address" ]
+    }
+  }, {
+    "@id" : "_:b314",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:iregCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b315",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b319",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b321",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b322",
+    "pattern" : "[1-9]([A-Z]){4}"
+  }, {
+    "@id" : "_:b323",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b270" ]
+    }
+  }, {
+    "@id" : "_:b326",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b329",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b331",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b332",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:indigenousAreas6DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b333",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:stateCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b335",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b336",
+    "pattern" : "[1-9]"
+  }, {
+    "@id" : "_:b337",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b267" ]
+    }
+  }, {
+    "@id" : "_:b339",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa4Code2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b34",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b340",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b342",
+    "length" : "4"
+  }, {
+    "@id" : "_:b343",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:raName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b344",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b70", "_:b237" ]
+    }
+  }, {
+    "@id" : "_:b347",
+    "length" : "6"
+  }, {
+    "@id" : "_:b349",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b35",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b457" ]
+    }
+  }, {
+    "@id" : "_:b350",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sosrCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b351",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sectionOfStateRange3DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b352",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sosrName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b353",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sosrName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b354",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:poaCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b355",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:poaName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b356",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:poaName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b358",
+    "xsd:maxLength" : 40
+  }, {
+    "@id" : "_:b359",
+    "length" : "2"
+  }, {
+    "@id" : "_:b360",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b362",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa4Code2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b363",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b364",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:sa4Name2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b365",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b202" ]
+    }
+  }, {
+    "@id" : "_:b366",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b153", "_:b297" ]
+    }
+  }, {
+    "@id" : "_:b367",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b178", "_:b65" ]
+    }
+  }, {
+    "@id" : "_:b368",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b340" ]
+    }
+  }, {
+    "@id" : "_:b37",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b371",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b34", "_:b55" ]
+    }
+  }, {
+    "@id" : "_:b373",
+    "length" : "5"
+  }, {
+    "@id" : "_:b374",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b349" ]
+    }
+  }, {
+    "@id" : "_:b375",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:lgaName2012",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b377",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b329", "_:b385" ]
+    }
+  }, {
+    "@id" : "_:b379",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b38",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b380",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b232", "_:b383" ]
+    }
+  }, {
+    "@id" : "_:b382",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b458" ]
+    }
+  }, {
+    "@id" : "_:b383",
+    "length" : "11"
+  }, {
+    "@id" : "_:b384",
+    "maxLength" : "40"
+  }, {
+    "@id" : "_:b385",
+    "xsd:length" : 11
+  }, {
+    "@id" : "_:b386",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b87", "_:b430" ]
+    }
+  }, {
+    "@id" : "_:b387",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b389",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b121" ]
+    }
+  }, {
+    "@id" : "_:b39",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:addCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b391",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b315" ]
+    }
+  }, {
+    "@id" : "_:b393",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b396",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:iregName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b397",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:iregName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b398",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sedCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b40",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:addCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b400",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b401",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b403",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:stateName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b404",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b405",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b263", "_:b208" ]
+    }
+  }, {
+    "@id" : "_:b406",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b473" ]
+    }
+  }, {
+    "@id" : "_:b407",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b12", "_:b243" ]
+    }
+  }, {
+    "@id" : "_:b409",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b41",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:addName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b414",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b436" ]
+    }
+  }, {
+    "@id" : "_:b415",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b416",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b129", "_:b432" ]
+    }
+  }, {
+    "@id" : "_:b418",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:stateName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b419",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:uclName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b42",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:addName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b420",
+    "length" : "6"
+  }, {
+    "@id" : "_:b422",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b201" ]
+    }
+  }, {
+    "@id" : "_:b423",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b240", "_:b257" ]
+    }
+  }, {
+    "@id" : "_:b424",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:stateOrTerritory1DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b425",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b326", "_:b359" ]
+    }
+  }, {
+    "@id" : "_:b426",
+    "length" : "5"
+  }, {
+    "@id" : "_:b427",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b196" ]
+    }
+  }, {
+    "@id" : "_:b428",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sedCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b43",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b209" ]
+    }
+  }, {
+    "@id" : "_:b430",
+    "length" : "5"
+  }, {
+    "@id" : "_:b431",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b432",
+    "length" : "3"
+  }, {
+    "@id" : "_:b436",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b438",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:raName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b440",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b443",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b27", "_:b373" ]
+    }
+  }, {
+    "@id" : "_:b449",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b63" ]
+    }
+  }, {
+    "@id" : "_:b45",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:dznCode11",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b450",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:iareCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b451",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b461", "_:b342" ]
+    }
+  }, {
+    "@id" : "_:b453",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b118" ]
+    }
+  }, {
+    "@id" : "_:b454",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b455",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b111" ]
+    }
+  }, {
+    "@id" : "_:b457",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b458",
+    "maxLength" : "40"
+  }, {
+    "@id" : "_:b459",
+    "xsd:maxLength" : 40
+  }, {
+    "@id" : "_:b46",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa3Code2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b460",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:raCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b461",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b462",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b463",
+    "xsd:maxLength" : 40
+  }, {
+    "@id" : "_:b464",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:gccsaName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b466",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:uclName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b467",
+    "xsd:maxLength" : 100
+  }, {
+    "@id" : "_:b468",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:iareName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b469",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b47",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b470",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "asgs-id:mbCode2011", "asgs-id:mbCode2016" ]
+    }
+  }, {
+    "@id" : "_:b471",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:statisticalArea1Sa111DigitCode",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b473",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b475",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b262" ]
+    }
+  }, {
+    "@id" : "_:b478",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:sa1Maincode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b479",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "asgs-id:mbCode2011", "asgs-id:mbCode2016" ]
+    }
+  }, {
+    "@id" : "_:b48",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:ilocName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b49",
+    "length" : "3"
+  }, {
+    "@id" : "_:b5",
+    "length" : "5"
+  }, {
+    "@id" : "_:b50",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:trCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b51",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b37" ]
+    }
+  }, {
+    "@id" : "_:b52",
+    "@type" : "rdfs:Datatype",
+    "owl:oneOf" : {
+      "@list" : [ "New South Wales", "Victoria", "Queensland", "South Australia", "Western Australia", "Tasmania", "Northern Territory", "Australian Capital Territory", "Other Territories" ]
+    }
+  }, {
+    "@id" : "_:b54",
+    "length" : "3"
+  }, {
+    "@id" : "_:b55",
+    "length" : "5"
+  }, {
+    "@id" : "_:b56",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b286" ]
+    }
+  }, {
+    "@id" : "_:b58",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:mbCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b59",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b384" ]
+    }
+  }, {
+    "@id" : "_:b62",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b63",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b64",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b213" ]
+    }
+  }, {
+    "@id" : "_:b65",
+    "length" : "9"
+  }, {
+    "@id" : "_:b67",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b7",
+    "length" : "2"
+  }, {
+    "@id" : "_:b70",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b75",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "asgs-id:mbCode2011", "asgs-id:mbCode2016" ]
+    }
+  }, {
+    "@id" : "_:b76",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:lgaCode2012",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b77",
+    "maxLength" : "50"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b95", "_:b5" ]
+    }
+  }, {
+    "@id" : "_:b80",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:suaCode2016",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b81",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:suaCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b82",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:suaName2016",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b83",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onClass" : "asgs-id:suaName2011",
+    "onProperty" : "rdfs:label"
+  }, {
+    "@id" : "_:b84",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b393" ]
+    }
+  }, {
+    "@id" : "_:b86",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b87",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b88",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b86", "_:b131" ]
+    }
+  }, {
+    "@id" : "_:b9",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b90",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b336" ]
+    }
+  }, {
+    "@id" : "_:b92",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b173", "_:b303" ]
+    }
+  }, {
+    "@id" : "_:b94",
+    "@type" : "owl:Restriction",
+    "maxQualifiedCardinality" : "1",
+    "onDataRange" : "asgs-id:uclCode2011",
+    "onProperty" : ":identifier"
+  }, {
+    "@id" : "_:b95",
+    "pattern" : "[0-9]+"
+  }, {
+    "@id" : "_:b96",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b9", "_:b99" ]
+    }
+  }, {
+    "@id" : "_:b97",
+    "@type" : "rdfs:Datatype",
+    "onDatatype" : "xsd:string",
+    "withRestrictions" : {
+      "@list" : [ "_:b47", "_:b264" ]
+    }
+  }, {
+    "@id" : "_:b99",
+    "length" : "5"
+  }, {
+    "@id" : "asgs:AustralianDrainageDivision",
+    "subClassOf" : [ "_:b39", "_:b40", "_:b41", "_:b42" ]
+  }, {
+    "@id" : "asgs:DestinationZone",
+    "subClassOf" : [ "_:b256", "_:b45", "_:b281" ]
+  }, {
+    "@id" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subClassOf" : [ "_:b462", "_:b194", "_:b28", "_:b464", "_:b268" ]
+  }, {
+    "@id" : "asgs:IndigenousArea",
+    "subClassOf" : [ "_:b332", "_:b307", "_:b450", "_:b110", "_:b468" ]
+  }, {
+    "@id" : "asgs:IndigenousLocation",
+    "subClassOf" : [ "_:b183", "_:b138", "_:b184", "_:b48" ]
+  }, {
+    "@id" : "asgs:IndigenousRegion",
+    "subClassOf" : [ "_:b179", "_:b314", "_:b236", "_:b396", "_:b397" ]
+  }, {
+    "@id" : "asgs:LocalGovernmentArea",
+    "subClassOf" : [ "_:b76", "_:b375" ]
+  }, {
+    "@id" : "asgs:MeshBlock",
+    "subClassOf" : [ "_:b19", "_:b58" ]
+  }, {
+    "@id" : "asgs:NaturalResourceManagementRegion",
+    "subClassOf" : [ "_:b102", "_:b192", "_:b167", "_:b193" ]
+  }, {
+    "@id" : "asgs:PostalArea",
+    "subClassOf" : [ "_:b288", "_:b354", "_:b355", "_:b356" ]
+  }, {
+    "@id" : "asgs:RemotenessArea",
+    "subClassOf" : [ "_:b460", "_:b180", "_:b343", "_:b438" ]
+  }, {
+    "@id" : "asgs:SectionOfState",
+    "subClassOf" : [ "_:b221", "_:b222", "_:b100", "_:b223", "_:b224" ]
+  }, {
+    "@id" : "asgs:SectionOfStateRange",
+    "subClassOf" : [ "_:b350", "_:b187", "_:b351", "_:b352", "_:b353" ]
+  }, {
+    "@id" : "asgs:SignificantUrbanArea",
+    "subClassOf" : [ "_:b80", "_:b81", "_:b82", "_:b83" ]
+  }, {
+    "@id" : "asgs:StateElectoralDivision",
+    "subClassOf" : [ "_:b398", "_:b428", "_:b177" ]
+  }, {
+    "@id" : "asgs:StateOrTerritory",
+    "subClassOf" : [ "_:b424", "_:b18", "_:b333", "_:b403", "_:b418" ]
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel1",
+    "subClassOf" : [ "_:b471", "_:b261", "_:b478" ]
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel2",
+    "subClassOf" : [ "_:b146", "_:b147", "_:b148", "_:b149", "_:b150" ]
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel3",
+    "subClassOf" : [ "_:b231", "_:b274", "_:b46", "_:b275", "_:b276" ]
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel4",
+    "subClassOf" : [ "_:b284", "_:b339", "_:b362", "_:b136", "_:b364" ]
+  }, {
+    "@id" : "asgs:TourismRegion",
+    "subClassOf" : [ "_:b245", "_:b50" ]
+  }, {
+    "@id" : "asgs:UrbanCentreAndLocality",
+    "subClassOf" : [ "_:b101", "_:b94", "_:b466", "_:b419" ]
+  }, {
+    "@id" : "http://linked.data.gov.au/def/asgs/id",
+    "@type" : "owl:Ontology",
+    "created" : "2019-12-13",
+    "creator" : "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>",
+    "description" : "<p>String types for codes and names.</p>\r\n<p>For use with the <a href='http://linked.data.gov.au/def/asgs'>Australian Statistical Geography Standard (ASGS) ontology</a>.</p>",
+    "modified" : "2020-01-31",
+    "publisher" : "<a href='http://catalogue.linked.data.gov.au/org/csiro'>CSIRO</a>",
+    "rights" : "Copyright 2020 CSIRO",
+    "title" : "ASGS Ontology - code properties",
+    "comment" : "The datatypes were initially generated from the retired datatype-properties using SPARQL and later updated to match the patterns specified in the ASGS documentation. ",
+    "imports" : "http://linked.data.gov.au/def/asgs"
+  }, {
+    "@id" : "asgs-id:addCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "addCode2011",
+    "equivalentClass" : "_:b287"
+  }, {
+    "@id" : "asgs-id:addCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "addCode2016",
+    "equivalentClass" : "_:b227"
+  }, {
+    "@id" : "asgs-id:addName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "addName2011",
+    "equivalentClass" : "_:b246"
+  }, {
+    "@id" : "asgs-id:addName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "addName2016",
+    "equivalentClass" : "_:b365"
+  }, {
+    "@id" : "asgs-id:ausCode2011",
+    "@type" : "rdfs:Datatype",
+    "label" : "ausCode2011",
+    "equivalentClass" : "_:b248"
+  }, {
+    "@id" : "asgs-id:ausCode2016",
+    "@type" : "rdfs:Datatype",
+    "label" : "ausCode2016",
+    "equivalentClass" : "_:b15"
+  }, {
+    "@id" : "asgs-id:dzn5dig11",
+    "@type" : "rdfs:Datatype",
+    "label" : "dzn5dig11",
+    "equivalentClass" : "_:b279"
+  }, {
+    "@id" : "asgs-id:dznCode11",
+    "@type" : "rdfs:Datatype",
+    "label" : "dznCode11",
+    "equivalentClass" : "_:b168"
+  }, {
+    "@id" : "asgs-id:dznCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/mf/8000.0",
+    "comment" : "DESTINATION ZONE CODING CONVENTIONS\r\n\r\nA 2016 Destination Zone is identifiable by a 9 digit code. This comprises the State or Territory, Statistical Area Level 2 and Destination Zone identifier code. A Destination Zone identifier is only unique within a State or Territory. Destination Zones do not have names.\r\n\r\nExample: 111728922\r\nS/T\tSA2\tDZN\r\n1\t1172\t8922",
+    "label" : "dznCode2016",
+    "equivalentClass" : "_:b407"
+  }, {
+    "@id" : "asgs-id:gccsaCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Greater%20Capital%20City%20Statistical%20Areas%20(GCCSA)~10003",
+    "comment" : "GCCSA CODING STRUCTURE\r\n\r\nA GCCSA is identified by a 5-character alphanumeric code. This comprises a 1-digit State and Territory identifier followed by a 4-character GCCSA identifier that is unique within each State and Territory.\r\n\r\nExample 1:\r\n\r\n1GSYD Greater Sydney\r\n- State and Territory identifier: 1\r\n- GCCSA identifier: GSYD\r\n\r\nExample 2:\r\n\r\nRest of NSW - 1RNSW\r\n- State and Territory identifier: 1\r\n- GCCSA identifier: RNSW\r\n\r\nSpecial Purpose GCCSA\r\n\r\nThere are non-spatial GCCSAs for Migratory - Offshore - Shipping and No Usual Address in each State and Territory.",
+    "label" : "gccsaCode2011",
+    "equivalentClass" : "_:b225"
+  }, {
+    "@id" : "asgs-id:gccsaCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Greater%20Capital%20City%20Statistical%20Areas%20(GCCSA)~10003",
+    "comment" : "GCCSA CODING STRUCTURE\r\n\r\nA GCCSA is identified by a 5-character alphanumeric code. This comprises a 1-digit State and Territory identifier followed by a 4-character GCCSA identifier that is unique within each State and Territory.\r\n\r\nExample 1:\r\n\r\n1GSYD Greater Sydney\r\n- State and Territory identifier: 1\r\n- GCCSA identifier: GSYD\r\n\r\nExample 2:\r\n\r\nRest of NSW - 1RNSW\r\n- State and Territory identifier: 1\r\n- GCCSA identifier: RNSW\r\n\r\nSpecial Purpose GCCSA\r\n\r\nThere are non-spatial GCCSAs for Migratory - Offshore - Shipping and No Usual Address in each State and Territory",
+    "label" : "gccsaCode2016",
+    "equivalentClass" : "_:b119"
+  }, {
+    "@id" : "asgs-id:gccsaName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Greater%20Capital%20City%20Statistical%20Areas%20(GCCSA)~10003",
+    "comment" : "GCCSA NAMES\r\n\r\nGCCSAs are named according to the cities they represent, for example, Greater Sydney.\r\n\r\nThe remainder of the State and Territory is named Rest of <State>, for example, Rest of NSW.\r\n\r\nThe exceptions to this are the ACT, as the whole of the ACT is included in the GCCSA, and the OTs, which do not have a capital city.",
+    "label" : "gccsaName2011",
+    "equivalentClass" : "_:b56"
+  }, {
+    "@id" : "asgs-id:gccsaName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Greater%20Capital%20City%20Statistical%20Areas%20(GCCSA)~10003",
+    "comment" : "GCCSA NAMES\r\n\r\nGCCSAs are named according to the cities they represent, for example, Greater Sydney.\r\n\r\nThe remainder of the State and Territory is named Rest of <State>, for example, Rest of NSW.\r\n\r\nThe exceptions to this are the ACT, as the whole of the ACT is included in the GCCSA, and the OTs, which do not have a capital city.",
+    "label" : "gccsaName2016",
+    "equivalentClass" : "_:b43"
+  }, {
+    "@id" : "asgs-id:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Greater%20Capital%20City%20Statistical%20Areas%20(GCCSA)~10003",
+    "comment" : "GCCSA CODING STRUCTURE\r\n\r\nA GCCSA is identified by a 5-character alphanumeric code. This comprises a 1-digit State and Territory identifier followed by a 4-character GCCSA identifier that is unique within each State and Territory.\r\n\r\nExample 1:\r\n\r\n1GSYD Greater Sydney\r\n- State and Territory identifier: 1\r\n- GCCSA identifier: GSYD\r\n\r\nExample 2:\r\n\r\nRest of NSW - 1RNSW\r\n- State and Territory identifier: 1\r\n- GCCSA identifier: RNSW\r\n\r\nSpecial Purpose GCCSA\r\n\r\nThere are non-spatial GCCSAs for Migratory - Offshore - Shipping and No Usual Address in each State and Territory.",
+    "label" : "greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode",
+    "equivalentClass" : "_:b308"
+  }, {
+    "@id" : "asgs-id:iareCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Area%20(IARE)~7",
+    "comment" : "INDIGENOUS AREA CODING STRUCTURE\r\nIndigenous Areas have a six digit hierarchical code. Indigenous Areas are allocated a three digit code. This is prefixed by the three digit Indigenous Region code to complete the Indigenous Area code.\r\n\r\nSpecial purpose codes are included as balancing items. Statistical Area Level 1 (SA1) allocated to these codes are not part of a distinct Indigenous Area.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Area Code\tIndigenous Area Name\r\nVictoria\t2\t201001\tBrimbank\r\nVictoria\t2\t201002\tCardinia\r\nVictoria\t2\t201003\tCraigieburn - Sunbury\r\nVictoria\t2\t201004\tCranbourne - Narre Warren\r\nVictoria\t2\t201005\tFrankston\r\nVictoria\t2\t201006\tGreater Dandenong\r\nVictoria\t2\t294994\tNo usual address (Vic.)\r\nVictoria\t2\t297997\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Areas may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Area is abolished or changes significantly for new editions of the ASGS, the Indigenous Area identifier will be retired and the replacement Indigenous Area(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "iareCode2011",
+    "equivalentClass" : "_:b259"
+  }, {
+    "@id" : "asgs-id:iareCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Area%20(IARE)~7",
+    "comment" : "INDIGENOUS AREA CODING STRUCTURE\r\nIndigenous Areas have a six digit hierarchical code. Indigenous Areas are allocated a three digit code. This is prefixed by the three digit Indigenous Region code to complete the Indigenous Area code.\r\n\r\nSpecial purpose codes are included as balancing items. Statistical Area Level 1 (SA1) allocated to these codes are not part of a distinct Indigenous Area.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Area Code\tIndigenous Area Name\r\nVictoria\t2\t201001\tBrimbank\r\nVictoria\t2\t201002\tCardinia\r\nVictoria\t2\t201003\tCraigieburn - Sunbury\r\nVictoria\t2\t201004\tCranbourne - Narre Warren\r\nVictoria\t2\t201005\tFrankston\r\nVictoria\t2\t201006\tGreater Dandenong\r\nVictoria\t2\t294994\tNo usual address (Vic.)\r\nVictoria\t2\t297997\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Areas may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Area is abolished or changes significantly for new editions of the ASGS, the Indigenous Area identifier will be retired and the replacement Indigenous Area(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "iareCode2016",
+    "equivalentClass" : "_:b92"
+  }, {
+    "@id" : "asgs-id:iareName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Area%20(IARE)~7",
+    "comment" : "INDIGENOUS AREA NAMES\r\nIndigenous Area Names are allocated by ABS and are generally based upon a commonly identified name or combination of names for the area/community which the boundary encompasses. In areas encompassing multiple communities a combination of up to three distinct community names have been used to label the area.",
+    "label" : "iareName2011",
+    "equivalentClass" : "_:b368"
+  }, {
+    "@id" : "asgs-id:iareName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Area%20(IARE)~7",
+    "comment" : "INDIGENOUS AREA NAMES\r\nIndigenous Area Names are allocated by ABS and are generally based upon a commonly identified name or combination of names for the area/community which the boundary encompasses. In areas encompassing multiple communities a combination of up to three distinct community names have been used to label the area.",
+    "label" : "iareName2016",
+    "equivalentClass" : "_:b337"
+  }, {
+    "@id" : "asgs-id:ilocCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Locations%20(ILOC)~6",
+    "comment" : "INDIGENOUS LOCATION CODING STRUCTURE\r\nEach Indigenous Location has a unique eight digit hierarchical code. Indigenous Locations are allocated a two digit code. This is prefixed by the six digit Indigenous Area code to complete the Indigenous Location code.\r\n\r\nSpecial purpose codes are included as balancing items. SA1s allocated to these codes are not part of a distinct Indigenous Location.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Location Code\tIndigenous Location Name\r\nVictoria\t2\t20100101\tKeilor\r\nVictoria\t2\t20100102\tSunshine\r\nVictoria\t2\t20100201\tCardinia\r\nVictoria\t2\t20100301\tCraigieburn - Sunbury\r\nVictoria\t2\t20100401\tCranbourne\r\nVictoria\t2\t20100402\tHallam - Berwick - Pearcedale\r\nVictoria\t2\t29499494\tNo usual address (Vic.)\r\nVictoria\t2\t29799797\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Locations may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Location is abolished or changes significantly for new editions of the ASGS, the Indigenous Location identifier will be retired and the replacement Indigenous Location(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "ilocCode2011",
+    "equivalentClass" : "_:b301"
+  }, {
+    "@id" : "asgs-id:ilocCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Locations%20(ILOC)~6",
+    "comment" : "INDIGENOUS LOCATION CODING STRUCTURE\r\nEach Indigenous Location has a unique eight digit hierarchical code. Indigenous Locations are allocated a two digit code. This is prefixed by the six digit Indigenous Area code to complete the Indigenous Location code.\r\n\r\nSpecial purpose codes are included as balancing items. SA1s allocated to these codes are not part of a distinct Indigenous Location.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Location Code\tIndigenous Location Name\r\nVictoria\t2\t20100101\tKeilor\r\nVictoria\t2\t20100102\tSunshine\r\nVictoria\t2\t20100201\tCardinia\r\nVictoria\t2\t20100301\tCraigieburn - Sunbury\r\nVictoria\t2\t20100401\tCranbourne\r\nVictoria\t2\t20100402\tHallam - Berwick - Pearcedale\r\nVictoria\t2\t29499494\tNo usual address (Vic.)\r\nVictoria\t2\t29799797\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Locations may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Location is abolished or changes significantly for new editions of the ASGS, the Indigenous Location identifier will be retired and the replacement Indigenous Location(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "ilocCode2016",
+    "equivalentClass" : "_:b190"
+  }, {
+    "@id" : "asgs-id:ilocName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Locations%20(ILOC)~6",
+    "comment" : "INDIGENOUS LOCATION NAMES\r\nIndigenous Location names are allocated by ABS and are generally based upon a commonly identified name or combination of names for the area/community that the boundary encompasses. In locations encompassing multiple communities a combination of up to three distinct community names have been used to label the location.",
+    "label" : "ilocName2011",
+    "equivalentClass" : "_:b174"
+  }, {
+    "@id" : "asgs-id:ilocName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Locations%20(ILOC)~6",
+    "comment" : "INDIGENOUS LOCATION NAMES\r\nIndigenous Location names are allocated by ABS and are generally based upon a commonly identified name or combination of names for the area/community that the boundary encompasses. In locations encompassing multiple communities a combination of up to three distinct community names have been used to label the location.",
+    "label" : "ilocName2016",
+    "equivalentClass" : "_:b406"
+  }, {
+    "@id" : "asgs-id:indigenousAreas6DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Area%20(IARE)~7",
+    "comment" : "INDIGENOUS AREA CODING STRUCTURE\r\nIndigenous Areas have a six digit hierarchical code. Indigenous Areas are allocated a three digit code. This is prefixed by the three digit Indigenous Region code to complete the Indigenous Area code.\r\n\r\nSpecial purpose codes are included as balancing items. Statistical Area Level 1 (SA1) allocated to these codes are not part of a distinct Indigenous Area.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Area Code\tIndigenous Area Name\r\nVictoria\t2\t201001\tBrimbank\r\nVictoria\t2\t201002\tCardinia\r\nVictoria\t2\t201003\tCraigieburn - Sunbury\r\nVictoria\t2\t201004\tCranbourne - Narre Warren\r\nVictoria\t2\t201005\tFrankston\r\nVictoria\t2\t201006\tGreater Dandenong\r\nVictoria\t2\t294994\tNo usual address (Vic.)\r\nVictoria\t2\t297997\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Areas may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Area is abolished or changes significantly for new editions of the ASGS, the Indigenous Area identifier will be retired and the replacement Indigenous Area(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "indigenousAreas6DigitCode",
+    "equivalentClass" : "_:b181"
+  }, {
+    "@id" : "asgs-id:indigenousRegions3DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Regions%20(IREG)~8",
+    "comment" : "INDIGENOUS REGION CODING STRUCTURE\r\nIndigenous Regions are allocated a two digit code. This is prefixed by a single digit State and Territory code to complete the Indigenous Region code.\r\n\r\nSpecial purpose codes are included as balancing items. Statistical Area Level 1 (SA1) allocated to these codes are not part of a distinct Indigenous Region.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Region Code\tIndigenous Region Name\r\nVictoria\t2\t201\tMelbourne\r\nVictoria\t2\t202\tVictoria exc. Melbourne\r\nVictoria\t2\t294\tNo usual address (Vic.)\r\nVictoria\t2\t297\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Regions may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Region is abolished or changes significantly for new editions of the ASGS, the Indigenous Region identifier will be retired and the replacement Indigenous Region(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "indigenousRegions3DigitCode",
+    "equivalentClass" : "_:b204"
+  }, {
+    "@id" : "asgs-id:iregCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Regions%20(IREG)~8",
+    "comment" : "INDIGENOUS REGION CODING STRUCTURE\r\nIndigenous Regions are allocated a two digit code. This is prefixed by a single digit State and Territory code to complete the Indigenous Region code.\r\n\r\nSpecial purpose codes are included as balancing items. Statistical Area Level 1 (SA1) allocated to these codes are not part of a distinct Indigenous Region.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Region Code\tIndigenous Region Name\r\nVictoria\t2\t201\tMelbourne\r\nVictoria\t2\t202\tVictoria exc. Melbourne\r\nVictoria\t2\t294\tNo usual address (Vic.)\r\nVictoria\t2\t297\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Regions may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Region is abolished or changes significantly for new editions of the ASGS, the Indigenous Region identifier will be retired and the replacement Indigenous Region(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "iregCode2011",
+    "equivalentClass" : "_:b97"
+  }, {
+    "@id" : "asgs-id:iregCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Regions%20(IREG)~8",
+    "comment" : "INDIGENOUS REGION CODING STRUCTURE\r\nIndigenous Regions are allocated a two digit code. This is prefixed by a single digit State and Territory code to complete the Indigenous Region code.\r\n\r\nSpecial purpose codes are included as balancing items. Statistical Area Level 1 (SA1) allocated to these codes are not part of a distinct Indigenous Region.\r\n\r\nCodes ending in 94 are reserved for cases where people are coded to No Usual Address SA1s.\r\nCodes ending in 97 are reserved for cases where people are coded to Migratory, Offshore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tIndigenous Region Code\tIndigenous Region Name\r\nVictoria\t2\t201\tMelbourne\r\nVictoria\t2\t202\tVictoria exc. Melbourne\r\nVictoria\t2\t294\tNo usual address (Vic.)\r\nVictoria\t2\t297\tMigratory - Offshore - Shipping (Vic.)\r\n\r\nThe codes used for the 2016 Indigenous Regions may not match those used in 2011 in some instances. In future ASGS editions, it may also be necessary to allocate new codes . Changes to codes occur where an Indigenous Region is abolished or changes significantly for new editions of the ASGS, the Indigenous Region identifier will be retired and the replacement Indigenous Region(s) given a new code. Correspondences enabling translation of data from 2011 to 2016 and how these changes have been applied will be released with this volume.",
+    "label" : "iregCode2016",
+    "equivalentClass" : "_:b300"
+  }, {
+    "@id" : "asgs-id:iregName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Regions%20(IREG)~8",
+    "comment" : "INDIGENOUS REGION NAMES\r\nIndigenous Region Names are allocated by ABS and are generally based upon a commonly identified name or combination of names for the area/community which the boundary encompasses.",
+    "label" : "iregName2011",
+    "equivalentClass" : "_:b414"
+  }, {
+    "@id" : "asgs-id:iregName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.002~July%202016~Main%20Features~Indigenous%20Regions%20(IREG)~8",
+    "comment" : "INDIGENOUS REGION NAMES\r\nIndigenous Region Names are allocated by ABS and are generally based upon a commonly identified name or combination of names for the area/community which the boundary encompasses.",
+    "label" : "iregName2016",
+    "equivalentClass" : "_:b171"
+  }, {
+    "@id" : "asgs-id:lgaCode2012",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Local%20Government%20Areas%20(LGAs)~2",
+    "comment" : "Local Government Area Coding Structure\r\n\r\nLocal Government Areas are identified by four digit codes. Codes are unique only within a State or Territory. For unique Australia-wide Local Government Area code identification, the four digit code must be preceded by the State or Territory code. All Local Government Area codes end with the digit 0.\r\n\r\nThe codes used for the 2019 Local Government Areas match those used in 2018, as there has been no change. Changes to codes occur where a Local Government Area is abolished or changes significantly. The previous code will be retired and the replacement Local Government Area will be given a new code.\r\n\r\nNon-spatial special purpose codes are included as balancing items. Mesh Blocks allocated to these codes are not part of Local Government Area.\r\nLGA code 9799 is reserved for cases where people are coded to Migratory, Off-shore and Shipping Mesh Blocks.\r\nLGA code 9499 is reserved for cases where people are coded to No usual address Mesh Blocks.\r\n\r\nExample:\r\nState Name\tState Code\tLocal Government\r\nArea Code\tLocal Government Area Name\r\nQueensland\t3\t31000\tBrisbane (C)\r\nQueensland\t3\t31750\tBulloo (S)\r\nQueensland\t3\t31820\tBundaberg (R)\r\nQueensland\t3\t31900\tBurdekin (S)\r\nQueensland\t3\t32080\tCairns (R)\r\nQueensland\t3\t32250\tCarpentaria (S)\r\nQueensland\t3\t32260\tCassowary Coast (R)\r\nQueensland\t3\t39799\tMigratory - Offshore - Shipping (Qld)\r\nQueensland\t3\t39499\tNo usual address (Qld)",
+    "label" : "lgaCode2012",
+    "equivalentClass" : "_:b252"
+  }, {
+    "@id" : "asgs-id:lgaName2012",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Local%20Government%20Areas%20(LGAs)~2",
+    "comment" : "Local Government Area Names\r\n\r\nLocal Government Area names are abbreviated in this structure. A suffix also indicates the Local Government Area status. Examples of these include:\r\nCity of Albury: Albury (C)\r\nDistrict Council of Copper Coast: Copper Coast (DC)\r\n\r\nWhere the same Local Government Area name appears in different States or Territories, the State or Territory abbreviation appears in parenthesis after the name. Local Government Area names are therefore unique.\r\n\r\nIn all States and the Northern Territory each incorporated area has an official status. In this ASGS edition, the various Local Government Area status types include:\r\nNew South Wales: Cities (C) and Areas (A)\r\nVictoria: Cities (C), Rural Cities (RC), Boroughs (B) and Shires (S)\r\nQueensland: Cities (C), Shires (S), Towns (T) and Regional Councils (R)\r\nSouth Australia: Cities (C), Rural Cities (RC), Municipalities/Municipal Councils (M), District Councils (DC), Regional Councils (RegC), Towns (T) and Aboriginal Councils (AC)\r\nWestern Australia: Cities (C), Towns (T) and Shires (S)\r\nTasmania: Cities (C) and Municipalities (M)\r\nNorthern Territory: Cities (C), Towns (T), Municipalities (M) and Shires (S).",
+    "label" : "lgaName2012",
+    "equivalentClass" : "_:b35"
+  }, {
+    "@id" : "asgs-id:mbCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012",
+    "comment" : "MESH BLOCK CODE\r\n\r\nThe 11-digit Mesh Block code comprises: State and Territory identifier (1 digit), and a Mesh Block identifier (10 digits).\r\n\r\nExample: 60106840000\r\nS/T\tMB\r\n6\t0106840000\r\nMesh Block Identifier Ranges\r\n\r\nWithin each State and Territory, the Mesh Block identifier range 0000000000 to 9999999999.",
+    "label" : "mbCode2011",
+    "equivalentClass" : "_:b242"
+  }, {
+    "@id" : "asgs-id:mbCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012",
+    "comment" : "MESH BLOCK CODE\r\n\r\nThe 11-digit Mesh Block code comprises: State and Territory identifier (1 digit), and a Mesh Block identifier (10 digits).\r\n\r\nExample: 60106840000\r\nS/T\tMB\r\n6\t0106840000\r\nMesh Block Identifier Ranges\r\n\r\nWithin each State and Territory, the Mesh Block identifier range 0000000000 to 9999999999.",
+    "label" : "mbCode2016",
+    "equivalentClass" : "_:b182"
+  }, {
+    "@id" : "asgs-id:nrmrCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "nrmrCode2011",
+    "equivalentClass" : "_:b0"
+  }, {
+    "@id" : "asgs-id:nrmrCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "nrmrCode2016",
+    "equivalentClass" : "_:b453"
+  }, {
+    "@id" : "asgs-id:nrmrName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "nrmrName2011",
+    "equivalentClass" : "_:b51"
+  }, {
+    "@id" : "asgs-id:nrmrName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "nrmrName2016",
+    "equivalentClass" : "_:b176"
+  }, {
+    "@id" : "asgs-id:poaCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "poaCode2011",
+    "equivalentClass" : "_:b228"
+  }, {
+    "@id" : "asgs-id:poaCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "poaCode2016",
+    "equivalentClass" : "_:b386"
+  }, {
+    "@id" : "asgs-id:poaName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "poaName2011",
+    "equivalentClass" : "_:b422"
+  }, {
+    "@id" : "asgs-id:poaName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "poaName2016",
+    "equivalentClass" : "_:b427"
+  }, {
+    "@id" : "asgs-id:raCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1270.0.55.005Main%20Features15July%202016?opendocument&tabname=Summary&prodno=1270.0.55.005&issue=July%202016&num=&view=",
+    "comment" : "A Remoteness Area is identifiable by a 2 digit hierarchical code. This comprises a State or Territory identifier and a Remoteness Area identifier code. A Remoteness Area identifier is only unique if it is preceded by the State or Territory identifier.\r\n\r\nAs an example the Remoteness Area naming and coding structure for New South Wales (NSW) is illustrated below in Table 3.\r\n\r\nTable 3: Remoteness Area naming and coding structure for NSW\r\n\r\nState or Territory Code\tState or Territory Name\tRemoteness Area Category\tRemoteness Area Code\tRemoteness Area Name\r\n1\tNew South Wales\t0\t10\tMajor Cities of Australia\r\n1\tNew South Wales\t1\t11\tInner Regional Australia\r\n1\tNew South Wales\t2\t12\tOuter Regional Australia\r\n1\tNew South Wales\t3\t13\tRemote Australia\r\n1\tNew South Wales\t4\t14\tVery Remote Australia\r\n1\tNew South Wales\t5\t15\tMigratory - Offshore - Shipping (NSW)\r\n1\tNew South Wales\t9\t19\tNo usual address (NSW)",
+    "label" : "raCode2011",
+    "equivalentClass" : "_:b366"
+  }, {
+    "@id" : "asgs-id:raCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1270.0.55.005Main%20Features15July%202016?opendocument&tabname=Summary&prodno=1270.0.55.005&issue=July%202016&num=&view=",
+    "comment" : "A Remoteness Area is identifiable by a 2 digit hierarchical code. This comprises a State or Territory identifier and a Remoteness Area identifier code. A Remoteness Area identifier is only unique if it is preceded by the State or Territory identifier.\r\n\r\nAs an example the Remoteness Area naming and coding structure for New South Wales (NSW) is illustrated below in Table 3.\r\n\r\nTable 3: Remoteness Area naming and coding structure for NSW\r\n\r\nState or Territory Code\tState or Territory Name\tRemoteness Area Category\tRemoteness Area Code\tRemoteness Area Name\r\n1\tNew South Wales\t0\t10\tMajor Cities of Australia\r\n1\tNew South Wales\t1\t11\tInner Regional Australia\r\n1\tNew South Wales\t2\t12\tOuter Regional Australia\r\n1\tNew South Wales\t3\t13\tRemote Australia\r\n1\tNew South Wales\t4\t14\tVery Remote Australia\r\n1\tNew South Wales\t5\t15\tMigratory - Offshore - Shipping (NSW)\r\n1\tNew South Wales\t9\t19\tNo usual address (NSW)",
+    "label" : "raCode2016",
+    "equivalentClass" : "_:b156"
+  }, {
+    "@id" : "asgs-id:raName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1270.0.55.005Main%20Features15July%202016?opendocument&tabname=Summary&prodno=1270.0.55.005&issue=July%202016",
+    "comment" : "Table 1: 2016 Remoteness Area Category Names for Australia and SA1 Average ARIA+ Value\r\n\r\nRemoteness Area Category\tRemoteness Area Name\tSA1 Average ARIA+ Value Ranges\r\n0\tMajor Cities of Australia\t0 to 0.2\r\n1\tInner Regional Australia\tgreater than 0.2 and less than or equal to 2.4\r\n2\tOuter Regional Australia\tgreater than 2.4 and less than or equal to 5.92\r\n3\tRemote Australia\t\t\tgreater than 5.92 and less than or equal to 10.53\r\n4\tVery Remote Australia\t\tgreater than 10.53\r\n5\tMigratory - Offshore - Shipping\t Not Applicable\r\n9\tNo usual address\t\t\tNot Applicable\r\n",
+    "label" : "raName2011",
+    "equivalentClass" : "_:b312"
+  }, {
+    "@id" : "asgs-id:raName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/1270.0.55.005Main%20Features15July%202016?opendocument&tabname=Summary&prodno=1270.0.55.005&issue=July%202016",
+    "comment" : "Table 1: 2016 Remoteness Area Category Names for Australia and SA1 Average ARIA+ Value\r\n\r\nRemoteness Area Category\tRemoteness Area Name\tSA1 Average ARIA+ Value Ranges\r\n0\tMajor Cities of Australia\t0 to 0.2\r\n1\tInner Regional Australia\tgreater than 0.2 and less than or equal to 2.4\r\n2\tOuter Regional Australia\tgreater than 2.4 and less than or equal to 5.92\r\n3\tRemote Australia\t\t\tgreater than 5.92 and less than or equal to 10.53\r\n4\tVery Remote Australia\t\tgreater than 10.53\r\n5\tMigratory - Offshore - Shipping\t Not Applicable\r\n9\tNo usual address\t\t\tNot Applicable\r\n",
+    "label" : "raName2016",
+    "equivalentClass" : "_:b13"
+  }, {
+    "@id" : "asgs-id:sa1Maincode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%201%20(SA1)~10013",
+    "comment" : "SA1 CODING STRUCTURE\r\n\r\nSA1s are not named. They are identified either by an 11-digit fully hierarchical code, or by a truncated 7-digit code comprising the State and Territory, SA2 and SA1 identifiers. The SA1 identifier is a 2-digit code, assigned within a SA2. A SA1 code is only unique within a State and Territory when it is preceded by the State and Territory identifier.\r\n\r\n11-digit Code\r\n\r\nAn 11-digit SA1 code is fully hierarchical, and comprises: State and Territory identifier, SA4 identifier, SA3 identifier, SA2 identifier and a SA1 identifier.\r\n\r\nExample: SA1 50302104118\r\nS/T\tSA4\tSA3\tSA2\tSA1\r\n5\t03\t02\t1041\t18\r\n\r\n\r\n7-digit Code\r\n\r\nA 7-digit SA1 code is not fully hierarchical and comprises: State and Territory identifier, SA2 identifier and SA1 identifier.\r\n\r\nExample: SA1 5104118\r\nS/T\tSA2\tSA1\r\n5\t1041\t18\r\nFuture Allocation of SA1 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA1 is abolished, or changes significantly for new editions of the ASGS, the SA1 identifier will be retired and the replacement SA1(s) given the next available previously unused SA1 identifier within the SA2.\r\n\r\nSA1 Identifier Ranges\r\n\r\nWithin each SA2, the SA1 identifier is in the data range 01 to 99.",
+    "label" : "sa1Maincode2011",
+    "equivalentClass" : "_:b377"
+  }, {
+    "@id" : "asgs-id:sa1Maincode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%201%20(SA1)~10013",
+    "comment" : "SA1 CODING STRUCTURE\r\n\r\nSA1s are not named. They are identified either by an 11-digit fully hierarchical code, or by a truncated 7-digit code comprising the State and Territory, SA2 and SA1 identifiers. The SA1 identifier is a 2-digit code, assigned within a SA2. A SA1 code is only unique within a State and Territory when it is preceded by the State and Territory identifier.\r\n\r\n11-digit Code\r\n\r\nAn 11-digit SA1 code is fully hierarchical, and comprises: State and Territory identifier, SA4 identifier, SA3 identifier, SA2 identifier and a SA1 identifier.\r\n\r\nExample: SA1 50302104118\r\nS/T\tSA4\tSA3\tSA2\tSA1\r\n5\t03\t02\t1041\t18\r\n\r\n\r\n7-digit Code\r\n\r\nA 7-digit SA1 code is not fully hierarchical and comprises: State and Territory identifier, SA2 identifier and SA1 identifier.\r\n\r\nExample: SA1 5104118\r\nS/T\tSA2\tSA1\r\n5\t1041\t18\r\nFuture Allocation of SA1 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA1 is abolished, or changes significantly for new editions of the ASGS, the SA1 identifier will be retired and the replacement SA1(s) given the next available previously unused SA1 identifier within the SA2.\r\n\r\nSA1 Identifier Ranges\r\n\r\nWithin each SA2, the SA1 identifier is in the data range 01 to 99.",
+    "label" : "sa1Maincode2016",
+    "equivalentClass" : "_:b380"
+  }, {
+    "@id" : "asgs-id:sa2Maincode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%202%20(SA2)~10014",
+    "comment" : "SA2 CODING STRUCTURE\r\n\r\nA SA2 is identifiable either by a 9-digit fully hierarchical code, or by a truncated 5-digit code comprising the State and Territory and SA2 identifiers. The SA2 identifier is a 4-digit code, assigned in alphabetical order within a SA3. A SA2 code is only unique within a State and Territory if it is preceded by the State and Territory identifier.\r\n\r\n9-digit Code\r\n\r\nA 9-digit SA2 code is fully hierarchical, and comprises: State and Territory identifier, Statistical Area Level 4 (SA4) identifier, SA3 identifier, SA2 identifier.\r\n\r\nExample: 503021041 Perth City\r\nS/T\tSA4\tSA3\tSA2\tSA2\r\n5\t03\t02\t1041\tPerth City\r\n\r\n5-digit Code\r\n\r\nA 5-digit SA2 code is not hierarchical, and comprises only State and Territory identifier, SA2 identifier.\r\n\r\nExample: 51041 Perth City\r\nS/T\tSA2\tSA2 Name\r\n5\t1041\tPerth City\r\n\r\nFuture Allocation of SA2 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA2 is abolished, or changes significantly for new editions of the ASGS, the SA2 identifier will be retired and the replacement SA2(s) given the next available previously unused SA2 identifier within the State and Territory.\r\n\r\nSA2 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA2 identifier is in the data range 0001-7999. SA2 identifiers in the range 8000-8999 are reserved for processing within the ABS. The range 9000 to 9999 is reserved for special purpose SA2s.",
+    "label" : "sa2Maincode2011",
+    "equivalentClass" : "_:b423"
+  }, {
+    "@id" : "asgs-id:sa2Maincode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%202%20(SA2)~10014",
+    "comment" : "SA2 CODING STRUCTURE\r\n\r\nA SA2 is identifiable either by a 9-digit fully hierarchical code, or by a truncated 5-digit code comprising the State and Territory and SA2 identifiers. The SA2 identifier is a 4-digit code, assigned in alphabetical order within a SA3. A SA2 code is only unique within a State and Territory if it is preceded by the State and Territory identifier.\r\n\r\n9-digit Code\r\n\r\nA 9-digit SA2 code is fully hierarchical, and comprises: State and Territory identifier, Statistical Area Level 4 (SA4) identifier, SA3 identifier, SA2 identifier.\r\n\r\nExample: 503021041 Perth City\r\nS/T\tSA4\tSA3\tSA2\tSA2\r\n5\t03\t02\t1041\tPerth City\r\n\r\n5-digit Code\r\n\r\nA 5-digit SA2 code is not hierarchical, and comprises only State and Territory identifier, SA2 identifier.\r\n\r\nExample: 51041 Perth City\r\nS/T\tSA2\tSA2 Name\r\n5\t1041\tPerth City\r\n\r\nFuture Allocation of SA2 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA2 is abolished, or changes significantly for new editions of the ASGS, the SA2 identifier will be retired and the replacement SA2(s) given the next available previously unused SA2 identifier within the State and Territory.\r\n\r\nSA2 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA2 identifier is in the data range 0001-7999. SA2 identifiers in the range 8000-8999 are reserved for processing within the ABS. The range 9000 to 9999 is reserved for special purpose SA2s.",
+    "label" : "sa2Maincode2016",
+    "equivalentClass" : "_:b367"
+  }, {
+    "@id" : "asgs-id:sa2Name2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%202%20(SA2)~10014",
+    "comment" : "SA2 NAMES\r\n\r\nThe key criteria for SA2 names are that they be:\r\nmeaningful\r\nhave a maximum of 40 characters\r\nunique, i.e. not shared by any other SA2 in Australia.\r\n\r\nIn large urban areas, SA2s are named for the gazetted suburbs that comprise them:\r\nwhere a SA2 is made from a single suburb, it will retain the name of the suburb, for example:\r\nDuffy (ACT)\r\nMacgregor (ACT)\r\n\r\nwhere a single large suburb is split into more than one SA2, it will retain the name of the suburb and a geographic identifier, for example:\r\nMount Waverley - North\r\nMount Waverley - South.\r\n\r\nwhere a SA2 is made up from 2 or 3 suburbs, then the SA2 name is a concatenation of the suburb names, for example:\r\nGreenfield Park - Prairiewood\r\nBayswater - Embleton - Bedford.\r\nwhere a SA2 is made up of 4 or more suburbs it will be named for the larger or more prominent suburbs, or given a local identifier, for example:\r\nHomebush Bay - Silverwater\r\nPioneer Valley.\r\n\r\nIn rural areas, SA2s are named for the gazetted localities that comprise them, or the towns, city, or region with which they are associated, for example:\r\nBenalla Region\r\nTownsville - South\r\nBulahdelah - Stroud.\r\n\r\nWhere a SA2 name is duplicated in two or more State and Territory, the State and Territory abbreviation is attached to the SA2 name, for example:\r\nO'Connor (ACT)\r\nO'Connor (WA).",
+    "label" : "sa2Name2011",
+    "equivalentClass" : "_:b198"
+  }, {
+    "@id" : "asgs-id:sa2Name2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%202%20(SA2)~10014",
+    "comment" : "SA2 NAMES\r\n\r\nThe key criteria for SA2 names are that they be:\r\nmeaningful\r\nhave a maximum of 40 characters\r\nunique, i.e. not shared by any other SA2 in Australia.\r\n\r\nIn large urban areas, SA2s are named for the gazetted suburbs that comprise them:\r\nwhere a SA2 is made from a single suburb, it will retain the name of the suburb, for example:\r\nDuffy (ACT)\r\nMacgregor (ACT)\r\n\r\nwhere a single large suburb is split into more than one SA2, it will retain the name of the suburb and a geographic identifier, for example:\r\nMount Waverley - North\r\nMount Waverley - South.\r\n\r\nwhere a SA2 is made up from 2 or 3 suburbs, then the SA2 name is a concatenation of the suburb names, for example:\r\nGreenfield Park - Prairiewood\r\nBayswater - Embleton - Bedford.\r\nwhere a SA2 is made up of 4 or more suburbs it will be named for the larger or more prominent suburbs, or given a local identifier, for example:\r\nHomebush Bay - Silverwater\r\nPioneer Valley.\r\n\r\nIn rural areas, SA2s are named for the gazetted localities that comprise them, or the towns, city, or region with which they are associated, for example:\r\nBenalla Region\r\nTownsville - South\r\nBulahdelah - Stroud.\r\n\r\nWhere a SA2 name is duplicated in two or more State and Territory, the State and Territory abbreviation is attached to the SA2 name, for example:\r\nO'Connor (ACT)\r\nO'Connor (WA).",
+    "label" : "sa2Name2016",
+    "equivalentClass" : "_:b133"
+  }, {
+    "@id" : "asgs-id:sa3Code2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%203%20(SA3)~10015",
+    "comment" : "SA3 CODING STRUCTURE\r\n\r\nA SA3 is identified by a 5-digit hierarchical code. This comprises a 1-digit State and Territory identifier followed by a 2-digit SA4 identifier, unique within each State and Territory, and a 2-digit SA3 identifier, unique within each SA4.\r\n\r\nExample: 11401 Shoalhaven\r\nS/T\tSA4\tSA3\tSA3 Name\r\n1\t14\t01\tShoalhaven\r\n\r\nFuture Allocation of SA3 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA3 is abolished, or changes significantly for new editions of the ASGS, the SA3 identifier will be retired and the replacement SA3(s) given the next available previously unused SA3 identifier within the SA4.\r\n\r\nSA3 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA3 identifier is in the data range 01-79. SA3 identifiers in the range 80-99 are reserved for special purpose SA3s.",
+    "label" : "sa3Code2011",
+    "equivalentClass" : "_:b443"
+  }, {
+    "@id" : "asgs-id:sa3Code2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%203%20(SA3)~10015",
+    "comment" : "SA3 CODING STRUCTURE\r\n\r\nA SA3 is identified by a 5-digit hierarchical code. This comprises a 1-digit State and Territory identifier followed by a 2-digit SA4 identifier, unique within each State and Territory, and a 2-digit SA3 identifier, unique within each SA4.\r\n\r\nExample: 11401 Shoalhaven\r\nS/T\tSA4\tSA3\tSA3 Name\r\n1\t14\t01\tShoalhaven\r\n\r\nFuture Allocation of SA3 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA3 is abolished, or changes significantly for new editions of the ASGS, the SA3 identifier will be retired and the replacement SA3(s) given the next available previously unused SA3 identifier within the SA4.\r\n\r\nSA3 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA3 identifier is in the data range 01-79. SA3 identifiers in the range 80-99 are reserved for special purpose SA3s.",
+    "label" : "sa3Code2016",
+    "equivalentClass" : "_:b371"
+  }, {
+    "@id" : "asgs-id:sa3Name2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%203%20(SA3)~10015",
+    "comment" : "SA3 NAMES\r\n\r\nThe key criteria for SA3 names are that they be:\r\n\r\nmeaningful\r\nhave a maximum of 40 characters\r\nunique, i.e. not shared by any other SA3 in Australia.\r\nSA3s are named according to the areas they represent:\r\nwhere a SA3 represents a well-known regional area or a State Regional Development Area it is named after that region, for example:\r\nSouthern Highlands\r\nMid West.\r\n\r\nwhere a SA3 represents the functional area of a regional city it is named after that city, for example, Wagga Wagga. In some cases the name of an associated town or region is also included, for example:\r\nGriffith - Murrumbidgee (West)\r\n\r\nwhere a SA3 represents an economic hub within a major city it is generally named to reflect that hub, for example:\r\nParramatta\r\n\r\nwhere a SA3 represents a group of related suburbs it is named after one or more of those suburbs that reflect its location and extent, for example:\r\nNorth Sydney - Mosman\r\nBrunswick - Coburg.\r\n\r\nwhere a SA3 name is not unique within Australia, it is followed by the State and Territory abbreviation in brackets, for example:\r\nCentral Highlands (Tas.)\r\nCentral Highlands (Qld).",
+    "label" : "sa3Name2011",
+    "equivalentClass" : "_:b104"
+  }, {
+    "@id" : "asgs-id:sa3Name2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%203%20(SA3)~10015",
+    "comment" : "SA3 NAMES\r\n\r\nThe key criteria for SA3 names are that they be:\r\n\r\nmeaningful\r\nhave a maximum of 40 characters\r\nunique, i.e. not shared by any other SA3 in Australia.\r\nSA3s are named according to the areas they represent:\r\nwhere a SA3 represents a well-known regional area or a State Regional Development Area it is named after that region, for example:\r\nSouthern Highlands\r\nMid West.\r\n\r\nwhere a SA3 represents the functional area of a regional city it is named after that city, for example, Wagga Wagga. In some cases the name of an associated town or region is also included, for example:\r\nGriffith - Murrumbidgee (West)\r\n\r\nwhere a SA3 represents an economic hub within a major city it is generally named to reflect that hub, for example:\r\nParramatta\r\n\r\nwhere a SA3 represents a group of related suburbs it is named after one or more of those suburbs that reflect its location and extent, for example:\r\nNorth Sydney - Mosman\r\nBrunswick - Coburg.\r\n\r\nwhere a SA3 name is not unique within Australia, it is followed by the State and Territory abbreviation in brackets, for example:\r\nCentral Highlands (Tas.)\r\nCentral Highlands (Qld).",
+    "label" : "sa3Name2016",
+    "equivalentClass" : "_:b170"
+  }, {
+    "@id" : "asgs-id:sa4Code2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%204%20(SA4)~10016",
+    "comment" : "SA4 CODING STRUCTURE\r\n\r\nA SA4 is identified by a 3-digit hierarchical code. This comprises a 1-digit State and Territory identifier, which precedes a 2-digit SA4 identifier, which is unique within each State and Territory.\r\n\r\nExample: 102 Central Coast\r\nS/T\tSA4\tSA4 Name\r\n1\t02\tCentral Coast\r\n\r\n\r\nFuture Allocation of SA4 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA4 is abolished, or changes significantly for new editions of the ASGS, the SA4 identifier will be retired and the replacement SA4(s) given the next available previously unused SA4 identifier within the State and Territory.\r\n\r\nSA4 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA4 identifier is in the range 01- 79. SA4 identifiers in the range 80-99 are reserved for special purpose SA4s.",
+    "label" : "sa4Code2011",
+    "equivalentClass" : "_:b304"
+  }, {
+    "@id" : "asgs-id:sa4Code2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%204%20(SA4)~10016",
+    "comment" : "SA4 CODING STRUCTURE\r\n\r\nA SA4 is identified by a 3-digit hierarchical code. This comprises a 1-digit State and Territory identifier, which precedes a 2-digit SA4 identifier, which is unique within each State and Territory.\r\n\r\nExample: 102 Central Coast\r\nS/T\tSA4\tSA4 Name\r\n1\t02\tCentral Coast\r\n\r\n\r\nFuture Allocation of SA4 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA4 is abolished, or changes significantly for new editions of the ASGS, the SA4 identifier will be retired and the replacement SA4(s) given the next available previously unused SA4 identifier within the State and Territory.\r\n\r\nSA4 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA4 identifier is in the range 01- 79. SA4 identifiers in the range 80-99 are reserved for special purpose SA4s.",
+    "label" : "sa4Code2016",
+    "equivalentClass" : "_:b298"
+  }, {
+    "@id" : "asgs-id:sa4Name2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%204%20(SA4)~10016",
+    "comment" : "SA4 NAMES\r\n\r\nThe key criteria for SA4 names are that they be:\r\n\r\nmeaningful\r\nhave a maximum of 40 characters\r\nunique, i.e. not shared by any other SA4 in Australia.\r\n\r\nSA4s are named according to the areas they represent:\r\nwhere a SA4 represents a labour market of a major city it is named after that city, for example:\r\nBendigo\r\n\r\nwhere a SA4 represents an employment centre within a larger city it is generally named to reflect both the larger city and the employment centre or part of the city that it represents, for example:\r\nMelbourne - Inner South\r\nSydney - Blacktown\r\n\r\nwhere a SA4 represents a collection of labour markets in regional areas it is named using either a description of that part of the State and Territory or after one or more well-known regional areas that it closely replicates, for example:\r\nLatrobe - Gippsland\r\n\r\nwhere this name does not identify it within Australia, it is generally preceded by the State and Territory name, for example:\r\nWestern Australia - Wheat Belt\r\nQueensland - Outback.",
+    "label" : "sa4Name2011",
+    "equivalentClass" : "_:b162"
+  }, {
+    "@id" : "asgs-id:sa4Name2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%204%20(SA4)~10016",
+    "comment" : "SA4 NAMES\r\n\r\nThe key criteria for SA4 names are that they be:\r\n\r\nmeaningful\r\nhave a maximum of 40 characters\r\nunique, i.e. not shared by any other SA4 in Australia.\r\n\r\nSA4s are named according to the areas they represent:\r\nwhere a SA4 represents a labour market of a major city it is named after that city, for example:\r\nBendigo\r\n\r\nwhere a SA4 represents an employment centre within a larger city it is generally named to reflect both the larger city and the employment centre or part of the city that it represents, for example:\r\nMelbourne - Inner South\r\nSydney - Blacktown\r\n\r\nwhere a SA4 represents a collection of labour markets in regional areas it is named using either a description of that part of the State and Territory or after one or more well-known regional areas that it closely replicates, for example:\r\nLatrobe - Gippsland\r\n\r\nwhere this name does not identify it within Australia, it is generally preceded by the State and Territory name, for example:\r\nWestern Australia - Wheat Belt\r\nQueensland - Outback.",
+    "label" : "sa4Name2016",
+    "equivalentClass" : "_:b455"
+  }, {
+    "@id" : "asgs-id:sectionOfState2DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS CODING STRUCTURE\r\n\r\nA SOS is identifiable by a 2 digit fully hierarchical code. These are outlined in the examples below.\r\n\r\nThe SOS code comprises a State or Territory (S/T) and SOS identifier. A SOS identifier is only unique if it is preceded by the State or Territory identifier.\r\n\r\n\r\nFor example Major Urban in Victoria:\r\n\r\n\r\n20 Major Urban\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n2\t\r\n0\r\nMajor Urban\r\n\r\n\r\nFor example Rural Balance in Western Australia:\r\n\r\n53 Rural Balance\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n5\t\r\n3\r\nRural Balance\r\n\r\nSOS Special Purpose Codes\r\n\r\nTwo SOS are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory – Offshore – Shipping\r\n· No usual address\r\n\r\n\r\nFor example Migratory – Offshore – Shipping in Tasmania:\r\n\r\n67 Migratory – Offshore – Shipping (Tas.)\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n6\t\r\n7\r\nMigratory – Offshore – Shipping (Tas.)\r\n\r\n\r\nFor example No usual address in New South Wales:\r\n\r\n19 No usual address (NSW)\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n1\t\r\n9\r\nNo usual address (NSW)\r\n",
+    "label" : "sectionOfState2DigitCode",
+    "equivalentClass" : "_:b425"
+  }, {
+    "@id" : "asgs-id:sectionOfStateRange3DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOSR CODING STRUCTURE\r\n\r\nA SOSR is identifiable by a 3 digit fully hierarchical code. This comprises State or Territory, SOS and SOSR identifiers. A SOSR identifier is only unique if it is preceded by the State or Territory and SOS identifiers. See ‘Design of SOS and SOSR’ for the SOS and SOSR identifiers used for the different SOSR population ranges.\r\n\r\nThe examples below show how the SOSR codes are assigned to the SOSR Name.\r\n\r\n\r\nFor example SOSR of ‘1 million or more’ in Western Australia:\r\n\r\n501 ‘1 million or more’\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n5\t\r\n0\r\n1\r\n1 million or more\r\n\r\n\r\nFor example SOSR of ‘Remainder of State/Territory’ in South Australia:\r\n\r\n431 Remainder of State/Territory\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n4\t\r\n3\r\n1\r\nRemainder of State / Territory\r\n\r\n\r\nSOSR Special Purpose Codes\r\n\r\nTwo SOSR are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory – Offshore – Shipping\r\n· No usual address\r\n\r\n\r\nFor example Migratory – Offshore – Shipping in Queensland:\r\n\r\n379 Migratory – Offshore – Shipping (Qld)\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n3\t\r\n7\r\n9\r\nMigratory – Offshore – Shipping (Qld)\r\n\r\n\r\nFor example No usual address in the Australian Capital Territory:\r\n\r\n899 No usual address (ACT)\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n8\t\r\n9\r\n9\r\nNo usual address (ACT)",
+    "label" : "sectionOfStateRange3DigitCode",
+    "equivalentClass" : "_:b405"
+  }, {
+    "@id" : "asgs-id:sedCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~State%20Electoral%20Divisions%20(SEDs)~3",
+    "comment" : "STATE ELECTORAL DIVISION CODING STRUCTURE\r\nState Electoral Divisions are allocated a four digit code within each State or Territory. This is prefixed by a single digit State or Territory code to enable unique identification of States or Territories across the country.\r\n\r\nThe codes used for the 2019 ASGS State Electoral Divisions may not match those used in 2018 as codes are assigned alphabetically within each State and Territory, and some State Electoral Division names have changed since 2018. A geographic correspondence file enabling the translation of data from 2018 to 2019 SEDs is available in the downloads tab of this publication.\r\n\r\nSpecial purpose codes are included as balancing items. SA1s allocated to these codes are not part of a State Electoral Division.\r\n\r\nSED code 9494 is reserved for those State or Territories where people are coded to the No Usual Address SA1s.\r\nSED code 9797 is reserved for those State or Territories that have Migratory, Off-Shore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory\tState Electoral Division Code\tState Electoral Division Name\r\n5\t9494\tNo usual address (WA)\r\n5\t9797\tMigratory - Offshore - Shipping (WA)\r\n\r\nIt should be noted that States or Territories have different electoral arrangements. A summary of these differences and how they affect the State Electoral Division classification is provided below.\r\n\r\n\r\nNew South Wales (NSW)\r\nNew South Wales has two Houses of Parliament but only the Legislative Assembly (Lower House) electoral districts are represented in the State Electoral Division classification since the Legislative Council (upper House) is a single constituency. State Electoral Divisions are sorted by Lower House district name and then allocated a State or Territory code (digit 1) and a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nNew South Wales\t1\t10001\tAlbury\r\nNew South Wales\t1\t10002\tAuburn\r\n\r\n\r\n\r\nVictoria (Vic.)\r\nIn Victoria, the Legislative Council (Upper House) regions are obtained by amalgamating the Legislative Assembly (Lower House) electoral districts. The State Electoral Division classification provides information on both of these houses. The code comprises a State or Territory code (digit 1), a Lower House code (digits 2-3) and an Upper House code (digits 4-5). Upper House region names are recorded in brackets after the Lower House district names.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nVictoria\t2\t20106\tAlbert Park (Southern Metropolitan)\r\nVictoria\t2\t20207\tAltona (Western Metropolitan)\r\n\r\n\r\n\r\nQueensland (Qld)\r\nQueensland has only one House of Parliament (the Legislative Assembly) with each member representing an electoral district. These districts are equivalent to divisions in this classification. State Electoral Divisions are sorted by name then allocated a State or Territory code (digit 1) and a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nQueensland\t3\t30001\tAlgester\r\nQueensland\t3\t30002\tAspley\r\n\r\n\r\n\r\nSouth Australia (SA)\r\nLike New South Wales, in South Australia, there are two Houses of Parliament but only the House of Assembly (Lower House) electoral districts are represented in the State Electoral Division classification since the Legislative Council (Upper House) is a single constituency. State Electoral Divisions are sorted by Lower House name then allocated a State or Territory code (digit 1) and a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nSouth Australia\t4\t40001\tAdelaide\r\nSouth Australia\t4\t40002\tBadcoe\r\n\r\n\r\n\r\nWestern Australia (WA)\r\nIn Western Australia, Legislative Council (Upper House) regions are obtained by amalgamating the Legislative Assembly (Lower House) electoral districts. The State Electoral Division classification provides information on both of these houses. The five-digit code comprises a State or Territory code (digit 1), a Lower House code (digits 2-3) and an Upper House code (digits 4-5). Upper House region names are recorded in brackets after the Lower House district names.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nWestern Australia\t5\t50106\tAlbany (South West)\r\nWestern Australia\t5\t50304\tBalcatta (North Metropolitan)\r\n\r\n\r\n\r\nTasmania (Tas.)\r\nIn Tasmania there are two Houses of Parliament, the House of Assembly (Lower House) and the Legislative Council (Upper House). The Upper House divisions do not aggregate to or from the Lower House divisions. Information on both Houses is provided by the State Electoral Division classification. The code comprises a State or Territory code (digit 1), a Lower House code (digits 2-3), and an Upper House code (digits 4-5). Tasmanian Upper House names are recorded in brackets after Lower House names. Because Upper House divisions do not aggregate from the Lower House divisions there is more than one code covering a Lower House division, for example, one for each overlapping House division.\r\n\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nTasmania\t6\t60301\tClark (Derwent)\r\nTasmania\t6\t60302\tClark (Elwick)\r\nTasmania\t6\t60303\tClark (Hobart)\r\nTasmania\t6\t60310\tClark (Nelson)\r\nTasmania\t6\t60404\tFranklin (Huon)\r\nTasmania\t6\t60410\tFranklin (Nelson)\r\nTasmania\t6\t60411\tFranklin (Pembroke)\r\nTasmania\t6\t60414\tFranklin (Rumney)\r\n\r\n\r\n\r\nNorthern Territory (NT)\r\nIn the Northern Territory there is only one House of Parliament, the Legislative Assembly, the electorates for which are equivalent to the divisions in the State Electoral Division classification. State Electoral Divisions are sorted by name, then allocated a State or Territory code (digit 1), and then a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nNorthern Territory\t7\t70001\tArafura\r\nNorthern Territory\t7\t70002\tAraluen\r\n\r\n\r\n\r\nAustralian Capital Territory (ACT)\r\nThe Australian Capital Territory has only one House of Parliament, the Legislative Assembly, the electorates for which are equivalent to the divisions in the State Electoral Division classification. State Electoral Divisions are sorted by name and then allocated State or Territory code (digit 1), and then a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nAustralian Capital Territory\t8\t80001\tBrindabella\r\nAustralian Capital Territory\t8\t80002\tGinninderra\r\n\r\n\r\n\r\nOther Territories (OT)\r\nThere are no State Electoral boundaries for Other Territories.\r\nState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\n9\t99191\tUnclassified (OT)\r\n\r\nThis",
+    "label" : "sedCode2011",
+    "equivalentClass" : "_:b96"
+  }, {
+    "@id" : "asgs-id:sedCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~State%20Electoral%20Divisions%20(SEDs)~3",
+    "comment" : "STATE ELECTORAL DIVISION CODING STRUCTURE\r\nState Electoral Divisions are allocated a four digit code within each State or Territory. This is prefixed by a single digit State or Territory code to enable unique identification of States or Territories across the country.\r\n\r\nThe codes used for the 2019 ASGS State Electoral Divisions may not match those used in 2018 as codes are assigned alphabetically within each State and Territory, and some State Electoral Division names have changed since 2018. A geographic correspondence file enabling the translation of data from 2018 to 2019 SEDs is available in the downloads tab of this publication.\r\n\r\nSpecial purpose codes are included as balancing items. SA1s allocated to these codes are not part of a State Electoral Division.\r\n\r\nSED code 9494 is reserved for those State or Territories where people are coded to the No Usual Address SA1s.\r\nSED code 9797 is reserved for those State or Territories that have Migratory, Off-Shore and Shipping SA1s.\r\n\r\nExample:\r\nState and Territory\tState Electoral Division Code\tState Electoral Division Name\r\n5\t9494\tNo usual address (WA)\r\n5\t9797\tMigratory - Offshore - Shipping (WA)\r\n\r\nIt should be noted that States or Territories have different electoral arrangements. A summary of these differences and how they affect the State Electoral Division classification is provided below.\r\n\r\n\r\nNew South Wales (NSW)\r\nNew South Wales has two Houses of Parliament but only the Legislative Assembly (Lower House) electoral districts are represented in the State Electoral Division classification since the Legislative Council (upper House) is a single constituency. State Electoral Divisions are sorted by Lower House district name and then allocated a State or Territory code (digit 1) and a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nNew South Wales\t1\t10001\tAlbury\r\nNew South Wales\t1\t10002\tAuburn\r\n\r\n\r\n\r\nVictoria (Vic.)\r\nIn Victoria, the Legislative Council (Upper House) regions are obtained by amalgamating the Legislative Assembly (Lower House) electoral districts. The State Electoral Division classification provides information on both of these houses. The code comprises a State or Territory code (digit 1), a Lower House code (digits 2-3) and an Upper House code (digits 4-5). Upper House region names are recorded in brackets after the Lower House district names.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nVictoria\t2\t20106\tAlbert Park (Southern Metropolitan)\r\nVictoria\t2\t20207\tAltona (Western Metropolitan)\r\n\r\n\r\n\r\nQueensland (Qld)\r\nQueensland has only one House of Parliament (the Legislative Assembly) with each member representing an electoral district. These districts are equivalent to divisions in this classification. State Electoral Divisions are sorted by name then allocated a State or Territory code (digit 1) and a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nQueensland\t3\t30001\tAlgester\r\nQueensland\t3\t30002\tAspley\r\n\r\n\r\n\r\nSouth Australia (SA)\r\nLike New South Wales, in South Australia, there are two Houses of Parliament but only the House of Assembly (Lower House) electoral districts are represented in the State Electoral Division classification since the Legislative Council (Upper House) is a single constituency. State Electoral Divisions are sorted by Lower House name then allocated a State or Territory code (digit 1) and a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nSouth Australia\t4\t40001\tAdelaide\r\nSouth Australia\t4\t40002\tBadcoe\r\n\r\n\r\n\r\nWestern Australia (WA)\r\nIn Western Australia, Legislative Council (Upper House) regions are obtained by amalgamating the Legislative Assembly (Lower House) electoral districts. The State Electoral Division classification provides information on both of these houses. The five-digit code comprises a State or Territory code (digit 1), a Lower House code (digits 2-3) and an Upper House code (digits 4-5). Upper House region names are recorded in brackets after the Lower House district names.\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nWestern Australia\t5\t50106\tAlbany (South West)\r\nWestern Australia\t5\t50304\tBalcatta (North Metropolitan)\r\n\r\n\r\n\r\nTasmania (Tas.)\r\nIn Tasmania there are two Houses of Parliament, the House of Assembly (Lower House) and the Legislative Council (Upper House). The Upper House divisions do not aggregate to or from the Lower House divisions. Information on both Houses is provided by the State Electoral Division classification. The code comprises a State or Territory code (digit 1), a Lower House code (digits 2-3), and an Upper House code (digits 4-5). Tasmanian Upper House names are recorded in brackets after Lower House names. Because Upper House divisions do not aggregate from the Lower House divisions there is more than one code covering a Lower House division, for example, one for each overlapping House division.\r\n\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nTasmania\t6\t60301\tClark (Derwent)\r\nTasmania\t6\t60302\tClark (Elwick)\r\nTasmania\t6\t60303\tClark (Hobart)\r\nTasmania\t6\t60310\tClark (Nelson)\r\nTasmania\t6\t60404\tFranklin (Huon)\r\nTasmania\t6\t60410\tFranklin (Nelson)\r\nTasmania\t6\t60411\tFranklin (Pembroke)\r\nTasmania\t6\t60414\tFranklin (Rumney)\r\n\r\n\r\n\r\nNorthern Territory (NT)\r\nIn the Northern Territory there is only one House of Parliament, the Legislative Assembly, the electorates for which are equivalent to the divisions in the State Electoral Division classification. State Electoral Divisions are sorted by name, then allocated a State or Territory code (digit 1), and then a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nNorthern Territory\t7\t70001\tArafura\r\nNorthern Territory\t7\t70002\tAraluen\r\n\r\n\r\n\r\nAustralian Capital Territory (ACT)\r\nThe Australian Capital Territory has only one House of Parliament, the Legislative Assembly, the electorates for which are equivalent to the divisions in the State Electoral Division classification. State Electoral Divisions are sorted by name and then allocated State or Territory code (digit 1), and then a code starting from 0001 (digits 2-5).\r\n\r\nExample:\r\nState and Territory Name\tState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\nAustralian Capital Territory\t8\t80001\tBrindabella\r\nAustralian Capital Territory\t8\t80002\tGinninderra\r\n\r\n\r\n\r\nOther Territories (OT)\r\nThere are no State Electoral boundaries for Other Territories.\r\nState and Territory Code\tState Electoral Division Code\tState Electoral Division Name\r\n9\t99191\tUnclassified (OT)\r\n\r\nThis",
+    "label" : "sedCode2016",
+    "equivalentClass" : "_:b8"
+  }, {
+    "@id" : "asgs-id:sosCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS CODING STRUCTURE\r\n\r\nA SOS is identifiable by a 2 digit fully hierarchical code. These are outlined in the examples below.\r\n\r\nThe SOS code comprises a State or Territory (S/T) and SOS identifier. A SOS identifier is only unique if it is preceded by the State or Territory identifier.\r\n\r\n\r\nFor example Major Urban in Victoria:\r\n\r\n\r\n20 Major Urban\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n2\t\r\n0\r\nMajor Urban\r\n\r\n\r\nFor example Rural Balance in Western Australia:\r\n\r\n53 Rural Balance\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n5\t\r\n3\r\nRural Balance\r\n\r\nSOS Special Purpose Codes\r\n\r\nTwo SOS are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory – Offshore – Shipping\r\n· No usual address\r\n\r\n\r\nFor example Migratory – Offshore – Shipping in Tasmania:\r\n\r\n67 Migratory – Offshore – Shipping (Tas.)\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n6\t\r\n7\r\nMigratory – Offshore – Shipping (Tas.)\r\n\r\n\r\nFor example No usual address in New South Wales:\r\n\r\n19 No usual address (NSW)\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n1\t\r\n9\r\nNo usual address (NSW)\r\n",
+    "label" : "sosCode2011",
+    "equivalentClass" : "_:b205"
+  }, {
+    "@id" : "asgs-id:sosCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS CODING STRUCTURE\r\n\r\nA SOS is identifiable by a 2 digit fully hierarchical code. These are outlined in the examples below.\r\n\r\nThe SOS code comprises a State or Territory (S/T) and SOS identifier. A SOS identifier is only unique if it is preceded by the State or Territory identifier.\r\n\r\n\r\nFor example Major Urban in Victoria:\r\n\r\n\r\n20 Major Urban\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n2\t\r\n0\r\nMajor Urban\r\n\r\n\r\nFor example Rural Balance in Western Australia:\r\n\r\n53 Rural Balance\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n5\t\r\n3\r\nRural Balance\r\n\r\nSOS Special Purpose Codes\r\n\r\nTwo SOS are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory – Offshore – Shipping\r\n· No usual address\r\n\r\n\r\nFor example Migratory – Offshore – Shipping in Tasmania:\r\n\r\n67 Migratory – Offshore – Shipping (Tas.)\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n6\t\r\n7\r\nMigratory – Offshore – Shipping (Tas.)\r\n\r\n\r\nFor example No usual address in New South Wales:\r\n\r\n19 No usual address (NSW)\r\nS/T\t\r\nSOS identifier\r\nSOS Name\r\n1\t\r\n9\r\nNo usual address (NSW)\r\n",
+    "label" : "sosCode2016",
+    "equivalentClass" : "_:b143"
+  }, {
+    "@id" : "asgs-id:sosName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS AND SOSR NAMES\r\n\r\nSection of State (SOS) and Section of State Range (SOSR) names are not unique in Australia.\r\n",
+    "label" : "sosName2011",
+    "equivalentClass" : "_:b25"
+  }, {
+    "@id" : "asgs-id:sosName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS AND SOSR NAMES\r\n\r\nSection of State (SOS) and Section of State Range (SOSR) names are not unique in Australia.\r\n",
+    "label" : "sosName2016",
+    "equivalentClass" : "_:b391"
+  }, {
+    "@id" : "asgs-id:sosrCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOSR CODING STRUCTURE\r\n\r\nA SOSR is identifiable by a 3 digit fully hierarchical code. This comprises State or Territory, SOS and SOSR identifiers. A SOSR identifier is only unique if it is preceded by the State or Territory and SOS identifiers. See ‘Design of SOS and SOSR’ for the SOS and SOSR identifiers used for the different SOSR population ranges.\r\n\r\nThe examples below show how the SOSR codes are assigned to the SOSR Name.\r\n\r\n\r\nFor example SOSR of ‘1 million or more’ in Western Australia:\r\n\r\n501 ‘1 million or more’\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n5\t\r\n0\r\n1\r\n1 million or more\r\n\r\n\r\nFor example SOSR of ‘Remainder of State/Territory’ in South Australia:\r\n\r\n431 Remainder of State/Territory\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n4\t\r\n3\r\n1\r\nRemainder of State / Territory\r\n\r\n\r\nSOSR Special Purpose Codes\r\n\r\nTwo SOSR are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory – Offshore – Shipping\r\n· No usual address\r\n\r\n\r\nFor example Migratory – Offshore – Shipping in Queensland:\r\n\r\n379 Migratory – Offshore – Shipping (Qld)\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n3\t\r\n7\r\n9\r\nMigratory – Offshore – Shipping (Qld)\r\n\r\n\r\nFor example No usual address in the Australian Capital Territory:\r\n\r\n899 No usual address (ACT)\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n8\t\r\n9\r\n9\r\nNo usual address (ACT)",
+    "label" : "sosrCode2011",
+    "equivalentClass" : "_:b206"
+  }, {
+    "@id" : "asgs-id:sosrCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOSR CODING STRUCTURE\r\n\r\nA SOSR is identifiable by a 3 digit fully hierarchical code. This comprises State or Territory, SOS and SOSR identifiers. A SOSR identifier is only unique if it is preceded by the State or Territory and SOS identifiers. See ‘Design of SOS and SOSR’ for the SOS and SOSR identifiers used for the different SOSR population ranges.\r\n\r\nThe examples below show how the SOSR codes are assigned to the SOSR Name.\r\n\r\n\r\nFor example SOSR of ‘1 million or more’ in Western Australia:\r\n\r\n501 ‘1 million or more’\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n5\t\r\n0\r\n1\r\n1 million or more\r\n\r\n\r\nFor example SOSR of ‘Remainder of State/Territory’ in South Australia:\r\n\r\n431 Remainder of State/Territory\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n4\t\r\n3\r\n1\r\nRemainder of State / Territory\r\n\r\n\r\nSOSR Special Purpose Codes\r\n\r\nTwo SOSR are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory – Offshore – Shipping\r\n· No usual address\r\n\r\n\r\nFor example Migratory – Offshore – Shipping in Queensland:\r\n\r\n379 Migratory – Offshore – Shipping (Qld)\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n3\t\r\n7\r\n9\r\nMigratory – Offshore – Shipping (Qld)\r\n\r\n\r\nFor example No usual address in the Australian Capital Territory:\r\n\r\n899 No usual address (ACT)\r\nS/T\t\r\nSOS\r\nSOSR\r\nSOSR Name\r\n8\t\r\n9\r\n9\r\nNo usual address (ACT)",
+    "label" : "sosrCode2016",
+    "equivalentClass" : "_:b416"
+  }, {
+    "@id" : "asgs-id:sosrName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS AND SOSR NAMES\r\n\r\nSection of State (SOS) and Section of State Range (SOSR) names are not unique in Australia.\r\n",
+    "label" : "sosrName2011",
+    "equivalentClass" : "_:b24"
+  }, {
+    "@id" : "asgs-id:sosrName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SOS%20and%20SOSR%20Name%20and%20Coding%20Structure~14",
+    "comment" : "SOS AND SOSR NAMES\r\n\r\nSection of State (SOS) and Section of State Range (SOSR) names are not unique in Australia.\r\n",
+    "label" : "sosrName2016",
+    "equivalentClass" : "_:b449"
+  }, {
+    "@id" : "asgs-id:sscCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "sscCode2016",
+    "equivalentClass" : "_:b64"
+  }, {
+    "@id" : "asgs-id:sscName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "sscName2016",
+    "equivalentClass" : "_:b84"
+  }, {
+    "@id" : "asgs-id:stateCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Australia%20(AUS)%20and%20State%20%7C%20Territory%20(S%7CT)~10017",
+    "comment" : "States and Territories are identified by unique one-digit codes within Australia as follows:\r\nState and Territory Codes and Names\r\nCode\tS/T\r\n\r\n1\tNew South Wales\r\n2\tVictoria\r\n3\tQueensland\r\n4\tSouth Australia\r\n5\tWestern Australia\r\n6\tTasmania\r\n7\tNorthern Territory\r\n8\tAustralian Capital Territory\r\n9\tOther Territories",
+    "label" : "stateCode2011",
+    "equivalentClass" : "_:b90"
+  }, {
+    "@id" : "asgs-id:stateCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Australia%20(AUS)%20and%20State%20%7C%20Territory%20(S%7CT)~10017",
+    "comment" : "States and Territories are identified by unique one-digit codes within Australia as follows:\r\nState and Territory Codes and Names\r\nCode\tS/T\r\n\r\n1\tNew South Wales\r\n2\tVictoria\r\n3\tQueensland\r\n4\tSouth Australia\r\n5\tWestern Australia\r\n6\tTasmania\r\n7\tNorthern Territory\r\n8\tAustralian Capital Territory\r\n9\tOther Territories",
+    "label" : "stateCode2016",
+    "equivalentClass" : "_:b323"
+  }, {
+    "@id" : "asgs-id:stateName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Australia%20(AUS)%20and%20State%20%7C%20Territory%20(S%7CT)~10017",
+    "label" : "stateName2011",
+    "equivalentClass" : "_:b132"
+  }, {
+    "@id" : "asgs-id:stateName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Australia%20(AUS)%20and%20State%20%7C%20Territory%20(S%7CT)~10017",
+    "label" : "stateName2016",
+    "equivalentClass" : "_:b52"
+  }, {
+    "@id" : "asgs-id:stateOrTerritory1DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Australia%20(AUS)%20and%20State%20%7C%20Territory%20(S%7CT)~10017",
+    "comment" : "States and Territories are identified by unique one-digit codes within Australia as follows:\r\nState and Territory Codes and Names\r\nCode\tS/T\r\n\r\n1\tNew South Wales\r\n2\tVictoria\r\n3\tQueensland\r\n4\tSouth Australia\r\n5\tWestern Australia\r\n6\tTasmania\r\n7\tNorthern Territory\r\n8\tAustralian Capital Territory\r\n9\tOther Territories",
+    "label" : "stateOrTerritory1DigitCode",
+    "equivalentClass" : "_:b475"
+  }, {
+    "@id" : "asgs-id:stateelectoraldivisionIdentifier",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~State%20Electoral%20Divisions%20(SEDs)~3",
+    "comment" : "STATE ELECTORAL DIVISION NAMES\r\nASGS State Electoral Division names are the same as those allocated by the Electoral Commission in each respective State or Territory.",
+    "label" : "stateelectoraldivisionIdentifier",
+    "equivalentClass" : "_:b389"
+  }, {
+    "@id" : "asgs-id:statisticalArea1Sa111DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%201%20(SA1)~10013",
+    "comment" : "SA1 CODING STRUCTURE\r\n\r\nSA1s are not named. They are identified either by an 11-digit fully hierarchical code, or by a truncated 7-digit code comprising the State and Territory, SA2 and SA1 identifiers. The SA1 identifier is a 2-digit code, assigned within a SA2. A SA1 code is only unique within a State and Territory when it is preceded by the State and Territory identifier.\r\n\r\n11-digit Code\r\n\r\nAn 11-digit SA1 code is fully hierarchical, and comprises: State and Territory identifier, SA4 identifier, SA3 identifier, SA2 identifier and a SA1 identifier.\r\n\r\nExample: SA1 50302104118\r\nS/T\tSA4\tSA3\tSA2\tSA1\r\n5\t03\t02\t1041\t18\r\n\r\n\r\n7-digit Code\r\n\r\nA 7-digit SA1 code is not fully hierarchical and comprises: State and Territory identifier, SA2 identifier and SA1 identifier.\r\n\r\nExample: SA1 5104118\r\nS/T\tSA2\tSA1\r\n5\t1041\t18\r\nFuture Allocation of SA1 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA1 is abolished, or changes significantly for new editions of the ASGS, the SA1 identifier will be retired and the replacement SA1(s) given the next available previously unused SA1 identifier within the SA2.\r\n\r\nSA1 Identifier Ranges\r\n\r\nWithin each SA2, the SA1 identifier is in the data range 01 to 99.",
+    "label" : "statisticalArea1Sa111DigitCode",
+    "equivalentClass" : "_:b139"
+  }, {
+    "@id" : "asgs-id:statisticalArea2Sa29DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%202%20(SA2)~10014",
+    "comment" : "SA2 CODING STRUCTURE\r\n\r\nA SA2 is identifiable either by a 9-digit fully hierarchical code, or by a truncated 5-digit code comprising the State and Territory and SA2 identifiers. The SA2 identifier is a 4-digit code, assigned in alphabetical order within a SA3. A SA2 code is only unique within a State and Territory if it is preceded by the State and Territory identifier.\r\n\r\n9-digit Code\r\n\r\nA 9-digit SA2 code is fully hierarchical, and comprises: State and Territory identifier, Statistical Area Level 4 (SA4) identifier, SA3 identifier, SA2 identifier.\r\n\r\nExample: 503021041 Perth City\r\nS/T\tSA4\tSA3\tSA2\tSA2\r\n5\t03\t02\t1041\tPerth City\r\n\r\n5-digit Code\r\n\r\nA 5-digit SA2 code is not hierarchical, and comprises only State and Territory identifier, SA2 identifier.\r\n\r\nExample: 51041 Perth City\r\nS/T\tSA2\tSA2 Name\r\n5\t1041\tPerth City\r\n\r\nFuture Allocation of SA2 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA2 is abolished, or changes significantly for new editions of the ASGS, the SA2 identifier will be retired and the replacement SA2(s) given the next available previously unused SA2 identifier within the State and Territory.\r\n\r\nSA2 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA2 identifier is in the data range 0001-7999. SA2 identifiers in the range 8000-8999 are reserved for processing within the ABS. The range 9000 to 9999 is reserved for special purpose SA2s.",
+    "label" : "statisticalArea2Sa29DigitCode",
+    "equivalentClass" : "_:b344"
+  }, {
+    "@id" : "asgs-id:statisticalArea3Sa35DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%203%20(SA3)~10015",
+    "comment" : "SA3 CODING STRUCTURE\r\n\r\nA SA3 is identified by a 5-digit hierarchical code. This comprises a 1-digit State and Territory identifier followed by a 2-digit SA4 identifier, unique within each State and Territory, and a 2-digit SA3 identifier, unique within each SA4.\r\n\r\nExample: 11401 Shoalhaven\r\nS/T\tSA4\tSA3\tSA3 Name\r\n1\t14\t01\tShoalhaven\r\n\r\nFuture Allocation of SA3 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA3 is abolished, or changes significantly for new editions of the ASGS, the SA3 identifier will be retired and the replacement SA3(s) given the next available previously unused SA3 identifier within the SA4.\r\n\r\nSA3 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA3 identifier is in the data range 01-79. SA3 identifiers in the range 80-99 are reserved for special purpose SA3s.",
+    "label" : "statisticalArea3Sa35DigitCode",
+    "equivalentClass" : "_:b88"
+  }, {
+    "@id" : "asgs-id:statisticalArea4Sa43DigitCode",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Statistical%20Area%20Level%204%20(SA4)~10016",
+    "comment" : "SA4 CODING STRUCTURE\r\n\r\nA SA4 is identified by a 3-digit hierarchical code. This comprises a 1-digit State and Territory identifier, which precedes a 2-digit SA4 identifier, which is unique within each State and Territory.\r\n\r\nExample: 102 Central Coast\r\nS/T\tSA4\tSA4 Name\r\n1\t02\tCentral Coast\r\n\r\n\r\nFuture Allocation of SA4 Codes\r\n\r\nIn the future, it may be necessary to allocate new codes. If a SA4 is abolished, or changes significantly for new editions of the ASGS, the SA4 identifier will be retired and the replacement SA4(s) given the next available previously unused SA4 identifier within the State and Territory.\r\n\r\nSA4 Identifier Ranges\r\n\r\nWithin each State and Territory, the SA4 identifier is in the range 01- 79. SA4 identifiers in the range 80-99 are reserved for special purpose SA4s.",
+    "label" : "statisticalArea4Sa43DigitCode",
+    "equivalentClass" : "_:b125"
+  }, {
+    "@id" : "asgs-id:suaCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SUA%20Coding%20Structure~18",
+    "comment" : "SUA CODING STRUCTURE\r\n\r\nA Significant Urban Area (SUA) is identifiable by a unique 4 digit non-hierarchical code, with the first digit identifying the State or Territory (S/T). Those SUAs which cross state boundaries are given the State or Territory identifier for the State or Territory which contains the largest Centre. The regions representing those parts of a State or Territory 'Not in a significant urban area' have codes ending in 000.\r\n\r\nThe codes used for the 2016 SUAs may not match those used in 2011 as codes are assigned alphabetically within each State or Territory for each Australian Statistical Geography Standard (ASGS) edition, and SUA names may have change since 2011.\r\n\r\nFor example:\r\n\r\nS/T identifier\t\r\nSUA identifier\r\nSUA Name\r\n5\t\r\n009\r\nPerth\r\n3\t\r\n006\r\nGold Coast - Tweed Heads\r\n8\t\r\n000\r\nNot in a Significant Urban Area (ACT)",
+    "label" : "suaCode2011",
+    "equivalentClass" : "_:b310"
+  }, {
+    "@id" : "asgs-id:suaCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SUA%20Coding%20Structure~18",
+    "comment" : "SUA CODING STRUCTURE\r\n\r\nA Significant Urban Area (SUA) is identifiable by a unique 4 digit non-hierarchical code, with the first digit identifying the State or Territory (S/T). Those SUAs which cross state boundaries are given the State or Territory identifier for the State or Territory which contains the largest Centre. The regions representing those parts of a State or Territory 'Not in a significant urban area' have codes ending in 000.\r\n\r\nThe codes used for the 2016 SUAs may not match those used in 2011 as codes are assigned alphabetically within each State or Territory for each Australian Statistical Geography Standard (ASGS) edition, and SUA names may have change since 2011.\r\n\r\nFor example:\r\n\r\nS/T identifier\t\r\nSUA identifier\r\nSUA Name\r\n5\t\r\n009\r\nPerth\r\n3\t\r\n006\r\nGold Coast - Tweed Heads\r\n8\t\r\n000\r\nNot in a Significant Urban Area (ACT)",
+    "label" : "suaCode2016",
+    "equivalentClass" : "_:b451"
+  }, {
+    "@id" : "asgs-id:suaName2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SUA%20Names~17",
+    "comment" : "SUA NAMES\r\n\r\nKey criteria for the Significant Urban Area (SUA) names are that they be:\r\n· meaningful\r\n· max of 40 characters\r\n· must be unique within Australia.\r\n\r\nA single Statistical Area Level 2 (SA2) SUA will be named after the Urban Centre:\r\n· Alice Springs\r\n· Albany\r\n· Mount Gambier\r\n\r\nA multiple SA2 SUA will be named after the largest Urban Centre it contains:\r\n· Toowoomba\r\n\r\nWhere a SUA represents a combination of two centres of comparable importance, it is named for both:\r\n· Gladstone – Tannum Sands\r\n· Kalgoorlie – Boulder\r\n\r\nWhere a SUA cross a State or Territory (S/T) border, it is named after the largest centre on each side:\r\n· Gold Coast – Tweed Heads\r\n· Canberra – Queanbeyan\r\n\r\nWhere an SUA represents a region with a widely recognised name, it is named for that region:\r\n· Sunshine Coast",
+    "label" : "suaName2011",
+    "equivalentClass" : "_:b59"
+  }, {
+    "@id" : "asgs-id:suaName2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~SUA%20Names~17",
+    "comment" : "SUA NAMES\r\n\r\nKey criteria for the Significant Urban Area (SUA) names are that they be:\r\n· meaningful\r\n· max of 40 characters\r\n· must be unique within Australia.\r\n\r\nA single Statistical Area Level 2 (SA2) SUA will be named after the Urban Centre:\r\n· Alice Springs\r\n· Albany\r\n· Mount Gambier\r\n\r\nA multiple SA2 SUA will be named after the largest Urban Centre it contains:\r\n· Toowoomba\r\n\r\nWhere a SUA represents a combination of two centres of comparable importance, it is named for both:\r\n· Gladstone – Tannum Sands\r\n· Kalgoorlie – Boulder\r\n\r\nWhere a SUA cross a State or Territory (S/T) border, it is named after the largest centre on each side:\r\n· Gold Coast – Tweed Heads\r\n· Canberra – Queanbeyan\r\n\r\nWhere an SUA represents a region with a widely recognised name, it is named for that region:\r\n· Sunshine Coast",
+    "label" : "suaName2016",
+    "equivalentClass" : "_:b134"
+  }, {
+    "@id" : "asgs-id:trCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "trCode2011",
+    "equivalentClass" : "_:b291"
+  }, {
+    "@id" : "asgs-id:trCode2012",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1",
+    "label" : "trCode2012",
+    "equivalentClass" : "_:b374"
+  }, {
+    "@id" : "asgs-id:uclCode2011",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~UCL%20Coding%20Structure~11",
+    "comment" : "UCL CODING STRUCTURE\r\n\r\nAn Urban Centre and Locality (UCL) is identifiable by a 6 digit fully hierarchical code. This comprises a State or Territory (S/T), Section of State (SOS), Section of State Range (SOSR) and an UCL identifier. An UCL identifier is only unique if it is preceded by the State or Territory, SOS and SOSR identifiers. It is therefore possible to identify the population range to which the UCL belongs from the component Section of State and Section of State Range codes. This was not possible under the old Australian Standard Geographical Classification (ASGC) UCL coding system.\r\n\r\nFor example Jervis Bay (L) in Other Territories:\r\n\r\n922002 Jervis Bay (L)\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n9\t\r\n2\r\n2\r\n002\r\nJervis Bay (L)\r\n\r\n\r\nFor example Remainder of State/ Territory in Tasmania:\r\n631777 Remainder of State/Territory (Tas.)\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n6\t\r\n3\r\n1\r\n777\r\nRemainder of State/Territory (Tas.)\r\n\r\n\r\nUCL SPECIAL PURPOSE CODES\r\n\r\nTwo UCLs are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory - Offshore - Shipping\r\n· No usual address\r\n\r\nFor example Migratory – Offshore – Shipping in New South Wales:\r\n179997 Migratory – Offshore – Shipping\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n1\t\r\n7\r\n9\r\n997\r\nMigratory – Offshore – Shipping (NSW)\r\n\r\n\r\nFor example No usual address in Victoria:\r\n299994 No usual address (Vic.)\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n2\t\r\n9\r\n9\r\n994\r\nNo usual address (Vic.)",
+    "label" : "uclCode2011",
+    "equivalentClass" : [ "_:b114", "_:b210" ]
+  }, {
+    "@id" : "asgs-id:uclCode2016",
+    "@type" : "rdfs:Datatype",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~UCL%20Coding%20Structure~11",
+    "comment" : "UCL CODING STRUCTURE\r\n\r\nAn Urban Centre and Locality (UCL) is identifiable by a 6 digit fully hierarchical code. This comprises a State or Territory (S/T), Section of State (SOS), Section of State Range (SOSR) and an UCL identifier. An UCL identifier is only unique if it is preceded by the State or Territory, SOS and SOSR identifiers. It is therefore possible to identify the population range to which the UCL belongs from the component Section of State and Section of State Range codes. This was not possible under the old Australian Standard Geographical Classification (ASGC) UCL coding system.\r\n\r\nFor example Jervis Bay (L) in Other Territories:\r\n\r\n922002 Jervis Bay (L)\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n9\t\r\n2\r\n2\r\n002\r\nJervis Bay (L)\r\n\r\n\r\nFor example Remainder of State/ Territory in Tasmania:\r\n631777 Remainder of State/Territory (Tas.)\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n6\t\r\n3\r\n1\r\n777\r\nRemainder of State/Territory (Tas.)\r\n\r\n\r\nUCL SPECIAL PURPOSE CODES\r\n\r\nTwo UCLs are defined in each State or Territory for that part of a population which cannot be meaningfully assigned to a geographically defined region:\r\n· Migratory - Offshore - Shipping\r\n· No usual address\r\n\r\nFor example Migratory – Offshore – Shipping in New South Wales:\r\n179997 Migratory – Offshore – Shipping\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n1\t\r\n7\r\n9\r\n997\r\nMigratory – Offshore – Shipping (NSW)\r\n\r\n\r\nFor example No usual address in Victoria:\r\n299994 No usual address (Vic.)\r\nS/T\t\r\nSOS\r\nSOSR\r\nUCL\r\nUCL Name\r\n2\t\r\n9\r\n9\r\n994\r\nNo usual address (Vic.)",
+    "label" : "uclCode2016",
+    "equivalentClass" : "_:b154"
+  }, {
+    "@id" : "asgs-id:uclName2011",
+    "@type" : "rdfs:Datatype",
+    "" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~UCL%20Names~10",
+    "comment" : "UCL NAMES\r\n\r\nThe key criteria for Urban Centre and Locality (UCL) names are that they be:\r\n· meaningful\r\n· have a maximum of 40 characters\r\n· unique, i.e. not shared by any other UCL in Australia.\r\n\r\nWhere an UCL represents a single dominant centre then it is named for that centre:\r\n· Melbourne\r\n· Sydney\r\n· Townsville\r\n\r\nWhere an UCL represents a combination of two centres of comparable importance, it is named for both centres separated by a hyphen, the largest taking precedence:\r\n· Shepparton - Mooroopna\r\n· Bushfield - Woodford (L)\r\n· Berrara - Cudmirrah (L)\r\n\r\nWhere an UCL crosses a State/Territory (S/T) border, the component parts are identified in brackets:\r\n· Gold Coast - Tweed Heads (Gold Coast Part)\r\n· Gold Coast - Tweed Heads (Tweed Heads Part)\r\n· Canberra - Queanbeyan (Canberra Part)\r\n· Canberra - Queanbeyan (Queanbeyan Part)\r\n\r\nWhere an UCL represents a region with a widely recognised name, then that name is used:\r\n· Sunshine Coast\r\n· Central Coast\r\n\r\nUrban Centre names will be unique within Australia. If there are two Urban Centres with the same name, the standard State/Territory abbreviation will be added in brackets:\r\n· Maitland (SA)\r\n· Maitland (NSW)\r\n· Mount Barker (SA)\r\n· Mount Barker (WA)\r\n· Richmond (L) (Tas.)\r\n· Richmond (L) (Qld)\r\n\r\nLocalities have (L) appended to their names to indicate they are Localities and not Urban Centres:\r\n· Agnes Bank (L)\r\n· Avoca (L)\r\n· Mount Burr (L)\r\n\r\nIn some cases Gazetted Localities and Aboriginal and Torres Strait Islander community names have been used to obtain UCL names.",
+    "label" : "uclName2011",
+    "equivalentClass" : "_:b238"
+  }, {
+    "@id" : "asgs-id:uclName2016",
+    "@type" : "rdfs:Datatype",
+    "" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.004~July%202016~Main%20Features~UCL%20Names~10",
+    "comment" : "UCL NAMES\r\n\r\nThe key criteria for Urban Centre and Locality (UCL) names are that they be:\r\n· meaningful\r\n· have a maximum of 40 characters\r\n· unique, i.e. not shared by any other UCL in Australia.\r\n\r\nWhere an UCL represents a single dominant centre then it is named for that centre:\r\n· Melbourne\r\n· Sydney\r\n· Townsville\r\n\r\nWhere an UCL represents a combination of two centres of comparable importance, it is named for both centres separated by a hyphen, the largest taking precedence:\r\n· Shepparton - Mooroopna\r\n· Bushfield - Woodford (L)\r\n· Berrara - Cudmirrah (L)\r\n\r\nWhere an UCL crosses a State/Territory (S/T) border, the component parts are identified in brackets:\r\n· Gold Coast - Tweed Heads (Gold Coast Part)\r\n· Gold Coast - Tweed Heads (Tweed Heads Part)\r\n· Canberra - Queanbeyan (Canberra Part)\r\n· Canberra - Queanbeyan (Queanbeyan Part)\r\n\r\nWhere an UCL represents a region with a widely recognised name, then that name is used:\r\n· Sunshine Coast\r\n· Central Coast\r\n\r\nUrban Centre names will be unique within Australia. If there are two Urban Centres with the same name, the standard State/Territory abbreviation will be added in brackets:\r\n· Maitland (SA)\r\n· Maitland (NSW)\r\n· Mount Barker (SA)\r\n· Mount Barker (WA)\r\n· Richmond (L) (Tas.)\r\n· Richmond (L) (Qld)\r\n\r\nLocalities have (L) appended to their names to indicate they are Localities and not Urban Centres:\r\n· Agnes Bank (L)\r\n· Avoca (L)\r\n· Mount Burr (L)\r\n\r\nIn some cases Gazetted Localities and Aboriginal and Torres Strait Islander community names have been used to obtain UCL names.",
+    "label" : "uclName2016",
+    "equivalentClass" : "_:b382"
+  }, {
+    "@id" : ":contributor",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":creator",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":modified",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":publisher",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":rights",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : ":title",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "withRestrictions" : {
+      "@id" : "http://www.w3.org/2002/07/owl#withRestrictions",
+      "@type" : "@id"
+    },
+    "onDatatype" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onDatatype",
+      "@type" : "@id"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#pattern"
+    },
+    "length" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#length",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "equivalentClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "oneOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#oneOf",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "onDataRange" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onDataRange",
+      "@type" : "@id"
+    },
+    "maxQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "onClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onClass",
+      "@type" : "@id"
+    },
+    "maxLength" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#maxLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "" : {
+      "@id" : "http://purl.org/dc/terms/",
+      "@type" : "@id"
+    },
+    "schema" : "http://schema.org/",
+    "cc" : "http://creativecommons.org/ns#",
+    "void" : "http://rdfs.org/ns/void#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "geo" : "http://www.opengis.net/ont/geosparql#",
+    "asgs-id" : "http://linked.data.gov.au/def/asgs/id#",
+    "asgs" : "http://linked.data.gov.au/def/asgs#",
+    "sf" : "http://www.opengis.net/ont/sf#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

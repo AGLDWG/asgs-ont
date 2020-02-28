@@ -1,0 +1,254 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel1",
+    "onProperty" : "asgs:isStatisticalAreaLevel2Of"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:UrbanCentreAndLocality",
+    "onProperty" : "asgs:isSectionOfStateRangeOf"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:IndigenousLocation",
+    "onProperty" : "asgs:isIndigenousAreaOf"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:SectionOfStateRange",
+    "onProperty" : "asgs:isSectionOfStateOf"
+  }, {
+    "@id" : "_:b4",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:isStatisticalAreaLevel1Of"
+  }, {
+    "@id" : "_:b5",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:GreaterCapitalCityStatisticalArea",
+    "onProperty" : "asgs:isStateOrTerritoryOf"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel3",
+    "onProperty" : "asgs:isStatisticalAreaLevel4Of"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel4",
+    "onProperty" : "asgs:isGreaterCapitalCityStatisticalAreaOf"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:IndigenousArea",
+    "onProperty" : "asgs:isIndigenousRegionOf"
+  }, {
+    "@id" : "_:b9",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel2",
+    "onProperty" : "asgs:isStatisticalAreaLevel3Of"
+  }, {
+    "@id" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subClassOf" : "_:b7"
+  }, {
+    "@id" : "asgs:IndigenousArea",
+    "subClassOf" : "_:b2"
+  }, {
+    "@id" : "asgs:IndigenousRegion",
+    "subClassOf" : "_:b8"
+  }, {
+    "@id" : "asgs:SectionOfState",
+    "subClassOf" : "_:b3"
+  }, {
+    "@id" : "asgs:SectionOfStateRange",
+    "subClassOf" : "_:b1"
+  }, {
+    "@id" : "asgs:StateOrTerritory",
+    "subClassOf" : "_:b5"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel1",
+    "subClassOf" : "_:b4"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel2",
+    "subClassOf" : "_:b0"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel3",
+    "subClassOf" : "_:b9"
+  }, {
+    "@id" : "asgs:StatisticalAreaLevel4",
+    "subClassOf" : "_:b6"
+  }, {
+    "@id" : "asgs:isGreaterCapitalCityStatisticalAreaOf",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isGreater Capital City Statistical AreaOf",
+    "seeAlso" : "asgs:GreaterCapitalCityStatisticalArea",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isIndigenousAreaOf",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isIndigenous AreaOf",
+    "seeAlso" : "asgs:IndigenousArea",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isIndigenousRegionOf",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isIndigenous RegionOf",
+    "seeAlso" : "asgs:IndigenousRegion",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isSectionOfStateOf",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isSection of StateOf",
+    "seeAlso" : "asgs:SectionOfState",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isSectionOfStateRangeOf",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isSection of State RangeOf",
+    "seeAlso" : "asgs:SectionOfStateRange",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isStateOrTerritoryOf",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isState or TerritoryOf",
+    "seeAlso" : "asgs:StateOrTerritory",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isStatisticalAreaLevel1Of",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isStatistical Area Level1Of",
+    "seeAlso" : "asgs:StatisticalAreaLevel1",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isStatisticalAreaLevel2Of",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isStatistical Area Level2Of",
+    "seeAlso" : "asgs:StatisticalAreaLevel2",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isStatisticalAreaLevel3Of",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isStatistical Area Level3Of",
+    "seeAlso" : "asgs:StatisticalAreaLevel3",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "asgs:isStatisticalAreaLevel4Of",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "isStatistical Area Level4Of",
+    "seeAlso" : "asgs:StatisticalAreaLevel4",
+    "subPropertyOf" : "asgs:contains"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/asgs/isof",
+    "@type" : "owl:Ontology",
+    "contributor" : "https://orcid.org/0000-0002-3884-3420",
+    "created" : "2019-12-10",
+    "creator" : "https://orcid.org/0000-0002-4305-6085",
+    "dcterms:creator" : "Laurent Lefort, Australian Bureau of Statistics",
+    "description" : "<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>\r\n                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\r\n\t\t\t\t\t<p>Extensions for specific properties for containers</p>\r\n",
+    "modified" : "2019-12-10",
+    "publisher" : [ "Australian Bureau of Statistics", {
+      "@id" : "http://catalogue.linked.data.gov.au/org/O-000928"
+    } ],
+    "rights" : "Copyright 2018 Australian Bureau of Statistics.",
+    "title" : "ASGS Ontology - specialized containment predicates",
+    "owl:deprecated" : true,
+    "imports" : "http://linked.data.gov.au/def/asgs"
+  }, {
+    "@id" : "dcterms:created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:rights",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "schema" : "http://schema.org/",
+    "@vocab" : "http://linked.data.gov.au/def/asgs/isof#",
+    "cc" : "http://creativecommons.org/ns#",
+    "void" : "http://rdfs.org/ns/void#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "geo" : "http://www.opengis.net/ont/geosparql#",
+    "sf" : "http://www.opengis.net/ont/sf#",
+    "asgs" : "http://linked.data.gov.au/def/asgs#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

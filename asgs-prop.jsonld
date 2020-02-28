@@ -1,0 +1,121 @@
+{
+  "@graph" : [ {
+    "@id" : "asgs:category",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "asgs:MeshBlock",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "category",
+    "range" : "asgs:MeshblockCategory",
+    "seeAlso" : "asgs:MeshBlock",
+    "subPropertyOf" : "dcterms:type"
+  }, {
+    "@id" : "asgs:code",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "asgs:Feature",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "code",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:Feature",
+    "subPropertyOf" : "dcterms:identifier"
+  }, {
+    "@id" : "asgs:contains",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "contains",
+    "seeAlso" : "asgs:Feature",
+    "subPropertyOf" : "geo:sfContains"
+  }, {
+    "@id" : "asgs:label",
+    "@type" : [ "owl:DatatypeProperty", "owl:AnnotationProperty" ],
+    "domain" : "asgs:Feature",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "label",
+    "range" : "xsd:string",
+    "seeAlso" : "asgs:Feature",
+    "subPropertyOf" : "rdfs:label"
+  }, {
+    "@id" : "asgs:within",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "is within",
+    "seeAlso" : "asgs:Feature",
+    "subPropertyOf" : "geo:sfWithin"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/asgs/prop",
+    "@type" : "owl:Ontology",
+    "created" : "2020-02-03",
+    "creator" : "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>",
+    "description" : "<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>\r\n                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\r\n\t\t\t\t\t<p>Specialized properties which shadow ones from standard RDF vocabularies</p>",
+    "modified" : "2020-02-03",
+    "publisher" : "<a href='http://catalogue.linked.data.gov.au/org/O-000928'>Australian Bureau of Statistics</a>",
+    "rights" : "Copyright 2020 Australian Bureau of Statistics.",
+    "title" : "ASGS Ontology - specialized properties",
+    "owl:deprecated" : true,
+    "imports" : "http://linked.data.gov.au/def/asgs"
+  } ],
+  "@context" : {
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "geo" : "http://www.opengis.net/ont/geosparql#",
+    "asgs-prop" : "http://linked.data.gov.au/def/asgs/prop#",
+    "asgs" : "http://linked.data.gov.au/def/asgs#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

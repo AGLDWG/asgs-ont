@@ -1,4 +1,4 @@
-# baseURI: http://linked.data.gov.au/def/asgs-id
+# baseURI: http://linked.data.gov.au/def/asgs/id
 # imports: http://linked.data.gov.au/def/asgs
 
 @prefix asgs: <http://linked.data.gov.au/def/asgs#> .
@@ -589,7 +589,7 @@ asgs:UrbanCentreAndLocality
       owl:onProperty dcterms:identifier ;
     ] ;
 .
-<http://linked.data.gov.au/def/asgs-id>
+<http://linked.data.gov.au/def/asgs/id>
   a owl:Ontology ;
   dcterms:created "2019-12-13"^^xsd:date ;
   dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ;
@@ -599,45 +599,7 @@ asgs:UrbanCentreAndLocality
   dcterms:publisher "<a href='http://catalogue.linked.data.gov.au/org/csiro'>CSIRO</a>"^^rdf:HTML ;
   dcterms:rights "Copyright 2020 CSIRO" ;
   dcterms:title "ASGS Ontology - code properties" ;
-  rdfs:comment """The 'code' datatypes were initially generated from the retired datatype-properties using the following SPARQL expression:
-
-                                      CONSTRUCT { ?dn a rdfs:Datatype ;
-rdfs:label ?ln ; 
-owl:equivalentClass [  
-rdf:type rdfs:Datatype ; 
-owl:onDatatype xsd:string ; 
-      owl:withRestrictions (
-          [
-            xsd:pattern \"[0-9]+\" ;
-          ]
-        ) ;
-]  ; .}
-WHERE {
-	?p rdfs:subPropertyOf asgs:code . 
-	BIND( strafter( str(?p) , \"#\" ) AS ?ln )
-	BIND( IRI( concat( \"http://linked.data.gov.au/def/asgs/id#\", ?ln ) ) as ?dn )
-}
-
-This says that each *code* string is composed of 1..* digit characters. The exact patterns will be updated later. """ ;
-  rdfs:comment """The 'name' datatypes were initially generated from the retired datatype-properties using the following SPARQL expression:
-CONSTRUCT { ?dn a rdfs:Datatype ;
-rdfs:label ?ln ; 
-owl:equivalentClass [  
-rdf:type rdfs:Datatype ; 
-owl:onDatatype xsd:string ; 
-      owl:withRestrictions (
-          [
-            xsd:maxLength \"100\"^^xsd:integer ;
-          ]
-        ) ;
-]  ; .}
-WHERE {
-	?p rdfs:subPropertyOf asgs:label . 
-	BIND( strafter( str(?p) , \"#\" ) AS ?ln )
-	BIND( IRI( concat( \"http://linked.data.gov.au/def/asgs/id#\", ?ln ) ) as ?dn )
-}
-
-This says that each label or name is a string up to length 100. The exact patterns will be adjusted later. """ ;
+  rdfs:comment """The datatypes were initially generated from the retired datatype-properties using SPARQL and later updated to match the patterns specified in the ASGS documentation. """ ;
   owl:imports <http://linked.data.gov.au/def/asgs> ;
 .
 asgs-id:addCode2011

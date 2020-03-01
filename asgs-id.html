@@ -168,13 +168,13 @@ code {
     <script type="application/ld+json">
       [
   {
-    "@id": "http://linked.data.gov.au/def/asgs-id",
+    "@id": "http://linked.data.gov.au/def/asgs/id",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p>The 'name' datatypes were initially generated from the retired datatype-properties using the following SPARQL expression:\nCONSTRUCT { ?dn a rdfs:Datatype ;\nrdfs:label ?ln ; \nowl:equivalentClass [<br />\nrdf:type rdfs:Datatype ; \nowl:onDatatype xsd:string ; \n      owl:withRestrictions (\n          [\n            xsd:maxLength \"100\"^^xsd:integer ;\n          ]\n        ) ;\n]  ; .}\nWHERE {\n    ?p rdfs:subPropertyOf asgs:label . \n    BIND( strafter( str(?p) , \"#\" ) AS ?ln )\n    BIND( IRI( concat( \"http://linked.data.gov.au/def/asgs/id#\", ?ln ) ) as ?dn )\n}</p>\n<p>This says that each label or name is a string up to length 100. The exact patterns will be adjusted later. </p>"
+        "@value": "<p>The datatypes were initially generated from the retired datatype-properties using SPARQL and later updated to match the patterns specified in the ASGS documentation. </p>"
       }
     ],
     "https://schema.org/name": [
@@ -198,7 +198,7 @@ code {
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>IRI</dt>
-        <dd><code>http://linked.data.gov.au/def/asgs-id</code></dd>
+        <dd><code>http://linked.data.gov.au/def/asgs/id</code></dd>
         <dt>Publisher(s)</dt>
         <dd>
             <a href='http://catalogue.linked.data.gov.au/org/csiro'>CSIRO</a><br/>
@@ -222,23 +222,7 @@ code {
     </dl>
     <h2>Description</h2>
     <div id="description">
-        <p>The 'name' datatypes were initially generated from the retired datatype-properties using the following SPARQL expression:
-CONSTRUCT { ?dn a rdfs:Datatype ;
-rdfs:label ?ln ; 
-owl:equivalentClass [<br />
-rdf:type rdfs:Datatype ; 
-owl:onDatatype xsd:string ; 
-      owl:withRestrictions (
-          [
-            xsd:maxLength "100"^^xsd:integer ;
-          ]
-        ) ;
-]  ; .}
-WHERE {
-    ?p rdfs:subPropertyOf asgs:label . 
-    BIND( strafter( str(?p) , "#" ) AS ?ln )
-    BIND( IRI( concat( "http://linked.data.gov.au/def/asgs/id#", ?ln ) ) as ?dn )
-}</p>
+        <p>The datatypes were initially generated from the retired datatype-properties using SPARQL and later updated to match the patterns specified in the ASGS documentation.</p>
 <p>This says that each label or name is a string up to length 100. The exact patterns will be adjusted later. </p>
     </div>
 </section>

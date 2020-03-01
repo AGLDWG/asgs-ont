@@ -1,0 +1,750 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:UrbanCentreAndLocality",
+    "onProperty" : "asgs:uclToSa1PathFrom"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel2",
+    "onProperty" : "asgs:trToSa2PathTo"
+  }, {
+    "@id" : "_:b10",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:PostalArea",
+    "onProperty" : "asgs:poaToMbPathFrom"
+  }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateSuburb",
+    "onProperty" : "asgs:stateToSscPathTo"
+  }, {
+    "@id" : "_:b12",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateOrTerritory",
+    "onProperty" : "asgs:stateToSscPathFrom"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel1",
+    "onProperty" : "asgs:raToSa1PathTo"
+  }, {
+    "@id" : "_:b14",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:RemotenessArea",
+    "onProperty" : "asgs:raToSa1PathFrom"
+  }, {
+    "@id" : "_:b15",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:LocalGovernmentArea",
+    "onProperty" : "asgs:stateToLgaPathTo"
+  }, {
+    "@id" : "_:b16",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:sscToSa1PathTo"
+  }, {
+    "@id" : "_:b17",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateSuburb",
+    "onProperty" : "asgs:sscToSa1PathFrom"
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:sscToMbPathTo"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateSuburb",
+    "onProperty" : "asgs:sscToMbPathFrom"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:TourismRegion",
+    "onProperty" : "asgs:trToSa2PathFrom"
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:dznToMbPathTo"
+  }, {
+    "@id" : "_:b21",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:lgaToMbPathTo"
+  }, {
+    "@id" : "_:b22",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:LocalGovernmentArea",
+    "onProperty" : "asgs:lgaToMbPathFrom"
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:DestinationZone",
+    "onProperty" : "asgs:dznToMbPathFrom"
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateOrTerritory",
+    "onProperty" : "asgs:stateToLgaPathFrom"
+  }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel1",
+    "onProperty" : "asgs:sedToSa1PathTo"
+  }, {
+    "@id" : "_:b26",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:Feature",
+    "onProperty" : "asgs:from"
+  }, {
+    "@id" : "_:b27",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateOrTerritory",
+    "onProperty" : "asgs:stateToRaPathFrom"
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:AustralianDrainageDivision",
+    "onProperty" : "asgs:addToMbPathFrom"
+  }, {
+    "@id" : "_:b29",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel2",
+    "onProperty" : "asgs:suaToSa2PathTo"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateOrTerritory",
+    "onProperty" : "asgs:stateToIregPathFrom"
+  }, {
+    "@id" : "_:b30",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:SignificantUrbanArea",
+    "onProperty" : "asgs:suaToSa2PathFrom"
+  }, {
+    "@id" : "_:b31",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateElectoralDivision",
+    "onProperty" : "asgs:sedToSa1PathFrom"
+  }, {
+    "@id" : "_:b32",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:nrmrToMbPathTo"
+  }, {
+    "@id" : "_:b33",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:SectionOfState",
+    "onProperty" : "asgs:stateToSosPathTo"
+  }, {
+    "@id" : "_:b34",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StateOrTerritory",
+    "onProperty" : "asgs:stateToSosPathFrom"
+  }, {
+    "@id" : "_:b35",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:IndigenousRegion",
+    "onProperty" : "asgs:stateToIregPathTo"
+  }, {
+    "@id" : "_:b36",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:RemotenessArea",
+    "onProperty" : "asgs:stateToRaPathTo"
+  }, {
+    "@id" : "_:b37",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel1",
+    "onProperty" : "asgs:cedToSa1PathTo"
+  }, {
+    "@id" : "_:b38",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:CommonwealthElectoralDivision",
+    "onProperty" : "asgs:cedToSa1PathFrom"
+  }, {
+    "@id" : "_:b39",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel1",
+    "onProperty" : "asgs:uclToSa1PathTo"
+  }, {
+    "@id" : "_:b4",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:NaturalResourceManagementRegion",
+    "onProperty" : "asgs:nrmrToMbPathFrom"
+  }, {
+    "@id" : "_:b40",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:DestinationZone",
+    "onProperty" : "asgs:sa2ToDznPathTo"
+  }, {
+    "@id" : "_:b41",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel2",
+    "onProperty" : "asgs:sa2ToDznPathFrom"
+  }, {
+    "@id" : "_:b5",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:StatisticalAreaLevel1",
+    "onProperty" : "asgs:ilocToSa1PathTo"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:IndigenousLocation",
+    "onProperty" : "asgs:ilocToSa1PathFrom"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:Feature",
+    "onProperty" : "asgs:to"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:addToMbPathTo"
+  }, {
+    "@id" : "_:b9",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "asgs:MeshBlock",
+    "onProperty" : "asgs:poaToMbPathTo"
+  }, {
+    "@id" : "asgs:AddToMbPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "ADD to MB Path",
+    "seeAlso" : "asgs:AddToMbPath",
+    "subClassOf" : [ "_:b8", "_:b28", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:CedToSa1Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "CED to SA1 Path",
+    "seeAlso" : "asgs:CedToSa1Path",
+    "subClassOf" : [ "_:b37", "_:b38", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:DznToMbPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "DZN to MB Path",
+    "seeAlso" : "asgs:DznToMbPath",
+    "subClassOf" : [ "_:b20", "_:b23", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:GeospatialPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "Geospatial Path",
+    "seeAlso" : "asgs:GeospatialPath",
+    "subClassOf" : [ "_:b7", "_:b26", "owl:Thing" ]
+  }, {
+    "@id" : "asgs:IlocToSa1Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "ILOC to SA1 Path",
+    "seeAlso" : "asgs:IlocToSa1Path",
+    "subClassOf" : [ "_:b5", "_:b6", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:LgaToMbPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "LGA to MB Path",
+    "seeAlso" : "asgs:LgaToMbPath",
+    "subClassOf" : [ "_:b21", "_:b22", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:NrmrToMbPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "NRMR to MB Path",
+    "seeAlso" : "asgs:NrmrToMbPath",
+    "subClassOf" : [ "_:b32", "_:b4", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:PoaToMbPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "POA to MB Path",
+    "seeAlso" : "asgs:PoaToMbPath",
+    "subClassOf" : [ "_:b9", "_:b10", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:RaToSa1Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "RA to SA1 Path",
+    "seeAlso" : "asgs:RaToSa1Path",
+    "subClassOf" : [ "_:b13", "_:b14", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:Sa2ToDznPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "SA2 to DZN Path",
+    "seeAlso" : "asgs:Sa2ToDznPath",
+    "subClassOf" : [ "_:b40", "_:b41", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:SedToSa1Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "SED to SA1 Path",
+    "seeAlso" : "asgs:SedToSa1Path",
+    "subClassOf" : [ "_:b25", "_:b31", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:SscToMbPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "SSC to MB Path",
+    "seeAlso" : "asgs:SscToMbPath",
+    "subClassOf" : [ "_:b16", "_:b17", "_:b18", "_:b19", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:StateToIregPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "State to IREG Path",
+    "seeAlso" : "asgs:StateToIregPath",
+    "subClassOf" : [ "_:b35", "_:b3", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:StateToLgaPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "State to LGA Path",
+    "seeAlso" : "asgs:StateToLgaPath",
+    "subClassOf" : [ "_:b15", "_:b24", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:StateToRaPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "State to RA Path",
+    "seeAlso" : "asgs:StateToRaPath",
+    "subClassOf" : [ "_:b36", "_:b27", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:StateToSosPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "State to SOS Path",
+    "seeAlso" : "asgs:StateToSosPath",
+    "subClassOf" : [ "_:b33", "_:b34", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:StateToSscPath",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "State to SSC Path",
+    "seeAlso" : "asgs:StateToSscPath",
+    "subClassOf" : [ "_:b11", "_:b12", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:SuaToSa2Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "SUA to SA2 Path",
+    "seeAlso" : "asgs:SuaToSa2Path",
+    "subClassOf" : [ "_:b29", "_:b30", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:TrToSa2Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "TR to SA2 Path",
+    "seeAlso" : "asgs:TrToSa2Path",
+    "subClassOf" : [ "_:b1", "_:b2", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:UclToSa1Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "UCL to SA1 Path",
+    "seeAlso" : "asgs:UclToSa1Path",
+    "subClassOf" : [ "_:b39", "_:b0", "asgs:GeospatialPath" ]
+  }, {
+    "@id" : "asgs:addToMbPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "addToMbPath from",
+    "seeAlso" : "asgs:AddToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:addToMbPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "addToMbPath to",
+    "seeAlso" : "asgs:AddToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:cedToSa1PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "cedToSa1Path from",
+    "seeAlso" : "asgs:CedToSa1Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:cedToSa1PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "cedToSa1Path to",
+    "seeAlso" : "asgs:CedToSa1Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:dznToMbPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "dznToMbPath from",
+    "seeAlso" : "asgs:DznToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:dznToMbPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "dznToMbPath to",
+    "seeAlso" : "asgs:DznToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:from",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "from",
+    "seeAlso" : "asgs:GeospatialPath"
+  }, {
+    "@id" : "asgs:ilocToSa1PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "ilocToSa1Path from",
+    "seeAlso" : "asgs:IlocToSa1Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:ilocToSa1PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "ilocToSa1Path to",
+    "seeAlso" : "asgs:IlocToSa1Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:lgaToMbPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "lgaToMbPath from",
+    "seeAlso" : "asgs:LgaToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:lgaToMbPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "lgaToMbPath to",
+    "seeAlso" : "asgs:LgaToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:nrmrToMbPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "nrmrToMbPath from",
+    "seeAlso" : "asgs:NrmrToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:nrmrToMbPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "nrmrToMbPath to",
+    "seeAlso" : "asgs:NrmrToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:poaName2011",
+    "domain" : "asgs:PoaToMbPath",
+    "seeAlso" : "asgs:PoaToMbPath"
+  }, {
+    "@id" : "asgs:poaToMbPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "poaToMbPath from",
+    "seeAlso" : "asgs:PoaToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:poaToMbPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "poaToMbPath to",
+    "seeAlso" : "asgs:PoaToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:raToSa1PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "raToSa1Path from",
+    "seeAlso" : "asgs:RaToSa1Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:raToSa1PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "raToSa1Path to",
+    "seeAlso" : "asgs:RaToSa1Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:sa2ToDznPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sa2ToDznPath from",
+    "seeAlso" : "asgs:Sa2ToDznPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:sa2ToDznPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sa2ToDznPath to",
+    "seeAlso" : "asgs:Sa2ToDznPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:sedToSa1PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sedToSa1Path from",
+    "seeAlso" : "asgs:SedToSa1Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:sedToSa1PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sedToSa1Path to",
+    "seeAlso" : "asgs:SedToSa1Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:sscToMbPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sscToMbPath from",
+    "seeAlso" : "asgs:SscToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:sscToMbPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sscToMbPath to",
+    "seeAlso" : "asgs:SscToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:sscToSa1PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sscToSa1Path from",
+    "seeAlso" : "asgs:SscToMbPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:sscToSa1PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "sscToSa1Path to",
+    "seeAlso" : "asgs:SscToMbPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:stateToIregPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToIregPath from",
+    "seeAlso" : "asgs:StateToIregPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:stateToIregPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToIregPath to",
+    "seeAlso" : "asgs:StateToIregPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:stateToLgaPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToLgaPath from",
+    "seeAlso" : "asgs:StateToLgaPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:stateToLgaPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToLgaPath to",
+    "seeAlso" : "asgs:StateToLgaPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:stateToRaPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToRaPath from",
+    "seeAlso" : "asgs:StateToRaPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:stateToRaPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToRaPath to",
+    "seeAlso" : "asgs:StateToRaPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:stateToSosPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToSosPath from",
+    "seeAlso" : "asgs:StateToSosPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:stateToSosPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToSosPath to",
+    "seeAlso" : "asgs:StateToSosPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:stateToSscPathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToSscPath from",
+    "seeAlso" : "asgs:StateToSscPath",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:stateToSscPathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "stateToSscPath to",
+    "seeAlso" : "asgs:StateToSscPath",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:suaToSa2PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "suaToSa2Path from",
+    "seeAlso" : "asgs:SuaToSa2Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:suaToSa2PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "suaToSa2Path to",
+    "seeAlso" : "asgs:SuaToSa2Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:to",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "to",
+    "seeAlso" : "asgs:GeospatialPath"
+  }, {
+    "@id" : "asgs:trToSa2PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "trToSa2Path from",
+    "seeAlso" : "asgs:TrToSa2Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:trToSa2PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "trToSa2Path to",
+    "seeAlso" : "asgs:TrToSa2Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "asgs:uclToSa1PathFrom",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "uclToSa1Path from",
+    "seeAlso" : "asgs:UclToSa1Path",
+    "subPropertyOf" : "asgs:from"
+  }, {
+    "@id" : "asgs:uclToSa1PathTo",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://linked.data.gov.au/def/asgs",
+    "label" : "uclToSa1Path to",
+    "seeAlso" : "asgs:UclToSa1Path",
+    "subPropertyOf" : "asgs:to"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/asgs/path",
+    "@type" : "owl:Ontology",
+    "contributor" : [ "Simon J D Cox, CSIRO", {
+      "@id" : "https://orcid.org/0000-0002-3884-3420"
+    } ],
+    "created" : "2019-12-10",
+    "creator" : "https://orcid.org/0000-0002-4305-6085",
+    "dcterms:creator" : "Laurent Lefort, Australian Bureau of Statistics",
+    "description" : "<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>\r\n                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\r\n\t\t\t\t\t<p>Extensions for paths linking features</p>\r\n",
+    "modified" : "2019-12-10",
+    "publisher" : [ "Australian Bureau of Statistics", {
+      "@id" : "http://catalogue.linked.data.gov.au/org/O-000928"
+    } ],
+    "rights" : "Copyright 2018 Australian Bureau of Statistics.",
+    "title" : "ASGS Ontology - path extensions",
+    "imports" : "http://linked.data.gov.au/def/asgs"
+  }, {
+    "@id" : "dcterms:created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:rights",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "schema" : "http://schema.org/",
+    "@vocab" : "http://linked.data.gov.au/def/asgs/path#",
+    "cc" : "http://creativecommons.org/ns#",
+    "void" : "http://rdfs.org/ns/void#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "geo" : "http://www.opengis.net/ont/geosparql#",
+    "sf" : "http://www.opengis.net/ont/sf#",
+    "asgs" : "http://linked.data.gov.au/def/asgs#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

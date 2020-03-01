@@ -1,9 +1,9 @@
-# baseURI: http://linked.data.gov.au/def/asgs-prop
+# baseURI: http://linked.data.gov.au/def/asgs/prop
 # imports: http://linked.data.gov.au/def/asgs
 # prefix: asgs-prop
 
 @prefix asgs: <http://linked.data.gov.au/def/asgs#> .
-@prefix asgs-prop: <http://linked.data.gov.au/def/asgs-prop#> .
+@prefix asgs-prop: <http://linked.data.gov.au/def/asgs/prop#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -53,7 +53,7 @@ asgs:within
   rdfs:seeAlso asgs:Feature ;
   rdfs:subPropertyOf geo:sfWithin ;
 .
-<http://linked.data.gov.au/def/asgs-prop>
+<http://linked.data.gov.au/def/asgs/prop>
   a owl:Ontology ;
   dcterms:created "2020-02-03" ;
   dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ;

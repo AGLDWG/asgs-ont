@@ -1,0 +1,113 @@
+{
+  "@graph" : [ {
+    "@id" : "asgs:MeshblockCategory",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/asgs/cat",
+    "@type" : "owl:Ontology",
+    "created" : "2019-12-11",
+    "creator" : "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>",
+    "description" : "<p>Meshblock categories <a href='https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012'>as defined by ABS</a>.</p>\r\n<p>For use with the <a href='http://linked.data.gov.au/def/asgs'>Australian Statistical Geography Standard (ASGS) ontology</a>.</p>",
+    "modified" : "2020-01-31",
+    "publisher" : "http://catalogue.linked.data.gov.au/org/O-000928",
+    "dcterms:publisher" : "Australian Bureau of Statistics",
+    "rights" : "Copyright 2018 Australian Bureau of Statistics.",
+    "source" : "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012",
+    "title" : "ASGS Ontology - meshblock categories",
+    "imports" : "http://linked.data.gov.au/def/asgs"
+  }, {
+    "@id" : "mbcat:commercial",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "commercial"
+  }, {
+    "@id" : "mbcat:education",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "education"
+  }, {
+    "@id" : "mbcat:hospital-medical",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "hospital/medical"
+  }, {
+    "@id" : "mbcat:industrial",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "industrial"
+  }, {
+    "@id" : "mbcat:other",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "other"
+  }, {
+    "@id" : "mbcat:parkland",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "parkland"
+  }, {
+    "@id" : "mbcat:primary-production",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "primary production"
+  }, {
+    "@id" : "mbcat:residential",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "residential"
+  }, {
+    "@id" : "mbcat:transport",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "transport"
+  }, {
+    "@id" : "mbcat:water",
+    "@type" : [ "owl:NamedIndividual", "asgs:MeshblockCategory" ],
+    "label" : "water"
+  } ],
+  "@context" : {
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "schema" : "http://schema.org/",
+    "cc" : "http://creativecommons.org/ns#",
+    "void" : "http://rdfs.org/ns/void#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "mbcat" : "http://linked.data.gov.au/def/asgs/cat/",
+    "geo" : "http://www.opengis.net/ont/geosparql#",
+    "asgs" : "http://linked.data.gov.au/def/asgs#",
+    "sf" : "http://www.opengis.net/ont/sf#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

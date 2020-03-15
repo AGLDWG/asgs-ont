@@ -53,10 +53,11 @@
   <li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>
 </u>"""^^rdf:HTML ;
                                       dcterms:modified "2020-02-03" ;
-                                      dcterms:publisher "<a href='http://catalogue.linked.data.gov.au/org/O-000928'>Australian Bureau of Statistics</a>"^^rdf:HTML ;
+                                      dcterms:publisher <http://linked.data.gov.au/org/abs> ;
                                       dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                       dcterms:source <https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)> ;
-                                      dcterms:title "ASGS Ontology" .
+                                      dcterms:title "ASGS Ontology" ;
+                                      sdo:codeRepository <https://github.com/AGLDWG/asgs-ont/> .
 
 <https://orcid.org/0000-0002-3884-3420>
     a sdo:Person ;

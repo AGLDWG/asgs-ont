@@ -11,6 +11,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix schema: <http://schema.org/> .
@@ -20,17 +21,16 @@
 <http://linked.data.gov.au/def/asgs> rdf:type owl:Ontology ;
                                       owl:imports <http://www.opengis.net/ont/geosparql> ;
                                       dcterms:created "2018-11-23" ;
-                                      dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ,
-                                                      "<a href='https://orcid.org/0000-0002-4305-6085'>Laurent Lefort, Australian Bureau of Statistics</a>"^^rdf:HTML ;
+                                      dcterms:creator <https://orcid.org/0000-0002-3884-3420> , <https://orcid.org/0000-0002-4305-6085> ;
                                       dcterms:description """<p><a href='https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)'>Australian Statistical Geography Standard (ASGS)</a> ABS Structures and non-ABS structures</p>
 <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
 <ul>
-  <li>structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,</li> 
+  <li>structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,</li>
   <li>Indigenous structures: Indigenous location, Indigenous area, , Indigenous region classes</li>
   <li>Urban structures: Urban Centre and Locality, Section of State Range, Section of State, and Significant Urban Area classes</li>
 </ul>
 <p>and for the Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>
-<ul>   
+<ul>
   <li>Local Government Areas (LGAs)</li>
   <li>Postal Areas (POAs)</li>
   <li>State Suburbs (SSCs)</li>
@@ -40,7 +40,7 @@
   <li>Natural Resource Management Regions (NRMRs)</li>
   <li>Tourism Regions (TRs)</li>
 </ul>
-<p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p> 
+<p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>
 <p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>
 <p>The ASGS Ontology is packaged in multiple graphs:</p>
 <ul>
@@ -57,6 +57,29 @@
                                       dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                       dcterms:source <https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)> ;
                                       dcterms:title "ASGS Ontology" .
+
+<https://orcid.org/0000-0002-3884-3420>
+    a sdo:Person ;
+    sdo:name "Simon J.D. Cox" ;
+    sdo:email <mailto:simon.cox@csiro.au> ;
+    sdo:affiliation <http://linked.data.gov.au/org/csiro> .
+
+<http://linked.data.gov.au/org/csiro>
+    a sdo:Organization ;
+    sdo:name "CSIRO" ;
+    sdo:url <https://www.csiro.au> .
+
+<https://orcid.org/0000-0002-4305-6085>
+    a sdo:Person ;
+    sdo:name "Laurent Lefort" ;
+    sdo:identifier <https://orcid.org/0000-0002-4305-6085> ;
+    sdo:affiliation <http://linked.data.gov.au/org/abs> .
+
+<http://linked.data.gov.au/org/abs>
+    a sdo:Organization ;
+    sdo:name "Australian Bureau of Statistics" ;
+    sdo:url <https://www.abs.gov.au> .
+
 
 #################################################################
 #    Annotation properties
@@ -199,7 +222,7 @@ asgs:DestinationZone rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#Feature
 asgs:Feature rdf:type owl:Class ;
              rdfs:subClassOf geo:Feature ;
-             rdfs:comment """<p>Super-class for all ABS Structures and Non-ABS Structures. Use</p> 
+             rdfs:comment """<p>Super-class for all ABS Structures and Non-ABS Structures. Use</p>
 <ul>
 <li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
 <li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>

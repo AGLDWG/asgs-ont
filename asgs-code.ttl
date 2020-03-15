@@ -23,9 +23,8 @@
                                            dcterms:creator <https://orcid.org/0000-0002-4305-6085> ,
                                                        "Laurent Lefort, Australian Bureau of Statistics" ;
                                            dcterms:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
-                    <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
-					<p>Properties for specific codes and names</p>
-"""^^rdf:HTML ;
+<p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
+<p>Properties for specific codes and names</p>"""^^rdf:HTML ;
                                            dcterms:modified "2019-12-11" ;
                                            dcterms:publisher <http://linked.data.gov.au/org/abs> ;
                                            dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;

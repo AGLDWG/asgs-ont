@@ -64,6 +64,7 @@
     a sdo:Person ;
     sdo:name "Simon J.D. Cox" ;
     sdo:email <mailto:simon.cox@csiro.au> ;
+    sdo:identifier <https://orcid.org/0000-0002-3884-3420> ;
     sdo:affiliation <http://linked.data.gov.au/org/csiro> .
 
 <http://linked.data.gov.au/org/csiro>
@@ -74,6 +75,7 @@
 <https://orcid.org/0000-0002-4305-6085>
     a sdo:Person ;
     sdo:name "Laurent Lefort" ;
+    sdo:email <mailto:laurent.lefort@abs.gov.au> ;
     sdo:identifier <https://orcid.org/0000-0002-4305-6085> ;
     sdo:affiliation <http://linked.data.gov.au/org/abs> .
 
@@ -86,6 +88,7 @@
     a sdo:Person ;
     sdo:name "Nicholas J. Car" ;
     sdo:email <mailto:nicholas.car@surroundaustralia.com> ;
+    sdo:identifier <https://orcid.org/0000-0002-8742-7730> ;
     sdo:affiliation <https://surroundaustralia.com> .
 
 <https://surroundaustralia.com>

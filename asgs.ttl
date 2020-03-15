@@ -22,6 +22,7 @@
                                       owl:imports <http://www.opengis.net/ont/geosparql> ;
                                       dcterms:created "2018-11-23" ;
                                       dcterms:creator <https://orcid.org/0000-0002-3884-3420> , <https://orcid.org/0000-0002-4305-6085> ;
+                                      dcterms:contributor <https://orcid.org/0000-0002-8742-7730> ;
                                       dcterms:description """<p><a href='https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)'>Australian Statistical Geography Standard (ASGS)</a> ABS Structures and non-ABS structures</p>
 <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
 <ul>
@@ -81,6 +82,16 @@
     sdo:name "Australian Bureau of Statistics" ;
     sdo:url <https://www.abs.gov.au> .
 
+<https://orcid.org/0000-0002-8742-7730>
+    a sdo:Person ;
+    sdo:name "Nicholas J. Car" ;
+    sdo:email <mailto:nicholas.car@surroundaustralia.com> ;
+    sdo:affiliation <https://surroundaustralia.com> .
+
+<https://surroundaustralia.com>
+    a sdo:Organization ;
+    sdo:name "SURROUND Australia Pty Ltd" ;
+    sdo:url <https://surroundaustralia.com> .
 
 #################################################################
 #    Annotation properties

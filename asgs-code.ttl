@@ -27,15 +27,21 @@
 					<p>Properties for specific codes and names</p>
 """^^rdf:HTML ;
                                            dcterms:modified "2019-12-11" ;
-                                           dcterms:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
-                                                         "Australian Bureau of Statistics" ;
+                                           dcterms:publisher <http://linked.data.gov.au/org/abs> ;
                                            dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                            dcterms:title "ASGS Ontology - code properties" ;
                                            owl:deprecated "true"^^xsd:boolean .
 
+<http://linked.data.gov.au/org/abs>
+    a sdo:Organization ;
+    sdo:name "Australian Bureau of Statistics" ;
+    sdo:url "https://www.abs.gov.au" ;
+.
+
 #################################################################
 #    Annotation properties
 #################################################################
+
 
 ###  http://purl.org/dc/terms/contributor
 dcterms:contributor rdf:type owl:AnnotationProperty .

@@ -239,8 +239,8 @@ asgs:Feature rdf:type owl:Class ;
              rdfs:subClassOf geo:Feature ;
              rdfs:comment """<p>Super-class for all ABS Structures and Non-ABS Structures. Use</p>
 <ul>
-<li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
-<li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs-id'>ASGS-id</a></li>
+<li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs/id'>asgs-id</a></li>
+<li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs/id'>asgs-id</a></li>
 <li>geo:sfWithin, geo:sfContains for containment and nesting relations</li>
 </ul>"""^^rdf:HTML ;
              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;

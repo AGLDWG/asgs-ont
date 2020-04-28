@@ -29,13 +29,6 @@ asgs:code
   rdfs:seeAlso asgs:Feature ;
   rdfs:subPropertyOf dcterms:identifier ;
 .
-asgs:contains
-  a owl:ObjectProperty ;
-  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "contains" ;
-  rdfs:seeAlso asgs:Feature ;
-  rdfs:subPropertyOf geo:sfContains ;
-.
 asgs:label
   a owl:AnnotationProperty ;
   a owl:DatatypeProperty ;
@@ -45,13 +38,6 @@ asgs:label
   rdfs:range xsd:string ;
   rdfs:seeAlso asgs:Feature ;
   rdfs:subPropertyOf rdfs:label ;
-.
-asgs:within
-  a owl:ObjectProperty ;
-  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "is within" ;
-  rdfs:seeAlso asgs:Feature ;
-  rdfs:subPropertyOf geo:sfWithin ;
 .
 <http://linked.data.gov.au/def/asgs/prop>
   a owl:Ontology ;

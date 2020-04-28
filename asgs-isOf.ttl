@@ -48,6 +48,21 @@ dcterms:rights rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://linked.data.gov.au/def/asgs#contains
+asgs:contains rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf geo:sfContains ;
+              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+              rdfs:label "contains" ;
+              rdfs:seeAlso asgs:Feature .
+
+
+###  http://linked.data.gov.au/def/asgs#within
+asgs:within rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf geo:sfWithin ;
+            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+            rdfs:label "is within" ;
+            rdfs:seeAlso asgs:Feature .
+
 ###  http://linked.data.gov.au/def/asgs#isGreaterCapitalCityStatisticalAreaOf
 asgs:isGreaterCapitalCityStatisticalAreaOf rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf asgs:contains ;

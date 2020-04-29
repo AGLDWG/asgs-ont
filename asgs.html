@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ASGS Ontology</title>
+    <title>ASGS Ontology - ABS Structures and non-ABS structures</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
     <style>
@@ -179,12 +179,12 @@ code {
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p><a href='https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)'>Australian Statistical Geography Standard (ASGS)</a> ABS Structures and non-ABS structures</p>\n\n<p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\n\n<ul>\n  <li>structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,</li>\n  <li>Indigenous structures: Indigenous location, Indigenous area, , Indigenous region classes</li>\n  <li>Urban structures: Urban Centre and Locality, Section of State Range, Section of State, and Significant Urban Area classes</li>\n</ul>\n\n<p>and for the Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>\n\n<ul>\n  <li>Local Government Areas (LGAs)</li>\n  <li>Postal Areas (POAs)</li>\n  <li>State Suburbs (SSCs)</li>\n  <li>Commonwealth Electoral Divisions (CEDs)</li>\n  <li>State Electoral Divisions (SEDs)</li>\n  <li>Australian Drainage Divisions (ADDs)</li>\n  <li>Natural Resource Management Regions (NRMRs)</li>\n  <li>Tourism Regions (TRs)</li>\n</ul>\n\n<p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>\n\n<p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>\n\n<p>The ASGS Ontology is packaged in multiple graphs:</p>\n\n<ul>\n    <li>http://linked.data.gov.au/def/asgs (this graph) contains the core classes for ASGS statistical units, and a small number of properties relating to their identity, classification, and containment hierarchy</li>\n  <li>http://linked.data.gov.au/def/asgs-cat contains the meshblock classification scheme</li>\n  <li>http://linked.data.gov.au/def/asgs-id contains specialised string types for identifiers and labels</li>\n  <li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>\n  <li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by the generic 'within' and 'contains' relations</li>\n  <li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>\n  <li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>\n</u>"
+        "@value": "<p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\n<p>ABS structures: </p>\n<ul>\n<li>Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes</li>\n<li>Indigenous location, Indigenous area, Indigenous region </li>\n<li>Urban Centre and Locality, Section of State Range, Section of State, Significant Urban Area</li>\n</ul>\n<p>Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. \nThe classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>\n<ul>\n<li>Local Government Areas (LGAs)</li>\n<li>Postal Areas (POAs)</li>\n<li>State Suburbs (SSCs)</li>\n<li>Commonwealth Electoral Divisions (CEDs)</li>\n<li>State Electoral Divisions (SEDs)</li>\n<li>Australian Drainage Divisions (ADDs)</li>\n<li>Natural Resource Management Regions (NRMRs)</li>\n<li>Tourism Regions (TRs)</li>\n</ul>\n<p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>\n<p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>\n<p>The ASGS Ontology is packaged in multiple graphs:</p>\n<ul>\n<li>http://linked.data.gov.au/def/asgs (this graph) contains the core classes for ASGS statistical units, and a small number of properties relating to their identity, classification, and containment hierarchy</li>\n<li>http://linked.data.gov.au/def/asgs-cat contains the meshblock classification scheme</li>\n<li>http://linked.data.gov.au/def/asgs-id contains specialised string types for identifiers and labels</li>\n<li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>\n<li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by generic 'within' and 'isComposedOf' relations instead</li>\n<li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>\n<li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>\n</ul>"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "ASGS Ontology"
+        "@value": "ASGS Ontology - ABS Structures and non-ABS structures"
       }
     ],
     "https://schema.org/rights": [
@@ -198,7 +198,7 @@ code {
 </head>
 <body>
 <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">pyLODE</a></div>
-<h1>ASGS Ontology</h1>
+<h1>ASGS Ontology - ABS Structures and non-ABS structures</h1>
 <section id="metadata">
     <h2 style="display:none;">Metadata</h2>
     <dl>
@@ -210,17 +210,17 @@ code {
         </dd>
         <dt>Creator(s)</dt>
         <dd>
-            <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a> of <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
-            <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D. Cox</a> of <a href="https://www.csiro.au">CSIRO</a><br/>
+            <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a> (<a href="mailto:laurent.lefort@abs.gov.au">laurent.lefort@abs.gov.au</a>) of <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
+            <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D. Cox</a> (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of <a href="https://www.csiro.au">CSIRO</a><br/>
         </dd>
         <dt>Contributors(s)</dt>
         <dd>
-            <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a> of <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br/>
+            <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a> (<a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a>) of <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br/>
         </dd>
         <dt>Created</dt>
         <dd>2018-11-23</dd>
         <dt>Modified</dt>
-        <dd>2020-02-03</dd>
+        <dd>2020-04-29</dd>
         <dt>Imports</dt>
         <dd>
             <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a><br/>
@@ -236,44 +236,37 @@ code {
     </dl>
     <h2>Description</h2>
     <div id="description">
-        <p><a href='https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)'>Australian Statistical Geography Standard (ASGS)</a> ABS Structures and non-ABS structures</p>
-
-<p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
-
+        <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
+<p>ABS structures: </p>
 <ul>
-  <li>structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,</li>
-  <li>Indigenous structures: Indigenous location, Indigenous area, , Indigenous region classes</li>
-  <li>Urban structures: Urban Centre and Locality, Section of State Range, Section of State, and Significant Urban Area classes</li>
+<li>Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes</li>
+<li>Indigenous location, Indigenous area, Indigenous region </li>
+<li>Urban Centre and Locality, Section of State Range, Section of State, Significant Urban Area</li>
 </ul>
-
-<p>and for the Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>
-
+<p>Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. 
+The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>
 <ul>
-  <li>Local Government Areas (LGAs)</li>
-  <li>Postal Areas (POAs)</li>
-  <li>State Suburbs (SSCs)</li>
-  <li>Commonwealth Electoral Divisions (CEDs)</li>
-  <li>State Electoral Divisions (SEDs)</li>
-  <li>Australian Drainage Divisions (ADDs)</li>
-  <li>Natural Resource Management Regions (NRMRs)</li>
-  <li>Tourism Regions (TRs)</li>
+<li>Local Government Areas (LGAs)</li>
+<li>Postal Areas (POAs)</li>
+<li>State Suburbs (SSCs)</li>
+<li>Commonwealth Electoral Divisions (CEDs)</li>
+<li>State Electoral Divisions (SEDs)</li>
+<li>Australian Drainage Divisions (ADDs)</li>
+<li>Natural Resource Management Regions (NRMRs)</li>
+<li>Tourism Regions (TRs)</li>
 </ul>
-
 <p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>
-
 <p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>
-
 <p>The ASGS Ontology is packaged in multiple graphs:</p>
-
 <ul>
-    <li>http://linked.data.gov.au/def/asgs (this graph) contains the core classes for ASGS statistical units, and a small number of properties relating to their identity, classification, and containment hierarchy</li>
-  <li>http://linked.data.gov.au/def/asgs-cat contains the meshblock classification scheme</li>
-  <li>http://linked.data.gov.au/def/asgs-id contains specialised string types for identifiers and labels</li>
-  <li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>
-  <li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by the generic 'within' and 'contains' relations</li>
-  <li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>
-  <li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>
-</u>
+<li>http://linked.data.gov.au/def/asgs (this graph) contains the core classes for ASGS statistical units, and a small number of properties relating to their identity, classification, and containment hierarchy</li>
+<li>http://linked.data.gov.au/def/asgs-cat contains the meshblock classification scheme</li>
+<li>http://linked.data.gov.au/def/asgs-id contains specialised string types for identifiers and labels</li>
+<li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>
+<li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by generic 'within' and 'isComposedOf' relations instead</li>
+<li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>
+<li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>
+</ul>
     </div>
 </section>
 <section id="toc">
@@ -312,8 +305,8 @@ code {
         <li><a href="#ASGSFeature">ASGS Feature</a></li>
         <li><a href="#AustralianDrainageDivision">Australian Drainage Division</a></li>
         <li><a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a></li>
-        <li><a href="#Country">Country</a></li>
-        <li><a href="#DestinationZone">DestinationZone</a></li>
+        <li><a href="#Country">Country </a></li>
+        <li><a href="#DestinationZone">Destination Zone</a></li>
         <li><a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a></li>
         <li><a href="#IndigenousArea">Indigenous Area</a></li>
         <li><a href="#IndigenousLocation">Indigenous Location</a></li>
@@ -322,6 +315,8 @@ code {
         <li><a href="#MeshBlock">Mesh Block</a></li>
         <li><a href="#Meshblockcategory">Meshblock category</a></li>
         <li><a href="#NaturalResourceManagementRegion">Natural Resource Management Region</a></li>
+        <li><a href="#Organization">Organization</a></li>
+        <li><a href="#Person">Person</a></li>
         <li><a href="#Postalarea">Postal area</a></li>
         <li><a href="#RemotenessArea">Remoteness Area</a></li>
         <li><a href="#SectionofState">Section of State</a></li>
@@ -329,13 +324,13 @@ code {
         <li><a href="#SignificantUrbanArea">Significant Urban Area</a></li>
         <li><a href="#StateElectoralDivision">State Electoral Division</a></li>
         <li><a href="#StateSuburb">State Suburb</a></li>
-        <li><a href="#StateOrTerritory">StateOrTerritory</a></li>
+        <li><a href="#StateorTerritory">State or Territory</a></li>
         <li><a href="#StatisticalAreaLevel1">Statistical Area Level 1</a></li>
         <li><a href="#StatisticalAreaLevel2">Statistical Area Level 2</a></li>
         <li><a href="#StatisticalAreaLevel3">Statistical Area Level 3</a></li>
         <li><a href="#StatisticalAreaLevel4">Statistical Area Level 4</a></li>
         <li><a href="#TourismRegion">Tourism Region</a></li>
-        <li><a href="#UrbanCentreAndLocality">UrbanCentreAndLocality</a></li>
+        <li><a href="#UrbanCentreandLocality">Urban Centre and Locality</a></li>
     </ul>
     <div class="entity class" id="AustralianDrainageDivision">
         <h3>Australian Drainage Division<sup title="class" class="sup-c">c</sup></h3>
@@ -359,7 +354,7 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -386,14 +381,14 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Country">
-        <h3>Country<sup title="class" class="sup-c">c</sup></h3>
+        <h3>Country <sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -402,7 +397,7 @@ code {
             <tr>
                 <th>Description</th>
                 <td>
-                    Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning:Ã¢â‚¬ËœÃ¢â‚¬Â¦the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external TerritoryÃ¢â‚¬â„¢.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia
+                    Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning: 'the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territory'.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia
                 </td>
             </tr>
             <tr>
@@ -411,10 +406,16 @@ code {
                     <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="DestinationZone">
-        <h3>DestinationZone<sup title="class" class="sup-c">c</sup></h3>
+        <h3>Destination Zone<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -435,8 +436,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -451,12 +452,11 @@ code {
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Super-class for all ABS Structures and Non-ABS Structures. Use</p>
-<ul>
-<li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs/id'>asgs-id</a></li>
-<li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs/id'>asgs-id</a></li>
-<li>geo:sfWithin, geo:sfContains for containment and nesting relations</li>
-</ul>
+                    Super-class for all ABS Structures and Non-ABS Structures. Use
+
+- dcterms:identifier for the code, with a suitable datatype from `asgs-id`
+- rdfs:label for the name, with a suitable datatype from `asgs-id`
+- `asgs:within`, `asgs:isComposedOf` for containment and composition relations
                 </td>
             </tr>
             <tr>
@@ -468,31 +468,31 @@ code {
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#UrbanCentreAndLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -519,7 +519,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -546,7 +547,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -573,7 +575,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -600,7 +603,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -615,7 +619,7 @@ code {
             <tr>
                 <th>Description</th>
                 <td>
-                    Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as â€˜Unincorporatedâ€™ in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics.
+                    Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as 'Unincorporated' in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics.
                 </td>
             </tr>
             <tr>
@@ -627,8 +631,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -655,8 +659,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://purl.org/dc/terms/type">dcterms:type</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Meshblockcategory">asgs:MeshblockCategory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -704,8 +708,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -732,7 +736,7 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -759,7 +763,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -786,7 +791,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -813,7 +819,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -835,6 +842,12 @@ code {
                 <th>Super-classes</th>
                 <td>
                     <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -861,14 +874,14 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="StateOrTerritory">
-        <h3>StateOrTerritory<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="StateorTerritory">
+        <h3>State or Territory<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -889,7 +902,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -916,8 +930,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -944,10 +958,13 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#UrbanCentreAndLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -974,8 +991,10 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1002,7 +1021,8 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1029,8 +1049,9 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#StateOrTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1057,13 +1078,13 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfContains">geo:sfContains</a> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="UrbanCentreAndLocality">
-        <h3>UrbanCentreAndLocality<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="UrbanCentreandLocality">
+        <h3>Urban Centre and Locality<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -1084,8 +1105,27 @@ code {
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/geosparql#sfWithin">geo:sfWithin</a> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Organization">
+        <h3>Organization<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/Organization</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Person">
+        <h3>Person<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/Person</code></td>
             </tr>
         </table>
     </div>
@@ -1093,8 +1133,42 @@ code {
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#iscomposedof">is composed of</a></li>
+        <li><a href="#iswithin">is within</a></li>
         <li><a href="#type">type</a></li>
     </ul>
+    <div class="entity property" id="iscomposedof">
+        <h3>is composed of<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#isComposedOf</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The context resource is composed one or more of the target resources. 
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="iswithin">
+        <h3>is within<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#within</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The context resource is contained within the target resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
+
+This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="type">
         <h3>type<sup title="object property" class="sup-op">op</sup></h3>
         <table>
@@ -1136,6 +1210,12 @@ code {
         <li><a href="#title">title</a></li>
         <li><a href="#isDefinedBy">isDefinedBy</a></li>
         <li><a href="#qualifiedCardinality">qualifiedCardinality</a></li>
+        <li><a href="#affiliation">affiliation</a></li>
+        <li><a href="#codeRepository">codeRepository</a></li>
+        <li><a href="#email">email</a></li>
+        <li><a href="#identifier1">identifier</a></li>
+        <li><a href="#name">name</a></li>
+        <li><a href="#url">url</a></li>
     </ul>
     <div class="entity property" id="created">
         <h3>created<sup title="annotation property" class="sup-ap">ap</sup></h3>
@@ -1233,6 +1313,60 @@ code {
             <tr>
                 <th>IRI</th>
                 <td><code>http://www.w3.org/2002/07/owl#qualifiedCardinality</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="affiliation">
+        <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/affiliation</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="codeRepository">
+        <h3>codeRepository<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/codeRepository</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="email">
+        <h3>email<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/email</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="identifier1">
+        <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/identifier</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="name">
+        <h3>name<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/name</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="url">
+        <h3>url<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>https://schema.org/url</code></td>
             </tr>
         </table>
     </div>

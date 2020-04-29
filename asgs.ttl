@@ -75,7 +75,7 @@ asgs:AustralianDrainageDivision
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
 .
 asgs:CommonwealthElectoralDivision
@@ -88,7 +88,7 @@ asgs:CommonwealthElectoralDivision
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel1 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -100,23 +100,28 @@ asgs:CommonwealthElectoralDivision
 .
 asgs:Country
   a owl:Class ;
-  dcterms:description "Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning:Ã¢â‚¬ËœÃ¢â‚¬Â¦the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external TerritoryÃ¢â‚¬â„¢.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia" ;
-  dcterms:description "Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning:â€˜â€¦the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territoryâ€™.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia" ;
+  dcterms:description "Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning: 'the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territory'.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia" ;
   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "Country" ;
+  rdfs:label "Country " ;
   rdfs:subClassOf asgs:Feature ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass asgs:StateOrTerritory ;
+      owl:onProperty asgs:isComposedOf ;
+    ] ;
 .
 asgs:DestinationZone
   a owl:Class ;
   dcterms:description "Destination Zones (DZN) are geographic areas primarily used for the analysis of Census Place of Work data. They are designed to represent the distribution of workplaces rather than residential dwellings. This means there is greater spatial detail in areas with high concentrations of workplaces. DZNs are jointly developed between the ABS and each State or Territory Transport Authority. DZNs are built from whole Mesh Blocks (MB) and aggregate to Statistical Areas Level 2 (SA2s). DZNs cover the whole of Australia without gaps or overlaps. The DZN regions are not an Australian Statistical Geography Standard (ASGS) structure however the ABS publishes Census data on these areas. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "DestinationZone" ;
+  rdfs:label "Destination Zone" ;
   rdfs:subClassOf asgs:Feature ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -127,12 +132,11 @@ asgs:DestinationZone
 .
 asgs:Feature
   a owl:Class ;
-  rdfs:comment """<p>Super-class for all ABS Structures and Non-ABS Structures. Use</p>
-<ul>
-<li>dcterms:identifier for the code, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs/id'>asgs-id</a></li>
-<li>rdfs:label for the name, with a suitable datatype from <a href='http://linked.data.gov.au/def/asgs/id'>asgs-id</a></li>
-<li>asgs:within, asgs:contains for containment and nesting relations</li>
-</ul>"""^^rdf:HTML ;
+  rdfs:comment """Super-class for all ABS Structures and Non-ABS Structures. Use
+
+- dcterms:identifier for the code, with a suitable datatype from `asgs-id`
+- rdfs:label for the name, with a suitable datatype from `asgs-id`
+- `asgs:within`, `asgs:isComposedOf` for containment and composition relations""" ;
   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
   rdfs:label "ASGS Feature" ;
   rdfs:subClassOf geo:Feature ;
@@ -147,7 +151,7 @@ asgs:GreaterCapitalCityStatisticalArea
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel4 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -167,7 +171,7 @@ asgs:IndigenousArea
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:IndigenousLocation ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -186,7 +190,7 @@ asgs:IndigenousLocation
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel1 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -205,7 +209,7 @@ asgs:IndigenousRegion
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:IndigenousArea ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -224,7 +228,7 @@ asgs:LocalGovernmentArea
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -269,7 +273,7 @@ asgs:NaturalResourceManagementRegion
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -289,7 +293,7 @@ asgs:PostalArea
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
 .
 asgs:RemotenessArea
@@ -302,7 +306,7 @@ asgs:RemotenessArea
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel1 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -321,7 +325,7 @@ asgs:SectionOfState
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:SectionOfStateRange ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -340,7 +344,7 @@ asgs:SectionOfStateRange
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:UrbanCentreAndLocality ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -359,7 +363,7 @@ asgs:SignificantUrbanArea
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel2 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
 .
 asgs:StateElectoralDivision
@@ -372,7 +376,7 @@ asgs:StateElectoralDivision
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel1 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -385,13 +389,13 @@ asgs:StateOrTerritory
   a owl:Class ;
   dcterms:description "State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "StateOrTerritory" ;
+  rdfs:label "State or Territory" ;
   rdfs:subClassOf asgs:Feature ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel4 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -410,7 +414,7 @@ asgs:StateSuburb
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -459,7 +463,7 @@ asgs:StatisticalAreaLevel1
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:MeshBlock ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -490,7 +494,7 @@ asgs:StatisticalAreaLevel2
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel1 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -509,7 +513,7 @@ asgs:StatisticalAreaLevel3
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel2 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -534,7 +538,7 @@ asgs:StatisticalAreaLevel4
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel3 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -553,20 +557,20 @@ asgs:TourismRegion
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel2 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
 .
 asgs:UrbanCentreAndLocality
   a owl:Class ;
   dcterms:description "Urban Centres and Localities (UCLs) represent areas of concentrated urban development with populations of 200 people or more. These areas of urban development are primarily identified using objective dwelling and population density criteria. This criteria is developed using data from the Census of Population and Housing. Urban Centres are defined separately to Localities. Urban Centres have urban populations of 1 000 people or more while Localities have populations of between 200 and 999 people.The UCLs are designed for the analysis of statistical data in particular data from the Census of Population and Housing. The 200 minimum population size is set to enable users to access cross classified Census data for these areas without the resulting counts becoming too small for use. UCLs are aggregates of Statistical Areas Level 1 (SA1s) they aggregate up to Section of State (SOS). UCLs include a category of Rural Balance which ensures that they cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "UrbanCentreAndLocality" ;
+  rdfs:label "Urban Centre and Locality" ;
   rdfs:subClassOf asgs:Feature ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onClass asgs:StatisticalAreaLevel1 ;
-      owl:onProperty asgs:contains ;
+      owl:onProperty asgs:isComposedOf ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -575,13 +579,11 @@ asgs:UrbanCentreAndLocality
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
 .
-asgs:contains
+asgs:isComposedOf
   a owl:ObjectProperty ;
-  rdfs:comment """The context resource contains the target resource, in a logical, ownership, governance, jurisidictional or 'has-part' sense. 
-
-This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).""" ;
+  rdfs:comment "The context resource is composed one or more of the target resources. " ;
   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-  rdfs:label "contains" ;
+  rdfs:label "is composed of" ;
   rdfs:seeAlso asgs:Feature ;
 .
 asgs:within

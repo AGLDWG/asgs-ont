@@ -1,4 +1,4 @@
-![](images/ABS_Logo_333.svg)  
+![](images/ABS_Logo_333.svg)  ![](images/CSIRO_Grad_RGB_hr-155.png)
 
 # ASGS Ontology
 An Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. 
@@ -35,3 +35,8 @@ Creator:
 *Assistant Director*  
 Emerging Data and Methods, Australian Bureau of Statistics  
 laurent.lefort@abs.gov.au  
+
+**Simon J D Cox**  
+*Research Scientist*  
+CSIRO Land & Water  
+simon.cox@csiro.au  

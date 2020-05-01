@@ -2,7 +2,6 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -13,6 +12,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://linked.data.gov.au/def/asgs/isof> .
 
 <http://linked.data.gov.au/def/asgs/isof> rdf:type owl:Ontology ;
@@ -20,17 +20,17 @@
                                            dcterms:contributor <https://orcid.org/0000-0002-3884-3420> ;
                                            dcterms:created "2019-12-10" ;
                                            dcterms:creator <https://orcid.org/0000-0002-4305-6085> ,
-                                                       "Laurent Lefort, Australian Bureau of Statistics" ;
+                                                           "Laurent Lefort, Australian Bureau of Statistics" ;
                                            dcterms:description """<p>Australian Statistical Geography Standard (ASGS) ABS Structures and non-ABS structures</p>
                     <p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>
 					<p>Extensions for specific properties for containers</p>
 """^^rdf:HTML ;
-                                           dcterms:modified "2019-12-10" ;
+                                           dcterms:modified "2020-04-29" ;
                                            dcterms:publisher <http://catalogue.linked.data.gov.au/org/O-000928> ,
-                                                         "Australian Bureau of Statistics" ;
+                                                             "Australian Bureau of Statistics" ;
                                            dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                            dcterms:title "ASGS Ontology - specialized containment predicates" ;
-                                           owl:deprecated true .
+                                           owl:deprecated "true"^^xsd:boolean .
 
 #################################################################
 #    Annotation properties
@@ -48,97 +48,86 @@ dcterms:rights rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://linked.data.gov.au/def/asgs#contains
-asgs:contains rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf geo:sfContains ;
-              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-              rdfs:label "contains" ;
-              rdfs:seeAlso asgs:Feature .
+###  http://linked.data.gov.au/def/asgs#isComposedOf
+asgs:isComposedOf rdf:type owl:ObjectProperty .
 
-
-###  http://linked.data.gov.au/def/asgs#within
-asgs:within rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf geo:sfWithin ;
-            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-            rdfs:label "is within" ;
-            rdfs:seeAlso asgs:Feature .
 
 ###  http://linked.data.gov.au/def/asgs#isGreaterCapitalCityStatisticalAreaOf
 asgs:isGreaterCapitalCityStatisticalAreaOf rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf asgs:contains ;
-                                           rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                                           rdfs:subPropertyOf asgs:isComposedOf ;
+                                           rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                                            rdfs:label "isGreater Capital City Statistical AreaOf" ;
                                            rdfs:seeAlso asgs:GreaterCapitalCityStatisticalArea .
 
 
 ###  http://linked.data.gov.au/def/asgs#isIndigenousAreaOf
 asgs:isIndigenousAreaOf rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf asgs:contains ;
-                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                        rdfs:subPropertyOf asgs:isComposedOf ;
+                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                         rdfs:label "isIndigenous AreaOf" ;
                         rdfs:seeAlso asgs:IndigenousArea .
 
 
 ###  http://linked.data.gov.au/def/asgs#isIndigenousRegionOf
 asgs:isIndigenousRegionOf rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf asgs:contains ;
-                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                          rdfs:subPropertyOf asgs:isComposedOf ;
+                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                           rdfs:label "isIndigenous RegionOf" ;
                           rdfs:seeAlso asgs:IndigenousRegion .
 
 
 ###  http://linked.data.gov.au/def/asgs#isSectionOfStateOf
 asgs:isSectionOfStateOf rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf asgs:contains ;
-                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                        rdfs:subPropertyOf asgs:isComposedOf ;
+                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                         rdfs:label "isSection of StateOf" ;
                         rdfs:seeAlso asgs:SectionOfState .
 
 
 ###  http://linked.data.gov.au/def/asgs#isSectionOfStateRangeOf
 asgs:isSectionOfStateRangeOf rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf asgs:contains ;
-                             rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                             rdfs:subPropertyOf asgs:isComposedOf ;
+                             rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                              rdfs:label "isSection of State RangeOf" ;
                              rdfs:seeAlso asgs:SectionOfStateRange .
 
 
 ###  http://linked.data.gov.au/def/asgs#isStateOrTerritoryOf
 asgs:isStateOrTerritoryOf rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf asgs:contains ;
-                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                          rdfs:subPropertyOf asgs:isComposedOf ;
+                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                           rdfs:label "isState or TerritoryOf" ;
                           rdfs:seeAlso asgs:StateOrTerritory .
 
 
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel1Of
 asgs:isStatisticalAreaLevel1Of rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf asgs:contains ;
-                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                               rdfs:subPropertyOf asgs:isComposedOf ;
+                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                                rdfs:label "isStatistical Area Level1Of" ;
                                rdfs:seeAlso asgs:StatisticalAreaLevel1 .
 
 
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel2Of
 asgs:isStatisticalAreaLevel2Of rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf asgs:contains ;
-                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                               rdfs:subPropertyOf asgs:isComposedOf ;
+                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                                rdfs:label "isStatistical Area Level2Of" ;
                                rdfs:seeAlso asgs:StatisticalAreaLevel2 .
 
 
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel3Of
 asgs:isStatisticalAreaLevel3Of rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf asgs:contains ;
-                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                               rdfs:subPropertyOf asgs:isComposedOf ;
+                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                                rdfs:label "isStatistical Area Level3Of" ;
                                rdfs:seeAlso asgs:StatisticalAreaLevel3 .
 
 
 ###  http://linked.data.gov.au/def/asgs#isStatisticalAreaLevel4Of
 asgs:isStatisticalAreaLevel4Of rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf asgs:contains ;
-                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+                               rdfs:subPropertyOf asgs:isComposedOf ;
+                               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs/isof> ;
                                rdfs:label "isStatistical Area Level4Of" ;
                                rdfs:seeAlso asgs:StatisticalAreaLevel4 .
 

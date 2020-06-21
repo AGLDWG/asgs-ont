@@ -57,7 +57,7 @@ The ASGS Ontology is packaged in multiple graphs:
 - http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by generic 'within' and 'isComposedOf' relations instead
 - http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties
 - http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies""" ;
-                                      dcterms:modified "2020-04-29" ;
+                                      dcterms:modified "2020-06-21" ;
                                       dcterms:publisher <http://linked.data.gov.au/org/abs> ;
                                       dcterms:rights "Copyright 2018 Australian Bureau of Statistics." ;
                                       dcterms:source <https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)> ;
@@ -144,8 +144,22 @@ sdo:url rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://linked.data.gov.au/def/asgs#contains
+asgs:contains rdf:type owl:ObjectProperty ;
+              owl:inverseOf asgs:within ;
+              rdfs:comment """The target resource is within the context resource , in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
+
+This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).""" ;
+              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
+              rdfs:label "contains" ;
+              rdfs:seeAlso asgs:Feature .
+
+
 ###  http://linked.data.gov.au/def/asgs#isComposedOf
 asgs:isComposedOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf asgs:contains ;
+                  rdfs:domain asgs:Feature ;
+                  rdfs:range asgs:Feature ;
                   rdfs:comment "The context resource is composed one or more of the target resources. " ;
                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                   rdfs:label "is composed of" ;
@@ -183,8 +197,11 @@ asgs:AustralianDrainageDivision rdf:type owl:Class ;
                                 rdfs:subClassOf asgs:Feature ,
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty asgs:isComposedOf ;
-                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                  owl:onClass asgs:MeshBlock
+                                                  owl:allValuesFrom asgs:MeshBlock
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty asgs:isComposedOf ;
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
                                                 ] ;
                                 dcterms:description "Australian Drainage Divisions (ADD) are an ABS approximation of Bureau of Meteorology Drainage Divisions. Drainage Divisions are defined by major landscape features and climatic zones to form broad hydrological regions as represented in the Australian Hydrological Geospatial Fabric (Geofabric) 2014 version 2 developed by the Bureau of Meteorology. ADDs are approximated using one or more Mesh Blocks (MBs). ADDs can cross State and Territory (S/T) boundaries. ADDs cover the whole of geographic Australia without gaps or overlaps. The ADDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -196,8 +213,11 @@ asgs:CommonwealthElectoralDivision rdf:type owl:Class ;
                                    rdfs:subClassOf asgs:Feature ,
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty asgs:isComposedOf ;
-                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                     owl:onClass asgs:StatisticalAreaLevel1
+                                                     owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty asgs:isComposedOf ;
+                                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
                                                    ] ,
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty asgs:within ;
@@ -206,7 +226,23 @@ asgs:CommonwealthElectoralDivision rdf:type owl:Class ;
                                                    ] ;
                                    dcterms:description "Commonwealth Electoral Divisions (CED) are an ABS approximation of Australian Electoral Commission (AEC) electoral division boundaries. An Australian Electoral Commission electoral division boundary is an area legally prescribed for the purpose of returning one member to the House of Representatives Australia's Federal Lower House of Parliament. Commonwealth Electoral Divisions may change as the Australian Electoral Commission revise their boundaries. Where the Australian Electoral Commission revise their boundaries the CEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures. CEDs are approximated using whole Statistical Areas Level 1 (SA1s). CEDs cover the whole of Australia without gaps or overlaps.The CEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                                   rdfs:label "Commonwealth Electoral Division" .
+                                   rdfs:label "Commonwealth Electoral Division" ;
+                                   skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216>
+  rdf:type asgs:CommonwealthElectoralDivision ;
+  rdf:type asgs:Feature ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 81571420.384044319 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/> ;
+  dcterms:identifier \"216\"^^asgs-id:cedCode2016 ;
+  dcterms:title \"Goldstein\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ced/216> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#Country
@@ -214,8 +250,11 @@ asgs:Country rdf:type owl:Class ;
              rdfs:subClassOf asgs:Feature ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty asgs:isComposedOf ;
-                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass asgs:StateOrTerritory
+                               owl:allValuesFrom asgs:StateOrTerritory
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty asgs:isComposedOf ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
                              ] ;
              dcterms:description "Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning: 'the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territory'.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia" ;
              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -227,8 +266,11 @@ asgs:DestinationZone rdf:type owl:Class ;
                      rdfs:subClassOf asgs:Feature ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty asgs:isComposedOf ;
-                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onClass asgs:MeshBlock
+                                       owl:allValuesFrom asgs:MeshBlock
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty asgs:isComposedOf ;
+                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty asgs:within ;
@@ -257,8 +299,11 @@ asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
                                        rdfs:subClassOf asgs:Feature ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty asgs:isComposedOf ;
-                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                         owl:onClass asgs:StatisticalAreaLevel4
+                                                         owl:allValuesFrom asgs:StatisticalAreaLevel4
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty asgs:isComposedOf ;
+                                                         owl:minCardinality "1"^^xsd:nonNegativeInteger
                                                        ] ,
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty asgs:within ;
@@ -267,7 +312,28 @@ asgs:GreaterCapitalCityStatisticalArea rdf:type owl:Class ;
                                                        ] ;
                                        dcterms:description "Greater Capital City Statistical Areas (GCCSAs) are designed to represent the functional extent of each of the eight State and Territory capital cities. They include the people who regularly socialise shop or work within the city but live in the small towns and rural areas surrounding the city. GCCSAs are defined using the capital city labour markets. The labour market is sometimes used as a de-facto measure of the functional extent of a city as it contains the majority of the commuting population. It is important to note that GCCSAs do not define the built up edge of the city this is better represented by Urban Centres and Localities (UCLs) or Significant Urban Areas (SUAs). The GCCSA is designed to provide a stable definition of the capital cities to enable production of economic indicators which integrate variables collected over long periods of time. GCCSAs are aggregations of whole Statistical Areas Level 4 (SA4s) in the ASGS Main Structure. Whole GCCSAs aggregate to State and Territory (S/T). GSSCAs are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                        rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                                       rdfs:label "Greater Capital City Statistical Area" .
+                                       rdfs:label "Greater Capital City Statistical Area" ;
+                                       skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:GreaterCapitalCityStatisticalArea ;
+  rdf:type geo:Feature ;
+  asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode \"2GMEL\"^^asgs-id:gccsaCode2016 ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 16025657279.543074 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 9992511800.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/> ;
+  dcterms:identifier \"2GMEL\"^^asgs-id:gccsaCode2016 ;
+  dcterms:title \"Greater Melbourne\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_gccsa/2GMEL> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#IndigenousArea
@@ -275,8 +341,11 @@ asgs:IndigenousArea rdf:type owl:Class ;
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isComposedOf ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass asgs:IndigenousLocation
+                                      owl:allValuesFrom asgs:IndigenousLocation
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:isComposedOf ;
+                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
                                     ] ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:within ;
@@ -285,7 +354,24 @@ asgs:IndigenousArea rdf:type owl:Class ;
                                     ] ;
                     dcterms:description "Indigenous Areas (IAREs) are medium sized geographical areas designed to facilitate the release of statistics with multiple variables for Aboriginal and Torres Strait Islander Peoples. IAREs provide a balance between spatial resolution and population size which provides the ability to release more detailed socio-economic attribute data than is available on Indigenous Locations (ILOCs). IAREs are aggregates of Indigenous Locations (ILOCs) and aggregate up to Indigenous Regions (IREGs). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                    rdfs:label "Indigenous Area" .
+                    rdfs:label "Indigenous Area" ;
+                    skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:IndigenousArea ;
+  rdf:type geo:Feature ;
+  asgs:indigenousAreas6DigitCode \"201010\"^^asgs-id:iareCode2016 ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201> ;
+  geox:hasAreaM2 [
+      data:value 259730438.69439441 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/indigenousarea/> ;
+  dcterms:identifier \"201010\"^^asgs-id:iareCode2016 ;
+  dcterms:title \"Melbourne - East\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_iare/201010> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#IndigenousLocation
@@ -293,8 +379,11 @@ asgs:IndigenousLocation rdf:type owl:Class ;
                         rdfs:subClassOf asgs:Feature ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty asgs:isComposedOf ;
-                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass asgs:StatisticalAreaLevel1
+                                          owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty asgs:isComposedOf ;
+                                          owl:minCardinality "1"^^xsd:nonNegativeInteger
                                         ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty asgs:within ;
@@ -303,7 +392,23 @@ asgs:IndigenousLocation rdf:type owl:Class ;
                                         ] ;
                         dcterms:description "Indigenous Locations (ILOCs) represent small Aboriginal and Torres Strait Islander communities (urban and rural) with a minimum population of 90 Aboriginal and Torres Strait Islander usual residents. An ILOC is an area designed to allow the release of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial detail whilst maintaining the confidentiality of individuals. ILOCs are aggregates of Statistical Areas Level 1 (SA1s). ILOCs aggregate to Indigenous Areas (IAREs) and cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                         rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                        rdfs:label "Indigenous Location" .
+                        rdfs:label "Indigenous Location" ;
+                        skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:IndigenousLocation ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010> ;
+  geox:hasAreaM2 [
+      data:value 103463893.37373097 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/> ;
+  dcterms:identifier \"20101003\"^^asgs-id:ilocCode2016 ;
+  dcterms:title \"Glen Eira\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_iloc/20101003> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#IndigenousRegion
@@ -311,8 +416,11 @@ asgs:IndigenousRegion rdf:type owl:Class ;
                       rdfs:subClassOf asgs:Feature ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:isComposedOf ;
-                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass asgs:IndigenousArea
+                                        owl:allValuesFrom asgs:IndigenousArea
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty asgs:isComposedOf ;
+                                        owl:minCardinality "1"^^xsd:nonNegativeInteger
                                       ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:within ;
@@ -321,7 +429,24 @@ asgs:IndigenousRegion rdf:type owl:Class ;
                                       ] ;
                       dcterms:description "Indigenous Regions (IREGs) are large geographical areas loosely based on the former Aboriginal and Torres Strait Islander Commission boundaries. They are designed for the release of detailed statistical data with multiple variables on Aboriginal and Torres Strait Islander Peoples. The greater population of IREGs enables greater cross classification of variables when compared with Indigenous Areas (IAREs) or Indigenous Localities (ILOCs). IREGs are aggregates of IAREs and aggregate up to State and Territory (S/T). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                       rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                      rdfs:label "Indigenous Region" .
+                      rdfs:label "Indigenous Region" ;
+                      skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:IndigenousRegion ;
+  rdf:type geo:Feature ;
+  asgs:indigenousRegions3DigitCode \"201\"^^asgs-id:iregCode2016 ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 14191868442.812222 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/indigenousregion/> ;
+  dcterms:identifier \"201\"^^asgs-id:iregCode2016 ;
+  dcterms:title \"Melbourne\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ireg/201> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#LocalGovernmentArea
@@ -329,8 +454,11 @@ asgs:LocalGovernmentArea rdf:type owl:Class ;
                          rdfs:subClassOf asgs:Feature ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty asgs:isComposedOf ;
-                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onClass asgs:MeshBlock
+                                           owl:allValuesFrom asgs:MeshBlock
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty asgs:isComposedOf ;
+                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty asgs:within ;
@@ -357,7 +485,31 @@ asgs:MeshBlock rdf:type owl:Class ;
                                ] ;
                dcterms:description "Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-               rdfs:label "Mesh Block" .
+               rdfs:label "Mesh Block" ;
+               skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/meshblock/20675580000>
+  rdf:type asgs:MeshBlock ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/destinationzone/211792650> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/localgovernmentarea/22310> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923> ;
+  geox:hasAreaM2 [
+      data:value 14548.840566578177 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 9000.000000000001818989403545856475830078125 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/meshblock/> ;
+  dcterms:identifier \"20675580000\"^^asgs-id:mbCode2016 ;
+  dcterms:type mbcat:residential ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_mb/20675580000> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#MeshblockCategory
@@ -373,8 +525,11 @@ asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
                                      rdfs:subClassOf asgs:Feature ,
                                                      [ rdf:type owl:Restriction ;
                                                        owl:onProperty asgs:isComposedOf ;
-                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                       owl:onClass asgs:MeshBlock
+                                                       owl:allValuesFrom asgs:MeshBlock
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty asgs:isComposedOf ;
+                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
                                                      ] ,
                                                      [ rdf:type owl:Restriction ;
                                                        owl:onProperty asgs:within ;
@@ -383,7 +538,23 @@ asgs:NaturalResourceManagementRegion rdf:type owl:Class ;
                                                      ] ;
                                      dcterms:description "Natural Resource Management Regions (NRMR) are an ABS approximation of Natural Resource Management regions (NRMs) which are defined through the Australian Government National Landcare Program. They are administrative regions primarily used by the Department of the Environment and Energy and the Department of Agriculture and Water Resources who share responsibility for delivery of the Australian Government's environment and sustainable agriculture programs which are broadly referred to as Natural Resource Management (NRM). NRMRs change occasionally as States and Territories revise their boundaries. NRMRs are approximated using one or more Mesh Blocks (MBs). NRMRs do not cross State and Territory (S/T) boundaries except for Jervis Bay which is included in a NSW region. NRMRs cover the whole of geographic Australia without gaps or overlaps. The NRMRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                                      rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                                     rdfs:label "Natural Resource Management Region" .
+                                     rdfs:label "Natural Resource Management Region" ;
+                                     skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:NaturalResourceManagementRegion ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 20626018491.989136 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/> ;
+  dcterms:identifier \"208\"^^asgs-id:nrmrCode2016 ;
+  dcterms:title \"Port Phillip and Western Port\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_nrmr/208> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#PostalArea
@@ -391,8 +562,11 @@ asgs:PostalArea rdf:type owl:Class ;
                 rdfs:subClassOf asgs:Feature ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty asgs:isComposedOf ;
-                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass asgs:MeshBlock
+                                  owl:allValuesFrom asgs:MeshBlock
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty asgs:isComposedOf ;
+                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
                                 ] ;
                 dcterms:description "Postal Areas (POAs) are an ABS approximation of postcodes created to enable the release of ABS data on areas that as closely as possible approximate postcodes. This enables the comparison of ABS data with other data that has been collected using postcodes as the geographic reference. POAs exclude non-mappable Australia Post postcodes such as: post office box postcodes some delivery route postcodes which are also covered by other postcodes (a situation which often occurs in rural areas).POAs are approximated using one or more Mesh Blocks (MBs). POAs cover the whole of geographic Australia without gaps or overlaps. The POAs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                 rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -404,8 +578,11 @@ asgs:RemotenessArea rdf:type owl:Class ;
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isComposedOf ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass asgs:StatisticalAreaLevel1
+                                      owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:isComposedOf ;
+                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
                                     ] ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:within ;
@@ -414,7 +591,27 @@ asgs:RemotenessArea rdf:type owl:Class ;
                                     ] ;
                     dcterms:description "Remoteness Areas (RAs) divide Australia into five classes of remoteness on the basis of relative access to services. RAs are based on the Accessibility and Remoteness Index of Australia (ARIA+) produced by the Hugo Centre for Migration and Population Research at the University of Adelaide. RAs are aggregates of Statistical Areas Level 1 (SA1s) that are grouped together based on their average ARIA+ score. Ras aggregate up to State and Territory (S/T) and cover Australia without gaps or overlaps." ;
                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                    rdfs:label "Remoteness Area" .
+                    rdfs:label "Remoteness Area" ;
+                    skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:RemotenessArea ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 4849332200.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 7798263021.8181982 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/remotenessarea/> ;
+  dcterms:identifier \"20\"^^asgs-id:raCode2016 ;
+  dcterms:title \"Major Cities of Australia\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ra/20> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#SectionOfState
@@ -422,8 +619,11 @@ asgs:SectionOfState rdf:type owl:Class ;
                     rdfs:subClassOf asgs:Feature ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:isComposedOf ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass asgs:SectionOfStateRange
+                                      owl:allValuesFrom asgs:SectionOfStateRange
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty asgs:isComposedOf ;
+                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
                                     ] ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty asgs:within ;
@@ -432,7 +632,22 @@ asgs:SectionOfState rdf:type owl:Class ;
                                     ] ;
                     dcterms:description "Section of State (SOS) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into four different classes within each State and Territory (S/T). These four classes are an aggregation of the more detailed Section of State Range (SOSR) classification. SOS groups Urban Centres into 2 classes one of 100 000 people or more and the other less than 100 000 people. The remaining two classes are Localities and Rural Balance. This broad summary of UCLs enables detailed statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOS are aggregates of SOSR and aggregate up to State and Territory (S/T). SOS regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                     rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                    rdfs:label "Section of State" .
+                    rdfs:label "Section of State" ;
+                    skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:SectionOfState ;
+  rdf:type geo:Feature ;
+  asgs:sectionOfState2DigitCode \"20\"^^asgs-id:sosCode2016 ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 4624490385.6316757 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/sectionofstate/> ;
+  dcterms:identifier \"20\"^^asgs-id:sosCode2016 ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sos/20> ;
+.""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#SectionOfStateRange
@@ -440,8 +655,11 @@ asgs:SectionOfStateRange rdf:type owl:Class ;
                          rdfs:subClassOf asgs:Feature ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty asgs:isComposedOf ;
-                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onClass asgs:UrbanCentreAndLocality
+                                           owl:allValuesFrom asgs:UrbanCentreAndLocality
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty asgs:isComposedOf ;
+                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty asgs:within ;
@@ -450,7 +668,23 @@ asgs:SectionOfStateRange rdf:type owl:Class ;
                                          ] ;
                          dcterms:description "Section of State Range (SOSR) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into 11 different classes within each State and Territory (S/T). The 11 classes are made up of; 8 different population size classes grouping Urban Centres; 2 population size classes grouping Localities; and a Rural Balance. This detailed summary of UCLs enables statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOSR are aggregates of UCLs and aggregate up to Section of State (SOS). SOSR regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                          rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                         rdfs:label "Section of State Range" .
+                         rdfs:label "Section of State Range" ;
+                         skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:SectionOfStateRange ;
+  rdf:type geo:Feature ;
+  asgs:sectionOfStateRange3DigitCode \"201\"^^asgs-id:sosrCode2016 ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20> ;
+  geox:hasAreaM2 [
+      data:value 4351251103.1468725 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/> ;
+  dcterms:identifier \"201\"^^asgs-id:sosrCode2016 ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sosr/201> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#SignificantUrbanArea
@@ -458,12 +692,30 @@ asgs:SignificantUrbanArea rdf:type owl:Class ;
                           rdfs:subClassOf asgs:Feature ,
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty asgs:isComposedOf ;
-                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                            owl:onClass asgs:StatisticalAreaLevel2
+                                            owl:allValuesFrom asgs:StatisticalAreaLevel2
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty asgs:isComposedOf ;
+                                            owl:minCardinality "1"^^xsd:nonNegativeInteger
                                           ] ;
                           dcterms:description "Significant Urban Areas (SUAs) represent towns or cities with 10 000 people or more. They are based on Urban Centres and Localities (UCLs) but are defined by the larger Statistical Areas Level 2 (SA2s). A single SUA can represent either a single Urban Centre or a cluster of related Urban Centres. Using SA2s to define SUAs ensures a wider range of more regularly updated data is available for these areas (such as Estimated Resident Population and Building Approvals) compared to UCLs where only Census data is available. The SUA structure does not aggregate to State or Territory (S/T) level as SUAs may cross S/T boundaries. In aggregate SUAs cover Australia without gaps or overlaps as they include a remainder area 'Not in any Significant Urban Area'. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                           rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                          rdfs:label "Significant Urban Area" .
+                          rdfs:label "Significant Urban Area" ;
+                          skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:SignificantUrbanArea ;
+  rdf:type geo:Feature ;
+  asgs:isComposedOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179> ;
+  geox:hasAreaM2 [
+      data:value 9937488759.6786938 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/> ;
+  dcterms:identifier \"2010\"^^asgs-id:suaCode2016 ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sua/2010> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#StateElectoralDivision
@@ -471,8 +723,11 @@ asgs:StateElectoralDivision rdf:type owl:Class ;
                             rdfs:subClassOf asgs:Feature ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty asgs:isComposedOf ;
-                                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onClass asgs:StatisticalAreaLevel1
+                                              owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty asgs:isComposedOf ;
+                                              owl:minCardinality "1"^^xsd:nonNegativeInteger
                                             ] ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty asgs:within ;
@@ -489,8 +744,11 @@ asgs:StateOrTerritory rdf:type owl:Class ;
                       rdfs:subClassOf asgs:Feature ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:isComposedOf ;
-                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass asgs:StatisticalAreaLevel4
+                                        owl:allValuesFrom asgs:StatisticalAreaLevel4
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty asgs:isComposedOf ;
+                                        owl:minCardinality "1"^^xsd:nonNegativeInteger
                                       ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty asgs:within ;
@@ -499,7 +757,28 @@ asgs:StateOrTerritory rdf:type owl:Class ;
                                       ] ;
                       dcterms:description "State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                       rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                      rdfs:label "State or Territory" .
+                      rdfs:label "State or Territory" ;
+                      skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StateOrTerritory ;
+  rdf:type geo:Feature ;
+  asgs:stateOrTerritory1DigitCode \"2\"^^asgs-id:stateCode2016 ;
+  geox:hasAreaM2 [
+      data:value 227495630400.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 356137738800.02869 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/> ;
+  dcterms:identifier \"2\"^^asgs-id:stateCode2016 ;
+  dcterms:title \"Victoria\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ste/2> ;
+  rdfs:label \"VIC\" ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#StateSuburb
@@ -507,8 +786,11 @@ asgs:StateSuburb rdf:type owl:Class ;
                  rdfs:subClassOf asgs:Feature ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:isComposedOf ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass asgs:MeshBlock
+                                   owl:allValuesFrom asgs:MeshBlock
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty asgs:isComposedOf ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty asgs:within ;
@@ -517,7 +799,23 @@ asgs:StateSuburb rdf:type owl:Class ;
                                  ] ;
                  dcterms:description "State Suburbs (SSC) are an ABS approximation of localities gazetted by the Geographical Place Name authority in each State and Territory (S/T). Gazetted Localities are the officially recognised boundaries of suburbs (in cities and larger towns) and localities (outside cities and larger towns). Gazetted Localities cover most of Australia. Presently there remain areas of rural South Australia and rural Australian Capital Territory for which Gazetted Localities remain undefined. Various islands offshore from New South Wales Victoria and Tasmania and some inshore water areas and islands are also undefined. Since 1996 Locality boundaries have been formalised for most areas of Australia through a program coordinated by the Permanent Committee on Place Names (PCPN) under the umbrella of the Intergovernmental Committee On Surveying and Mapping (ISCM). Areas where localities are not gazetted are represented by Remainder SSCs.SSCs are approximated using one or more Mesh Blocks (MBs). SSCs cover the whole of geographic Australia without gaps or overlaps including the Remainder SSCs.The SSCs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                  rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                 rdfs:label "State Suburb" .
+                 rdfs:label "State Suburb" ;
+                 skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StateSuburb ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 4185791.9328826475 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statesuburb/> ;
+  dcterms:identifier \"20858\"^^asgs-id:sscCode2016 ;
+  dcterms:title \"Elsternwick\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ssc/20858> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1
@@ -525,8 +823,11 @@ asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isComposedOf ;
-                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass asgs:MeshBlock
+                                             owl:allValuesFrom asgs:MeshBlock
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:isComposedOf ;
+                                             owl:minCardinality "1"^^xsd:nonNegativeInteger
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:within ;
@@ -560,7 +861,31 @@ asgs:StatisticalAreaLevel1 rdf:type owl:Class ;
                                            ] ;
                            dcterms:description "Statistical Areas Level 1 (SA1s) are designed to maximise the spatial detail available for Census data. Most SA1s have a population of between 200 to 800 persons with an average population of approximately 400 persons. This is to optimise the balance between spatial detail and the ability to cross classify Census variables without the resulting counts becoming too small for use. SA1s aim to separate out areas with different geographic characteristics within Suburb and Locality boundaries. In rural areas they often combine related Locality boundaries. SA1s are aggregations of Mesh Blocks (MBs). Whole SA1s aggregate to form Statistical Areas Level 2 (SA2s) Indigenous Locations (ILOCs) Urban Centres and Localities (UCLs) Remoteness Areas (RAs) Commonwealth Electoral Divisions (CEDs) and State Electoral Divisions (SEDs). SA1s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                           rdfs:label "Statistical Area Level 1" .
+                           rdfs:label "Statistical Area Level 1" ;
+                           skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923>
+  rdf:type asgs:StatisticalAreaLevel1 ;
+  rdf:type geo:Feature ;
+  asgs:statisticalArea1Sa111DigitCode \"20802117923\"^^asgs-id:sa1Maincode2016 ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001> ;
+  geox:hasAreaM2 [
+      data:value 114800.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 184552.47130247016 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/> ;
+  dcterms:identifier \"20802117923\"^^asgs-id:sa1Maincode2016 ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sa1/20802117923> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2
@@ -568,8 +893,11 @@ asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isComposedOf ;
-                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass asgs:StatisticalAreaLevel1
+                                             owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:isComposedOf ;
+                                             owl:minCardinality "1"^^xsd:nonNegativeInteger
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:within ;
@@ -588,7 +916,31 @@ asgs:StatisticalAreaLevel2 rdf:type owl:Class ;
                                            ] ;
                            dcterms:description "Statistical Areas Level 2 (SA2s) are functional areas that represent a community that interacts together socially and economically. They often align with Suburb and Locality boundaries to improve the geographic coding of data to these areas. In major urban areas SA2s often reflect one or more related suburbs. The SA2 is the smallest area for the release of many ABS statistics including the Estimated Resident Population (ERP) Health & Vitals and Building Approvals data. SA2s generally have a population range of 3 000 to 25 000 persons and have an average population of about 10 000 persons. SA2s are aggregated from whole Statistical Areas Level 1 (SA1s) in the ASGS Main Structure. Whole SA2s aggregate to form Statistical Areas Level 3 (SA3s) Significant Urban Areas (SUAs) and Tourism Regions (TRs). SA2s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                           rdfs:label "Statistical Area Level 2" .
+                           rdfs:label "Statistical Area Level 2" ;
+                           skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179>
+  rdf:type asgs:StatisticalAreaLevel2 ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208> ;
+  geox:hasAreaM2 [
+      data:value 2861600.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 4602063.7284709048 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/> ;
+  dcterms:identifier \"208021179\"^^asgs-id:sa2Maincode2016 ;
+  dcterms:identifier \"208021179\"^^asgs-id:statisticalArea2Sa29DigitCode ;
+  geo:hasGeometry <https://gds.loci.cat/geometry/asgs16_sa2/208021179> ;
+  rdfs:label \"Elsternwick\"^^asgs-id:sa2Name2016 ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3
@@ -596,8 +948,11 @@ asgs:StatisticalAreaLevel3 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isComposedOf ;
-                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass asgs:StatisticalAreaLevel2
+                                             owl:allValuesFrom asgs:StatisticalAreaLevel2
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:isComposedOf ;
+                                             owl:minCardinality "1"^^xsd:nonNegativeInteger
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:within ;
@@ -606,7 +961,28 @@ asgs:StatisticalAreaLevel3 rdf:type owl:Class ;
                                            ] ;
                            dcterms:description "Statistical Areas Level 3 (SA3s) are designed for the output of regional data. SA3s create a standard framework for the analysis of ABS data at the regional level. SA3s do this by clustering groups of Statistical Areas Level 2 (SA2s) that have similar regional characteristics administrative boundaries or labour markets. SA3s generally have populations between 30 000 and 130 000 persons. They are often the functional areas of regional towns and cities with a population in excess of 20 000 people. Within urban areas they represent clusters of related suburbs around urban commercial and transport hubs. SA3s are aggregations of whole SA2s in the ASGS Main Structure. Whole SA3s aggregate to form Statistical Areas Level 4 (SA4s). SA3s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                           rdfs:label "Statistical Area Level 3" .
+                           rdfs:label "Statistical Area Level 3" ;
+                           skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StatisticalAreaLevel3 ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208> ;
+  geox:hasAreaM2 [
+      data:value 40700200.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 65477553.844688073 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/> ;
+  dcterms:identifier \"20802\"^^asgs-id:sa3Code2016 ;
+  dcterms:title \"Glen Eira\" ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sa3/20802> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4
@@ -614,8 +990,11 @@ asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
                            rdfs:subClassOf asgs:Feature ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:isComposedOf ;
-                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass asgs:StatisticalAreaLevel3
+                                             owl:allValuesFrom asgs:StatisticalAreaLevel3
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty asgs:isComposedOf ;
+                                             owl:minCardinality "1"^^xsd:nonNegativeInteger
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty asgs:within ;
@@ -629,7 +1008,28 @@ asgs:StatisticalAreaLevel4 rdf:type owl:Class ;
                                            ] ;
                            dcterms:description "Statistical Areas Level 4 (SA4s) are specifically designed for the output of Labour Force Survey data. SA4s reflect labour markets within each State and Territory within the population limits imposed by the Labour Force Survey sample. Most SA4s have a population above 100 000 persons to provide sufficient sample size for Labour Force estimates. In regional areas SA4s tend to have lower populations (100 000 to 300 000). In metropolitan areas the SA4s tend to have larger populations (300 000 to 500 000). SA4s are aggregations of whole Statistical Areas Level 3 (SA3s) in the ASGS Main Structure. Whole SA4s aggregate to form Greater Capital City Statistical Areas (GCCSAs) and State and Territory (S/T).SA4s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                            rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                           rdfs:label "Statistical Area Level 4" .
+                           rdfs:label "Statistical Area Level 4" ;
+                           skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StatisticalAreaLevel4 ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL> ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
+  geox:hasAreaM2 [
+      data:value 161496600.0 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 260154098.46660107 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/> ;
+  dcterms:identifier \"208\"^^asgs-id:sa4Code2016 ;
+  dcterms:title \"Melbourne - Inner South\"^^asgs-id:sa4Name2016 ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sa4/208> ;
+.
+""" .
 
 
 ###  http://linked.data.gov.au/def/asgs#TourismRegion
@@ -637,8 +1037,11 @@ asgs:TourismRegion rdf:type owl:Class ;
                    rdfs:subClassOf asgs:Feature ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty asgs:isComposedOf ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass asgs:StatisticalAreaLevel2
+                                     owl:allValuesFrom asgs:StatisticalAreaLevel2
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty asgs:isComposedOf ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
                                    ] ;
                    dcterms:description "Tourism Regions (TR) are an ABS approximation of Tourism Regions provided by Tourism Research Australia (TRA). They are administrative regions primarily used by Tourism Research Australia for research and policy purposes.TRs are approximated using whole Statistical Areas Level 2 (SA2s). As of 2016 TRs do not cross State and Territory (S/T) boundaries and there are no TRs for the Other Territories (OT). The TRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                    rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
@@ -650,8 +1053,11 @@ asgs:UrbanCentreAndLocality rdf:type owl:Class ;
                             rdfs:subClassOf asgs:Feature ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty asgs:isComposedOf ;
-                                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onClass asgs:StatisticalAreaLevel1
+                                              owl:allValuesFrom asgs:StatisticalAreaLevel1
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty asgs:isComposedOf ;
+                                              owl:minCardinality "1"^^xsd:nonNegativeInteger
                                             ] ,
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty asgs:within ;
@@ -660,7 +1066,22 @@ asgs:UrbanCentreAndLocality rdf:type owl:Class ;
                                             ] ;
                             dcterms:description "Urban Centres and Localities (UCLs) represent areas of concentrated urban development with populations of 200 people or more. These areas of urban development are primarily identified using objective dwelling and population density criteria. This criteria is developed using data from the Census of Population and Housing. Urban Centres are defined separately to Localities. Urban Centres have urban populations of 1 000 people or more while Localities have populations of between 200 and 999 people.The UCLs are designed for the analysis of statistical data in particular data from the Census of Population and Housing. The 200 minimum population size is set to enable users to access cross classified Census data for these areas without the resulting counts becoming too small for use. UCLs are aggregates of Statistical Areas Level 1 (SA1s) they aggregate up to Section of State (SOS). UCLs include a category of Rural Balance which ensures that they cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia." ;
                             rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
-                            rdfs:label "Urban Centre and Locality" .
+                            rdfs:label "Urban Centre and Locality" ;
+                            skos:example """
+<http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001>
+  rdf:type asgs:Feature ;
+  rdf:type asgs:UrbanCentreAndLocality ;
+  rdf:type geo:Feature ;
+  asgs:within <http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201> ;
+  geox:hasAreaM2 [
+      data:value 4351251103.1468725 ;
+      geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
+    ] ;
+  loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/> ;
+  dcterms:identifier \"201001\"^^asgs-id:uclCode2016 ;
+  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ucl/201001> ;
+.
+""" .
 
 
 ###  https://schema.org/Organization
@@ -726,10 +1147,10 @@ sdo:Person rdf:type owl:Class .
 [ skos:editorialNote "This relationship is implied by the fist digit of the code, and described in the text definition, but is in the ASGS model shown in the diagrams in the ASGS specification. "
 ] .
 
-[ skos:editorialNote "Jervis Bay is included in a NSW-based NRMR, even though it is strictly not part of NSW. "
+[ skos:editorialNote "This relationship is implied by the fist digit of the code, and described in the text definition, but is in the ASGS model shown in the diagrams in the ASGS specification. "
  ] .
 
-[ skos:editorialNote "This relationship is implied by the fist digit of the code, and described in the text definition, but is in the ASGS model shown in the diagrams in the ASGS specification. "
+[ skos:editorialNote "Jervis Bay is included in a NSW-based NRMR, even though it is strictly not part of NSW. "
  ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

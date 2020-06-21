@@ -147,7 +147,7 @@ sdo:url rdf:type owl:AnnotationProperty .
 ###  http://linked.data.gov.au/def/asgs#contains
 asgs:contains rdf:type owl:ObjectProperty ;
               owl:inverseOf asgs:within ;
-              rdfs:comment """The target resource is within the context resource , in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
+              rdfs:comment """The target resource is within the context resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
 
 This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).""" ;
               rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;

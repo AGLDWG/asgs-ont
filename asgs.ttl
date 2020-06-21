@@ -289,7 +289,7 @@ asgs:Feature rdf:type owl:Class ;
 
 - dcterms:identifier for the code, with a suitable datatype from `asgs-id`
 - rdfs:label for the name, with a suitable datatype from `asgs-id`
-- `asgs:within`, `asgs:isComposedOf` for containment and composition relations""" ;
+- `asgs:within`, `asgs:contains`, `asgs:isComposedOf` for containment and composition relations""" ;
              rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
              rdfs:label "ASGS Feature" .
 

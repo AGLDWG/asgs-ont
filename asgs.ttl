@@ -160,7 +160,7 @@ asgs:isComposedOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf asgs:contains ;
                   rdfs:domain asgs:Feature ;
                   rdfs:range asgs:Feature ;
-                  rdfs:comment "The context resource is composed one or more of the target resources. " ;
+                  rdfs:comment "The context resource is composed of one or more of the target resources. " ;
                   rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;
                   rdfs:label "is composed of" ;
                   rdfs:seeAlso asgs:Feature .
@@ -168,7 +168,7 @@ asgs:isComposedOf rdf:type owl:ObjectProperty ;
 
 ###  http://linked.data.gov.au/def/asgs#within
 asgs:within rdf:type owl:ObjectProperty ;
-            rdfs:comment """The context resource is contained within the target resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
+            rdfs:comment """The context resource is contained by the target resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
 
 This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).""" ;
             rdfs:isDefinedBy <http://linked.data.gov.au/def/asgs> ;

@@ -5,164 +5,151 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
     <style>
-#pylode {
-    position: fixed;
-    top: 80px;
-    left: -60px;
-    font-size: small;
-    transform: rotate(-90deg);
-    color: grey;
-}
-#pylode a {
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #005A9C;
-}
-#pylode a:hover {
-    color: #333;
-}
-
-.cardinality {
-    font-style: italic;
-    color: #aa00aa;
-}
-
-dt {
-    font-weight: bold;
-    padding: 5px 0 5px 0;
-}
-
-ul.hlist {
-    list-style-type: none;
-    border: 1px solid navy;
-    padding:5px;
-    background-color: #F4FFFF;
-}
-
-
-ul.hlist li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.entity {
-    border: 1px solid navy;
-    margin:5px 0 5px 0;
-    padding: 5px;
-}
-
-.entity th {
-    width: 150px;
-    vertical-align: top;
-}
-
-.entity th,
-.entity td {
-    padding-bottom: 20px;
-}
-
-.entity table th {
-    text-align: left;
-}
-
-section#overview img {
-    max-width: 1000px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-align: left
-}
-h1, h2, h3 {
-    color: #005A9C; background: white
-}
-h1 {
-    font: 170% sans-serif;
-    line-height: 110%;
-}
-h2 {
-    font: 140% sans-serif;
-    margin-top:40px;
-}
-h3 {
-    font: 120% sans-serif;
-    margin-top: 3px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid navy;
-}
-h4 { font: bold 100% sans-serif }
-h5 { font: italic 100% sans-serif }
-h6 { font: small-caps 100% sans-serif }
-
-
-body {
-    padding: 2em 70px 2em 70px;
-    margin: 0;
-    font-family: sans-serif;
-    color: black;
-    background: white;
-    background-position: top left;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: justify;
-}
-
-section {
-    max-width: 1500px;
-}
-
-.figure {
-    margin-bottom: 20px;
-}
-
-:link { color: #00C; background: transparent }
-:visited { color: #609; background: transparent }
-a:active { color: #C00; background: transparent }
-
-.sup-c,
-.sup-op,
-.sup-fp,
-.sup-dp,
-.sup-ap,
-.sup-p,
-.sup-ni {
-    cursor:help;
-    margin-left: 3px;
-}
-
-.sup-c {
-    color:orange;
-}
-
-.sup-op {
-    color:navy;
-}
-
-.sup-fp {
-    color:lightskyblue;
-}
-
-.sup-dp {
-    color:green;
-}
-
-.sup-ap {
-    color:darkred;
-}
-
-.sup-p {
-    color:black;
-}
-
-.sup-ni {
-    color:brown;
-}
-
-code {
-    font-size: large;
-    color: darkred;
-}
-
+        #pylode {
+            position: fixed;
+            top: 130px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+        .entity table th {
+            text-align: left;
+        }
+        section#overview img {
+            max-width: 1000px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+        section {
+            max-width: 1500px;
+        }
+        .figure {
+            margin-bottom: 20px;
+        }
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-cp,
+        .sup-cl {
+            cursor:help;
+            margin-left: 3px;
+        }
+        .sup-c {
+            color:orange;
+        }
+        .sup-op {
+            color:navy;
+        }
+        .sup-fp {
+            color:lightskyblue;
+        }
+        .sup-dp {
+            color:green;
+        }
+        .sup-ap {
+            color:darkred;
+        }
+        .sup-p {
+            color:black;
+        }
+        .sup-ni {
+            color:brown;
+        }
+        .sup-cp {
+            color:orange;
+        }
+        .sup-cl {
+            color:darkred;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
     </style>
     
     <script type="application/ld+json">
@@ -197,9 +184,12 @@ code {
     </script>
 </head>
 <body>
-<div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">pyLODE</a></div>
-<img alt='ABS logo' src='./images/ABS_Logo_333.png' /> <img alt='CSIRO logo' src='./images/CSIRO_Grad_RGB_hr-155.png' />
-<h1>ASGS Ontology - ABS Structures and non-ABS structures</h1>
+  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
+    <span style="font-size:smaller;">2.4</span>
+  </div>
+  <img alt='ABS logo' src='./images/ABS_Logo_333.png' /> <img alt='CSIRO logo' src='./images/CSIRO_Grad_RGB_hr-155.png' />
+  <h1>ASGS Ontology - ABS Structures and non-ABS structures</h1>
 <section id="metadata">
     <h2 style="display:none;">Metadata</h2>
     <dl>
@@ -207,27 +197,94 @@ code {
         <dd><code>http://linked.data.gov.au/def/asgs</code></dd>
         <dt>Publisher(s)</dt>
         <dd>
-            Australian Bureau of Statistics<br/>
+            
+    <a href="http://linked.data.gov.au/org/abs">Australian Bureau of Statistics</a><br/>
         </dd>
         <dt>Creator(s)</dt>
         <dd>
-            <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a> (<a href="mailto:laurent.lefort@abs.gov.au">laurent.lefort@abs.gov.au</a>) of <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
-            <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D. Cox</a> (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of <a href="https://www.csiro.au">CSIRO</a><br/>
+            
+            <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a>
+            <a href="https://orcid.org/0000-0002-4305-6085"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Orcid logo</title>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
+                    <g id="Group-4">
+                        <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+                            <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
+                            <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
+                                <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
+                                <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
+                                <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg></a>
+            (<a href="mailto:laurent.lefort@abs.gov.au">laurent.lefort@abs.gov.au</a>) of 
+        <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
+                    
+    <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D. Cox</a>
+    <a href="https://orcid.org/0000-0002-3884-3420"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Orcid logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+                    <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
+                    <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
+                        <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
+                        <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
+                        <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+    (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of 
+    <a href="https://www.csiro.au">CSIRO</a><br/>
         </dd>
         <dt>Contributors(s)</dt>
         <dd>
-            <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a> (<a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a>) of <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br/>
+            
+    <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a>
+    <a href="https://orcid.org/0000-0002-8742-7730"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Orcid logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+                    <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
+                    <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
+                        <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
+                        <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
+                        <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+    (<a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a>) of 
+    <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br/>
         </dd>
         <dt>Created</dt>
         <dd>2018-11-23</dd>
         <dt>Modified</dt>
-        <dd>2020-04-29</dd>
+        <dd>2020-06-21</dd>
         <dt>Imports</dt>
         <dd>
             <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a><br/>
         </dd>
         <dt>Rights</dt>
-        <dd>&copy; 2018 Australian Bureau of Statistics.</dd>
+        <dd>&copy; 2018, 2020 Australian Bureau of Statistics, CSIRO</dd>
         <dt>Source</dt>
         <dd><a href="https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)">https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)</a></dd>
         <dt>Ontology RDF</dt>
@@ -277,6 +334,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <li><a href="#objectproperties">Object Properties</a></li>
         <li><a href="#datatypeproperties">Datatype Properties</a></li>
         <li><a href="#annotationproperties">Annotation Properties</a></li>
+        <li><a href="#namedindividuals">Named Individuals</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -300,7 +358,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <div class="caption"><strong>Figure4:</strong> Non-ABS Structures with containment relations</div>
     </div>
 </section>
-<section id="classes">
+  <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#ASGSFeature">ASGS Feature</a></li>
@@ -341,9 +399,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#AustralianDrainageDivision</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Australian Drainage Divisions (ADD) are an ABS approximation of Bureau of Meteorology Drainage Divisions. Drainage Divisions are defined by major landscape features and climatic zones to form broad hydrological regions as represented in the Australian Hydrological Geospatial Fabric (Geofabric) 2014 version 2 developed by the Bureau of Meteorology. ADDs are approximated using one or more Mesh Blocks (MBs). ADDs can cross State and Territory (S/T) boundaries. ADDs cover the whole of geographic Australia without gaps or overlaps. The ADDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Australian Drainage Divisions (ADD) are an ABS approximation of Bureau of Meteorology Drainage Divisions. Drainage Divisions are defined by major landscape features and climatic zones to form broad hydrological regions as represented in the Australian Hydrological Geospatial Fabric (Geofabric) 2014 version 2 developed by the Bureau of Meteorology. ADDs are approximated using one or more Mesh Blocks (MBs). ADDs can cross State and Territory (S/T) boundaries. ADDs cover the whole of geographic Australia without gaps or overlaps. The ADDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
                 </td>
             </tr>
             <tr>
@@ -355,7 +419,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -368,9 +433,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Commonwealth Electoral Divisions (CED) are an ABS approximation of Australian Electoral Commission (AEC) electoral division boundaries. An Australian Electoral Commission electoral division boundary is an area legally prescribed for the purpose of returning one member to the House of Representatives Australia's Federal Lower House of Parliament. Commonwealth Electoral Divisions may change as the Australian Electoral Commission revise their boundaries. Where the Australian Electoral Commission revise their boundaries the CEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures. CEDs are approximated using whole Statistical Areas Level 1 (SA1s). CEDs cover the whole of Australia without gaps or overlaps.The CEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Commonwealth Electoral Divisions (CED) are an ABS approximation of Australian Electoral Commission (AEC) electoral division boundaries. An Australian Electoral Commission electoral division boundary is an area legally prescribed for the purpose of returning one member to the House of Representatives Australia's Federal Lower House of Parliament. Commonwealth Electoral Divisions may change as the Australian Electoral Commission revise their boundaries. Where the Australian Electoral Commission revise their boundaries the CEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures. CEDs are approximated using whole Statistical Areas Level 1 (SA1s). CEDs cover the whole of Australia without gaps or overlaps.The CEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt;
+  rdf:type asgs:CommonwealthElectoralDivision ;
+  rdf:type asgs:Feature ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 81571420.384044319 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/&gt; ;
+  dcterms:identifier "216"^^asgs-id:cedCode2016 ;
+  dcterms:title "Goldstein" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ced/216&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -382,8 +475,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -396,9 +490,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#Country</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning: 'the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territory'.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia
+                    <p>Australia (AUS) represents the geographic extent of Australia. This is set out in section 2B of the Acts Interpretation Act 1901 which currently defines Australia or the Commonwealth as meaning: 'the Commonwealth of Australia and when used in a geographical sense includes Norfolk Island the Territory of Christmas Island and the Territory of Cocos (Keeling) Islands but does not include any other external Territory'.Prior to 2016 Norfolk Island was not included in the ASGS. However in line with Australian Government announced reforms to the governance of Norfolk Island and its inclusion into the definition of Geographic Australia the Territory of Norfolk Island was included in the 2016 ASGS. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia</p>
                 </td>
             </tr>
             <tr>
@@ -410,7 +510,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -423,9 +524,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#DestinationZone</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Destination Zones (DZN) are geographic areas primarily used for the analysis of Census Place of Work data. They are designed to represent the distribution of workplaces rather than residential dwellings. This means there is greater spatial detail in areas with high concentrations of workplaces. DZNs are jointly developed between the ABS and each State or Territory Transport Authority. DZNs are built from whole Mesh Blocks (MB) and aggregate to Statistical Areas Level 2 (SA2s). DZNs cover the whole of Australia without gaps or overlaps. The DZN regions are not an Australian Statistical Geography Standard (ASGS) structure however the ABS publishes Census data on these areas. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Destination Zones (DZN) are geographic areas primarily used for the analysis of Census Place of Work data. They are designed to represent the distribution of workplaces rather than residential dwellings. This means there is greater spatial detail in areas with high concentrations of workplaces. DZNs are jointly developed between the ABS and each State or Territory Transport Authority. DZNs are built from whole Mesh Blocks (MB) and aggregate to Statistical Areas Level 2 (SA2s). DZNs cover the whole of Australia without gaps or overlaps. The DZN regions are not an Australian Statistical Geography Standard (ASGS) structure however the ABS publishes Census data on these areas. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
                 </td>
             </tr>
             <tr>
@@ -437,8 +544,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -451,13 +559,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#Feature</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Super-class for all ABS Structures and Non-ABS Structures. Use
-
-- dcterms:identifier for the code, with a suitable datatype from `asgs-id`
-- rdfs:label for the name, with a suitable datatype from `asgs-id`
-- `asgs:within`, `asgs:isComposedOf` for containment and composition relations
+                    <p>Super-class for all ABS Structures and Non-ABS Structures. Use</p>
+<ul>
+<li>dcterms:identifier for the code, with a suitable datatype from <code>asgs-id</code></li>
+<li>rdfs:label for the name, with a suitable datatype from <code>asgs-id</code></li>
+<li><code>asgs:within</code>, <code>asgs:contains</code>, <code>asgs:isComposedOf</code> for containment and composition relations</li>
+</ul>
                 </td>
             </tr>
             <tr>
@@ -469,31 +584,43 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -506,9 +633,42 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Greater Capital City Statistical Areas (GCCSAs) are designed to represent the functional extent of each of the eight State and Territory capital cities. They include the people who regularly socialise shop or work within the city but live in the small towns and rural areas surrounding the city. GCCSAs are defined using the capital city labour markets. The labour market is sometimes used as a de-facto measure of the functional extent of a city as it contains the majority of the commuting population. It is important to note that GCCSAs do not define the built up edge of the city this is better represented by Urban Centres and Localities (UCLs) or Significant Urban Areas (SUAs). The GCCSA is designed to provide a stable definition of the capital cities to enable production of economic indicators which integrate variables collected over long periods of time. GCCSAs are aggregations of whole Statistical Areas Level 4 (SA4s) in the ASGS Main Structure. Whole GCCSAs aggregate to State and Territory (S/T). GSSCAs are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Greater Capital City Statistical Areas (GCCSAs) are designed to represent the functional extent of each of the eight State and Territory capital cities. They include the people who regularly socialise shop or work within the city but live in the small towns and rural areas surrounding the city. GCCSAs are defined using the capital city labour markets. The labour market is sometimes used as a de-facto measure of the functional extent of a city as it contains the majority of the commuting population. It is important to note that GCCSAs do not define the built up edge of the city this is better represented by Urban Centres and Localities (UCLs) or Significant Urban Areas (SUAs). The GCCSA is designed to provide a stable definition of the capital cities to enable production of economic indicators which integrate variables collected over long periods of time. GCCSAs are aggregations of whole Statistical Areas Level 4 (SA4s) in the ASGS Main Structure. Whole GCCSAs aggregate to State and Territory (S/T). GSSCAs are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:GreaterCapitalCityStatisticalArea ;
+  rdf:type geo:Feature ;
+  asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode "2GMEL"^^asgs-id:gccsaCode2016 ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 16025657279.543074 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 9992511800.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/&gt; ;
+  dcterms:identifier "2GMEL"^^asgs-id:gccsaCode2016 ;
+  dcterms:title "Greater Melbourne" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_gccsa/2GMEL&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -520,8 +680,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -534,9 +695,38 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#IndigenousArea</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Indigenous Areas (IAREs) are medium sized geographical areas designed to facilitate the release of statistics with multiple variables for Aboriginal and Torres Strait Islander Peoples. IAREs provide a balance between spatial resolution and population size which provides the ability to release more detailed socio-economic attribute data than is available on Indigenous Locations (ILOCs). IAREs are aggregates of Indigenous Locations (ILOCs) and aggregate up to Indigenous Regions (IREGs). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Indigenous Areas (IAREs) are medium sized geographical areas designed to facilitate the release of statistics with multiple variables for Aboriginal and Torres Strait Islander Peoples. IAREs provide a balance between spatial resolution and population size which provides the ability to release more detailed socio-economic attribute data than is available on Indigenous Locations (ILOCs). IAREs are aggregates of Indigenous Locations (ILOCs) and aggregate up to Indigenous Regions (IREGs). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:IndigenousArea ;
+  rdf:type geo:Feature ;
+  asgs:indigenousAreas6DigitCode "201010"^^asgs-id:iareCode2016 ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt; ;
+  geox:hasAreaM2 [
+      data:value 259730438.69439441 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/&gt; ;
+  dcterms:identifier "201010"^^asgs-id:iareCode2016 ;
+  dcterms:title "Melbourne - East" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iare/201010&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -548,8 +738,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -562,9 +753,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#IndigenousLocation</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Indigenous Locations (ILOCs) represent small Aboriginal and Torres Strait Islander communities (urban and rural) with a minimum population of 90 Aboriginal and Torres Strait Islander usual residents. An ILOC is an area designed to allow the release of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial detail whilst maintaining the confidentiality of individuals. ILOCs are aggregates of Statistical Areas Level 1 (SA1s). ILOCs aggregate to Indigenous Areas (IAREs) and cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Indigenous Locations (ILOCs) represent small Aboriginal and Torres Strait Islander communities (urban and rural) with a minimum population of 90 Aboriginal and Torres Strait Islander usual residents. An ILOC is an area designed to allow the release of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial detail whilst maintaining the confidentiality of individuals. ILOCs are aggregates of Statistical Areas Level 1 (SA1s). ILOCs aggregate to Indigenous Areas (IAREs) and cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:IndigenousLocation ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
+  geox:hasAreaM2 [
+      data:value 103463893.37373097 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/&gt; ;
+  dcterms:identifier "20101003"^^asgs-id:ilocCode2016 ;
+  dcterms:title "Glen Eira" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iloc/20101003&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -577,7 +796,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Restrictions</th>
                 <td>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -590,9 +810,38 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#IndigenousRegion</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Indigenous Regions (IREGs) are large geographical areas loosely based on the former Aboriginal and Torres Strait Islander Commission boundaries. They are designed for the release of detailed statistical data with multiple variables on Aboriginal and Torres Strait Islander Peoples. The greater population of IREGs enables greater cross classification of variables when compared with Indigenous Areas (IAREs) or Indigenous Localities (ILOCs). IREGs are aggregates of IAREs and aggregate up to State and Territory (S/T). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Indigenous Regions (IREGs) are large geographical areas loosely based on the former Aboriginal and Torres Strait Islander Commission boundaries. They are designed for the release of detailed statistical data with multiple variables on Aboriginal and Torres Strait Islander Peoples. The greater population of IREGs enables greater cross classification of variables when compared with Indigenous Areas (IAREs) or Indigenous Localities (ILOCs). IREGs are aggregates of IAREs and aggregate up to State and Territory (S/T). They cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:IndigenousRegion ;
+  rdf:type geo:Feature ;
+  asgs:indigenousRegions3DigitCode "201"^^asgs-id:iregCode2016 ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 14191868442.812222 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/&gt; ;
+  dcterms:identifier "201"^^asgs-id:iregCode2016 ;
+  dcterms:title "Melbourne" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ireg/201&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -604,8 +853,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -618,9 +868,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#LocalGovernmentArea</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as 'Unincorporated' in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics.
+                    <p>Local Government Areas (LGAs) are an ABS approximation of gazetted local government boundaries as defined by each State and Territory Local Government Department. LGAs cover incorporated areas of Australia. Incorporated areas are legally designated parts of a State or Territory over which incorporated local governing bodies have responsibility. The major areas of Australia not administered by incorporated bodies are the northern parts of South Australia and all of the Australian Capital Territory and the Other Territories. These regions are identified as 'Unincorporated' in the Australian Statistical Geography Standard (ASGS) LGA structure. A small number of LGA boundaries and names change each year and the ABS LGAs are updated on an annual basis to reflect these changes. LGAs are approximated using whole Mesh Blocks (MBs). In aggregation LGAs cover Australia without gaps or overlaps. The LGAs are Non ABS Structures within the ASGS. These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics.</p>
                 </td>
             </tr>
             <tr>
@@ -633,7 +889,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Restrictions</th>
                 <td>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -646,9 +903,45 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#MeshBlock</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Mesh Blocks (MB) are the smallest geographical area defined by the ABS. They are designed as geographic building blocks rather than as areas for the release of statistics themselves. All statistical areas in the Australian Statistical Geography Standard (ASGS) both ABS and Non ABS Structures are built up from one or more MBs.As a result the design of MBs takes into account many factors including administrative boundaries such as Cadastre (property boundaries) Suburbs and Localities and Local Government Areas (LGAs) as well as land uses and dwelling distribution. Most MBs contain 30 to 60 dwellings although some are specifically designed to have zero. This provides an additional level of confidentiality for data released on the ASGS as the difference in data released on multiple statistical areas is always at least one MB. Mesh Blocks like other ABS structures in the ASGS are stable for 5 years and are updated to reflect changes such as new housing developments every 5 years. The MB table includes a Mesh Block Category field that broadly defines primary land uses such as Residential and Commercial. MB boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/20675580000&gt;
+  rdf:type asgs:MeshBlock ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/destinationzone/211792650&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/localgovernmentarea/22310&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt; ;
+  geox:hasAreaM2 [
+      data:value 14548.840566578177 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 9000.000000000001818989403545856475830078125 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/&gt; ;
+  dcterms:identifier "20675580000"^^asgs-id:mbCode2016 ;
+  dcterms:type mbcat:residential ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_mb/20675580000&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -676,7 +969,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Description</th>
                 <td>
-                    The class of meshblock categories, as defined in ASGS
+                    <p>The class of meshblock categories, as defined in ASGS</p>
                 </td>
             </tr>
             <tr>
@@ -695,9 +988,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Natural Resource Management Regions (NRMR) are an ABS approximation of Natural Resource Management regions (NRMs) which are defined through the Australian Government National Landcare Program. They are administrative regions primarily used by the Department of the Environment and Energy and the Department of Agriculture and Water Resources who share responsibility for delivery of the Australian Government's environment and sustainable agriculture programs which are broadly referred to as Natural Resource Management (NRM). NRMRs change occasionally as States and Territories revise their boundaries. NRMRs are approximated using one or more Mesh Blocks (MBs). NRMRs do not cross State and Territory (S/T) boundaries except for Jervis Bay which is included in a NSW region. NRMRs cover the whole of geographic Australia without gaps or overlaps. The NRMRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Natural Resource Management Regions (NRMR) are an ABS approximation of Natural Resource Management regions (NRMs) which are defined through the Australian Government National Landcare Program. They are administrative regions primarily used by the Department of the Environment and Energy and the Department of Agriculture and Water Resources who share responsibility for delivery of the Australian Government's environment and sustainable agriculture programs which are broadly referred to as Natural Resource Management (NRM). NRMRs change occasionally as States and Territories revise their boundaries. NRMRs are approximated using one or more Mesh Blocks (MBs). NRMRs do not cross State and Territory (S/T) boundaries except for Jervis Bay which is included in a NSW region. NRMRs cover the whole of geographic Australia without gaps or overlaps. The NRMRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:NaturalResourceManagementRegion ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 20626018491.989136 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/&gt; ;
+  dcterms:identifier "208"^^asgs-id:nrmrCode2016 ;
+  dcterms:title "Port Phillip and Western Port" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_nrmr/208&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -709,8 +1030,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -723,9 +1045,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#PostalArea</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Postal Areas (POAs) are an ABS approximation of postcodes created to enable the release of ABS data on areas that as closely as possible approximate postcodes. This enables the comparison of ABS data with other data that has been collected using postcodes as the geographic reference. POAs exclude non-mappable Australia Post postcodes such as: post office box postcodes some delivery route postcodes which are also covered by other postcodes (a situation which often occurs in rural areas).POAs are approximated using one or more Mesh Blocks (MBs). POAs cover the whole of geographic Australia without gaps or overlaps. The POAs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Postal Areas (POAs) are an ABS approximation of postcodes created to enable the release of ABS data on areas that as closely as possible approximate postcodes. This enables the comparison of ABS data with other data that has been collected using postcodes as the geographic reference. POAs exclude non-mappable Australia Post postcodes such as: post office box postcodes some delivery route postcodes which are also covered by other postcodes (a situation which often occurs in rural areas).POAs are approximated using one or more Mesh Blocks (MBs). POAs cover the whole of geographic Australia without gaps or overlaps. The POAs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
                 </td>
             </tr>
             <tr>
@@ -737,7 +1065,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -750,9 +1079,41 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#RemotenessArea</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Remoteness Areas (RAs) divide Australia into five classes of remoteness on the basis of relative access to services. RAs are based on the Accessibility and Remoteness Index of Australia (ARIA+) produced by the Hugo Centre for Migration and Population Research at the University of Adelaide. RAs are aggregates of Statistical Areas Level 1 (SA1s) that are grouped together based on their average ARIA+ score. Ras aggregate up to State and Territory (S/T) and cover Australia without gaps or overlaps.
+                    <p>Remoteness Areas (RAs) divide Australia into five classes of remoteness on the basis of relative access to services. RAs are based on the Accessibility and Remoteness Index of Australia (ARIA+) produced by the Hugo Centre for Migration and Population Research at the University of Adelaide. RAs are aggregates of Statistical Areas Level 1 (SA1s) that are grouped together based on their average ARIA+ score. Ras aggregate up to State and Territory (S/T) and cover Australia without gaps or overlaps.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:RemotenessArea ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 4849332200.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 7798263021.8181982 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/&gt; ;
+  dcterms:identifier "20"^^asgs-id:raCode2016 ;
+  dcterms:title "Major Cities of Australia" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ra/20&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -764,8 +1125,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -778,9 +1140,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#SectionOfState</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Section of State (SOS) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into four different classes within each State and Territory (S/T). These four classes are an aggregation of the more detailed Section of State Range (SOSR) classification. SOS groups Urban Centres into 2 classes one of 100 000 people or more and the other less than 100 000 people. The remaining two classes are Localities and Rural Balance. This broad summary of UCLs enables detailed statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOS are aggregates of SOSR and aggregate up to State and Territory (S/T). SOS regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Section of State (SOS) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into four different classes within each State and Territory (S/T). These four classes are an aggregation of the more detailed Section of State Range (SOSR) classification. SOS groups Urban Centres into 2 classes one of 100 000 people or more and the other less than 100 000 people. The remaining two classes are Localities and Rural Balance. This broad summary of UCLs enables detailed statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOS are aggregates of SOSR and aggregate up to State and Territory (S/T). SOS regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:SectionOfState ;
+  rdf:type geo:Feature ;
+  asgs:sectionOfState2DigitCode "20"^^asgs-id:sosCode2016 ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 4624490385.6316757 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/&gt; ;
+  dcterms:identifier "20"^^asgs-id:sosCode2016 ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sos/20&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -792,8 +1182,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -806,9 +1197,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#SectionOfStateRange</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Section of State Range (SOSR) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into 11 different classes within each State and Territory (S/T). The 11 classes are made up of; 8 different population size classes grouping Urban Centres; 2 population size classes grouping Localities; and a Rural Balance. This detailed summary of UCLs enables statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOSR are aggregates of UCLs and aggregate up to Section of State (SOS). SOSR regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Section of State Range (SOSR) provides a set of geographic areas classifying Urban Centres and Localities (UCLs) into 11 different classes within each State and Territory (S/T). The 11 classes are made up of; 8 different population size classes grouping Urban Centres; 2 population size classes grouping Localities; and a Rural Balance. This detailed summary of UCLs enables statistical comparisons of differently sized Urban Centres Localities and the Rural areas. SOSR are aggregates of UCLs and aggregate up to Section of State (SOS). SOSR regions cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:SectionOfStateRange ;
+  rdf:type geo:Feature ;
+  asgs:sectionOfStateRange3DigitCode "201"^^asgs-id:sosrCode2016 ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt; ;
+  geox:hasAreaM2 [
+      data:value 4351251103.1468725 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/&gt; ;
+  dcterms:identifier "201"^^asgs-id:sosrCode2016 ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sosr/201&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -820,7 +1239,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -834,9 +1254,36 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#SignificantUrbanArea</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Significant Urban Areas (SUAs) represent towns or cities with 10 000 people or more. They are based on Urban Centres and Localities (UCLs) but are defined by the larger Statistical Areas Level 2 (SA2s). A single SUA can represent either a single Urban Centre or a cluster of related Urban Centres. Using SA2s to define SUAs ensures a wider range of more regularly updated data is available for these areas (such as Estimated Resident Population and Building Approvals) compared to UCLs where only Census data is available. The SUA structure does not aggregate to State or Territory (S/T) level as SUAs may cross S/T boundaries. In aggregate SUAs cover Australia without gaps or overlaps as they include a remainder area 'Not in any Significant Urban Area'. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Significant Urban Areas (SUAs) represent towns or cities with 10 000 people or more. They are based on Urban Centres and Localities (UCLs) but are defined by the larger Statistical Areas Level 2 (SA2s). A single SUA can represent either a single Urban Centre or a cluster of related Urban Centres. Using SA2s to define SUAs ensures a wider range of more regularly updated data is available for these areas (such as Estimated Resident Population and Building Approvals) compared to UCLs where only Census data is available. The SUA structure does not aggregate to State or Territory (S/T) level as SUAs may cross S/T boundaries. In aggregate SUAs cover Australia without gaps or overlaps as they include a remainder area 'Not in any Significant Urban Area'. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:SignificantUrbanArea ;
+  rdf:type geo:Feature ;
+  asgs:isComposedOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
+  geox:hasAreaM2 [
+      data:value 9937488759.6786938 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/&gt; ;
+  dcterms:identifier "2010"^^asgs-id:suaCode2016 ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sua/2010&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -848,7 +1295,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -861,9 +1309,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StateElectoralDivision</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    State Electoral Divisions (SED) are an ABS approximation of State Electoral Districts. A State Electoral District is an area legally prescribed for the purpose of returning one or more members to the State or Territory Lower Houses of Parliament or the relevant equivalent. State Electoral Divisions may change as State or Territory authorities revise their boundaries. Where the Australian Electoral Commission revise their boundaries the SEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures.SEDs are approximated using whole Statistical Areas Level 1 (SA1s). SEDs do not cross State and Territory (S/T) boundaries and they cover the whole of Australia without gaps or overlaps. The Other Territories (OT) of Jervis Bay Norfolk Island Christmas Island and the Cocos (Keeling) Islands are allocated to 'Unclassified (OT)'. The SEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>State Electoral Divisions (SED) are an ABS approximation of State Electoral Districts. A State Electoral District is an area legally prescribed for the purpose of returning one or more members to the State or Territory Lower Houses of Parliament or the relevant equivalent. State Electoral Divisions may change as State or Territory authorities revise their boundaries. Where the Australian Electoral Commission revise their boundaries the SEDs will be updated on an annual basis in July in conjunction with updates of other Non ABS Structures.SEDs are approximated using whole Statistical Areas Level 1 (SA1s). SEDs do not cross State and Territory (S/T) boundaries and they cover the whole of Australia without gaps or overlaps. The Other Territories (OT) of Jervis Bay Norfolk Island Christmas Island and the Cocos (Keeling) Islands are allocated to 'Unclassified (OT)'. The SEDs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
                 </td>
             </tr>
             <tr>
@@ -875,7 +1329,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -889,9 +1344,42 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StateOrTerritory</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>State and Territory (S/T) are separate spatial units representing the States and Territories within Australia. Jervis Bay Territory the Territories of Christmas Island; Cocos (Keeling) Islands and Norfolk Island are included as one spatial unit at the State and Territory level under the category of Other Territories. S/T are aggregations of one or more Statistical Area Level 4 (SA4s) in the ASGS Main Structure. S/T boundaries are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StateOrTerritory ;
+  rdf:type geo:Feature ;
+  asgs:stateOrTerritory1DigitCode "2"^^asgs-id:stateCode2016 ;
+  geox:hasAreaM2 [
+      data:value 227495630400.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 356137738800.02869 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/&gt; ;
+  dcterms:identifier "2"^^asgs-id:stateCode2016 ;
+  dcterms:title "Victoria" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ste/2&gt; ;
+  rdfs:label "VIC" ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -903,8 +1391,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -917,9 +1406,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StateSuburb</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    State Suburbs (SSC) are an ABS approximation of localities gazetted by the Geographical Place Name authority in each State and Territory (S/T). Gazetted Localities are the officially recognised boundaries of suburbs (in cities and larger towns) and localities (outside cities and larger towns). Gazetted Localities cover most of Australia. Presently there remain areas of rural South Australia and rural Australian Capital Territory for which Gazetted Localities remain undefined. Various islands offshore from New South Wales Victoria and Tasmania and some inshore water areas and islands are also undefined. Since 1996 Locality boundaries have been formalised for most areas of Australia through a program coordinated by the Permanent Committee on Place Names (PCPN) under the umbrella of the Intergovernmental Committee On Surveying and Mapping (ISCM). Areas where localities are not gazetted are represented by Remainder SSCs.SSCs are approximated using one or more Mesh Blocks (MBs). SSCs cover the whole of geographic Australia without gaps or overlaps including the Remainder SSCs.The SSCs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>State Suburbs (SSC) are an ABS approximation of localities gazetted by the Geographical Place Name authority in each State and Territory (S/T). Gazetted Localities are the officially recognised boundaries of suburbs (in cities and larger towns) and localities (outside cities and larger towns). Gazetted Localities cover most of Australia. Presently there remain areas of rural South Australia and rural Australian Capital Territory for which Gazetted Localities remain undefined. Various islands offshore from New South Wales Victoria and Tasmania and some inshore water areas and islands are also undefined. Since 1996 Locality boundaries have been formalised for most areas of Australia through a program coordinated by the Permanent Committee on Place Names (PCPN) under the umbrella of the Intergovernmental Committee On Surveying and Mapping (ISCM). Areas where localities are not gazetted are represented by Remainder SSCs.SSCs are approximated using one or more Mesh Blocks (MBs). SSCs cover the whole of geographic Australia without gaps or overlaps including the Remainder SSCs.The SSCs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StateSuburb ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 4185791.9328826475 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/&gt; ;
+  dcterms:identifier "20858"^^asgs-id:sscCode2016 ;
+  dcterms:title "Elsternwick" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ssc/20858&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -932,7 +1449,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Restrictions</th>
                 <td>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -945,9 +1463,45 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Statistical Areas Level 1 (SA1s) are designed to maximise the spatial detail available for Census data. Most SA1s have a population of between 200 to 800 persons with an average population of approximately 400 persons. This is to optimise the balance between spatial detail and the ability to cross classify Census variables without the resulting counts becoming too small for use. SA1s aim to separate out areas with different geographic characteristics within Suburb and Locality boundaries. In rural areas they often combine related Locality boundaries. SA1s are aggregations of Mesh Blocks (MBs). Whole SA1s aggregate to form Statistical Areas Level 2 (SA2s) Indigenous Locations (ILOCs) Urban Centres and Localities (UCLs) Remoteness Areas (RAs) Commonwealth Electoral Divisions (CEDs) and State Electoral Divisions (SEDs). SA1s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Statistical Areas Level 1 (SA1s) are designed to maximise the spatial detail available for Census data. Most SA1s have a population of between 200 to 800 persons with an average population of approximately 400 persons. This is to optimise the balance between spatial detail and the ability to cross classify Census variables without the resulting counts becoming too small for use. SA1s aim to separate out areas with different geographic characteristics within Suburb and Locality boundaries. In rural areas they often combine related Locality boundaries. SA1s are aggregations of Mesh Blocks (MBs). Whole SA1s aggregate to form Statistical Areas Level 2 (SA2s) Indigenous Locations (ILOCs) Urban Centres and Localities (UCLs) Remoteness Areas (RAs) Commonwealth Electoral Divisions (CEDs) and State Electoral Divisions (SEDs). SA1s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt;
+  rdf:type asgs:StatisticalAreaLevel1 ;
+  rdf:type geo:Feature ;
+  asgs:statisticalArea1Sa111DigitCode "20802117923"^^asgs-id:sa1Maincode2016 ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
+  geox:hasAreaM2 [
+      data:value 114800.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 184552.47130247016 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/&gt; ;
+  dcterms:identifier "20802117923"^^asgs-id:sa1Maincode2016 ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa1/20802117923&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -959,13 +1513,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -978,9 +1533,45 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Statistical Areas Level 2 (SA2s) are functional areas that represent a community that interacts together socially and economically. They often align with Suburb and Locality boundaries to improve the geographic coding of data to these areas. In major urban areas SA2s often reflect one or more related suburbs. The SA2 is the smallest area for the release of many ABS statistics including the Estimated Resident Population (ERP) Health & Vitals and Building Approvals data. SA2s generally have a population range of 3 000 to 25 000 persons and have an average population of about 10 000 persons. SA2s are aggregated from whole Statistical Areas Level 1 (SA1s) in the ASGS Main Structure. Whole SA2s aggregate to form Statistical Areas Level 3 (SA3s) Significant Urban Areas (SUAs) and Tourism Regions (TRs). SA2s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Statistical Areas Level 2 (SA2s) are functional areas that represent a community that interacts together socially and economically. They often align with Suburb and Locality boundaries to improve the geographic coding of data to these areas. In major urban areas SA2s often reflect one or more related suburbs. The SA2 is the smallest area for the release of many ABS statistics including the Estimated Resident Population (ERP) Health &amp; Vitals and Building Approvals data. SA2s generally have a population range of 3 000 to 25 000 persons and have an average population of about 10 000 persons. SA2s are aggregated from whole Statistical Areas Level 1 (SA1s) in the ASGS Main Structure. Whole SA2s aggregate to form Statistical Areas Level 3 (SA3s) Significant Urban Areas (SUAs) and Tourism Regions (TRs). SA2s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt;
+  rdf:type asgs:StatisticalAreaLevel2 ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
+  geox:hasAreaM2 [
+      data:value 2861600.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 4602063.7284709048 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/&gt; ;
+  dcterms:identifier "208021179"^^asgs-id:sa2Maincode2016 ;
+  dcterms:identifier "208021179"^^asgs-id:statisticalArea2Sa29DigitCode ;
+  geo:hasGeometry &lt;https://gds.loci.cat/geometry/asgs16_sa2/208021179&gt; ;
+  rdfs:label "Elsternwick"^^asgs-id:sa2Name2016 ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -992,8 +1583,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
@@ -1008,9 +1600,42 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Statistical Areas Level 3 (SA3s) are designed for the output of regional data. SA3s create a standard framework for the analysis of ABS data at the regional level. SA3s do this by clustering groups of Statistical Areas Level 2 (SA2s) that have similar regional characteristics administrative boundaries or labour markets. SA3s generally have populations between 30 000 and 130 000 persons. They are often the functional areas of regional towns and cities with a population in excess of 20 000 people. Within urban areas they represent clusters of related suburbs around urban commercial and transport hubs. SA3s are aggregations of whole SA2s in the ASGS Main Structure. Whole SA3s aggregate to form Statistical Areas Level 4 (SA4s). SA3s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Statistical Areas Level 3 (SA3s) are designed for the output of regional data. SA3s create a standard framework for the analysis of ABS data at the regional level. SA3s do this by clustering groups of Statistical Areas Level 2 (SA2s) that have similar regional characteristics administrative boundaries or labour markets. SA3s generally have populations between 30 000 and 130 000 persons. They are often the functional areas of regional towns and cities with a population in excess of 20 000 people. Within urban areas they represent clusters of related suburbs around urban commercial and transport hubs. SA3s are aggregations of whole SA2s in the ASGS Main Structure. Whole SA3s aggregate to form Statistical Areas Level 4 (SA4s). SA3s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StatisticalAreaLevel3 ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
+  geox:hasAreaM2 [
+      data:value 40700200.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 65477553.844688073 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/&gt; ;
+  dcterms:identifier "20802"^^asgs-id:sa3Code2016 ;
+  dcterms:title "Glen Eira" ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa3/20802&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -1022,8 +1647,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1036,9 +1662,42 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Statistical Areas Level 4 (SA4s) are specifically designed for the output of Labour Force Survey data. SA4s reflect labour markets within each State and Territory within the population limits imposed by the Labour Force Survey sample. Most SA4s have a population above 100 000 persons to provide sufficient sample size for Labour Force estimates. In regional areas SA4s tend to have lower populations (100 000 to 300 000). In metropolitan areas the SA4s tend to have larger populations (300 000 to 500 000). SA4s are aggregations of whole Statistical Areas Level 3 (SA3s) in the ASGS Main Structure. Whole SA4s aggregate to form Greater Capital City Statistical Areas (GCCSAs) and State and Territory (S/T).SA4s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Statistical Areas Level 4 (SA4s) are specifically designed for the output of Labour Force Survey data. SA4s reflect labour markets within each State and Territory within the population limits imposed by the Labour Force Survey sample. Most SA4s have a population above 100 000 persons to provide sufficient sample size for Labour Force estimates. In regional areas SA4s tend to have lower populations (100 000 to 300 000). In metropolitan areas the SA4s tend to have larger populations (300 000 to 500 000). SA4s are aggregations of whole Statistical Areas Level 3 (SA3s) in the ASGS Main Structure. Whole SA4s aggregate to form Greater Capital City Statistical Areas (GCCSAs) and State and Territory (S/T).SA4s are contiguous and in aggregate cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:StatisticalAreaLevel4 ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  geox:hasAreaM2 [
+      data:value 161496600.0 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
+    ] ;
+  geox:hasAreaM2 [
+      data:value 260154098.46660107 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/&gt; ;
+  dcterms:identifier "208"^^asgs-id:sa4Code2016 ;
+  dcterms:title "Melbourne - Inner South"^^asgs-id:sa4Name2016 ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa4/208&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -1051,8 +1710,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Restrictions</th>
                 <td>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1065,9 +1725,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#TourismRegion</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Tourism Regions (TR) are an ABS approximation of Tourism Regions provided by Tourism Research Australia (TRA). They are administrative regions primarily used by Tourism Research Australia for research and policy purposes.TRs are approximated using whole Statistical Areas Level 2 (SA2s). As of 2016 TRs do not cross State and Territory (S/T) boundaries and there are no TRs for the Other Territories (OT). The TRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Tourism Regions (TR) are an ABS approximation of Tourism Regions provided by Tourism Research Australia (TRA). They are administrative regions primarily used by Tourism Research Australia for research and policy purposes.TRs are approximated using whole Statistical Areas Level 2 (SA2s). As of 2016 TRs do not cross State and Territory (S/T) boundaries and there are no TRs for the Other Territories (OT). The TRs are Non ABS Structures within the Australian Statistical Geography Standard (ASGS). These are mostly administrative areas which are not defined or maintained by the ABS but for which the ABS is committed to providing a range of statistics. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
                 </td>
             </tr>
             <tr>
@@ -1079,7 +1745,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1092,9 +1759,36 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    Urban Centres and Localities (UCLs) represent areas of concentrated urban development with populations of 200 people or more. These areas of urban development are primarily identified using objective dwelling and population density criteria. This criteria is developed using data from the Census of Population and Housing. Urban Centres are defined separately to Localities. Urban Centres have urban populations of 1 000 people or more while Localities have populations of between 200 and 999 people.The UCLs are designed for the analysis of statistical data in particular data from the Census of Population and Housing. The 200 minimum population size is set to enable users to access cross classified Census data for these areas without the resulting counts becoming too small for use. UCLs are aggregates of Statistical Areas Level 1 (SA1s) they aggregate up to Section of State (SOS). UCLs include a category of Rural Balance which ensures that they cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.
+                    <p>Urban Centres and Localities (UCLs) represent areas of concentrated urban development with populations of 200 people or more. These areas of urban development are primarily identified using objective dwelling and population density criteria. This criteria is developed using data from the Census of Population and Housing. Urban Centres are defined separately to Localities. Urban Centres have urban populations of 1 000 people or more while Localities have populations of between 200 and 999 people.The UCLs are designed for the analysis of statistical data in particular data from the Census of Population and Housing. The 200 minimum population size is set to enable users to access cross classified Census data for these areas without the resulting counts becoming too small for use. UCLs are aggregates of Statistical Areas Level 1 (SA1s) they aggregate up to Section of State (SOS). UCLs include a category of Rural Balance which ensures that they cover the whole of Australia without gaps or overlaps. An additional code (Outside Australia) has also been added to represent areas not covered by Geographical Australia.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Example</th>
+                <td>
+                    <pre>
+                      
+&lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt;
+  rdf:type asgs:Feature ;
+  rdf:type asgs:UrbanCentreAndLocality ;
+  rdf:type geo:Feature ;
+  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
+  geox:hasAreaM2 [
+      data:value 4351251103.1468725 ;
+      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
+    ] ;
+  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/&gt; ;
+  dcterms:identifier "201001"^^asgs-id:uclCode2016 ;
+  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ucl/201001&gt; ;
+.
+                    </pre>
                 </td>
             </tr>
             <tr>
@@ -1106,7 +1800,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -1134,10 +1829,39 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#contains">contains</a></li>
         <li><a href="#iscomposedof">is composed of</a></li>
         <li><a href="#iswithin">is within</a></li>
         <li><a href="#type">type</a></li>
     </ul>
+    <div class="entity property" id="contains">
+        <h3>contains<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#contains</code></td>
+            </tr>
+            <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The target resource is within the context resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
+This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="iscomposedof">
         <h3>is composed of<sup title="object property" class="sup-op">op</sup></h3>
         <table>
@@ -1146,9 +1870,33 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#isComposedOf</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    The context resource is composed one or more of the target resources. 
+                    The context resource is composed of one or more of the target resources. 
+                </td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#contains">asgs:contains</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1161,10 +1909,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td><code>http://linked.data.gov.au/def/asgs#within</code></td>
             </tr>
             <tr>
+                <th>Is Defined By</th>
+                <td>
+                    http://linked.data.gov.au/def/asgs
+                </td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>
-                    The context resource is contained within the target resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
-
+                    The context resource is contained by the target resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
 This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).
                 </td>
             </tr>
@@ -1180,7 +1933,6 @@ This may or may not correspond with a strict geometric relationship (which shoul
         </table>
     </div>
 </section>
-
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
@@ -1196,7 +1948,6 @@ This may or may not correspond with a strict geometric relationship (which shoul
         </table>
     </div>
 </section>
-
 <section id="annotationproperties">
     <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
@@ -1372,8 +2123,127 @@ This may or may not correspond with a strict geometric relationship (which shoul
         </table>
     </div>
 </section>
-
-<section id="namespaces">
+  
+  <section id="namedindividuals">
+    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#0000-0002-3884-3420">0000-0002-3884-3420</a></li>
+        <li><a href="#0000-0002-4305-6085">0000-0002-4305-6085</a></li>
+        <li><a href="#0000-0002-8742-7730">0000-0002-8742-7730</a></li>
+        <li><a href="#abs">abs</a></li>
+        <li><a href="#csiro">csiro</a></li>
+    </ul>
+    <div class="entity named_individual" id="abs">
+        <h3>abs<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/org/abs
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Organization">sdo:Organization</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="csiro">
+        <h3>csiro<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/org/csiro
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Organization">sdo:Organization</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="0000-0002-3884-3420">
+        <h3>0000-0002-3884-3420<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://orcid.org/0000-0002-3884-3420
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Person">sdo:Person</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="0000-0002-4305-6085">
+        <h3>0000-0002-4305-6085<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://orcid.org/0000-0002-4305-6085
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Person">sdo:Person</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="0000-0002-8742-7730">
+        <h3>0000-0002-8742-7730<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://orcid.org/0000-0002-8742-7730
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Person">sdo:Person</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="None">
+        <h3>None<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td>
+                  <code>
+                      https://surroundaustralia.com
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="https://schema.org/Organization">sdo:Organization</a><br/>
+            </dd>
+        </table>
+    </div>
+</section>
+  
+  <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt><em>default (:)</em></dt>
@@ -1414,17 +2284,17 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
     </dl>
 </section>
-<section id="legend">
-    <h2>Legend</h2>
-    <table class="entity">
-        <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
-        <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
-        <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
-        <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
-        <tr><td><sup class="sup-ap" title="Annotation Properties">dp</sup></td><td>Annotation Properties</td></tr>
-        <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
-        <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
-    </table>
-</section>
+  <section id="legend">
+      <h2>Legend</h2>
+      <table class="entity">
+          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
+          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
+          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
+          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
+          <tr><td><sup class="sup-ap" title="Annotation Properties">dp</sup></td><td>Annotation Properties</td></tr>
+          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
+          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
+      </table>
+  </section>
 </body>
 </html>

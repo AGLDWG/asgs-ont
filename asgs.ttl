@@ -1,5 +1,4 @@
 @prefix : <http://linked.data.gov.au/def/asgs#> .
-@prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
@@ -57,6 +56,7 @@ The ASGS Ontology is packaged in multiple graphs:
 - http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by generic 'within' and 'isComposedOf' relations instead
 - http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties
 - http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies""" ;
+                                      dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
                                       dcterms:modified "2020-06-21" ;
                                       dcterms:publisher <http://linked.data.gov.au/org/abs> ;
                                       dcterms:rights "Copyright 2018, 2020 Australian Bureau of Statistics, CSIRO" ;

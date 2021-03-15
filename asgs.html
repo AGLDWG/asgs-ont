@@ -22,60 +22,48 @@
         #pylode a:hover {
             color: #333;
         }
-
         .cardinality {
             font-style: italic;
             color: #aa00aa;
         }
-
         dt {
             font-weight: bold;
             padding: 5px 0 5px 0;
         }
-
         ul.hlist {
             list-style-type: none;
             border: 1px solid navy;
             padding:5px;
             background-color: #F4FFFF;
         }
-
         ul.hierarchy {
             border: 1px solid navy;
             padding: 5px 25px 5px 25px;
             background-color: #F4FFFF;
         }
-
-
         ul.hlist li {
             display: inline;
             margin-right: 10px;
         }
-
         .entity {
             border: 1px solid navy;
             margin:5px 0 5px 0;
             padding: 5px;
         }
-
         .entity th {
             width: 150px;
             vertical-align: top;
         }
-
         .entity th,
         .entity td {
             padding-bottom: 20px;
         }
-
         .entity table th {
             text-align: left;
         }
-
         section#overview img {
             max-width: 1000px;
         }
-
         h1, h2, h3, h4, h5, h6 {
             text-align: left
         }
@@ -99,8 +87,6 @@
         h4 { font: bold 100% sans-serif }
         h5 { font: italic 100% sans-serif }
         h6 { font: small-caps 100% sans-serif }
-
-
         body {
             padding: 2em 70px 2em 70px;
             margin: 0;
@@ -112,19 +98,15 @@
             background-repeat: no-repeat;
             text-align: justify;
         }
-
         section {
             max-width: 1500px;
         }
-
         .figure {
             margin-bottom: 20px;
         }
-
         :link { color: #00C; background: transparent }
         :visited { color: #609; background: transparent }
         a:active { color: #C00; background: transparent }
-
         .sup-c,
         .sup-op,
         .sup-fp,
@@ -137,48 +119,37 @@
             cursor:help;
             margin-left: 3px;
         }
-
         .sup-c {
             color:orange;
         }
-
         .sup-op {
             color:navy;
         }
-
         .sup-fp {
             color:lightskyblue;
         }
-
         .sup-dp {
             color:green;
         }
-
         .sup-ap {
             color:darkred;
         }
-
         .sup-p {
             color:black;
         }
-
         .sup-ni {
             color:brown;
         }
-
         .sup-cp {
             color:orange;
         }
-
         .sup-cl {
             color:darkred;
         }
-
         code {
             font-size: large;
             color: darkred;
         }
-
         /* less prominent links for properties */
         .proplink {
             color: #336;
@@ -525,39 +496,25 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt;
-
-  rdf:type asgs:CommonwealthElectoralDivision ;
-
-  rdf:type asgs:NonABSStructure ;
-
-  rdf:type asgs:Feature ;
-
-  rdf:type geo:Feature ;
-
-  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
-  geox:hasAreaM2 [
-
-      data:value 81571420.384044319 ;
-
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
+    rdf:type asgs:CommonwealthElectoralDivision ;
+    rdf:type asgs:Feature ;
+    rdf:type asgs:NonABSStructure ;
+    rdf:type geo:Feature ;
+    asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+    asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117122&gt; ;
+    asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117224&gt; ;
+    asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117429&gt; ; 
+... more here ...
+    geox:hasAreaM2 [
+        data:value 81571420.384044319 ;
+        geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
-
-  loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/&gt; ;
-
-  dct:identifier "216"^^asgs-id:cedCode2016 ;
-
-  dct:title "Goldstein" ;
-
-  geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ced/216&gt; ;
-
+    loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/&gt; ;
+    dcterms:identifier "216"^^asgs-idcedCode2016 ;
+    dcterms:title "Goldstein" ;
+    geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ced/216&gt; ;
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -722,51 +679,27 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:GreaterCapitalCityStatisticalArea ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode "2GMEL"^^asgs-id:gccsaCode2016 ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 16025657279.543074 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 9992511800.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/&gt; ;
-
   dct:identifier "2GMEL"^^asgs-id:gccsaCode2016 ;
-
   dct:title "Greater Melbourne" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_gccsa/2GMEL&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -809,43 +742,23 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:IndigenousArea ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt; ;
-
   asgs:indigenousAreas6DigitCode "201010"^^asgs-id:iareCode2016 ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 259730438.69439441 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/&gt; ;
-
   dct:identifier "201010"^^asgs-id:iareCode2016 ;
-
   dct:title "Melbourne - East" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iare/201010&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -889,33 +802,19 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:IndigenousLocation ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 103463893.37373097 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/&gt; ;
-
   dct:identifier "20101003"^^asgs-id:ilocCode2016 ;
-
   dct:title "Glen Eira" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iloc/20101003&gt; ;
-
 .
                     </pre>
                 </td>
@@ -960,40 +859,22 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:IndigenousRegion ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:indigenousRegions3DigitCode "201"^^asgs-id:iregCode2016 ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 14191868442.812222 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/&gt; ;
-
   dct:identifier "201"^^asgs-id:iregCode2016 ;
-
   dct:title "Melbourne" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ireg/201&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1072,52 +953,28 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/20675580000&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:MeshBlock ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/destinationzone/211792650&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/localgovernmentarea/22310&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 14548.840566578177 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 9000.000000000001818989403545856475830078125 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/&gt; ;
-
   dct:identifier "20675580000"^^asgs-id:mbCode2016 ;
-
   dct:type mbcat:residential ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_mb/20675580000&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1181,36 +1038,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:NaturalResourceManagementRegion ;
-
   rdf:type asgs:NonABSStructure ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 20626018491.989136 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/&gt; ;
-
   dct:identifier "208"^^asgs-id:nrmrCode2016 ;
-
   dct:title "Port Phillip and Western Port" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_nrmr/208&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1323,44 +1164,24 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:RemotenessArea ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 4849332200.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 7798263021.8181982 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/&gt; ;
-
   dct:identifier "20"^^asgs-id:raCode2016 ;
-
   dct:title "Major Cities of Australia" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ra/20&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1404,35 +1225,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:SectionOfState ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
-
   asgs:sectionOfState2DigitCode "20"^^asgs-id:sosCode2016 ;
-
   geox:hasAreaM2 [
-
       data:value 4624490385.6316757 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/&gt; ;
-
   dct:identifier "20"^^asgs-id:sosCode2016 ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sos/20&gt; ;
-
 .
                     </pre>
                 </td>
@@ -1477,38 +1283,21 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:SectionOfStateRange ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt; ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
-
   asgs:sectionOfStateRange3DigitCode "201"^^asgs-id:sosrCode2016 ;
-
   geox:hasAreaM2 [
-
       data:value 4351251103.1468725 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/&gt; ;
-
   dct:identifier "201"^^asgs-id:sosrCode2016 ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sosr/201&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1552,31 +1341,18 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:SignificantUrbanArea ;
-
   rdf:type geo:Feature ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 9937488759.6786938 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/&gt; ;
-
   dct:identifier "2010"^^asgs-id:suaCode2016 ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sua/2010&gt; ;
-
 .
                     </pre>
                 </td>
@@ -1655,48 +1431,26 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:StateOrTerritory ;
-
   rdf:type geo:Feature ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-
   asgs:stateOrTerritory1DigitCode "2"^^asgs-id:stateCode2016 ;
-
   geox:hasAreaM2 [
-
       data:value 227495630400.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 356137738800.02869 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/&gt; ;
-
   dct:identifier "2"^^asgs-id:stateCode2016 ;
-
   dct:title "Victoria" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ste/2&gt; ;
-
   rdfs:label "VIC" ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1740,36 +1494,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:NonABSStructure ;
-
   rdf:type asgs:StateSuburb ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 4185791.9328826475 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/&gt; ;
-
   dct:identifier "20858"^^asgs-id:sscCode2016 ;
-
   dct:title "Elsternwick" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ssc/20858&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1812,55 +1550,29 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:StatisticalAreaLevel1 ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
-
   asgs:statisticalArea1Sa111DigitCode "20802117923"^^asgs-id:sa1Maincode2016 ;
-
   geox:hasAreaM2 [
-
       data:value 114800.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 184552.47130247016 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/&gt; ;
-
   dct:identifier "20802117923"^^asgs-id:sa1Maincode2016 ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa1/20802117923&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -1908,55 +1620,29 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:StatisticalAreaLevel2 ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 2861600.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 4602063.7284709048 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/&gt; ;
-
   dct:identifier "208021179"^^asgs-id:sa2Maincode2016 ;
-
   dct:identifier "208021179"^^asgs-id:statisticalArea2Sa29DigitCode ;
-
   geo:hasGeometry &lt;https://gds.loci.cat/geometry/asgs16_sa2/208021179&gt; ;
-
   rdfs:label "Elsternwick"^^asgs-id:sa2Name2016 ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -2002,48 +1688,26 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:StatisticalAreaLevel3 ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 40700200.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 65477553.844688073 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/&gt; ;
-
   dct:identifier "20802"^^asgs-id:sa3Code2016 ;
-
   dct:title "Glen Eira" ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa3/20802&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -2086,51 +1750,27 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:StatisticalAreaLevel4 ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 161496600.0 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-
     ] ;
-
   geox:hasAreaM2 [
-
       data:value 260154098.46660107 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/&gt; ;
-
   dct:identifier "208"^^asgs-id:sa4Code2016 ;
-
   dct:title "Melbourne - Inner South"^^asgs-id:sa4Name2016 ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa4/208&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -2208,37 +1848,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-
-
 &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt;
-
   rdf:type asgs:ABSStructure ;
-
   rdf:type asgs:Feature ;
-
   rdf:type asgs:UrbanCentreAndLocality ;
-
   rdf:type geo:Feature ;
-
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
-
   geox:hasAreaM2 [
-
       data:value 4351251103.1468725 ;
-
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-
     ] ;
-
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/&gt; ;
-
   dct:identifier "201001"^^asgs-id:uclCode2016 ;
-
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ucl/201001&gt; ;
-
 .
-
-
                     </pre>
                 </td>
             </tr>
@@ -2360,7 +1983,6 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
 </section>
-
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
@@ -2376,7 +1998,6 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
 </section>
-
 <section id="annotationproperties">
     <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
@@ -2552,7 +2173,6 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
 </section>
-
   
   <section id="namedindividuals">
     <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>

@@ -23,7 +23,7 @@ asgs:MeshblockCategory
 <http://linked.data.gov.au/def/asgs/cat>
   a owl:Ontology ;
   dcterms:created "2019-12-11"^^xsd:date ;
-  dcterms:creator "<a href='https://orcid.org/0000-0002-3884-3420'>Simon J D Cox, CSIRO</a>"^^rdf:HTML ;
+  dcterms:creator <https://orcid.org/0000-0002-3884-3420> ;
   dcterms:description """<p>Meshblock categories <a href='https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012'>as defined by ABS</a>.</p>
 <p>For use with the <a href='http://linked.data.gov.au/def/asgs'>Australian Statistical Geography Standard (ASGS) ontology</a>.</p>"""^^rdf:HTML ;
   dcterms:modified "2020-01-31"^^xsd:date ;

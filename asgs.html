@@ -150,6 +150,11 @@
             font-size: large;
             color: darkred;
         }
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
     </style>
     
     <script type="application/ld+json">
@@ -169,6 +174,11 @@
         "@value": "<p>Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics.</p>\n<p>ABS structures: </p>\n<ul>\n<li>Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes</li>\n<li>Indigenous location, Indigenous area, Indigenous region </li>\n<li>Urban Centre and Locality, Section of State Range, Section of State, Significant Urban Area</li>\n</ul>\n<p>Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. \nThe classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>\n<ul>\n<li>Local Government Areas (LGAs)</li>\n<li>Postal Areas (POAs)</li>\n<li>State Suburbs (SSCs)</li>\n<li>Commonwealth Electoral Divisions (CEDs)</li>\n<li>State Electoral Divisions (SEDs)</li>\n<li>Australian Drainage Divisions (ADDs)</li>\n<li>Natural Resource Management Regions (NRMRs)</li>\n<li>Tourism Regions (TRs)</li>\n</ul>\n<p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>\n<p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>\n<p>The ASGS Ontology is packaged in multiple graphs:</p>\n<ul>\n<li>http://linked.data.gov.au/def/asgs (this graph) contains the core classes for ASGS statistical units, and a small number of properties relating to their identity, classification, and containment hierarchy</li>\n<li>http://linked.data.gov.au/def/asgs-cat contains the meshblock classification scheme</li>\n<li>http://linked.data.gov.au/def/asgs-id contains specialised string types for identifiers and labels</li>\n<li>http://linked.data.gov.au/def/asgs-path contains association classes and properties relating to paths between instances of the core classes</li>\n<li>http://linked.data.gov.au/def/asgs-isof (deprecated) contains specialized predicates for containment relationships - this functionality is provided by generic 'within' and 'isComposedOf' relations instead</li>\n<li>http://linked.data.gov.au/def/asgs-code (deprecated) contains specialised annotation properties for identifiers and labels - this functionality has been superseded by a set of data-types to be used in conjunction with more generic properties</li>\n<li>http://linked.data.gov.au/def/asgs-prop (deprecated) contains specialised ASGS properties for relationships, classifiers, identifiers and labels - this functionality has been superseded by use of types from standardized RDF vocabularies</li>\n</ul>"
       }
     ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
     "https://schema.org/name": [
       {
         "@value": "ASGS Ontology - ABS Structures and non-ABS structures"
@@ -176,7 +186,7 @@
     ],
     "https://schema.org/rights": [
       {
-        "@value": "&copy; 2018 Australian Bureau of Statistics."
+        "@value": "&copy; 2018, 2021 Australian Bureau of Statistics, CSIRO"
       }
     ]
   }
@@ -186,46 +196,23 @@
 <body>
   <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
     <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.4</span>
+    <span style="font-size:smaller;">2.8.6</span>
   </div>
   <img alt='ABS logo' src='./images/ABS_Logo_333.png' /> <img alt='CSIRO logo' src='./images/CSIRO_Grad_RGB_hr-155.png' />
   <h1>ASGS Ontology - ABS Structures and non-ABS structures</h1>
 <section id="metadata">
     <h2 style="display:none;">Metadata</h2>
     <dl>
-        <dt>IRI</dt>
+        <dt>URI</dt>
         <dd><code>http://linked.data.gov.au/def/asgs</code></dd>
-        <dt>Publisher(s)</dt>
+        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher">Publisher</a>(s)</dt>
         <dd>
             
     <a href="http://linked.data.gov.au/org/abs">Australian Bureau of Statistics</a><br/>
         </dd>
-        <dt>Creator(s)</dt>
+        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">Creator</a>(s)</dt>
         <dd>
             
-            <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a>
-            <a href="https://orcid.org/0000-0002-4305-6085"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>Orcid logo</title>
-            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
-                    <g id="Group-4">
-                        <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
-                            <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
-                            <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
-                                <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
-                                <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
-                                <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg></a>
-            (<a href="mailto:laurent.lefort@abs.gov.au">laurent.lefort@abs.gov.au</a>) of 
-        <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
-                    
     <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D. Cox</a>
     <a href="https://orcid.org/0000-0002-3884-3420"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -248,8 +235,31 @@
 </svg></a>
     (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of 
     <a href="https://www.csiro.au">CSIRO</a><br/>
+            
+    <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a>
+    <a href="https://orcid.org/0000-0002-4305-6085"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Orcid logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero" transform="translate(-924.000000, -72.000000)" fill-rule="nonzero">
+            <g id="Group-4">
+                <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+                    <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" id="Path" fill="#A6CE39"></path>
+                    <g id="Group" transform="translate(18.868966, 12.910345)" fill="#FFFFFF">
+                        <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878"></polygon>
+                        <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape"></path>
+                        <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></a>
+    (<a href="mailto:laurent.lefort@abs.gov.au">laurent.lefort@abs.gov.au</a>) of 
+    <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
         </dd>
-        <dt>Contributors(s)</dt>
+        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor">Contributor</a>(s)</dt>
         <dd>
             
     <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a>
@@ -275,16 +285,19 @@
     (<a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a>) of 
     <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br/>
         </dd>
-        <dt>Created</dt>
+        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
         <dd>2018-11-23</dd>
-        <dt>Modified</dt>
-        <dd>2020-06-21</dd>
+        <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
+        <dd>2021-03-19</dd>
         <dt>Imports</dt>
         <dd>
             <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a><br/>
         </dd>
-        <dt>Rights</dt>
-        <dd>&copy; 2018, 2020 Australian Bureau of Statistics, CSIRO</dd>
+        <dt>License &amp; Rights</dt>
+        <dd>
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a><br />
+            &copy; 2018, 2021 Australian Bureau of Statistics, CSIRO
+        </dd>
         <dt>Source</dt>
         <dd><a href="https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)">https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+(ASGS)</a></dd>
         <dt>Ontology RDF</dt>
@@ -301,6 +314,10 @@
 <li>Indigenous location, Indigenous area, Indigenous region </li>
 <li>Urban Centre and Locality, Section of State Range, Section of State, Significant Urban Area</li>
 </ul>
+<div class="figure">
+    <div><img src="./images/ABS-structures.jpg"/></div>
+    <div class="caption"><strong>Figure 1:</strong> ABS Structures in the ASGS</div>
+</div>
 <p>Non ABS Structures which are not defined or maintained by the ABS but represent administrative areas for which the ABS is committed to providing a range of statistics. 
 The classes defined here corresponds to ABS approximations of spatial areas or regions which are defined elsewhere</p>
 <ul>
@@ -313,6 +330,10 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
 <li>Natural Resource Management Regions (NRMRs)</li>
 <li>Tourism Regions (TRs)</li>
 </ul>
+<div class="figure">
+    <div><img src="./images/Non-ABS-structures.jpg"/></div>
+    <div class="caption"><strong>Figure 2:</strong> Non-ABS Structures in the ASGS</div>
+</div>
 <p>The ASGS uses Mesh Blocks as a common building block for all structures. Mesh Blocks are small enough that they can accurately approximate the changing administrative areas maintained by other organisations, without changing themselves.</p>
 <p>The publication of the ASGS ontology is part of the Australian Bureau of Statistics contribution to a joint effort to publish authoritative, interconnected spatial products (Location Index project).</p>
 <p>The ASGS Ontology is packaged in multiple graphs:</p>
@@ -342,29 +363,26 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
 <section id="overview">
     <h2>Overview</h2>
     <div class="figure">
-        <div><img src="./images/ABS-structures.png"/></div>
-        <div class="caption"><strong>Figure 1:</strong> Classes for ABS Structures</div>
-    </div>
-    <div class="figure">
         <div><img src="./images/ABS-structures-attributes.png"/></div>
-        <div class="caption"><strong>Figure 2:</strong> ABS Structures with containment relations</div>
-    </div>
-    <div class="figure">
-        <div><img src="./images/Non-ABS-structures.png"/></div>
-        <div class="caption"><strong>Figure 3:</strong> Classes for Non-ABS Structures</div>
+        <div class="caption"><strong>Figure 3:</strong> ASGS Ontology classes for ABS Structures with their containment relations</div>
     </div>
     <div class="figure">
         <div><img src="./images/Non-ABS-structures-attributes.png"/></div>
-        <div class="caption"><strong>Figure4:</strong> Non-ABS Structures with containment relations</div>
+        <div class="caption"><strong>Figure 4:</strong> ASGS Ontology classes for Non-ABS Structures with their containment relations</div>
+    </div>
+    <div class="figure">
+        <div><img src="./images/ASGS-feature-hierarchy.png"/></div>
+        <div class="caption"><strong>Figure 5:</strong> Hierarchy of ASGS Ontology classes</div>
     </div>
 </section>
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#ABSStructure">ABS Structure</a></li>
         <li><a href="#ASGSFeature">ASGS Feature</a></li>
         <li><a href="#AustralianDrainageDivision">Australian Drainage Division</a></li>
         <li><a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a></li>
-        <li><a href="#Country">Country </a></li>
+        <li><a href="#Country(Australia)">Country (Australia)</a></li>
         <li><a href="#DestinationZone">Destination Zone</a></li>
         <li><a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a></li>
         <li><a href="#IndigenousArea">Indigenous Area</a></li>
@@ -374,6 +392,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <li><a href="#MeshBlock">Mesh Block</a></li>
         <li><a href="#Meshblockcategory">Meshblock category</a></li>
         <li><a href="#NaturalResourceManagementRegion">Natural Resource Management Region</a></li>
+        <li><a href="#NonABSStructure">Non ABS Structure</a></li>
         <li><a href="#Organization">Organization</a></li>
         <li><a href="#Person">Person</a></li>
         <li><a href="#Postalarea">Postal area</a></li>
@@ -391,11 +410,53 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <li><a href="#TourismRegion">Tourism Region</a></li>
         <li><a href="#UrbanCentreandLocality">Urban Centre and Locality</a></li>
     </ul>
+    <div class="entity class" id="ABSStructure">
+        <h3>ABS Structure<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#ABSStructure</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The ABS Structures are areas that the ABS designs specifically for outputting statistics. This means that the statistical areas are designed to meet the requirements of specific statistical collections as well as geographic concepts relevant to those statistics such as remoteness and urban/rural definitions. This helps to ensure the confidentiality, accuracy and relevance of the data. The ABS Structures are stable for five years to enable better comparison of data over time.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Country(Australia)">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="AustralianDrainageDivision">
         <h3>Australian Drainage Division<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#AustralianDrainageDivision</code></td>
             </tr>
             <tr>
@@ -413,14 +474,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -429,7 +490,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Commonwealth Electoral Division<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision</code></td>
             </tr>
             <tr>
@@ -448,18 +509,22 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt;
   rdf:type asgs:CommonwealthElectoralDivision ;
   rdf:type asgs:Feature ;
+  rdf:type asgs:NonABSStructure ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117122&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117224&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117429&gt; ; 
+... more here ...
   geox:hasAreaM2 [
       data:value 81571420.384044319 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/&gt; ;
-  dcterms:identifier "216"^^asgs-id:cedCode2016 ;
+  dcterms:identifier "216"^^asgs-idcedCode2016 ;
   dcterms:title "Goldstein" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ced/216&gt; ;
 .
@@ -469,24 +534,24 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Country">
-        <h3>Country <sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="Country(Australia)">
+        <h3>Country (Australia)<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#Country</code></td>
             </tr>
             <tr>
@@ -504,14 +569,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -520,7 +585,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Destination Zone<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#DestinationZone</code></td>
             </tr>
             <tr>
@@ -538,15 +603,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -555,7 +620,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>ASGS Feature<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#Feature</code></td>
             </tr>
             <tr>
@@ -567,11 +632,12 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Super-class for all ABS Structures and Non-ABS Structures. Use</p>
+                    <p>This is the super-class for all ABS Structures and Non-ABS Structures. For </p>
 <ul>
-<li>dcterms:identifier for the code, with a suitable datatype from <code>asgs-id</code></li>
-<li>rdfs:label for the name, with a suitable datatype from <code>asgs-id</code></li>
-<li><code>asgs:within</code>, <code>asgs:contains</code>, <code>asgs:isComposedOf</code> for containment and composition relations</li>
+<li>the location's numeric code, use <code>dcterms:identifier</code>, along with a suitable datatype from <code>asgs-id</code></li>
+<li>the location's textual name, use <code>dcterms:title</code></li>
+<li>containment and composition relations defined in ASGS, use <code>asgs:isAggregationOf</code>, <code>asgs:aggregatesTo</code>, for the </li>
+<li>other relationships, use a suitable predicate from GeoSPARQL (spatial relations), Loc-I (fiat relations), Dublin Core (generic relations) or any other suitable RDF vocabaulary. </li>
 </ul>
                 </td>
             </tr>
@@ -584,43 +650,22 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -629,7 +674,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Greater Capital City Statistical Area<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#GreaterCapitalCityStatisticalArea</code></td>
             </tr>
             <tr>
@@ -648,13 +693,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt;
   rdf:type asgs:Feature ;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:GreaterCapitalCityStatisticalArea ;
   rdf:type geo:Feature ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode "2GMEL"^^asgs-id:gccsaCode2016 ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
   geox:hasAreaM2 [
       data:value 16025657279.543074 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
@@ -664,8 +710,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/&gt; ;
-  dcterms:identifier "2GMEL"^^asgs-id:gccsaCode2016 ;
-  dcterms:title "Greater Melbourne" ;
+  dct:identifier "2GMEL"^^asgs-id:gccsaCode2016 ;
+  dct:title "Greater Melbourne" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_gccsa/2GMEL&gt; ;
 .
                     </pre>
@@ -674,15 +720,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -691,7 +737,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Indigenous Area<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#IndigenousArea</code></td>
             </tr>
             <tr>
@@ -710,20 +756,21 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt;
   rdf:type asgs:Feature ;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:IndigenousArea ;
   rdf:type geo:Feature ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt; ;
   asgs:indigenousAreas6DigitCode "201010"^^asgs-id:iareCode2016 ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
   geox:hasAreaM2 [
       data:value 259730438.69439441 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/&gt; ;
-  dcterms:identifier "201010"^^asgs-id:iareCode2016 ;
-  dcterms:title "Melbourne - East" ;
+  dct:identifier "201010"^^asgs-id:iareCode2016 ;
+  dct:title "Melbourne - East" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iare/201010&gt; ;
 .
                     </pre>
@@ -732,15 +779,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -749,7 +796,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Indigenous Location<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#IndigenousLocation</code></td>
             </tr>
             <tr>
@@ -768,19 +815,19 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:IndigenousLocation ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
   geox:hasAreaM2 [
       data:value 103463893.37373097 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/&gt; ;
-  dcterms:identifier "20101003"^^asgs-id:ilocCode2016 ;
-  dcterms:title "Glen Eira" ;
+  dct:identifier "20101003"^^asgs-id:ilocCode2016 ;
+  dct:title "Glen Eira" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iloc/20101003&gt; ;
 .
                     </pre>
@@ -789,15 +836,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -806,7 +853,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Indigenous Region<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#IndigenousRegion</code></td>
             </tr>
             <tr>
@@ -825,20 +872,21 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:IndigenousRegion ;
   rdf:type geo:Feature ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:indigenousRegions3DigitCode "201"^^asgs-id:iregCode2016 ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
   geox:hasAreaM2 [
       data:value 14191868442.812222 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/&gt; ;
-  dcterms:identifier "201"^^asgs-id:iregCode2016 ;
-  dcterms:title "Melbourne" ;
+  dct:identifier "201"^^asgs-id:iregCode2016 ;
+  dct:title "Melbourne" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ireg/201&gt; ;
 .
                     </pre>
@@ -847,15 +895,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -864,7 +912,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Local Government Area<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#LocalGovernmentArea</code></td>
             </tr>
             <tr>
@@ -882,15 +930,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -899,7 +947,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Mesh Block<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#MeshBlock</code></td>
             </tr>
             <tr>
@@ -918,16 +966,16 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/20675580000&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:MeshBlock ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/destinationzone/211792650&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/localgovernmentarea/22310&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/destinationzone/211792650&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/localgovernmentarea/22310&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt; ;
   geox:hasAreaM2 [
       data:value 14548.840566578177 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
@@ -937,8 +985,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/&gt; ;
-  dcterms:identifier "20675580000"^^asgs-id:mbCode2016 ;
-  dcterms:type mbcat:residential ;
+  dct:identifier "20675580000"^^asgs-id:mbCode2016 ;
+  dct:type mbcat:residential ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_mb/20675580000&gt; ;
 .
                     </pre>
@@ -947,14 +995,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
                     <a href="http://purl.org/dc/terms/type">dcterms:type</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Meshblockcategory">asgs:MeshblockCategory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -963,7 +1011,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Meshblock category<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#MeshblockCategory</code></td>
             </tr>
             <tr>
@@ -979,12 +1027,16 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
         </table>
-    </div>
+        <div class="figure">
+            <div><img src="./images/mb-categories.png"/></div>
+            <div class="caption"><strong>Figure 6:</strong> Meshblock categories</div>
+        </div>
+            </div>
     <div class="entity class" id="NaturalResourceManagementRegion">
         <h3>Natural Resource Management Region<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#NaturalResourceManagementRegion</code></td>
             </tr>
             <tr>
@@ -1003,22 +1055,51 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt;
   rdf:type asgs:Feature ;
   rdf:type asgs:NaturalResourceManagementRegion ;
+  rdf:type asgs:NonABSStructure ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   geox:hasAreaM2 [
       data:value 20626018491.989136 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/&gt; ;
-  dcterms:identifier "208"^^asgs-id:nrmrCode2016 ;
-  dcterms:title "Port Phillip and Western Port" ;
+  dct:identifier "208"^^asgs-id:nrmrCode2016 ;
+  dct:title "Port Phillip and Western Port" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_nrmr/208&gt; ;
 .
                     </pre>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="NonABSStructure">
+        <h3>Non ABS Structure<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#NonABSStructure</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The Non ABS Structures represent administrative areas for which the ABS is committed to providing a range of statistics. These areas can change regularly as they are not defined by the ABS. As a result the Non ABS Structures are updated annually if significant changes to the areas have occurred. This improves the relevance of ABS data released on these areas. For example, the Local Government Areas (LGAs) are released annually: these represent LGAs that are defined by the State and Territory governments. ABS statistics such as Estimated Resident Population (ERP) are output on these LGA approximations.</p>
                 </td>
             </tr>
             <tr>
@@ -1028,11 +1109,17 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Restrictions</th>
+                <th>Sub-classes</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1041,7 +1128,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Postal area<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#PostalArea</code></td>
             </tr>
             <tr>
@@ -1059,14 +1146,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1075,7 +1162,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Remoteness Area<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#RemotenessArea</code></td>
             </tr>
             <tr>
@@ -1094,12 +1181,12 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:RemotenessArea ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   geox:hasAreaM2 [
       data:value 4849332200.0 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
@@ -1109,8 +1196,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/&gt; ;
-  dcterms:identifier "20"^^asgs-id:raCode2016 ;
-  dcterms:title "Major Cities of Australia" ;
+  dct:identifier "20"^^asgs-id:raCode2016 ;
+  dct:title "Major Cities of Australia" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ra/20&gt; ;
 .
                     </pre>
@@ -1119,15 +1206,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1136,7 +1223,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Section of State<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#SectionOfState</code></td>
             </tr>
             <tr>
@@ -1155,19 +1242,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:SectionOfState ;
   rdf:type geo:Feature ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
   asgs:sectionOfState2DigitCode "20"^^asgs-id:sosCode2016 ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   geox:hasAreaM2 [
       data:value 4624490385.6316757 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/&gt; ;
-  dcterms:identifier "20"^^asgs-id:sosCode2016 ;
+  dct:identifier "20"^^asgs-id:sosCode2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sos/20&gt; ;
 .
                     </pre>
@@ -1176,15 +1264,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1193,7 +1281,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Section of State Range<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#SectionOfStateRange</code></td>
             </tr>
             <tr>
@@ -1212,19 +1300,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:SectionOfStateRange ;
   rdf:type geo:Feature ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
   asgs:sectionOfStateRange3DigitCode "201"^^asgs-id:sosrCode2016 ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt; ;
   geox:hasAreaM2 [
       data:value 4351251103.1468725 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/&gt; ;
-  dcterms:identifier "201"^^asgs-id:sosrCode2016 ;
+  dct:identifier "201"^^asgs-id:sosrCode2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sosr/201&gt; ;
 .
                     </pre>
@@ -1233,15 +1322,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1250,7 +1339,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Significant Urban Area<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#SignificantUrbanArea</code></td>
             </tr>
             <tr>
@@ -1269,18 +1358,18 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:SignificantUrbanArea ;
   rdf:type geo:Feature ;
-  asgs:isComposedOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
   geox:hasAreaM2 [
       data:value 9937488759.6786938 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/&gt; ;
-  dcterms:identifier "2010"^^asgs-id:suaCode2016 ;
+  dct:identifier "2010"^^asgs-id:suaCode2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sua/2010&gt; ;
 .
                     </pre>
@@ -1289,14 +1378,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1305,7 +1394,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>State Electoral Division<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StateElectoralDivision</code></td>
             </tr>
             <tr>
@@ -1323,15 +1412,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1340,7 +1429,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>State or Territory<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StateOrTerritory</code></td>
             </tr>
             <tr>
@@ -1359,11 +1448,12 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:StateOrTerritory ;
   rdf:type geo:Feature ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
   asgs:stateOrTerritory1DigitCode "2"^^asgs-id:stateCode2016 ;
   geox:hasAreaM2 [
       data:value 227495630400.0 ;
@@ -1374,8 +1464,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/&gt; ;
-  dcterms:identifier "2"^^asgs-id:stateCode2016 ;
-  dcterms:title "Victoria" ;
+  dct:identifier "2"^^asgs-id:stateCode2016 ;
+  dct:title "Victoria" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ste/2&gt; ;
   rdfs:label "VIC" ;
 .
@@ -1385,15 +1475,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Country">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Country(Australia)">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1402,7 +1492,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>State Suburb<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StateSuburb</code></td>
             </tr>
             <tr>
@@ -1421,19 +1511,19 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt;
   rdf:type asgs:Feature ;
+  rdf:type asgs:NonABSStructure ;
   rdf:type asgs:StateSuburb ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   geox:hasAreaM2 [
       data:value 4185791.9328826475 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/&gt; ;
-  dcterms:identifier "20858"^^asgs-id:sscCode2016 ;
-  dcterms:title "Elsternwick" ;
+  dct:identifier "20858"^^asgs-id:sscCode2016 ;
+  dct:title "Elsternwick" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ssc/20858&gt; ;
 .
                     </pre>
@@ -1442,15 +1532,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1459,7 +1549,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Statistical Area Level 1<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel1</code></td>
             </tr>
             <tr>
@@ -1478,17 +1568,17 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:StatisticalAreaLevel1 ;
   rdf:type geo:Feature ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
   asgs:statisticalArea1Sa111DigitCode "20802117923"^^asgs-id:sa1Maincode2016 ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
   geox:hasAreaM2 [
       data:value 114800.0 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
@@ -1498,7 +1588,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/&gt; ;
-  dcterms:identifier "20802117923"^^asgs-id:sa1Maincode2016 ;
+  dct:identifier "20802117923"^^asgs-id:sa1Maincode2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa1/20802117923&gt; ;
 .
                     </pre>
@@ -1507,20 +1597,20 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1529,7 +1619,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Statistical Area Level 2<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel2</code></td>
             </tr>
             <tr>
@@ -1548,15 +1638,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:StatisticalAreaLevel2 ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
   geox:hasAreaM2 [
       data:value 2861600.0 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
@@ -1566,8 +1656,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/&gt; ;
-  dcterms:identifier "208021179"^^asgs-id:sa2Maincode2016 ;
-  dcterms:identifier "208021179"^^asgs-id:statisticalArea2Sa29DigitCode ;
+  dct:identifier "208021179"^^asgs-id:sa2Maincode2016 ;
+  dct:identifier "208021179"^^asgs-id:statisticalArea2Sa29DigitCode ;
   geo:hasGeometry &lt;https://gds.loci.cat/geometry/asgs16_sa2/208021179&gt; ;
   rdfs:label "Elsternwick"^^asgs-id:sa2Name2016 ;
 .
@@ -1577,17 +1667,17 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1596,7 +1686,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Statistical Area Level 3<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel3</code></td>
             </tr>
             <tr>
@@ -1615,13 +1705,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:StatisticalAreaLevel3 ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
   geox:hasAreaM2 [
       data:value 40700200.0 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
@@ -1631,8 +1722,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/&gt; ;
-  dcterms:identifier "20802"^^asgs-id:sa3Code2016 ;
-  dcterms:title "Glen Eira" ;
+  dct:identifier "20802"^^asgs-id:sa3Code2016 ;
+  dct:title "Glen Eira" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa3/20802&gt; ;
 .
                     </pre>
@@ -1641,15 +1732,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1658,7 +1749,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Statistical Area Level 4<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#StatisticalAreaLevel4</code></td>
             </tr>
             <tr>
@@ -1677,13 +1768,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:StatisticalAreaLevel4 ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
+  asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
   geox:hasAreaM2 [
       data:value 161496600.0 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
@@ -1693,8 +1785,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/&gt; ;
-  dcterms:identifier "208"^^asgs-id:sa4Code2016 ;
-  dcterms:title "Melbourne - Inner South"^^asgs-id:sa4Name2016 ;
+  dct:identifier "208"^^asgs-id:sa4Code2016 ;
+  dct:title "Melbourne - Inner South"^^asgs-id:sa4Name2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa4/208&gt; ;
 .
                     </pre>
@@ -1703,16 +1795,16 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1721,7 +1813,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Tourism Region<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#TourismRegion</code></td>
             </tr>
             <tr>
@@ -1739,14 +1831,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
@@ -1755,7 +1847,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Urban Centre and Locality<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://linked.data.gov.au/def/asgs#UrbanCentreAndLocality</code></td>
             </tr>
             <tr>
@@ -1774,18 +1866,18 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 <th>Example</th>
                 <td>
                     <pre>
-                      
 &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt;
+  rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:UrbanCentreAndLocality ;
   rdf:type geo:Feature ;
-  asgs:within &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
+  asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
   geox:hasAreaM2 [
       data:value 4351251103.1468725 ;
       geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
     ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/&gt; ;
-  dcterms:identifier "201001"^^asgs-id:uclCode2016 ;
+  dct:identifier "201001"^^asgs-id:uclCode2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ucl/201001&gt; ;
 .
                     </pre>
@@ -1794,15 +1886,15 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#iscomposedof">asgs:isComposedOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1811,7 +1903,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Organization<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/Organization</code></td>
             </tr>
         </table>
@@ -1820,7 +1912,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <h3>Person<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/Person</code></td>
             </tr>
         </table>
@@ -1829,17 +1921,16 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#contains">contains</a></li>
-        <li><a href="#iscomposedof">is composed of</a></li>
-        <li><a href="#iswithin">is within</a></li>
+        <li><a href="#aggregatesto">aggregates to</a></li>
+        <li><a href="#isaggregationof">is aggregation of</a></li>
         <li><a href="#type">type</a></li>
     </ul>
-    <div class="entity property" id="contains">
-        <h3>contains<sup title="object property" class="sup-op">op</sup></h3>
+    <div class="entity property" id="aggregatesto">
+        <h3>aggregates to<sup title="object property" class="sup-op">op</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
-                <td><code>http://linked.data.gov.au/def/asgs#contains</code></td>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#aggregatesTo</code></td>
             </tr>
             <tr>
                 <th>Is Defined By</th>
@@ -1850,41 +1941,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Description</th>
                 <td>
-                    The target resource is within the context resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
-This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).
-                </td>
-            </tr>
-            <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#iswithin">asgs:within</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="iscomposedof">
-        <h3>is composed of<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>IRI</th>
-                <td><code>http://linked.data.gov.au/def/asgs#isComposedOf</code></td>
-            </tr>
-            <tr>
-                <th>Is Defined By</th>
-                <td>
-                    http://linked.data.gov.au/def/asgs
-                </td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    The context resource is composed of one or more of the target resources. 
-                </td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="#contains">asgs:contains</a><sup class="sup-op" title="object property">op</sup>
+                    The context resource aggregates to the target resource.
                 </td>
             </tr>
             <tr>
@@ -1901,12 +1958,12 @@ This may or may not correspond with a strict geometric relationship (which shoul
             </tr>
         </table>
     </div>
-    <div class="entity property" id="iswithin">
-        <h3>is within<sup title="object property" class="sup-op">op</sup></h3>
+    <div class="entity property" id="isaggregationof">
+        <h3>is aggregation of<sup title="object property" class="sup-op">op</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
-                <td><code>http://linked.data.gov.au/def/asgs#within</code></td>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/asgs#isAggregationOf</code></td>
             </tr>
             <tr>
                 <th>Is Defined By</th>
@@ -1917,8 +1974,19 @@ This may or may not correspond with a strict geometric relationship (which shoul
             <tr>
                 <th>Description</th>
                 <td>
-                    The context resource is contained by the target resource, in a logical, ownership, governance, jurisidictional or 'is-part-of' sense. 
-This may or may not correspond with a strict geometric relationship (which should be expressed using GeoSPARQL predicates).
+                    The context resource is an aggregation of (composed of) one or more of the target resources. 
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1927,7 +1995,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>type<sup title="object property" class="sup-op">op</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/type</code></td>
             </tr>
         </table>
@@ -1942,7 +2010,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>identifier<sup title="datatype property" class="sup-dp">dp</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/identifier</code></td>
             </tr>
         </table>
@@ -1951,10 +2019,15 @@ This may or may not correspond with a strict geometric relationship (which shoul
 <section id="annotationproperties">
     <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#value">value</a></li>
+        <li><a href="#hasAreaM2">hasAreaM2</a></li>
+        <li><a href="#inCRS">inCRS</a></li>
+        <li><a href="#isMemberOf">isMemberOf</a></li>
         <li><a href="#created">created</a></li>
         <li><a href="#creator">creator</a></li>
         <li><a href="#date">date</a></li>
         <li><a href="#description">description</a></li>
+        <li><a href="#license">license</a></li>
         <li><a href="#modified">modified</a></li>
         <li><a href="#publisher">publisher</a></li>
         <li><a href="#rights">rights</a></li>
@@ -1969,11 +2042,47 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <li><a href="#name">name</a></li>
         <li><a href="#url">url</a></li>
     </ul>
+    <div class="entity property" id="value">
+        <h3>value<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/datatype/value</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasAreaM2">
+        <h3>hasAreaM2<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/geox#hasAreaM2</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="inCRS">
+        <h3>inCRS<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/geox#inCRS</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isMemberOf">
+        <h3>isMemberOf<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/loci#isMemberOf</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="created">
         <h3>created<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/created</code></td>
             </tr>
         </table>
@@ -1982,7 +2091,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>creator<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/creator</code></td>
             </tr>
         </table>
@@ -1991,7 +2100,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>date<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/date</code></td>
             </tr>
         </table>
@@ -2000,8 +2109,17 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>description<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/description</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="license">
+        <h3>license<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/terms/license</code></td>
             </tr>
         </table>
     </div>
@@ -2009,7 +2127,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>modified<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/modified</code></td>
             </tr>
         </table>
@@ -2018,7 +2136,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/publisher</code></td>
             </tr>
         </table>
@@ -2027,7 +2145,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>rights<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/rights</code></td>
             </tr>
         </table>
@@ -2036,7 +2154,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>source<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/source</code></td>
             </tr>
         </table>
@@ -2045,7 +2163,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>title<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://purl.org/dc/terms/title</code></td>
             </tr>
         </table>
@@ -2054,7 +2172,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>isDefinedBy<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</code></td>
             </tr>
         </table>
@@ -2063,7 +2181,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>qualifiedCardinality<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>http://www.w3.org/2002/07/owl#qualifiedCardinality</code></td>
             </tr>
         </table>
@@ -2072,7 +2190,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/affiliation</code></td>
             </tr>
         </table>
@@ -2081,7 +2199,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>codeRepository<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/codeRepository</code></td>
             </tr>
         </table>
@@ -2090,7 +2208,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>email<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/email</code></td>
             </tr>
         </table>
@@ -2099,7 +2217,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/identifier</code></td>
             </tr>
         </table>
@@ -2108,7 +2226,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>name<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/name</code></td>
             </tr>
         </table>
@@ -2117,7 +2235,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>url<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td><code>https://schema.org/url</code></td>
             </tr>
         </table>
@@ -2130,14 +2248,111 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <li><a href="#0000-0002-3884-3420">0000-0002-3884-3420</a></li>
         <li><a href="#0000-0002-4305-6085">0000-0002-4305-6085</a></li>
         <li><a href="#0000-0002-8742-7730">0000-0002-8742-7730</a></li>
+        <li><a href="#2">2</a></li>
+        <li><a href="#20801117122">20801117122</a></li>
+        <li><a href="#20801117224">20801117224</a></li>
+        <li><a href="#20802117429">20802117429</a></li>
+        <li><a href="#216">216</a></li>
+        <li><a href="#2161">216</a></li>
         <li><a href="#abs">abs</a></li>
         <li><a href="#csiro">csiro</a></li>
     </ul>
+    <div class="entity named_individual" id="216">
+        <h3>216<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://gds.loci.cat/geometry/asgs16_ced/216
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity named_individual" id="2161">
+        <h3>216<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Classes(s)</dt>
+            <dd>
+                <a href="http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><br/>
+                <a href="http://linked.data.gov.au/def/asgs#NonABSStructure">asgs:NonABSStructure</a><br/>
+                <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><br/>
+                <a href="http://linked.data.gov.au/def/asgs#Feature">asgs:Feature</a><br/>
+            </dd>
+        </table>
+    </div>
+    <div class="entity named_individual" id="2">
+        <h3>2<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity named_individual" id="20801117122">
+        <h3>20801117122<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117122
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity named_individual" id="20801117224">
+        <h3>20801117224<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117224
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity named_individual" id="20802117429">
+        <h3>20802117429<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117429
+                  
+                  </code>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity named_individual" id="abs">
         <h3>abs<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td>
                   <code>
                       http://linked.data.gov.au/org/abs
@@ -2155,7 +2370,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>csiro<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td>
                   <code>
                       http://linked.data.gov.au/org/csiro
@@ -2173,7 +2388,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>0000-0002-3884-3420<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td>
                   <code>
                       https://orcid.org/0000-0002-3884-3420
@@ -2191,7 +2406,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>0000-0002-4305-6085<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td>
                   <code>
                       https://orcid.org/0000-0002-4305-6085
@@ -2209,7 +2424,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>0000-0002-8742-7730<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td>
                   <code>
                       https://orcid.org/0000-0002-8742-7730
@@ -2227,7 +2442,7 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <h3>None<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
-                <th>IRI</th>
+                <th>URI</th>
                 <td>
                   <code>
                       https://surroundaustralia.com
@@ -2246,12 +2461,8 @@ This may or may not correspond with a strict geometric relationship (which shoul
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
-        <dt><em>default (:)</em></dt>
-        <dd><code>http://linked.data.gov.au/def/asgs#</code></dd>
         <dt>asgs</dt>
         <dd><code>http://linked.data.gov.au/def/asgs#</code></dd>
-        <dt>cc</dt>
-        <dd><code>http://creativecommons.org/ns#</code></dd>
         <dt>dc</dt>
         <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
         <dt>dcterms</dt>
@@ -2278,8 +2489,6 @@ This may or may not correspond with a strict geometric relationship (which shoul
         <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
         <dt>void</dt>
         <dd><code>http://rdfs.org/ns/void#</code></dd>
-        <dt>xml</dt>
-        <dd><code>http://www.w3.org/XML/1998/namespace</code></dd>
         <dt>xsd</dt>
         <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
     </dl>

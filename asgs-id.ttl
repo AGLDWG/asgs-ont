@@ -606,13 +606,30 @@ asgs:UrbanCentreAndLocality
 asgs-id:addCode
   a rdfs:Datatype ;
   dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1> ;
+  rdfs:comment """Australian Drainage Divisions are sorted by name then allocated a two digit code starting from 01. This is prefixed by a “D” which enables unique identification across the country and differentiates them from other ABS codes.
+
+The codes used for the ASGS Australian Drainage Divisions may not match those used in 2011 in some instances as codes are assigned alphabetically within each State and Territory, and some Australian Drainage Division have changed. Correspondences enabling translation of data from 2011 to 2016 to qualify these changes are available upon request.
+
+Special purpose codes are included as balancing items. Mesh Blocks allocated to these codes are not part of any official drainage division.
+ADD code D94 is reserved for those States or Territories where people are coded to the No Usual Address SA1s.
+ADD code D97 is reserved for States or Territories that have Migratory, Off-Shore and Shipping SA1s.
+
+Example:
+Australian Drainage Division Code	Australian Drainage Division Name
+D01	Carpentaria Coast
+D02	Lake Eyre Basin
+D03	Murray-Darling Basin
+D04	North East Coast
+D91	Unclassified (Aust.)
+D94	No usual address (Aust.)
+D97	Migratory - Offshore - Shipping (Aust.)""" ;
   rdfs:label "addCode" ;
   owl:equivalentClass [
       a rdfs:Datatype ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "[0-9]+" ;
+            xsd:pattern "D[0-9]+" ;
           ]
         ) ;
     ] ;
@@ -728,6 +745,35 @@ asgs-id:ausCode2016
 .
 asgs-id:cedCode
   a rdfs:Datatype ;
+  dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202016~Main%20Features~Commonwealth%20Electoral%20Divisions%20(CED)~12> ;
+  rdfs:comment """COMMONWEALTH ELECTORAL DIVISION CODING STRUCTURE
+Commonwealth Electoral Divisions are sorted by name then allocated a two digit code starting from 01 within each State or Territory. This is prefixed by a single digit State or Territory code to enable unique identification of Commonwealth Electoral Divisions across the country.
+
+The codes used for the 2016 Commonwealth Electoral Divisions may not match those used in 2011 as codes are assigned alphabetically within each State and Territory, and some Commonwealth Electoral Division names have changed since 2011. Correspondences enabling translation of data from 2011 to 2016 to qualify these changes will be released with this volume.
+
+Special purpose codes are included as balancing items. SA1s allocated to these codes are not part of any official Commonwealth Electoral Division.
+CED code 94 is reserved for those State and Territories where people are coded to the No Usual Address SA1s.
+CED code 97 is reserved for those State and Territories that have Migratory, Off-Shore and Shipping SA1s.
+
+Example:
+State and Territory Name	State and Territory Code	Commonwealth Electoral Division Code	Commonwealth Electoral Division Name
+South Australia	4	401	Adelaide
+South Australia	4	402	Barker
+South Australia	4	403	Boothby
+South Australia	4	404	Grey
+South Australia	4	405	Hindmarsh
+South Australia	4	406	Kingston
+South Australia	4	494	No usual address (SA)
+South Australia	4	497	Migratory - Offshore - Shipping (SA)""" ;
+  owl:equivalentClass [
+      a rdfs:Datatype ;
+      owl:onDatatype xsd:string ;
+      owl:withRestrictions (
+          [
+            xsd:pattern "[0-9]+" ;
+          ]
+        ) ;
+    ] ;
 .
 asgs-id:dzn5dig11
   a rdfs:Datatype ;
@@ -1755,6 +1801,24 @@ Within each State and Territory, the Mesh Block identifier range 0000000000 to 9
 asgs-id:nrmrCode
   a rdfs:Datatype ;
   dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1> ;
+  rdfs:comment """National Resource Management Regions are sorted by name then allocated a two digit code starting from 01 within each State or Territory. This is prefixed by a single digit State or Territory code to enable unique identification of NRMRs across the country.
+
+The codes used for the National Resource Management Regions are unlikely to match those used in 2011 as codes are assigned alphabetically within each State and Territory, and many Natural Resource Management Region names have changed since 2011. Correspondences enabling translation of data from 2011 to 2016 to qualify these changes are available upon request.
+
+Special purpose codes are included as balancing items. Mesh Blocks allocated to these codes are not part of any official National Resource Management Region.
+NRMR code 94 is reserved for those States or Territories where people are coded to the No Usual Address SA1s.
+NRMR code 97 is reserved for those States or Territories that have Migratory, Off-Shore and Shipping SA1s.
+
+Example:
+State and Territory Name	State and Territory Code	Natural Resource Management Region Code	Natural Resource Management Region Name
+Queensland	3	301	Burnett Mary
+Queensland	3	302	Cape York
+Queensland	3	303	Condamine
+Queensland	3	304	Cooperative Management Area
+Queensland	3	305	Desert Channels
+Queensland	3	306	Fitzroy Basin
+Queensland	3	394	No usual address (Qld)
+Queensland	3	397	Migratory - Offshore - Shipping (Qld)""" ;
   rdfs:label "nrmrCode" ;
   owl:equivalentClass [
       a rdfs:Datatype ;
@@ -1839,6 +1903,22 @@ asgs-id:nrmrName2016
 asgs-id:poaCode
   a rdfs:Datatype ;
   dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1> ;
+  rdfs:comment """POSTAL AREA CODING STRUCTURE
+Each Postal Area code is the same as the corresponding four digit Australia Post postcode.
+
+Special purpose codes are included as balancing items. Mesh Blocks allocated to these codes are not part of any official Postal Area.
+POA code 9797 is reserved for cases where people are coded to Migratory, Off-Shore and Shipping Mesh Blocks.
+POA code 9494 is reserved for cases where people are coded to No Usual Address Mesh Blocks.
+
+Example:
+POA Code	POA Name
+2614	2614
+2615	2615
+2617	2617
+2618	2618 crosses New South Wales/Australian Capital Territory
+2619	2619
+9494	No usual address (Aust.)
+9797	Migratory - Offshore - Shipping (Aust.)""" ;
   rdfs:label "poaCode" ;
   owl:equivalentClass [
       a rdfs:Datatype ;
@@ -4040,6 +4120,25 @@ Section of State (SOS) and Section of State Range (SOSR) names are not unique in
 asgs-id:sscCode
   a rdfs:Datatype ;
   dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1> ;
+  rdfs:comment """STATE SUBURB CODING STRUCTURE
+State Suburbs are sorted alphabetically by name then allocated a four digit code starting from 0001 within each State or Territory. This is prefixed by a single digit State or Territory code to enable unique identification of State Suburbs across the country.
+
+The codes used for the 2016 State Suburbs may not match those used in 2011 as codes are assigned alphabetically within each State and Territory, and some State Suburb names have changed since 2011. Correspondences enabling translation of data from 2011 to 2016 to qualify these changes will be released with this volume.
+
+Special purpose codes are included as balancing items. Mesh Blocks allocated to these codes are not part of any official State Suburb.
+SSC code 9797 is reserved for cases where people are coded to Migratory, Off-Shore and Shipping Mesh Blocks.
+SSC code 9494 is reserved for cases where people are coded to No Usual Address Mesh Blocks.
+
+Example:
+State and Territory Name	State and Territory Code	State Suburb Code	State Suburb Name
+New South Wales	1	10001	Aarons Pass
+New South Wales	1	10002	Abbotsbury
+New South Wales	1	10003	Abbotsford (NSW)
+New South Wales	1	10004	Abercrombie
+New South Wales	1	10005	Abercrombie River
+New South Wales	1	10006	Aberdare
+New South Wales	1	19494	No usual address (NSW)
+New South Wales	1	19797	Migratory - Offshore - Shipping (NSW)""" ;
   rdfs:label "sscCode" ;
   owl:equivalentClass [
       a rdfs:Datatype ;
@@ -4684,14 +4783,30 @@ Where an SUA represents a region with a widely recognised name, it is named for 
 .
 asgs-id:trCode
   a rdfs:Datatype ;
-  dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202019~Main%20Features~Overview~1> ;
+  dcterms:source <https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.003~July%202016~Main%20Features~Tourism%20Regions%20(TR)~14> ;
+  rdfs:comment """TOURISM REGION CODING STRUCTURE
+ASGS Tourism Regions are sorted by name then allocated a two digit code starting from 01 within each State or Territory. This is prefixed by a single digit State or Territory code to enable unique identification of Tourism Regions across the country.
+
+The codes used for Tourism Regions may not match those used in 2011 in some instances. Correspondences enabling translation of data from 2011 to 2016 to qualify these changes will be released with this volume.
+
+Special purpose codes are not included for Tourism Regions.
+
+Example:
+
+State and Territory	Tourism Region	Name
+1		New South Wales
+1	R100	Hunter
+2		Victoria
+2	R100	High Country
+3		Queensland
+3	R100	Whitsundays""" ;
   rdfs:label "trCode" ;
   owl:equivalentClass [
       a rdfs:Datatype ;
       owl:onDatatype xsd:string ;
       owl:withRestrictions (
           [
-            xsd:pattern "[0-9]+" ;
+            xsd:pattern "[0-9]R[0-9]+" ;
           ]
         ) ;
     ] ;

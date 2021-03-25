@@ -23,25 +23,6 @@
 <http://gds.loci.cat/geometry/asgs16_ced/216>
   a owl:NamedIndividual ;
 .
-<http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216>
-  a asgs:CommonwealthElectoralDivision ;
-  a asgs:Feature ;
-  a asgs:NonABSStructure ;
-  a geo:Feature ;
-  a owl:NamedIndividual ;
-  asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
-  asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117122> ;
-  asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117224> ;
-  asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117429> ;
-  <http://linked.data.gov.au/def/geox#hasAreaM2> [
-      <http://linked.data.gov.au/def/datatype/value> 81571420.384044319 ;
-      <http://linked.data.gov.au/def/geox#inCRS> <http://www.opengis.net/def/crs/EPSG/0/3857> ;
-    ] ;
-  <http://linked.data.gov.au/def/loci#isMemberOf> <http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/> ;
-  dcterms:identifier "216"^^<http://linked.data.gov.au/def/asgs/id#cedCode2016> ;
-  dcterms:title "Goldstein" ;
-  geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ced/216> ;
-.
 <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2>
   a owl:NamedIndividual ;
 .
@@ -168,7 +149,7 @@ asgs:CommonwealthElectoralDivision
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/> ;
-  dcterms:identifier \"216\"^^asgs-idcedCode2016 ;
+  dcterms:identifier \"216\"^^asgs-id:cedCode ;
   dcterms:title \"Goldstein\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ced/216> ;
 .
@@ -269,7 +250,7 @@ asgs:GreaterCapitalCityStatisticalArea
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/> ;
-  dct:identifier \"2GMEL\"^^asgs-id:gccsaCode2016 ;
+  dct:identifier \"2GMEL\"^^asgs-id:gccsaCode ;
   dct:title \"Greater Melbourne\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_gccsa/2GMEL> ;
 .
@@ -305,14 +286,13 @@ asgs:IndigenousArea
   rdf:type asgs:IndigenousArea ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201> ;
-  asgs:indigenousAreas6DigitCode \"201010\"^^asgs-id:iareCode2016 ;
   asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003> ;
   geox:hasAreaM2 [
       data:value 259730438.69439441 ;
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/indigenousarea/> ;
-  dct:identifier \"201010\"^^asgs-id:iareCode2016 ;
+  dct:identifier \"201010\"^^asgs-id:iareCode ;
   dct:title \"Melbourne - East\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_iare/201010> ;
 .
@@ -352,7 +332,7 @@ asgs:IndigenousLocation
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/> ;
-  dct:identifier \"20101003\"^^asgs-id:ilocCode2016 ;
+  dct:identifier \"20101003\"^^asgs-id:ilocCode ;
   dct:title \"Glen Eira\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_iloc/20101003> ;
 .""" ;
@@ -386,14 +366,13 @@ asgs:IndigenousRegion
   rdf:type asgs:IndigenousRegion ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
-  asgs:indigenousRegions3DigitCode \"201\"^^asgs-id:iregCode2016 ;
   asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010> ;
   geox:hasAreaM2 [
       data:value 14191868442.812222 ;
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/indigenousregion/> ;
-  dct:identifier \"201\"^^asgs-id:iregCode2016 ;
+  dct:identifier \"201\"^^asgs-id:iregCode ;
   dct:title \"Melbourne\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ireg/201> ;
 .
@@ -461,7 +440,7 @@ asgs:MeshBlock
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/meshblock/> ;
-  dct:identifier \"20675580000\"^^asgs-id:mbCode2016 ;
+  dct:identifier \"20675580000\"^^asgs-id:mbCode ;
   dct:type mbcat:residential ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_mb/20675580000> ;
 .
@@ -508,7 +487,7 @@ asgs:NaturalResourceManagementRegion
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/> ;
-  dct:identifier \"208\"^^asgs-id:nrmrCode2016 ;
+  dct:identifier \"208\"^^asgs-id:nrmrCode ;
   dct:title \"Port Phillip and Western Port\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_nrmr/208> ;
 .
@@ -577,7 +556,7 @@ asgs:RemotenessArea
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/remotenessarea/> ;
-  dct:identifier \"20\"^^asgs-id:raCode2016 ;
+  dct:identifier \"20\"^^asgs-id:raCode ;
   dct:title \"Major Cities of Australia\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ra/20> ;
 .
@@ -613,13 +592,12 @@ asgs:SectionOfState
   rdf:type geo:Feature ;
   asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
   asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201> ;
-  asgs:sectionOfState2DigitCode \"20\"^^asgs-id:sosCode2016 ;
   geox:hasAreaM2 [
       data:value 4624490385.6316757 ;
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/sectionofstate/> ;
-  dct:identifier \"20\"^^asgs-id:sosCode2016 ;
+  dct:identifier \"20\"^^asgs-id:sosCode ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sos/20> ;
 .""" ;
 .
@@ -692,7 +670,7 @@ asgs:SignificantUrbanArea
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/> ;
-  dct:identifier \"2010\"^^asgs-id:suaCode2016 ;
+  dct:identifier \"2010\"^^asgs-id:suaCode ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sua/2010> ;
 .""" ;
 .
@@ -749,7 +727,6 @@ asgs:StateOrTerritory
   rdf:type asgs:StateOrTerritory ;
   rdf:type geo:Feature ;
   asgs:isAggregationOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208> ;
-  asgs:stateOrTerritory1DigitCode \"2\"^^asgs-id:stateCode2016 ;
   geox:hasAreaM2 [
       data:value 227495630400.0 ;
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
@@ -759,7 +736,7 @@ asgs:StateOrTerritory
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/> ;
-  dct:identifier \"2\"^^asgs-id:stateCode2016 ;
+  dct:identifier \"2\"^^asgs-id:stateCode ;
   dct:title \"Victoria\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ste/2> ;
   rdfs:label \"VIC\" ;
@@ -800,7 +777,7 @@ asgs:StateSuburb
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statesuburb/> ;
-  dct:identifier \"20858\"^^asgs-id:sscCode2016 ;
+  dct:identifier \"20858\"^^asgs-id:sscCode ;
   dct:title \"Elsternwick\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ssc/20858> ;
 .
@@ -870,7 +847,6 @@ asgs:StatisticalAreaLevel1
   asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2> ;
   asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179> ;
   asgs:aggregatesTo <http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001> ;
-  asgs:statisticalArea1Sa111DigitCode \"20802117923\"^^asgs-id:sa1Maincode2016 ;
   geox:hasAreaM2 [
       data:value 114800.0 ;
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3577> ;
@@ -880,7 +856,7 @@ asgs:StatisticalAreaLevel1
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/> ;
-  dct:identifier \"20802117923\"^^asgs-id:sa1Maincode2016 ;
+  dct:identifier \"20802117923\"^^asgs-id:sa1Code ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sa1/20802117923> ;
 .
 """ ;
@@ -939,9 +915,8 @@ asgs:StatisticalAreaLevel2
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/> ;
-  dct:identifier \"208021179\"^^asgs-id:sa2Maincode2016 ;
-  dct:identifier \"208021179\"^^asgs-id:statisticalArea2Sa29DigitCode ;
-  geo:hasGeometry <https://gds.loci.cat/geometry/asgs16_sa2/208021179> ;
+  dct:identifier \"208021179\"^^asgs-id:sa2Code ;
+   geo:hasGeometry <https://gds.loci.cat/geometry/asgs16_sa2/208021179> ;
   rdfs:label \"Elsternwick\"^^asgs-id:sa2Name2016 ;
 .
 """ ;
@@ -986,7 +961,7 @@ asgs:StatisticalAreaLevel3
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/> ;
-  dct:identifier \"20802\"^^asgs-id:sa3Code2016 ;
+  dct:identifier \"20802\"^^asgs-id:sa3Code ;
   dct:title \"Glen Eira\" ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sa3/20802> ;
 .
@@ -1039,8 +1014,8 @@ asgs:StatisticalAreaLevel4
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/> ;
-  dct:identifier \"208\"^^asgs-id:sa4Code2016 ;
-  dct:title \"Melbourne - Inner South\"^^asgs-id:sa4Name2016 ;
+  dct:identifier \"208\"^^asgs-id:sa4Code ;
+  dct:title \"Melbourne - Inner South\"^^asgs-id:sa4Name ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_sa4/208> ;
 .
 """ ;
@@ -1097,7 +1072,7 @@ asgs:UrbanCentreAndLocality
       geox:inCRS <http://www.opengis.net/def/crs/EPSG/0/3857> ;
     ] ;
   loci:isMemberOf <http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/> ;
-  dct:identifier \"201001\"^^asgs-id:uclCode2016 ;
+  dct:identifier \"201001\"^^asgs-id:uclCode ;
   geo:hasGeometry <http://gds.loci.cat/geometry/asgs16_ucl/201001> ;
 .
 """ ;
@@ -1119,9 +1094,6 @@ asgs:isAggregationOf
   rdfs:label "is aggregation of" ;
   rdfs:range asgs:Feature ;
   skos:definition "The context resource is an aggregation of (composed of) one or more of the target resources. " ;
-.
-<http://linked.data.gov.au/def/asgs/id#cedCode2016>
-  a rdfs:Datatype ;
 .
 <http://linked.data.gov.au/def/datatype/value>
   a owl:AnnotationProperty ;

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>ASGS Ontology - ABS Structures and non-ABS structures</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
+EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
     <style>
@@ -114,8 +117,8 @@
         .sup-ap,
         .sup-p,
         .sup-ni,
-        .sup-cp,
-        .sup-cl {
+        .sup-con,
+        .sup-col {
             cursor:help;
             margin-left: 3px;
         }
@@ -140,10 +143,10 @@
         .sup-ni {
             color:brown;
         }
-        .sup-cp {
+        .sup-con {
             color:orange;
         }
-        .sup-cl {
+        .sup-col {
             color:darkred;
         }
         code {
@@ -196,7 +199,7 @@
 <body>
   <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
     <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.8.6</span>
+    <span style="font-size:smaller;">2.9.3</span>
   </div>
   <img alt='ABS logo' src='./images/ABS_Logo_333.png' /> <img alt='CSIRO logo' src='./images/CSIRO_Grad_RGB_hr-155.png' />
   <h1>ASGS Ontology - ABS Structures and non-ABS structures</h1>
@@ -214,7 +217,8 @@
         <dd>
             
     <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D. Cox</a>
-    <a href="https://orcid.org/0000-0002-3884-3420"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    <a href="">
+  <svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Orcid logo</title>
@@ -232,12 +236,14 @@
             </g>
         </g>
     </g>
-</svg></a>
+  </svg>
+</a>
     (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of 
     <a href="https://www.csiro.au">CSIRO</a><br/>
             
     <a href="https://orcid.org/0000-0002-4305-6085">Laurent Lefort</a>
-    <a href="https://orcid.org/0000-0002-4305-6085"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    <a href="">
+  <svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Orcid logo</title>
@@ -255,7 +261,8 @@
             </g>
         </g>
     </g>
-</svg></a>
+  </svg>
+</a>
     (<a href="mailto:laurent.lefort@abs.gov.au">laurent.lefort@abs.gov.au</a>) of 
     <a href="https://www.abs.gov.au">Australian Bureau of Statistics</a><br/>
         </dd>
@@ -263,7 +270,8 @@
         <dd>
             
     <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a>
-    <a href="https://orcid.org/0000-0002-8742-7730"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    <a href="">
+  <svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Orcid logo</title>
@@ -281,14 +289,15 @@
             </g>
         </g>
     </g>
-</svg></a>
+  </svg>
+</a>
     (<a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a>) of 
     <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br/>
         </dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
         <dd>2018-11-23</dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
-        <dd>2021-03-19</dd>
+        <dd>2021-06-25</dd>
         <dt>Imports</dt>
         <dd>
             <a href="http://www.opengis.net/ont/geosparql">http://www.opengis.net/ont/geosparql</a><br/>
@@ -378,40 +387,43 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#ABSStructure">ABS Structure</a></li>
-        <li><a href="#ASGSFeature">ASGS Feature</a></li>
-        <li><a href="#AustralianDrainageDivision">Australian Drainage Division</a></li>
-        <li><a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a></li>
-        <li><a href="#Country(Australia)">Country (Australia)</a></li>
-        <li><a href="#DestinationZone">Destination Zone</a></li>
-        <li><a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a></li>
-        <li><a href="#IndigenousArea">Indigenous Area</a></li>
-        <li><a href="#IndigenousLocation">Indigenous Location</a></li>
-        <li><a href="#IndigenousRegion">Indigenous Region</a></li>
-        <li><a href="#LocalGovernmentArea">Local Government Area</a></li>
-        <li><a href="#MeshBlock">Mesh Block</a></li>
-        <li><a href="#Meshblockcategory">Meshblock category</a></li>
-        <li><a href="#NaturalResourceManagementRegion">Natural Resource Management Region</a></li>
-        <li><a href="#NonABSStructure">Non ABS Structure</a></li>
-        <li><a href="#Organization">Organization</a></li>
-        <li><a href="#Person">Person</a></li>
-        <li><a href="#Postalarea">Postal area</a></li>
-        <li><a href="#RemotenessArea">Remoteness Area</a></li>
-        <li><a href="#SectionofState">Section of State</a></li>
-        <li><a href="#SectionofStateRange">Section of State Range</a></li>
-        <li><a href="#SignificantUrbanArea">Significant Urban Area</a></li>
-        <li><a href="#StateElectoralDivision">State Electoral Division</a></li>
-        <li><a href="#StateSuburb">State Suburb</a></li>
-        <li><a href="#StateorTerritory">State or Territory</a></li>
-        <li><a href="#StatisticalAreaLevel1">Statistical Area Level 1</a></li>
-        <li><a href="#StatisticalAreaLevel2">Statistical Area Level 2</a></li>
-        <li><a href="#StatisticalAreaLevel3">Statistical Area Level 3</a></li>
-        <li><a href="#StatisticalAreaLevel4">Statistical Area Level 4</a></li>
-        <li><a href="#TourismRegion">Tourism Region</a></li>
-        <li><a href="#UrbanCentreandLocality">Urban Centre and Locality</a></li>
+      <li><a href="#ABSStructure">ABS Structure</a></li>
+      <li><a href="#AustralianDrainageDivision">Australian Drainage Division</a></li>
+      <li><a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a></li>
+      <li><a href="#Country(Australia)">Country (Australia)</a></li>
+      <li><a href="#DestinationZone">Destination Zone</a></li>
+      <li><a href="#ASGSFeature">ASGS Feature</a></li>
+      <li><a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a></li>
+      <li><a href="#IndigenousArea">Indigenous Area</a></li>
+      <li><a href="#IndigenousLocation">Indigenous Location</a></li>
+      <li><a href="#IndigenousRegion">Indigenous Region</a></li>
+      <li><a href="#LocalGovernmentArea">Local Government Area</a></li>
+      <li><a href="#MeshBlock">Mesh Block</a></li>
+      <li><a href="#Meshblockcategory">Meshblock category</a></li>
+      <li><a href="#NaturalResourceManagementRegion">Natural Resource Management Region</a></li>
+      <li><a href="#NonABSStructure">Non ABS Structure</a></li>
+      <li><a href="#Postalarea">Postal area</a></li>
+      <li><a href="#RemotenessArea">Remoteness Area</a></li>
+      <li><a href="#SectionofState">Section of State</a></li>
+      <li><a href="#SectionofStateRange">Section of State Range</a></li>
+      <li><a href="#SignificantUrbanArea">Significant Urban Area</a></li>
+      <li><a href="#StateElectoralDivision">State Electoral Division</a></li>
+      <li><a href="#StateorTerritory">State or Territory</a></li>
+      <li><a href="#StateSuburb">State Suburb</a></li>
+      <li><a href="#StatisticalAreaLevel1">Statistical Area Level 1</a></li>
+      <li><a href="#StatisticalAreaLevel2">Statistical Area Level 2</a></li>
+      <li><a href="#StatisticalAreaLevel3">Statistical Area Level 3</a></li>
+      <li><a href="#StatisticalAreaLevel4">Statistical Area Level 4</a></li>
+      <li><a href="#TourismRegion">Tourism Region</a></li>
+      <li><a href="#UrbanCentreandLocality">Urban Centre and Locality</a></li>
+      <li><a href="https://schema.org/Organization">sdo:Organization</a></li>
+      <li><a href="https://schema.org/Person">sdo:Person</a></li>
     </ul>
     <div class="entity class" id="ABSStructure">
-        <h3>ABS Structure<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          ABS Structure<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ABSStructure" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -426,34 +438,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">ASGS Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Country(Australia)">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SignificantUrbanArea">Significant Urban Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofState">Section of State</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Country(Australia)">Country (Australia)</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel3">Statistical Area Level 3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UrbanCentreandLocality">Urban Centre and Locality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousArea">Indigenous Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SectionofStateRange">Section of State Range</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel2">Statistical Area Level 2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousRegion">Indigenous Region</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RemotenessArea">Remoteness Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatisticalAreaLevel4">Statistical Area Level 4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IndigenousLocation">Indigenous Location</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="AustralianDrainageDivision">
-        <h3>Australian Drainage Division<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Australian Drainage Division<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AustralianDrainageDivision" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -474,20 +489,23 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="CommonwealthElectoralDivision">
-        <h3>Commonwealth Electoral Division<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Commonwealth Electoral Division<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CommonwealthElectoralDivision" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -506,7 +524,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216&gt;
@@ -519,36 +537,35 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20801117224&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117429&gt; ; 
 ... more here ...
-  geox:hasAreaM2 [
-      data:value 81571420.384044319 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/&gt; ;
   dcterms:identifier "216"^^asgs-id:cedCode ;
   dcterms:title "Goldstein" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ced/216&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Country(Australia)">
-        <h3>Country (Australia)<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Country (Australia)<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Country(Australia)" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -569,20 +586,23 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="DestinationZone">
-        <h3>Destination Zone<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Destination Zone<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DestinationZone" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -603,21 +623,24 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">Statistical Area Level 2</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="ASGSFeature">
-        <h3>ASGS Feature<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          ASGS Feature<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ASGSFeature" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -650,28 +673,31 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="GreaterCapitalCityStatisticalArea">
-        <h3>Greater Capital City Statistical Area<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Greater Capital City Statistical Area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GreaterCapitalCityStatisticalArea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -690,7 +716,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt;
@@ -701,40 +727,35 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:greaterCapitalCityStatisticalAreasGccsa5CharacterAlphanumericCode "2GMEL"^^asgs-id:gccsaCode2016 ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-  geox:hasAreaM2 [
-      data:value 16025657279.543074 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 9992511800.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/&gt; ;
   dct:identifier "2GMEL"^^asgs-id:gccsaCode ;
   dct:title "Greater Melbourne" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_gccsa/2GMEL&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">Statistical Area Level 4</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="IndigenousArea">
-        <h3>Indigenous Area<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Indigenous Area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#IndigenousArea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -753,7 +774,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt;
@@ -763,36 +784,35 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt; ;
-  geox:hasAreaM2 [
-      data:value 259730438.69439441 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/&gt; ;
-  dct:identifier "201010"^^asgs-id:iareCode2016 ;
+  dct:identifier "201010"^^asgs-id:iareCode ;
   dct:title "Melbourne - East" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iare/201010&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">asgs:IndigenousRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousRegion">Indigenous Region</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousLocation">Indigenous Location</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="IndigenousLocation">
-        <h3>Indigenous Location<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Indigenous Location<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#IndigenousLocation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -811,45 +831,42 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/20101003&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:IndigenousLocation ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
-  geox:hasAreaM2 [
-      data:value 103463893.37373097 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenouslocation/&gt; ;
   dct:identifier "20101003"^^asgs-id:ilocCode ;
   dct:title "Glen Eira" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_iloc/20101003&gt; ;
-.
-                    </pre>
+.</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#IndigenousArea">Indigenous Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="IndigenousRegion">
-        <h3>Indigenous Region<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Indigenous Region<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#IndigenousRegion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -868,46 +885,44 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/201&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:IndigenousRegion ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousarea/201010&gt; ;
-  geox:hasAreaM2 [
-      data:value 14191868442.812222 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/indigenousregion/&gt; ;
   dct:identifier "201"^^asgs-id:iregCode ;
   dct:title "Melbourne" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ireg/201&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousArea">asgs:IndigenousArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#IndigenousArea">Indigenous Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="LocalGovernmentArea">
-        <h3>Local Government Area<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Local Government Area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#LocalGovernmentArea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -928,21 +943,24 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="MeshBlock">
-        <h3>Mesh Block<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Mesh Block<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#MeshBlock" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -961,10 +979,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/20675580000&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/20675580000&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:MeshBlock ;
   rdf:type geo:Feature ;
@@ -974,39 +991,34 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt; ;
-  geox:hasAreaM2 [
-      data:value 14548.840566578177 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 9000.000000000001818989403545856475830078125 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/meshblock/&gt; ;
   dct:identifier "20675580000"^^asgs-id:mbCode ;
   dct:type mbcat:residential ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_mb/20675580000&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://purl.org/dc/terms/type">dcterms:type</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Meshblockcategory">asgs:MeshblockCategory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/type">dcterms:type</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Meshblockcategory">Meshblock category</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Meshblockcategory">
-        <h3>Meshblock category<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Meshblock category<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Meshblockcategory" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1025,13 +1037,12 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
         </table>
-        <div class="figure">
-            <div><img src="./images/mb-categories.png"/></div>
-            <div class="caption"><strong>Figure 6:</strong> Meshblock categories</div>
-        </div>
-            </div>
+    </div>
     <div class="entity class" id="NaturalResourceManagementRegion">
-        <h3>Natural Resource Management Region<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Natural Resource Management Region<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NaturalResourceManagementRegion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1050,45 +1061,43 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/208&gt;
   rdf:type asgs:Feature ;
   rdf:type asgs:NaturalResourceManagementRegion ;
   rdf:type asgs:NonABSStructure ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  geox:hasAreaM2 [
-      data:value 20626018491.989136 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/naturalresourcemanagementregion/&gt; ;
   dct:identifier "208"^^asgs-id:nrmrCode ;
   dct:title "Port Phillip and Western Port" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_nrmr/208&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="NonABSStructure">
-        <h3>Non ABS Structure<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Non ABS Structure<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NonABSStructure" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1103,27 +1112,30 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ASGSFeature">ASGS Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#StateSuburb">asgs:StateSuburb</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LocalGovernmentArea">asgs:LocalGovernmentArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#AustralianDrainageDivision">asgs:AustralianDrainageDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NaturalResourceManagementRegion">asgs:NaturalResourceManagementRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#DestinationZone">asgs:DestinationZone</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Postalarea">asgs:PostalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateSuburb">State Suburb</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TourismRegion">Tourism Region</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NaturalResourceManagementRegion">Natural Resource Management Region</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StateElectoralDivision">State Electoral Division</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LocalGovernmentArea">Local Government Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DestinationZone">Destination Zone</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AustralianDrainageDivision">Australian Drainage Division</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Postalarea">Postal area</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Postalarea">
-        <h3>Postal area<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Postal area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Postalarea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1144,20 +1156,23 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="RemotenessArea">
-        <h3>Remoteness Area<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Remoteness Area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#RemotenessArea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1176,49 +1191,43 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/20&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:RemotenessArea ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  geox:hasAreaM2 [
-      data:value 4849332200.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 7798263021.8181982 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/remotenessarea/&gt; ;
   dct:identifier "20"^^asgs-id:raCode ;
   dct:title "Major Cities of Australia" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ra/20&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="SectionofState">
-        <h3>Section of State<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Section of State<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SectionofState" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1237,45 +1246,42 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:SectionOfState ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
-  geox:hasAreaM2 [
-      data:value 4624490385.6316757 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/&gt; ;
   dct:identifier "20"^^asgs-id:sosCode ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sos/20&gt; ;
-.
-                    </pre>
+.</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#SectionofStateRange">Section of State Range</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="SectionofStateRange">
-        <h3>Section of State Range<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Section of State Range<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SectionofStateRange" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1294,45 +1300,44 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:SectionOfStateRange ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstate/20&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
-  geox:hasAreaM2 [
-      data:value 4351251103.1468725 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
+  asgs:sectionOfStateRange3DigitCode "201"^^asgs-id:sosrCode2016 ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/&gt; ;
-  dct:identifier "201"^^asgs-id:sosrCode ;
+  dct:identifier "201"^^asgs-id:sosrCode2016 ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sosr/201&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">asgs:SectionOfState</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#UrbanCentreandLocality">Urban Centre and Locality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofState">Section of State</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="SignificantUrbanArea">
-        <h3>Significant Urban Area<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Significant Urban Area<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SignificantUrbanArea" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1351,43 +1356,40 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/2010&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:SignificantUrbanArea ;
   rdf:type geo:Feature ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
-  geox:hasAreaM2 [
-      data:value 9937488759.6786938 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/significanturbanarea/&gt; ;
   dct:identifier "2010"^^asgs-id:suaCode ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sua/2010&gt; ;
-.
-                    </pre>
+.</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">Statistical Area Level 2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StateElectoralDivision">
-        <h3>State Electoral Division<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          State Electoral Division<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StateElectoralDivision" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1408,21 +1410,24 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StateorTerritory">
-        <h3>State or Territory<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          State or Territory<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StateorTerritory" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1441,50 +1446,44 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:StateOrTerritory ;
   rdf:type geo:Feature ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-  geox:hasAreaM2 [
-      data:value 227495630400.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 356137738800.02869 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/&gt; ;
   dct:identifier "2"^^asgs-id:stateCode ;
   dct:title "Victoria" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ste/2&gt; ;
   rdfs:label "VIC" ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Country(Australia)">asgs:Country</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel4">Statistical Area Level 4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#Country(Australia)">Country (Australia)</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StateSuburb">
-        <h3>State Suburb<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          State Suburb<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StateSuburb" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1503,45 +1502,43 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/20858&gt;
   rdf:type asgs:Feature ;
   rdf:type asgs:NonABSStructure ;
   rdf:type asgs:StateSuburb ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
-  geox:hasAreaM2 [
-      data:value 4185791.9328826475 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statesuburb/&gt; ;
   dct:identifier "20858"^^asgs-id:sscCode ;
   dct:title "Elsternwick" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ssc/20858&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StatisticalAreaLevel1">
-        <h3>Statistical Area Level 1<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Statistical Area Level 1<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StatisticalAreaLevel1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1560,7 +1557,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/20802117923&gt;
@@ -1573,44 +1570,39 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt; ;
-  geox:hasAreaM2 [
-      data:value 114800.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 184552.47130247016 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel1/&gt; ;
   dct:identifier "20802117923"^^asgs-id:sa1Code ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa1/20802117923&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#StateElectoralDivision">asgs:StateElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">asgs:MeshBlock</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">asgs:IndigenousLocation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#UrbanCentreandLocality">asgs:UrbanCentreAndLocality</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">asgs:RemotenessArea</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#MeshBlock">Mesh Block</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#CommonwealthElectoralDivision">Commonwealth Electoral Division</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#UrbanCentreandLocality">Urban Centre and Locality</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#IndigenousLocation">Indigenous Location</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#StateElectoralDivision">State Electoral Division</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#RemotenessArea">Remoteness Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel2">Statistical Area Level 2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StatisticalAreaLevel2">
-        <h3>Statistical Area Level 2<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Statistical Area Level 2<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StatisticalAreaLevel2" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1629,7 +1621,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt;
@@ -1641,42 +1633,37 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
-  geox:hasAreaM2 [
-      data:value 2861600.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 4602063.7284709048 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/&gt; ;
-  dct:identifier "208021179"^^asgs-id:sa2Code2016 ;
-  geo:hasGeometry &lt;https://gds.loci.cat/geometry/asgs16_sa2/208021179&gt; ;
+  dct:identifier "208021179"^^asgs-id:sa2Code ;
+   geo:hasGeometry &lt;https://gds.loci.cat/geometry/asgs16_sa2/208021179&gt; ;
   rdfs:label "Elsternwick"^^asgs-id:sa2Name2016 ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#TourismRegion">asgs:TourismRegion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">asgs:SignificantUrbanArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#TourismRegion">Tourism Region</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#SignificantUrbanArea">Significant Urban Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel3">Statistical Area Level 3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StatisticalAreaLevel3">
-        <h3>Statistical Area Level 3<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Statistical Area Level 3<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StatisticalAreaLevel3" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1695,10 +1682,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
-                    <pre>
-&lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt;
+                    <pre>&lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt;
   rdf:type asgs:ABSStructure ;
   rdf:type asgs:Feature ;
   rdf:type asgs:StatisticalAreaLevel3 ;
@@ -1706,40 +1692,35 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel2/208021179&gt; ;
-  geox:hasAreaM2 [
-      data:value 40700200.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 65477553.844688073 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/&gt; ;
   dct:identifier "20802"^^asgs-id:sa3Code ;
   dct:title "Glen Eira" ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa3/20802&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">asgs:StatisticalAreaLevel4</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StatisticalAreaLevel4">Statistical Area Level 4</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">Statistical Area Level 2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StatisticalAreaLevel4">
-        <h3>Statistical Area Level 4<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Statistical Area Level 4<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StatisticalAreaLevel4" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1758,7 +1739,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/208&gt;
@@ -1769,41 +1750,36 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/greatercapitalcitystatisticalarea/2GMEL&gt; ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/stateorterritory/2&gt; ;
   asgs:isAggregationOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel3/20802&gt; ;
-  geox:hasAreaM2 [
-      data:value 161496600.0 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3577&gt; ;
-    ] ;
-  geox:hasAreaM2 [
-      data:value 260154098.46660107 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/statisticalarealevel4/&gt; ;
   dct:identifier "208"^^asgs-id:sa4Code ;
   dct:title "Melbourne - Inner South"^^asgs-id:sa4Name ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_sa4/208&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">asgs:GreaterCapitalCityStatisticalArea</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel3">asgs:StatisticalAreaLevel3</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">asgs:StateOrTerritory</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel3">Statistical Area Level 3</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1 <a href="#GreaterCapitalCityStatisticalArea">Greater Capital City Statistical Area</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#StateorTerritory">State or Territory</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="TourismRegion">
-        <h3>Tourism Region<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Tourism Region<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TourismRegion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1824,20 +1800,23 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#NonABSStructure">asgs:NonABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonABSStructure">Non ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">asgs:StatisticalAreaLevel2</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel2">Statistical Area Level 2</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="UrbanCentreandLocality">
-        <h3>Urban Centre and Locality<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Urban Centre and Locality<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#UrbanCentreandLocality" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1856,7 +1835,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                 </td>
             </tr>
             <tr>
-                <th>Example</th>
+                <th>Example(s)</th>
                 <td>
                     <pre>
 &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/201001&gt;
@@ -1865,48 +1844,66 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
   rdf:type asgs:UrbanCentreAndLocality ;
   rdf:type geo:Feature ;
   asgs:aggregatesTo &lt;http://linked.data.gov.au/dataset/asgs2016/sectionofstaterange/201&gt; ;
-  geox:hasAreaM2 [
-      data:value 4351251103.1468725 ;
-      geox:inCRS &lt;http://www.opengis.net/def/crs/EPSG/0/3857&gt; ;
-    ] ;
   loci:isMemberOf &lt;http://linked.data.gov.au/dataset/asgs2016/urbancentreandlocality/&gt; ;
   dct:identifier "201001"^^asgs-id:uclCode ;
   geo:hasGeometry &lt;http://gds.loci.cat/geometry/asgs16_ucl/201001&gt; ;
 .
-                    </pre>
+</pre><br/>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ABSStructure">asgs:ABSStructure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ABSStructure">ABS Structure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
-                    <a href="#isaggregationof">asgs:isAggregationOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">asgs:StatisticalAreaLevel1</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#aggregatesto">asgs:aggregatesTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">asgs:SectionOfStateRange</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#StatisticalAreaLevel1">Statistical Area Level 1</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#isaggregationof">is aggregation of</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="#aggregatesto">aggregates to</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#SectionofStateRange">Section of State Range</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Organization">
-        <h3>Organization<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Organization<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Organization" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
                 <td><code>https://schema.org/Organization</code></td>
             </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a href="http://linked.data.gov.au/org/abs">http://linked.data.gov.au/org/abs</a><br/>
+                    <a href="https://surroundaustralia.com">https://surroundaustralia.com</a><br/>
+                    <a href="http://linked.data.gov.au/org/csiro">http://linked.data.gov.au/org/csiro</a><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="Person">
-        <h3>Person<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Person<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Person" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
                 <td><code>https://schema.org/Person</code></td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a href="https://orcid.org/0000-0002-3884-3420">https://orcid.org/0000-0002-3884-3420</a><br/>
+                    <a href="https://orcid.org/0000-0002-8742-7730">https://orcid.org/0000-0002-8742-7730</a><br/>
+                    <a href="https://orcid.org/0000-0002-4305-6085">https://orcid.org/0000-0002-4305-6085</a><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -1919,7 +1916,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <li><a href="#type">type</a></li>
     </ul>
     <div class="entity property" id="aggregatesto">
-        <h3>aggregates to<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>aggregates to<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#aggregatesto" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1934,25 +1933,27 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Description</th>
                 <td>
-                    The context resource aggregates to the target resource.
+                    <p>The context resource aggregates to the target resource.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#ASGSFeature">ASGS Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://linked.data.gov.au/def/asgs#Feature">http://linked.data.gov.au/def/asgs#Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity property" id="isaggregationof">
-        <h3>is aggregation of<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>is aggregation of<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isaggregationof" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1967,25 +1968,27 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             <tr>
                 <th>Description</th>
                 <td>
-                    The context resource is an aggregation of (composed of) one or more of the target resources. 
+                    <p>The context resource is an aggregation of (composed of) one or more of the target resources. </p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#ASGSFeature">ASGS Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#ASGSFeature">asgs:Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://linked.data.gov.au/def/asgs#Feature">http://linked.data.gov.au/def/asgs#Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity property" id="type">
-        <h3>type<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>type<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#type" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2000,7 +2003,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <li><a href="#identifier">identifier</a></li>
     </ul>
     <div class="entity property" id="identifier">
-        <h3>identifier<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <h3>identifier<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#identifier" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2013,8 +2018,6 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
     <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#value">value</a></li>
-        <li><a href="#hasAreaM2">hasAreaM2</a></li>
-        <li><a href="#inCRS">inCRS</a></li>
         <li><a href="#isMemberOf">isMemberOf</a></li>
         <li><a href="#created">created</a></li>
         <li><a href="#creator">creator</a></li>
@@ -2036,7 +2039,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         <li><a href="#url">url</a></li>
     </ul>
     <div class="entity property" id="value">
-        <h3>value<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>value<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#value" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2044,26 +2049,10 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasAreaM2">
-        <h3>hasAreaM2<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://linked.data.gov.au/def/geox#hasAreaM2</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="inCRS">
-        <h3>inCRS<sup title="annotation property" class="sup-ap">ap</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://linked.data.gov.au/def/geox#inCRS</code></td>
-            </tr>
-        </table>
-    </div>
     <div class="entity property" id="isMemberOf">
-        <h3>isMemberOf<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>isMemberOf<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isMemberOf" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2072,7 +2061,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="created">
-        <h3>created<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>created<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#created" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2081,7 +2072,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="creator">
-        <h3>creator<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>creator<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#creator" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2090,7 +2083,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="date">
-        <h3>date<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>date<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#date" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2099,7 +2094,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="description">
-        <h3>description<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>description<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#description" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2108,7 +2105,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="license">
-        <h3>license<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>license<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#license" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2117,7 +2116,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="modified">
-        <h3>modified<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>modified<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#modified" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2126,7 +2127,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="publisher">
-        <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#publisher" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2135,7 +2138,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="rights">
-        <h3>rights<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>rights<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#rights" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2144,7 +2149,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="source">
-        <h3>source<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>source<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#source" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2153,7 +2160,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="title">
-        <h3>title<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>title<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#title" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2162,7 +2171,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="isDefinedBy">
-        <h3>isDefinedBy<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>isDefinedBy<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isDefinedBy" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2171,7 +2182,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="qualifiedCardinality">
-        <h3>qualifiedCardinality<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>qualifiedCardinality<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#qualifiedCardinality" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2180,7 +2193,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="affiliation">
-        <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#affiliation" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2189,7 +2204,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="codeRepository">
-        <h3>codeRepository<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>codeRepository<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#codeRepository" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2198,7 +2215,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="email">
-        <h3>email<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>email<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#email" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2207,7 +2226,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="identifier1">
-        <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#identifier1" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2216,7 +2237,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="name">
-        <h3>name<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>name<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#name" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2225,7 +2248,9 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
         </table>
     </div>
     <div class="entity property" id="url">
-        <h3>url<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>url<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#url" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2235,22 +2260,22 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
     </div>
 </section>
   
-  <section id="namedindividuals">
-    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#0000-0002-3884-3420">0000-0002-3884-3420</a></li>
-        <li><a href="#0000-0002-4305-6085">0000-0002-4305-6085</a></li>
-        <li><a href="#0000-0002-8742-7730">0000-0002-8742-7730</a></li>
-        <li><a href="#2">2</a></li>
-        <li><a href="#20801117122">20801117122</a></li>
-        <li><a href="#20801117224">20801117224</a></li>
-        <li><a href="#20802117429">20802117429</a></li>
-        <li><a href="#216">216</a></li>
-        <li><a href="#2161">216</a></li>
-        <li><a href="#abs">abs</a></li>
-        <li><a href="#csiro">csiro</a></li>
-    </ul>
-    <div class="entity named_individual" id="216">
+    <section id="namedindividuals">
+        <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+        <ul class="hlist">
+            <li><a href="#2">2</a></li>
+            <li><a href="#20801117122">20801117122</a></li>
+            <li><a href="#20801117224">20801117224</a></li>
+            <li><a href="#20802117429">20802117429</a></li>
+            <li><a href="#216">216</a></li>
+            <li><a href="#AustralianBureauofStatistics">Australian Bureau of Statistics</a></li>
+            <li><a href="#CSIRO">CSIRO</a></li>
+            <li><a href="#LaurentLefort">Laurent Lefort</a></li>
+            <li><a href="#NicholasJ.Car">Nicholas J. Car</a></li>
+            <li><a href="#SURROUNDAustraliaPtyLtd">SURROUND Australia Pty Ltd</a></li>
+            <li><a href="#SimonJ.D.Cox">Simon J.D. Cox</a></li>
+        </ul>
+            <div class="entity named_individual" id="216">
         <h3>216<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2264,28 +2289,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             </tr>
         </table>
     </div>
-    <div class="entity named_individual" id="2161">
-        <h3>216<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://linked.data.gov.au/dataset/asgs2016/commonwealthelectoraldivision/216
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="http://linked.data.gov.au/def/asgs#CommonwealthElectoralDivision">asgs:CommonwealthElectoralDivision</a><br/>
-                <a href="http://linked.data.gov.au/def/asgs#NonABSStructure">asgs:NonABSStructure</a><br/>
-                <a href="http://www.opengis.net/ont/geosparql#Feature">geo:Feature</a><br/>
-                <a href="http://linked.data.gov.au/def/asgs#Feature">asgs:Feature</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="2">
+            <div class="entity named_individual" id="2">
         <h3>2<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2299,7 +2303,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             </tr>
         </table>
     </div>
-    <div class="entity named_individual" id="20801117122">
+            <div class="entity named_individual" id="20801117122">
         <h3>20801117122<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2313,7 +2317,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             </tr>
         </table>
     </div>
-    <div class="entity named_individual" id="20801117224">
+            <div class="entity named_individual" id="20801117224">
         <h3>20801117224<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2327,7 +2331,7 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             </tr>
         </table>
     </div>
-    <div class="entity named_individual" id="20802117429">
+            <div class="entity named_individual" id="20802117429">
         <h3>20802117429<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2341,8 +2345,8 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
             </tr>
         </table>
     </div>
-    <div class="entity named_individual" id="abs">
-        <h3>abs<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="AustralianBureauofStatistics">
+        <h3>Australian Bureau of Statistics<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2353,14 +2357,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a href="https://schema.org/Organization">sdo:Organization</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="csiro">
-        <h3>csiro<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="CSIRO">
+        <h3>CSIRO<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2371,14 +2375,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a href="https://schema.org/Organization">sdo:Organization</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="0000-0002-3884-3420">
-        <h3>0000-0002-3884-3420<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="SimonJ.D.Cox">
+        <h3>Simon J.D. Cox<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2389,14 +2393,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a href="https://schema.org/Person">sdo:Person</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="0000-0002-4305-6085">
-        <h3>0000-0002-4305-6085<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="LaurentLefort">
+        <h3>Laurent Lefort<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2407,14 +2411,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a href="https://schema.org/Person">sdo:Person</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="0000-0002-8742-7730">
-        <h3>0000-0002-8742-7730<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="NicholasJ.Car">
+        <h3>Nicholas J. Car<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2425,14 +2429,14 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a href="https://schema.org/Person">sdo:Person</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="None">
-        <h3>None<sup title="named individual" class="sup-ni">ni</sup></h3>
+            <div class="entity named_individual" id="SURROUNDAustraliaPtyLtd">
+        <h3>SURROUND Australia Pty Ltd<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2443,19 +2447,18 @@ The classes defined here corresponds to ABS approximations of spatial areas or r
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a href="https://schema.org/Organization">sdo:Organization</a><br/>
             </dd>
         </table>
     </div>
-</section>
-  
+    </section>
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
-        <dt>asgs</dt>
-        <dd><code>http://linked.data.gov.au/def/asgs#</code></dd>
+        <dt>default (:)</dt>
+        <dd><code>http://linked.data.gov.au/def/asgs</code></dd>
         <dt>dc</dt>
         <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
         <dt>dcterms</dt>

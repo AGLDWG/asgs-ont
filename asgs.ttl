@@ -299,6 +299,16 @@ asgs:DestinationZone rdf:type owl:Class ;
 ###  http://linked.data.gov.au/def/asgs#Feature
 asgs:Feature rdf:type owl:Class ;
              rdfs:subClassOf geo:Feature ;
+             rdfs:subClassOf [
+                a owl:Restriction ;
+                owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty dcterms:identifier ;
+              ] ;
+              rdfs:subClassOf [
+                a owl:Restriction ;
+                owl:cardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty dcterms:title ;
+              ] ;
              rdfs:comment """This is the super-class for all ABS Structures and Non-ABS Structures. For 
 
 - the location's numeric code, use `dcterms:identifier`, along with a suitable datatype from `asgs-id`

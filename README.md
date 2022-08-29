@@ -2,6 +2,8 @@
 
 # ASGS Ontology
 An Ontology for the Australian Statistical Geography Standard (ASGS), a framework of statistical areas used by the Australian Bureau of Statistics (ABS) and other organisations to enable the publication of statistics that are comparable and spatially integrated. 
+Documentation and the machine-readable representation of the ASGS Ontology are available from the URI 
+http://linked.data.gov.au/def/asgs . 
 This ontology contains the definitions for the ABS Structures which are areas that the ABS designs specifically for outputting statistics
 
 * Main structures: Mesh Block, Statistical Areas (Level 1 to Level 4), Greater Capital City Statistical Areas, State or Territory, Country classes,
